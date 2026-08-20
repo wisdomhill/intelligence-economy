@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "4. The Thirty"
+---
+
+{{< include _04-the-thirty.qmd >}}

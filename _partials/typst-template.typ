@@ -26,6 +26,7 @@
   heading3-size: 11pt,
   heading1-color: "2F4B8F",
   heading1-gap-after: 0.5em,
+  raw-scale: 0.87,
   colophon-size: 8.5pt,
   colophon-color: "6E7B87",
   colophon-gap-before: 1.5em,
@@ -82,12 +83,34 @@
     justify: true,
     leading: linestretch * 0.65em
   )
+  // Body copy is justified; table cells must not be. A justified column a few
+  // centimetres wide stretches every line to the cell edge to get there, which
+  // is what made the cells read as blocks rather than as left-aligned text.
+  //
+  // Hyphenation has to be re-enabled by hand alongside it. Typst's default is
+  // `hyphenate: auto`, meaning "only when justified", so switching justify off
+  // also switches hyphenation off — and a word wider than its column then
+  // overflows into the neighbour instead of breaking: a 13% column rendered
+  // `ClassificatioSnegment`, two cells printed on top of each other. Narrow
+  // columns need the break even when the text is ragged-right.
+  show table: set par(justify: false)
+  show table: set text(hyphenate: true)
   set text(lang: lang,
            region: region,
            size: fontsize)
   set text(font: font) if font != none
   show math.equation: set text(font: mathfont) if mathfont != none
   show raw: set text(font: codefont) if codefont != none
+  // No `codefont` is set, so inline literals fall to DejaVu Sans Mono, one
+  // of the four faces Typst bundles. Quarto’s own output already sets raw
+  // text to 0.8em, which leaves a literal reading noticeably smaller than
+  // the body: DejaVu’s x-height is 0.547em against Source Serif 4’s 0.475,
+  // so 0.8 × 11pt gives an x-height of 4.81pt against the body’s 5.22pt.
+  // 0.87 × the body size matches them (9.57pt → 5.23pt).
+  //
+  // Scale off `fontsize` rather than `em`: inside this rule `em` resolves
+  // against the already-reduced raw size and the two reductions compound.
+  show raw: set text(size: fontsize * raw-scale)
 
   set heading(numbering: sectionnumbering)
   show heading: set text(font: headingfont, weight: "semibold") if headingfont != none

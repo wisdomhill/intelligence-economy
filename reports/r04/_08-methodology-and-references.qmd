@@ -1,0 +1,53 @@
+## Methodological Note
+
+Market capitalization data for the thirty-company universe are drawn from the CompaniesMarketCap software ranking [1], recorded at the close of the last trading day of 2025 and at July 1, 2026, and cross-checked by Wisdom Hill Research; §4.1 states the limits of the universe's construction and of capitalization as a performance measure. Aggregate figures in the text are computed from the table in §4.2. Functional classifications follow this report's fixed taxonomy and involve judgment for multi-segment firms; each company carries a single primary classification. Vendor product, protocol, and pricing-structure claims are sourced to the primary announcements and documentation cited. A small number of claims rest on secondary industry accounts rather than vendor documentation — notably the distribution of Agentforce experiences inside third-party assistants — and are attributed as such in the text rather than asserted. Vendor rate cards for machine-scale traffic are not publicly disclosed by any incumbent in the universe; statements about toll levels are therefore structural arguments about pricing logic, not claims about published rates. Challenger references are limited to independently confirmed facts of existence and category; private valuations are omitted. Forward-looking statements are analytical judgments, not predictions, and §7.5 states the evidence that would revise them. This report is not investment advice.
+
+## References
+
+[1] CompaniesMarketCap. "Largest Software Companies by Market Cap." <https://companiesmarketcap.com/software/largest-software-companies-by-market-cap/>
+
+[2] Salesforce Developers Blog. "Salesforce Hosted MCP Servers Are Now Generally Available." April 2026. <https://developer.salesforce.com/blogs/2026/04/salesforce-hosted-mcp-servers-are-now-generally-available>
+
+[3] Salesforce Developers Blog. "Salesforce Hosted MCP Servers Are in Beta Today." October 2025. <https://developer.salesforce.com/blogs/2025/10/salesforce-hosted-mcp-servers-are-in-beta-today>
+
+[4] Salesforce. "Introducing the Data 360 MCP Server — Your Unified Data, Ready for Any Agent." May 2026. <https://www.salesforce.com/blog/introducing-the-data-360-mcp-server-your-unified-data-ready-for-any-agent/>
+
+[5] ServiceNow Newsroom. "ServiceNow Opens Its Full System of Action to Every AI Agent in the Enterprise." May 2026. <https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-opens-its-full-system-of-action-to-every-AI-Agent-in-the-enterprise/default.aspx>
+
+[6] diginomica. "ServiceNow Knowledge 2026 — AI Control Tower Expands, Autonomous Workforce Reaches Every Function." May 2026. <https://diginomica.com/servicenow-knowledge-2026-ai-control-tower-expands-autonomous-workforce-reaches-every-function-and>
+
+[7] Reworked. "ServiceNow Wants to Be the Control Layer for Every AI Agent in the Enterprise." May 2026. <https://www.reworked.co/digital-workplace/servicenow-launches-action-fabric-major-overhaul-of-ai-control-tower/>
+
+[8] ERP Today. "ServiceNow Repositions Around AI Security and Governance at Knowledge 2026." May 2026. <https://erp.today/servicenow-ai-security-governance-knowledge-2026/>
+
+[9] Bersin, Josh. "The Reinvention of Workday: From System of Record to Platform of Agents." April 2026. <https://joshbersin.com/2026/04/the-reinvention-of-workday-from-system-of-record-to-platform-of-agents/>
+
+[10] Workday Newsroom. "Workday Announces New AI Agent Partner Network and Agent Gateway." June 3, 2025. <https://newsroom.workday.com/2025-06-03-Workday-Announces-New-AI-Agent-Partner-Network-and-Agent-Gateway-to-Power-the-Next-Generation-of-Human-and-Digital-Workforces>
+
+[11] Workday Blog. "The Workday Agent System of Record Is Now Generally Available." February 2026. <https://blog.workday.com/en-us/managing-ai-powered-future-of-work.html>
+
+[12] Roush, Tyler. "Intuit Becomes S&P 500's Worst Performer This Year — Here's Why." Forbes, June 2, 2026. <https://www.forbes.com/sites/tylerroush/2026/06/02/intuit-becomes-sp-500s-worst-performer-this-year-heres-why/>
+
+[13] Great Speculations. "What's Behind Intuit's 30% Correction." Forbes, February 4, 2026. <https://www.forbes.com/sites/greatspeculations/2026/02/04/whats-behind-intuits-30-correction/>
+
+[14] IndexBox. "Early AI Adoption Fails to Shield Intuit in 'SaaSpocalypse' Market Panic." 2026. <https://www.indexbox.io/blog/early-ai-adoption-fails-to-shield-intuit-in-saaspocalypse-market-panic/>
+
+[15] International Business Times (AU). "Intuit Stock Turbulence: AI Disruption." 2026. <https://www.ibtimes.com.au/intuit-stock-turbulence-ai-disruption-1871597>
+
+[16] The Motley Fool. "Intuit Stock Was Absolutely Hammered After a Beat." May 21, 2026. <https://www.fool.com/investing/2026/05/21/intuit-stock-was-absolutely-hammered-after-a-beat/>
+
+[17] Sherwood News. "Intuit Plummets After Reporting Slowing Revenue Growth." 2026. <https://sherwood.news/markets/intuit-plummets-after-reporting-slowing-revenue-growth/>
+
+[18] Anthropic. "Introducing the Model Context Protocol." November 2024. <https://www.anthropic.com/news/model-context-protocol>
+
+[19] Google Developers Blog. "Announcing the Agent2Agent Protocol (A2A): A New Era of Agent Interoperability." April 2025. <https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/>
+
+[20] Digital Today. "ServiceNow Launches Action Fabric, Opens Platform to External AI Agents." May 2026. <https://www.digitaltoday.co.kr/en/view/55228/servicenow-launches-action-fabric-opens-platform-to-external-ai-agents>
+
+[21] NowBen. "ServiceNow Launches Action Fabric to Open 'Full System of Action' to Any AI Agent." May 2026. <https://nowben.com/servicenow-launches-action-fabric-to-open-full-system-of-action-to-any-ai-agent/>
+
+[22] Efficiently Connected. "ServiceNow Knowledge 2026: AI Governance Takes Center Stage." May 2026. <https://www.efficientlyconnected.com/servicenow-knowledge-2026-ai-governance-control-tower/>
+
+[23] Muir, Don. "\$300 Billion Evaporated. The SaaS-Pocalypse Has Begun." Forbes, February 4, 2026. <https://www.forbes.com/sites/donmuir/2026/02/04/300-billion-evaporated-the-saaspocalypse-has-begun/>
+
+------------------------------------------------------------------------

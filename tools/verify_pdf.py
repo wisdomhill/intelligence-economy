@@ -25,6 +25,18 @@ except ImportError:
 
 A4_MM = (210, 297)
 EXPECT_FONTS = {"Inter-SemiBold", "Inter-Regular", "SourceSerif4-Regular"}
+
+# Faces a correct render may embed. Anything else means Typst substituted a
+# font it could not find, which it does silently.
+#
+# DejaVuSansMono is the exception, and a deliberate one: it is one of the four
+# fonts Typst bundles, and it is what `show raw` resolves to because the
+# project sets no `codefont`. It is not a substitution — a build with
+# `--ignore-system-fonts` still embeds it, which is the proof that it comes
+# from Typst rather than from the machine. The series carries about ten inline
+# literals in total (file and field names), so committing a monospace face of
+# our own would add weight for nothing.
+ALLOWED_PREFIXES = ("Inter", "SourceSerif4", "DejaVuSansMono")
 EXPECT_HEADING_PT = {1: 15.0, 2: 12.0, 3: 11.0}
 EXPECT_BODY_PT = 11.0
 EXPECT_H1_RGB = (0.184, 0.294, 0.561)   # 2F4B8F
@@ -69,7 +81,7 @@ def main(path: Path) -> int:
     check(not missing, "expected fonts embedded",
           f"missing {sorted(missing)}" if missing else ", ".join(sorted(embedded)))
     strays = {f for f in embedded
-              if not f.startswith(("Inter", "SourceSerif4"))}
+              if not f.startswith(ALLOWED_PREFIXES)}
     check(not strays, "no substituted faces",
           f"unexpected {sorted(strays)}" if strays else "")
 

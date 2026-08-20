@@ -1,0 +1,141 @@
+Anthropic. *2026 Agentic Coding Trends Report.* 2026. <https://resources.anthropic.com/hubfs/2026%20Agentic%20Coding%20Trends%20Report.pdf>
+
+Anthropic. "Claude Fable 5 and Claude Mythos 5." June 9, 2026. <https://www.anthropic.com/news/claude-fable-5-mythos-5>
+
+Anthropic. "Claude Fable." Product page. June 2026. <https://www.anthropic.com/claude/fable>
+
+Anthropic. "Anthropic raises \$65B in Series H funding at \$965B post-money valuation." May 28, 2026. <https://www.anthropic.com/news/series-h>
+
+Azure (Microsoft). "Claude Fable 5 available today in Microsoft Foundry: Powering the next era of autonomous agents." June 9, 2026. <https://azure.microsoft.com/en-us/blog/claude-fable-5-is-now-available-in-microsoft-foundry-powering-the-next-era-of-autonomous-agents/>
+
+Businesswire (Forrester). "Forrester's 2026 Technology & Security Predictions: As AI's Hype Fades, Enterprises Will Defer 25% of Planned AI Spend to 2027." October 2025. <https://www.businesswire.com/news/home/20251028641086/en/Forresters-2026-Technology-Security-Predictions-As-AIs-Hype-Fades-Enterprises-Will-Defer-25-of-Planned-AI-Spend-to-2027> (The 25% deferral is a forecast, not a realized figure.)
+
+Business Model Analyst. "AI Token Bills Explode and Companies Scramble to Regain Control." June 2026. <https://businessmodelanalyst.com/ai-token-costs-tokenomics-foundation-enterprise-spending/>
+
+BizTech Magazine (Eddy, N.). "AI Tokenomics: How Token-Based Pricing Is Reshaping Enterprise AI Strategy." July 2026. <https://biztechmagazine.com/article/2026/07/ai-tokenomics-how-token-based-pricing-reshaping-enterprise-ai-strategy-perfcon>
+
+Bureau of Labor Statistics. "Total Factor Productivity — 2025." News release, March 19, 2026. <https://www.bls.gov/news.release/archives/prod3_03192026.htm>
+
+Bureau of Labor Statistics. "Productivity and Costs, First Quarter 2026." News release, June 4, 2026. <https://www.bls.gov/news.release/archives/prod2_06042026.pdf>
+
+codecentric. "The Ralph Wiggum Loop: Autonomous Code Generation with a Fresh Context." April 2026. <https://www.codecentric.de/en/knowledge-hub/blog/the-ralph-wiggum-loop-autonomous-code-generation-with-a-fresh-context>
+
+Daily.dev. "Vibe Coding in 2026: How It Works and When to Use It." May 2026. <https://daily.dev/blog/vibe-coding-how-ai-changing-developers-code/>
+
+Demirer, M., Musolff, L., & Yang, S. *Writing Code vs. Shipping Code: Productivity Effects Across Generations of AI Coding Tools.* NBER Working Paper No. 35275, 2026. <https://www.nber.org/papers/w35275>
+
+EY. *The Total Cost of Agents* (agentic FinOps whitepaper series, first edition). 2026. <https://www.ey.com/en_us/insights/ai/agentic-ai-token-costs>
+
+Exceeds AI. "6 Strategies for Managing AI Coding Token Costs in 2026." June 2026. <https://blog.exceeds.ai/ai-coding-token-costs-2026/>
+
+Dev Journal (earezki). "Vibe Coding Audit Failure: 96% of Developers Distrust AI-Generated Code." April 2026. <https://earezki.com/ai-news/2026-04-26-vibe-coding-just-failed-its-first-real-audit/>
+
+DEV Community (javatarz). "Multi-Agent Development Workflows with Claude Code." May 2026. <https://dev.to/javatarz/multi-agent-development-workflows-with-claude-code-n23>
+
+Digital Applied. "Claude Fable 5 & Mythos 5: The Frontier, Split in Two." June 9, 2026. <https://www.digitalapplied.com/blog/claude-fable-5-mythos-5-release-benchmarks-2026>
+
+Digital Applied. "Claude Fable 5 & Mythos 5: Agentic Coding Deep Dive." June 9, 2026. <https://www.digitalapplied.com/blog/claude-fable-5-mythos-5-agentic-coding-deep-dive-2026>
+
+Digital Applied. "Claude Code vs Codex vs Jules: Q2 2026 Benchmark Matrix." April 2026. <https://www.digitalapplied.com/blog/claude-code-vs-codex-vs-jules-q2-2026-matrix>
+
+elevatex. "Token Spend: The New Engineering KPI for CTOs in 2026." May 2026. <https://elevatex.de/blog/ai/token-spend-engineering-kpi/>
+
+elvex. "AI Token Cost Enterprise: Stop Budget Blowouts in 2026." May 2026. <https://www.elvex.com/blog/ai-token-cost-enterprise-budget-control>
+
+Faros AI. Engineering telemetry across 1,255 teams (PR review time +91%, merged PRs +98%). As reported in Addy Osmani, "Code Review in the Age of AI," January 2026.
+
+FutureSearch. "Anthropic Revenue and Valuation in 2026 Leading to IPO" (financial forecast; ARR walk). June 2026. <https://futuresearch.ai/anthropic-financial-forecast/>
+
+GitClear. *AI Copilot Code Quality: 2025 Data Suggests 4x Growth in Code Clones.* February 2025. <https://www.gitclear.com/ai_assistant_code_quality_2025_research> (211 million changed lines, January 2020 – December 2024; full report PDF: <https://gitclear-public.s3.us-west-2.amazonaws.com/GitClear-AI-Copilot-Code-Quality-2025.pdf>)
+
+GitHub. "Survey reveals AI's impact on the developer experience." June 2023. <https://github.blog/news-insights/research/survey-reveals-ais-impact-on-the-developer-experience/> (n = 500 US enterprise developers; measures ever-use at work or personally.)
+
+GitHub. "Claude Fable 5 is generally available for GitHub Copilot." GitHub Changelog, June 9, 2026. <https://github.blog/changelog/2026-06-09-claude-fable-5-is-generally-available-for-github-copilot/>
+
+GitLab. "Mythos-class Claude Fable 5 arrives on GitLab Duo Agent Platform." June 9, 2026. <https://about.gitlab.com/blog/mythos-class-claude-fable-5-on-gitlab/>
+
+Harness. *State of Software Delivery.* 2026. <https://www.harness.io/state-of-software-delivery>
+
+Huntley, G. The Ralph Wiggum technique (canonical blog post, July 2025), as documented in the awesome-ralph compendium. <https://github.com/snwfdhmp/awesome-ralph>
+
+Imas, A. "What Is the Impact of AI on Productivity?" March 2026. <https://aleximas.substack.com/p/what-is-the-impact-of-ai-on-productivity> (Survey of the productivity literature; source of record here for Brynjolfsson's Financial Times argument on labor-output decoupling and for Furman's concurrence with it.)
+
+InfoQ. "Claude Code Adds Dynamic Workflows for Parallel Agent Coordination." June 2026. <https://www.infoq.com/news/2026/06/dynamic-workflows-claude-code/>
+
+JetBrains. "Which AI Coding Tools Do Developers Actually Use at Work?" (AI Pulse; *State of Developer Ecosystem* follow-up survey, January 2026). April 2026. <https://blog.jetbrains.com/research/2026/04/which-ai-coding-tools-do-developers-actually-use-at-work/>
+
+Leanware. "Ralph Wiggum AI Agents: The Coding Loop of 2026." January 2026. <https://www.leanware.co/insights/ralph-wiggum-ai-coding>
+
+METR. "Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity" (RCT). July 10, 2025. <https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/>
+
+METR. "Uplift Update: Revisiting the Early-2025 Developer Productivity RCT." February 24, 2026. <https://metr.org/blog/2026-02-24-uplift-update/>
+
+METR. "Many SWE-bench-Verified-Passing PRs Would Not Be Merged Into Main." Research note, March 10, 2026. <https://metr.org/notes/2026-03-10-many-swe-bench-passing-prs-would-not-be-merged-into-main/>
+
+MindStudio. "What Is the OpenAI Codex Plugin for Claude Code? How Cross-Provider AI Review Works." 2026. <https://www.mindstudio.ai/blog/openai-codex-plugin-claude-code-cross-provider-review>
+
+MindStudio. "Anthropic ARR Doubled Every 6 Weeks in 2026." May 2026. <https://www.mindstudio.ai/blog/anthropic-arr-growth-9b-to-44b-2026>
+
+MarketingProfs. "AI Update, July 3, 2026: AI News and Views From the Past Week" (Coinbase model routing; Vaudit billing audit). July 3, 2026. <https://www.marketingprofs.com/opinions/2026/55197/ai-update-july-3-2026-ai-news-and-views-from-the-past-week>
+
+MLQ News. "Meta Caps Internal AI Token Spending After Costs Approach Billions in 2026." June 2026. <https://mlq.ai/news/meta-caps-internal-ai-token-spending-after-costs-approach-billions-in-2026/>
+
+OpenAI. "GPT-5.4 mini." Official model documentation. <https://developers.openai.com/api/docs/models/gpt-5.4-mini>
+
+OpenAI. "Long-running work in Codex." Official documentation. <https://learn.chatgpt.com/docs/long-running-work>
+
+OpenAI. Codex CLI release notes, v0.128.0 (April 30, 2026) through v0.133.0 (May 2026). <https://github.com/openai/codex/releases> (v0.128.0 introduced persisted /goal workflows with app-server APIs, model tools, runtime continuation, and TUI create/pause/resume/clear controls; Goal Mode was promoted to standard in the May 21, 2026 release wave.)
+
+Morphllm. "AI Coding Costs (2026): Claude vs Codex vs Gemini, Real Monthly Spend From Token Math." June 2026. <https://www.morphllm.com/ai-coding-costs>
+
+O'Reilly, T. "Steve Yegge Wants You to Stop Looking at Your Code." O'Reilly Radar, March 12, 2026. <https://www.oreilly.com/radar/steve-yegge-wants-you-to-stop-looking-at-your-code/>
+
+Onoufrios (Substack). "The Emerging Token Gap: How AI Spending Is Splitting Engineers Into Tiers." 2026. <https://onoufrios.substack.com/p/the-emerging-token-gap-how-ai-spending>
+
+Osmani, A. "Code Review in the Age of AI." January 2026. <https://addyosmani.com/blog/code-review-ai/>
+
+Osmani, A. "The Code Agent Orchestra — what makes multi-agent coding work." March 2026. <https://addyosmani.com/blog/code-agent-orchestra/>
+
+Pocock, M. grill-me (MIT-licensed agent skill), with derivative documentation. <https://alirezarezvani.github.io/claude-skills/skills/engineering/grill-me/>
+
+Rusin, A. "Claude Code Planning Tools Compared: Plan Mode vs Grill Me vs Superpowers." May 2026. <https://blog.alexrusin.com/claude-code-planning-tools-plan-mode-vs-grill-me-vs-superpowers/>
+
+Sacra. "Anthropic revenue, valuation & funding." May 2026. <https://sacra.com/c/anthropic/>
+
+SaaStr. "Anthropic Just Hit \$14 Billion in ARR. Up From \$1 Billion Just 14 Months Ago." February 2026. <https://www.saastr.com/anthropic-just-hit-14-billion-in-arr-up-from-1-billion-just-14-months-ago/>
+
+Shipyard. "Multi-agent orchestration for Claude Code in 2026." March 2026. <https://shipyard.build/blog/claude-code-multi-agent/>
+
+Sonar. "Sonar Data Reveals Critical Verification Gap in AI Coding." Press release, 2026. <https://www.sonarsource.com/company/press-releases/sonar-data-reveals-critical-verification-gap-in-ai-coding/>
+
+Stack Overflow. *2025 Developer Survey* (n ≈ 49,000), AI section. <https://survey.stackoverflow.co/2025/ai>
+
+StartupHub.ai. "Codex Now Tackles Long Tasks With New 'Goals' Feature." May 2026. <https://www.startuphub.ai/ai-news/artificial-intelligence/2026/codex-now-tackles-long-tasks-with-new-goals-feature>
+
+TechCrunch. "The token bill comes due: Inside the industry scramble to manage AI's runaway costs." June 5, 2026. <https://techcrunch.com/2026/06/05/the-token-bill-comes-due-inside-the-industry-scramble-to-manage-ais-runaway-costs/>
+
+TechCrunch. "Are AI tokens the new signing bonus, or just a cost of doing business?" March 21, 2026. <https://techcrunch.com/2026/03/21/are-ai-tokens-the-new-signing-bonus-or-just-a-cost-of-doing-business/>
+
+Tech Jacks Solutions. "Claude Fable 5 Review: Anthropic Mythos-Class Flagship (2026)." June 2026. <https://techjacksolutions.com/ai-tools/anthropic-claude/claude-fable-5-review/>
+
+The AI Consulting Network. "AI Sticker Shock: The Enterprise AI ROI Reckoning." May 2026. <https://www.theaiconsultingnetwork.com/blog/enterprise-ai-roi-sticker-shock-cre-investors-2026>
+
+Vaasblock. "Enterprise AI Spending ROI Crisis 2026." June 2026. <https://www.vaasblock.com/news/corporate-ai-spending-roi-enterprise-reckoning-2026/>
+
+VentureBeat. "Anthropic says it hit a \$30 billion revenue run rate after 'crazy' 80x growth." May 2026. <https://venturebeat.com/technology/anthropic-says-it-hit-a-30-billion-revenue-run-rate-after-crazy-80x-growth>
+
+Verdent. "Grill-Me + Trellis: The Vibe Coding Workflow That Replaced My Planning Phase." May 2026. <https://www.verdent.ai/guides/grill-me-trellis-vibe-coding-workflow>
+
+Wiegold, T. "The Ralph Loop: How Recursive AI Agents Actually Work." May 2026. <https://thomas-wiegold.com/blog/ralph-loop-how-recursive-ai-agents-work/>
+
+Wiggum CLI. "Ralph Loop — Autonomous Coding Technique." 2026. <https://wiggum.app/ralph-loop/>
+
+Willison, S. "Anthropic's run-rate revenue hits \$47 billion." May 29, 2026. <https://simonwillison.net/2026/May/29/anthropic/>
+
+Yegge, S. "Welcome to Gas Town." January 1, 2026. <https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04>
+
+Yegge, S. "The Future of Coding Agents." January 2026. <https://steve-yegge.medium.com/the-future-of-coding-agents-e9451a84207c>
+
+Zitron, E. "Anthropic's 'Profitability' Swindle." May 2026. <https://www.wheresyoured.at/anthropics-profitability-swindle/>
+
+------------------------------------------------------------------------

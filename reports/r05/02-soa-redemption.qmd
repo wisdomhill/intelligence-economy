@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "Part II. The SOA Redemption"
+---
+
+{{< include _02-soa-redemption.qmd >}}

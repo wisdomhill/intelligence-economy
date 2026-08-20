@@ -85,6 +85,52 @@ website:
           - reports/r02/09-conclusion.qmd
           - reports/r02/10-appendices.qmd
           - reports/r02/11-references.qmd
+      - section: "3. The Token Economics of Coding Agents"
+        href: reports/r03/index.qmd
+        contents:
+          - reports/r03/01-introduction.qmd
+          - reports/r03/02-coding-assistant-era.qmd
+          - reports/r03/03-tokenmaxxing-era.qmd
+          - reports/r03/04-maturation-era.qmd
+          - reports/r03/05-monitoring-framework.qmd
+          - reports/r03/06-appendices.qmd
+          - reports/r03/07-references.qmd
+      - section: "4. The SaaS Apocalypse Question"
+        href: reports/r04/index.qmd
+        contents:
+          - reports/r04/01-the-question.qmd
+          - reports/r04/02-three-layers.qmd
+          - reports/r04/03-toll-problem.qmd
+          - reports/r04/04-the-thirty.qmd
+          - reports/r04/05-open-facade.qmd
+          - reports/r04/06-six-functions.qmd
+          - reports/r04/07-verdict.qmd
+          - reports/r04/08-methodology-and-references.qmd
+      - section: "5. The Agentic Mesh"
+        href: reports/r05/index.qmd
+        contents:
+          - reports/r05/01-protocol-fabric.qmd
+          - reports/r05/02-soa-redemption.qmd
+          - reports/r05/03-agentic-mesh.qmd
+          - reports/r05/04-control-plane-stack.qmd
+          - reports/r05/05-scope-contest.qmd
+          - reports/r05/06-monetization-reset.qmd
+          - reports/r05/07-machine-native-dollar.qmd
+          - reports/r05/08-new-value-chain.qmd
+          - reports/r05/09-value-migration-map.qmd
+          - reports/r05/10-risks.qmd
+          - reports/r05/11-appendices.qmd
+          - reports/r05/12-references.qmd
+      - section: "6. The Data Layer Reforged"
+        href: reports/r06/index.qmd
+        contents:
+          - reports/r06/01-great-convergence.qmd
+          - reports/r06/02-context-layer.qmd
+          - reports/r06/03-reasoning-and-loop.qmd
+          - reports/r06/04-competitive-landscape.qmd
+          - reports/r06/05-conclusion.qmd
+          - reports/r06/06-appendices.qmd
+          - reports/r06/07-references.qmd
       - text: "---"
       - href: errata.qmd
         text: "Errata"

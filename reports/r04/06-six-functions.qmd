@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "6. Six Functions Under Audit"
+---
+
+{{< include _06-six-functions.qmd >}}

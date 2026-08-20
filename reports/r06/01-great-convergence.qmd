@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "Part I. The Great Convergence"
+---
+
+{{< include _01-great-convergence.qmd >}}

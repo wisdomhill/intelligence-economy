@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "Part IV. The Scope Contest"
+---
+
+{{< include _05-scope-contest.qmd >}}

@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "Part VIII. Value Migration Map"
+---
+
+{{< include _09-value-migration-map.qmd >}}

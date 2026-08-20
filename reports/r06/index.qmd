@@ -1,0 +1,42 @@
+---
+format:
+  html: default
+title-block-style: default
+title: "6. The Data Layer Reforged"
+subtitle: "Storage, semantics, and reasoning in the converged data substrate"
+
+description: >-
+  Agents became the data layer's first machine-speed customer, and the layer is
+  reorganising around them. Where value migrates as storage commoditises, and
+  why semantic lock-in succeeds data lock-in.
+
+order: 6
+keywords:
+  - data layer
+  - lakehouse
+  - semantic layer
+  - context layer
+  - causal analytics
+  - agent memory
+
+---
+
+::: {.callout-note appearance="simple" icon=false}
+**Read the full report as a PDF:** [The Data Layer Reforged (PDF)](r06-the-data-layer-reforged.pdf)
+:::
+
+## Executive Summary
+
+{{< include _00-executive-summary.qmd >}}
+
+## Contents
+
+|     | Part                                                        | The question it answers                                                     |
+|-----|-------------------------------------------------------------|-----------------------------------------------------------------------------|
+| I   | [The Great Convergence](01-great-convergence.qmd)           | How did storage, then OLTP and OLAP, converge — and what did agents change? |
+| II  | [The Context Layer](02-context-layer.qmd)                   | What supplies agents with governed meaning, and who owns it?                |
+| III | [Reasoning and the Closing Loop](03-reasoning-and-loop.qmd) | What happens when the data layer learns to decide and to act?               |
+| IV  | [Competitive Landscape](04-competitive-landscape.qmd)       | Who is positioned where, and which standards decide it?                     |
+| V   | [Conclusion](05-conclusion.qmd)                             | What is the substrate of the loop, and what stays open?                     |
+
+: {tbl-colwidths="[6,34,60]"}

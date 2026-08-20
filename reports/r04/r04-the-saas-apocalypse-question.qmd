@@ -1,0 +1,42 @@
+---
+title: "4. The SaaS Apocalypse Question"
+subtitle: "A critical examination of the enterprise SaaS ecosystem in the agentic transition"
+format:
+  typst: default
+---
+
+# Executive Summary
+
+{{< include _00-executive-summary.qmd >}}
+
+# 1. Anatomy of a Panic
+
+{{< include _01-the-question.qmd >}}
+
+# 2. Three Layers, Three Leaks
+
+{{< include _02-three-layers.qmd >}}
+
+# 3. The Toll Problem
+
+{{< include _03-toll-problem.qmd >}}
+
+# 4. The Thirty
+
+{{< include _04-the-thirty.qmd >}}
+
+# 5. The Open Facade
+
+{{< include _05-open-facade.qmd >}}
+
+# 6. Six Functions Under Audit
+
+{{< include _06-six-functions.qmd >}}
+
+# 7. Gridlock, Not Apocalypse
+
+{{< include _07-verdict.qmd >}}
+
+# Methodology and References
+
+{{< include _08-methodology-and-references.qmd >}}

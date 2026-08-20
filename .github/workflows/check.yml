@@ -1,0 +1,55 @@
+name: Check
+
+# The Publish workflow renders and deploys, and only runs on main. This one
+# renders a pull request without deploying, so a branch that breaks the build
+# or the typography is caught before it reaches the live site.
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: check-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install verification dependencies
+        run: pip install --quiet pypdf pdfplumber
+
+      - name: Render
+        run: quarto render
+
+      # The runner has no Inter installed, so Typst uses the committed faces in
+      # `_fonts/` and this is the authoritative check. A developer machine with
+      # Inter installed shadows them and reports false failures — see HANDOFF.md.
+      - name: Verify every PDF against TYPOGRAPHY.md
+        run: |
+          status=0
+          for pdf in $(find _site -name '*.pdf' | sort); do
+            echo "::group::$pdf"
+            python tools/verify_pdf.py "$pdf" || status=1
+            echo "::endgroup::"
+          done
+          exit $status

@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "Part I. The Protocol Fabric"
+---
+
+{{< include _01-protocol-fabric.qmd >}}

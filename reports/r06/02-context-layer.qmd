@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "Part II. The Context Layer"
+---
+
+{{< include _02-context-layer.qmd >}}

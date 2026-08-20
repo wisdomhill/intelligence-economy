@@ -1,0 +1,14 @@
+title-block-style: none
+
+date: 2026-08-24
+date-modified: 2026-08-24
+
+# Applied to every page in this report, so each chapter cites the report as a
+# whole rather than itself. `title` and `url` override the per-page values.
+citation:
+  type: report
+  title: "5. The Agentic Mesh"
+  container-title: "The Intelligence Economy"
+  number: 5
+  publisher: "Wisdom Hill"
+  url: https://wisdomhill.github.io/intelligence-economy/reports/r05/

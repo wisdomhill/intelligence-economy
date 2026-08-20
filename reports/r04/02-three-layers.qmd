@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "2. Three Layers, Three Leaks"
+---
+
+{{< include _02-three-layers.qmd >}}

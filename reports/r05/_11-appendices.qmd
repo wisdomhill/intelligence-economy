@@ -1,0 +1,60 @@
+## Appendix A. Protocol Reference
+
+**MCP (Model Context Protocol).** Introduced by Anthropic, November 2024. Standardizes agent-to-tool interaction: tool discovery, schema-described invocation, resources, and prompts, over JSON-RPC transports. Adopted across Anthropic, OpenAI, Google, and Microsoft platforms; 97M+ downloads by 2026. 2026 roadmap: asynchronous tasks, long-running operations, multi-agent primitives. Governance: open specification with community RFC process.
+
+**A2A (Agent-to-Agent Protocol).** Launched by Google Cloud, April 2025, with 50+ enterprise partners; v1.0 in early 2026 with gRPC, signed Agent Cards, multi-tenancy. Standardizes peer-agent discovery, capability advertisement, task delegation, and status exchange. Governance: open-foundation stewardship.
+
+**x402.** Coinbase-developed payment protocol reviving HTTP status 402: server returns a payment specification; agent settles a stablecoin micropayment on-chain (or via batched off-chain verification) and resubmits with receipt. 100M+ cumulative transactions on Base through Q1 2026; multi-chain deployments expanding.
+
+**AP2 (Agent Payments Protocol).** Google, September 2025; 60+ launch partners including Coinbase, Cloudflare, Circle; embeds x402 for stablecoin settlement. Adds mandate/authorization semantics for agent-to-merchant commerce.
+
+**ARD (Agentic Resource Discovery).** Published June 17, 2026; co-authored by Google, Microsoft, and Hugging Face; Apache 2.0, built on the Linux Foundation AI Catalog WG data model. Two primitives: a static `ai-catalog.json` manifest at a well-known path on the publisher's domain describing offered MCP servers, A2A agents, skills, and APIs; and a registry API that crawls, indexes, and returns ranked matches to natural-language queries. Trust anchored in domain ownership plus cryptographic trust manifests. Sits before invocation; protocol-agnostic. Launch partners include Cisco, Databricks, GitHub, GoDaddy, Nvidia, Salesforce, ServiceNow, and Snowflake.
+
+**OKF (Open Knowledge Format).** Published by Google Cloud, June 12, 2026; v0.1 draft, Apache 2.0. Represents organizational knowledge as directories of markdown files with YAML frontmatter; one required metadata field; untyped links; consumers instructed to tolerate broken links. Presupposes an LLM interpreter. Natively ingested by Google's Knowledge Catalog (rebranded Dataplex).
+
+**ERC-8004.** Decentralized agent identity standard, launched late January 2026; \~24,000 agents registered within weeks. Provides verifiable agent credentials underpinning trusted agent commerce.
+
+## Appendix B. The SOA-to-Agentic Stack Mapping Table
+
+| SOA-Era Component (1999–2010) | Function | Agentic-Era Successor (2024–2026) | Key Difference |
+|---|---|---|---|
+| UDDI registry | Dynamic service discovery | ARD catalogs + registries; MCP registries; A2A Agent Cards | Bundled with trust + payment |
+| WSDL | Machine-readable contract | MCP tool schemas + natural-language descriptions | Prose is now machine-readable |
+| SOAP | Messaging envelope | JSON-RPC over MCP transports | Radically simpler |
+| BPEL | Workflow orchestration | Agent runtime planning loop | Probabilistic, not scripted |
+| OWL-S / Semantic Web | Machine understanding of meaning | LLM latent semantics | Statistical, not symbolic; zero authoring cost |
+| WS-Security / WS-* | Identity, reliability, transactions | OAuth + signed Agent Cards + ERC-8004 + harness verification | Runtime-enforced, not schema-enforced |
+| (absent) | Payment & settlement | x402, AP2, batch clearing | The layer whose absence killed UDDI |
+
+: {tbl-colwidths="[15,25,35,25]"}
+
+## Appendix C. Pricing Model Taxonomy with Vendor Case Studies
+
+| Model | Unit | Alignment | Exemplars | Failure Mode |
+|---|---|---|---|---|
+| Per-seat | Human license | Access | Classical SaaS | Voided when agents do the work |
+| Hybrid | Seats + consumption pool | Transitional | Most 2025–26 enterprise SaaS | Unstable waypoint; dual-metric complexity |
+| Usage | Token / task / conversation | Cost | Salesforce Agentforce (per conversation) | Rewards vendor inefficiency; bill shock |
+| Outcome | Verified result | Value | Intercom Fin (\~\$0.99/resolution) | Outcome attribution disputes |
+| Agent seat | Per agent instance | Digital labor | Emerging | Decouples from work volume |
+| Committed spend + drawdown | Pre-purchased capacity | Predictability | Cloud-style enterprise agreements | Likely equilibrium structure |
+
+: {tbl-colwidths="[15,20,15,25,25]"}
+
+## Appendix D. The Four-Scope Control Plane Matrix
+
+| Scope | Core assets | Rent character | Leading positions (mid-2026) | Key 2026 events |
+|---|---|---|---|---|
+| Universal — protocols | MCP, A2A, payment protocols | Neutralized; table stakes | Linux Foundation stewardship; Anthropic/Google influence | MCP \~9,600 servers; A2A v1.0 |
+| Universal — curation gateway | Registries, ranking, trust manifests, identity/payment rails | High but contested and likely regulator-capped | Google Agent Registry; GitHub agent finder; HF Discover; labs' proto-gateways | ARD spec (June 17); OKF (June 12) |
+| Industry | Sector ontologies, regulatory mappings, benchmarks, data cooperatives | Highest quality; horizontal network effects; least priced-in | Bloomberg/Veeva/Epic class; industry lakehouses; Palantir sector templates | OKF as candidate carrier; FDE template accumulation |
+| Enterprise | Data authority, governance perimeter, fleet orchestration | Moderate; sticky per instance, replicable across instances | Microsoft, Google, Palantir, Databricks, Snowflake | Agent Bricks/Unity AI Gateway (June 15–18); FDE arms race (\~\$9B announced, May–July) |
+| Departmental | Team workflows, local context, task agents | Thin; execution edge | Vertical apps, startups; labs via harnesses | Shadow-AI absorption contest |
+
+: {tbl-colwidths="[15,20,20,25,20]"}
+
+## Appendix E. Glossary
+
+**Agentic mesh** — the composite architecture of agents, tool-ified apps, routers, and converged data interacting over standardized protocols. **Control plane** — the layer owning workflow decomposition, routing, verification, and exception handling. **Harness** — the engineered envelope (verification, recovery, observability, permissioning) that renders probabilistic agents production-reliable. **Integration tax** — aggregate economic cost of N² point-to-point integration. **Machine-native dollar** — fiat-backed stablecoin functioning as programmable settlement money for machine-to-machine commerce. **Tool-ification** — the conversion of applications into headless, agent-callable capability providers. **Metering–settlement–trust stack** — the financial plumbing category comprising usage measurement, payment clearing, and agent identity/compliance. **Scope stack** — the four nested levels (universal, industry, enterprise, departmental) at which control planes are instantiated. **Curation gateway** — an active registry that evaluates, ranks, and warrants capabilities, collecting two-sided gatekeeper rents; contrasted with a passive (DNS-model) registry. **FDE (Forward Deployed Engineering)** — embedded-engineer deployment as go-to-market; three variants distinguished in Section 4.3 (ontology installation, distribution-channel JV, consumption CAC). **Sector semantic authority** — ownership of an industry's de facto shared ontology.
+
+------------------------------------------------------------------------

@@ -1,0 +1,62 @@
+## Appendix A. Glossary of Convergence-Era Terminology
+
+| Term | Definition |
+|---|---|
+| **Lakehouse** | Architecture layering warehouse properties (ACID, schema, performance) on open object storage; the post-2020 analytical default. |
+| **Lakebase** | A serverless, branching-capable transactional (Postgres) layer native to the lakehouse platform; category formalized with Databricks Lakebase GA (Feb 2026). |
+| **Open table format** | Engine-neutral table specification (Apache Iceberg, Delta Lake) enabling multi-engine read/write on shared storage. |
+| **Context layer** | The stratum that supplies agents with governed meaning: catalogs, semantic models, ontologies, knowledge graphs, retrieval infrastructure. |
+| **Descriptive vs. normative semantics** | Definitions of what data means (metrics, glossaries) vs. encodings of permitted action and operational meaning; the latter is costlier to build and more durable. |
+| **Semantic view / metric view** | Governed, reusable definition of business metrics addressable by SQL, BI tools, and agents (Snowflake / Databricks implementations respectively). |
+| **Context activation** | Serving semantic context dynamically to agents at query time, rather than as a passive index (e.g., Horizon Context's activate stage; Cortex Sense). |
+| **GraphRAG** | Retrieval pattern using entity relationships and graph traversal rather than (or alongside) vector similarity. |
+| **Branching ("git for data")** | Copy-on-write forking of database or table state; the enabling primitive for agent experimentation and what-if simulation. |
+| **Intervention log** | Event-level record of actions taken (what, to whom, when, under what assignment), the raw material of causal inference. |
+| **Decision provenance** | Linked record connecting analysis → action → expected and realized outcome; audit trail and learning-loop substrate. |
+| **Inference governance** | Governance of analytical conclusions: encoded rules for valid comparison, required experiment designs, decision-grade thresholds; the third discipline alongside read governance (data access) and action governance (permitted agent actions). |
+| **Agent FinOps** | Cost governance for agent-driven consumption: budget routing, per-session ceilings, cost-aware query planning. |
+| **Semantic lock-in** | Switching costs arising from embedding business meaning in one vendor's semantic/orchestration layer; successor to data lock-in. |
+| **Modality axis** | Classification of data by natural processor: *quantitative* (reducible to numbers/codes; computable by deterministic code and SQL, including categorical values) vs. *qualitative* (meaning resisting such reduction; natively and generally computable only by probabilistic models, i.e., LLMs — earlier NLP extracted narrow, predefined signals via task-specific pipelines). Orthogonal to the structured/unstructured form axis. |
+| **Dark data** | Stored-but-uncomputed enterprise information — predominantly the qualitative corpus (documents, mail, decks) — revalued by LLMs from storage cost to computable asset. |
+| **Compiled context** | Context supplied by pre-compiling knowledge into a curated, versioned, agent-readable corpus (typically Markdown), rather than retrieving it from raw sources at query time. |
+| **LLM wiki** | Practitioner pattern in which an LLM builds and maintains a cross-linked Markdown knowledge base — the maintenance labor that defeats human wikis delegated to the model. |
+| **OKF (Open Knowledge Format)** | Google's open v0.1 specification (June 2026) formalizing the LLM-wiki pattern: knowledge as a directory of Markdown files with YAML frontmatter, links forming a knowledge graph; "format, not platform." |
+| **Shadow semantic layer** | Bottom-up, file-based semantic assets (compiled context in Git) accumulating outside the governed platform semantic layer. |
+
+: {tbl-colwidths="[30,70]"}
+
+## Appendix B. Agentic Data Workload Taxonomy (Reference)
+
+| Workload class | Access pattern | Natural substrate | Primary contenders |
+|---|---|---|---|
+| Agent episodic memory | High-frequency transactional read/write | Serverless OLTP | Lakebase, Snowflake Postgres, AgentCore Memory, Oracle 26ai |
+| Agent semantic memory | Graph/entity read-heavy | Knowledge graph / converged engine | Neo4j-class, Oracle 26ai, platform catalogs |
+| Session state & checkpoints | Low-latency durable writes | Serverless OLTP | Lakebase-class |
+| Experimental branches | Ephemeral copy-on-write forks | Branching storage | Neon/Lakebase, Iceberg branches |
+| Embedding pipelines | Batch + streaming inference | Lakehouse compute | Databricks, Snowflake Cortex, BigQuery |
+| Entity/relationship extraction | LLM-powered batch | Lakehouse + catalog | Knowledge Catalog, Unity Catalog, Horizon Context |
+| Predictive workloads | Scheduled + on-demand compute | Warehouse ML / foundation models | All platforms; TimesFM/Chronos-class models |
+| Causal / experimentation | Event-level scans + assignment logs | Warehouse + experimentation infra | Platforms + causal specialists |
+| What-if simulation | N×M branched compute bursts | Branching + simulation compute | Lakebase-class, specialist simulators, NVIDIA-class infra |
+| Decision provenance | Append-heavy, audit-queried | (Unclaimed) | Open |
+
+: {tbl-colwidths="[25,25,20,30]"}
+
+## Appendix C. Timeline of Consolidation Events (2024–2026)
+
+-   **2024** — Databricks acquires Tabular (Iceberg founders); Iceberg/Delta interoperability race begins in earnest.
+-   **May 2025** — Databricks acquires Neon (serverless Postgres, branching).
+-   **June 2025** — Snowflake acquires Crunchy Data; Databricks announces Lakebase (public preview) and Unity Catalog Metrics; Unity Catalog adds full Iceberg REST support [1].
+-   **2025** — OpenAI acquires Statsig (experimentation infrastructure); Microsoft announces Azure HorizonDB (private preview, November) [5].
+-   **October 2025** — Fivetran and dbt Labs announce all-stock merger [16].
+-   **February 2026** — Databricks Lakebase reaches GA; "lakebase" category formalized [2].
+-   **March 2026** — Oracle AI Database 26ai agentic suite (Unified Memory Core, in-engine agent governance) [3][4]; Alembic launches real-time causal enterprise simulation on NVIDIA DGX [31].
+-   **April 2026** — Databricks open-sources Unity Catalog Business Semantics at GA [13][15]; Google Cloud Next 26: Agentic Data Cloud, Knowledge Catalog, Gemini Enterprise Agent Platform [36][37][38]; Snowflake expands Cortex Code beyond Snowsight through an SDK, MCP server, and editor integrations (April 21) [51].
+-   **May 2026** — Snowflake announces a definitive agreement to acquire Natoma, an enterprise MCP connectivity and governance platform (May 27; pending close), extending its governance perimeter from data assets to agent actions [45].
+-   **June 2026** — Fivetran + dbt merger closes; Agents Schema launched [16][17]. Azure HorizonDB enters public preview (June 2) [5]. Snowflake Summit 26: Horizon Context, Cortex Sense, CoWork action pivot [6][7][9][11][12]. Databricks Data + AI Summit 26: Unity Catalog Semantics extended with Glossary and Domains; Metrics declared OSI-ready [52]. Google publishes Open Knowledge Format (OKF) v0.1, formalizing the LLM-wiki pattern; Knowledge Catalog ingests and serves OKF bundles [47][48][49][50].
+
+## Appendix D. Data and Sourcing Notes
+
+The following claims are vendor-sourced, preliminary, or otherwise flagged, consistent with this series' verification discipline. (1) Snowflake's Cortex Sense accuracy benchmark (86% vs. 24%) and Semantic View Autopilot automation claims are vendor-reported and preview-stage; no independent replication on production enterprise estates exists as of this writing [12]. (2) Databricks Lakebase's February 2026 general availability applied initially to AWS, with Azure GA following in March 2026; adoption-rate comparisons are company-reported [2]. (3) Azure HorizonDB performance figures (up to 3,072 vCores, 128TB databases, roughly 3x open-source Postgres transactional throughput) are Microsoft benchmarks without independent verification; the service remains in public preview [5]. (4) The Natoma acquisition is a signed definitive agreement pending customary closing conditions as of this writing; financial terms were not disclosed [45]. (5) Causal-AI market sizings [30] and the 2025 Dataiku/Databricks adoption survey figures (16% current use; approximately 70% planned by 2026) [28] are treated as directional indicators only. (6) Neon's pre-acquisition statistic that the majority of new databases on its platform were agent-created is vendor-reported. (7) OKF is a v0.1 draft specification; adoption beyond Google's own tooling is not yet evidenced, and OKF-dependent arguments should be read as conditional on that adoption [47]. (8) Estimates of the qualitative ("dark data") share of enterprise information, commonly cited at 80–90%, are industry rules of thumb rather than measured figures.
+
+------------------------------------------------------------------------

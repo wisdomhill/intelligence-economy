@@ -1,0 +1,109 @@
+[1] Databricks. "Databricks Eliminates Table Format Lock-in and Adds Capabilities for Business Users with Unity Catalog Advancements." Press release, June 11, 2025. <https://www.databricks.com/company/newsroom/press-releases/databricks-eliminates-table-format-lock-and-adds-capabilities>
+
+[2] Databricks Blog. "Databricks Lakebase is now Generally Available." February 3, 2026. <https://www.databricks.com/blog/databricks-lakebase-generally-available>
+
+[3] SiliconANGLE. "Oracle's new AI bet: Make the AI database the center of agentic workloads." March 27, 2026. <https://siliconangle.com/2026/03/27/oracles-new-ai-bet-make-ai-database-center-agentic-workloads/>
+
+[4] Futurum Group. "Oracle Positions AI Database 26ai to Lead \$1.2 Trillion Market by Bridging the Agentic Reasoning Gap." March 25, 2026. <https://futurumgroup.com/insights/oracle-positions-ai-database-26ai-to-lead-1-2-trillion-market-by-bridging-the-agentic-reasoning-gap/>
+
+[5] Microsoft. "Announcing Azure HorizonDB." Microsoft Community Hub, November 18, 2025 (private preview); "Azure HorizonDB: Enterprise-Ready Postgres, Engineered for the AI Era," June 2, 2026 (public preview). <https://techcommunity.microsoft.com/blog/adforpostgresql/announcing-azure-horizondb/4469710;> <https://techcommunity.microsoft.com/blog/adforpostgresql/azure-horizondb-enterprise-ready-postgres-engineered-for-the-ai-era/4524094>
+
+[6] Snowflake. "Snowflake Advances Trusted AI with Snowflake Horizon Catalog Centralizing Governance, Context, and Security Across the Enterprise." Press release, June 2, 2026. <https://www.snowflake.com/en/news/press-releases/snowflake-advances-trusted-ai-with-snowflake-horizon-catalog-centralizing-governance-context-and-security-across-the-enterprise/>
+
+[7] Snowflake Blog. "Snowflake Horizon Context: The Governed Context Layer for AI, BI and Apps." June 2026. <https://www.snowflake.com/en/blog/horizon-context-governed-context/>
+
+[8] Snowflake. Horizon Context product page. <https://www.snowflake.com/en/product/features/horizon-context/>
+
+[9] Atlan. "Snowflake Summit 2026: All the Announcements and What They Mean." June 2026. <https://atlan.com/know/snowflake/summit-2026-announcements/>
+
+[10] Atlan. "Snowflake CoWork: The Personal AI Work Agent, Explained." June 2026. <https://atlan.com/know/snowflake/snowflake-cowork/>
+
+[11] CIO. "Snowflake recasts its AI strategy around action, not answers, with CoWork." June 2026. <https://www.cio.com/article/4179715/snowflake-recasts-its-ai-strategy-around-action-not-answers-with-cowork.html>
+
+[12] Futurum Group. "Snowflake Summit 2026: Four Infrastructure Bets That Determine Whether the Agentic Enterprise Delivers." June 2026. <https://futurumgroup.com/insights/snowflake-summit-2026-four-infrastructure-bets-that-determine-whether-the-agentic-enterprise-delivers/>
+
+[13] Databricks Blog. "Announcing General Availability and Open Sourcing of Unity Catalog Business Semantics." April 2, 2026. <https://www.databricks.com/blog/redefining-semantics-data-layer-future-bi-and-ai>
+
+[14] Databricks Documentation. "Unity Catalog business semantics" and "Unity Catalog metric views." <https://docs.databricks.com/aws/en/business-semantics>
+
+[15] Swanson, E. "Building the Semantic Layer on Databricks." Medium, April 7, 2026. <https://medium.com/@eliswanson/building-the-semantic-layer-on-databricks-439c7ce286f3>
+
+[16] Fivetran. "Fivetran + dbt Labs Complete Merger to Create the Data Infrastructure for Trusted AI Agents." Press release, June 1, 2026. <https://www.fivetran.com/press/fivetran-dbt-labs-complete-merger-to-create-the-data-infrastructure-for-trusted-ai-agents>
+
+[17] Techzine Global. "Fivetran and dbt Labs complete merger: Data infrastructure for reliable agentic AI." June 2026. <https://www.techzine.eu/news/analytics/141758/fivetran-and-dbt-labs-complete-merger-data-infrastructure-for-reliable-agentic-ai/>
+
+[18] TechTarget. "Fivetran, DBT Labs complete merger to form data layer for AI." June 2026. <https://www.techtarget.com/searchdatamanagement/news/366643590/Fivetran-DBT-Labs-complete-merger-to-form-data-layer-for-AI>
+
+[19] Unwind Data. "The dbt Fivetran Merger: What It Means for Your Stack." May 2026. <https://unwinddata.com/dbt-fivetran-merger>
+
+[20] Palantir Technologies Inc. Form 10-Q, Q1 FY2026 (filed 2026). U.S. Securities and Exchange Commission. <https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000028/pltr-20260331.htm>
+
+[21] Galaxy. "RAG vs. Knowledge Graph vs. Semantic Layer: Enterprise AI Comparison 2026." January 2026. <https://www.getgalaxy.io/articles/rag-vs-knowledge-graph-vs-semantic-layer-enterprise-ai>
+
+[22] Galaxy. "Top Knowledge Graph Platforms for Enterprise Data Intelligence 2026." March 2026. <https://www.getgalaxy.io/articles/top-knowledge-graph-platforms-enterprise-data-intelligence-2026>
+
+[23] Fluree. "GraphRAG & Knowledge Graphs: Making Your Data AI-Ready for 2026." January 2026. <https://flur.ee/fluree-blog/graphrag-knowledge-graphs-making-your-data-ai-ready-for-2026/>
+
+[24] Fluree. "How to Build a Semantic Layer for Enterprise AI." March 2026. <https://flur.ee/blog/how-to-build-a-semantic-layer-for-enterprise-ai>
+
+[25] Trantor. "Knowledge Graphs for Enterprise AI: Beyond RAG in 2026." June 2026. <https://www.trantorinc.com/blog/knowledge-graphs-enterprise-ai>
+
+[26] NextAgile. "GraphRAG vs RAG: Which Should Enterprises Choose in 2026?" June 2026. <https://nextagile.ai/blogs/ai/graphrag-vs-rag/>
+
+[27] The Year of the Graph Newsletter, Vol. 30. "Beyond Context Graphs: How Ontology, Semantics, and Knowledge Graphs Define Context." Spring 2026. <https://yearofthegraph.xyz/newsletter/2026/03/>
+
+[28] SiliconANGLE. "How agentic AI systems and causal AI reshape enterprise AI." April 2025. <https://siliconangle.com/2025/04/08/agentic-ai-systems-causal-ai-reshape-enteprrise-ai-aiagentbuilder/>
+
+[29] theCUBE Research. "Causal AI Decision Intelligence: Why It Will Emerge in 2026." January 2026. <https://thecuberesearch.com/why-causal-ai-decision-intelligence-2026/>
+
+[30] Fortune Business Insights. "Causal AI Market Size, Industry Share | Forecast, 2026–2034." 2026. <https://www.fortunebusinessinsights.com/causal-ai-market-112132>
+
+[31] Alembic Technologies. "Alembic Launches Real-Time Causal AI Platform for Enterprise." March 19, 2026. <https://alembic.com/alembic-launches-real-time-causal-ai-platform-for-enterprise>
+
+[32] Cloudera. "What are Digital Twins in AI and Data Management?" April 2026. <https://www.cloudera.com/resources/faqs/digital-twins-ai-and-data-management.html>
+
+[33] "Agentic digital twins: bridging model-based and AI-driven decision-making support for a new era of supply chain and operations management." International Journal of Production Research, February 2026. <https://www.tandfonline.com/doi/full/10.1080/00207543.2026.2630277>
+
+[34] SiliconANGLE. "Personal agents light the fuse as Snowflake and Databricks move up the AI stack." May 30, 2026. <https://siliconangle.com/2026/05/30/personal-agents-light-fuse-snowflake-databricks-move-ai-stack/>
+
+[35] SiliconANGLE / theCUBE Research. "Snowflake, Databricks and the model makers: The battle for the agentic client and AI back end." June 7, 2026. <https://siliconangle.com/2026/06/07/snowflake-databricks-model-makers-battle-agentic-client-ai-back-end/>
+
+[36] Futurum Group. "From Silicon to Security: Architecting the Autonomous Enterprise at Google Cloud Next 2026." April 2026. <https://futurumgroup.com/insights/from-silicon-to-security-architecting-the-autonomous-enterprise-at-google-cloud-next-2026/>
+
+[37] Moor Insights & Strategy. "How Google's Agentic Data Cloud Redefines What Context Means for the Enterprise." May 2026. <https://moorinsightsstrategy.com/analyst-insight-how-googles-agentic-data-cloud-redefines-what-context-means-for-the-enterprise/>
+
+[38] Virtualization Review. "Google Cloud Next '26: Gemini Enterprise Agent Platform Leads AI-Centric News." April 24, 2026. <https://virtualizationreview.com/articles/2026/04/24/google-cloud-next-26-gemini-enterprise-agent-platform-leads-ai-centric-news.aspx>
+
+[39] Google Cloud Blog. "Exploring the Data Engineering Agent in BigQuery." Updated April 22, 2026. <https://cloud.google.com/blog/products/data-analytics/exploring-the-data-engineering-agent-in-bigquery>
+
+[40] Google Cloud Blog. "Introducing Gemini Enterprise Agent Platform." April 2026. <https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform>
+
+[41] TechTarget. "AWS unifies analytics and AI development in SageMaker." March 2025. <https://www.techtarget.com/searchdatamanagement/news/366620658/AWS-unifies-analytics-and-AI-development-in-SageMaker>
+
+[42] Amazon Web Services. "Amazon Bedrock AgentCore Payments (Preview)." AWS What's New, April 2026. <https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-bedrock-agentcore-payments-preview/;> BuildMVPFast. "AWS Bedrock AgentCore Guide for SaaS." May 2026. <https://www.buildmvpfast.com/blog/aws-bedrock-agentcore-stateful-agents-saas-guide-2026>
+
+[43] FinancialContent. "MongoDB (MDB): The Data Foundation for the Agentic AI Era." March 2, 2026. <https://www.financialcontent.com/article/finterra-2026-3-2-mongodb-mdb-the-data-foundation-for-the-agentic-ai-era>
+
+[44] MongoDB, Inc. "MongoDB, Inc. Announces Second Quarter Fiscal 2026 Financial Results." Investor relations press release, 2025. <https://investors.mongodb.com/news-releases/news-release-details/mongodb-inc-announces-second-quarter-fiscal-2026-financial>
+
+[45] Snowflake. "Snowflake Announces Intent to Acquire Natoma, Providing Secure Connectivity For The Agentic Enterprise." Press release, May 27, 2026. <https://www.snowflake.com/en/news/press-releases/snowflake-announces-intent-to-acquire-natoma-providing-secure-connectivity-for-the-agentic-enterprise/>
+
+[46] Signisys. "Amazon SageMaker: AWS ML Platform Guide (2026)." April 2026. <https://www.signisys.com/blog/amazon-sagemaker-aws-machine-learning-guide/>
+
+[47] Google Cloud Blog. "How the Open Knowledge Format can improve data sharing." June 12, 2026. <https://cloud.google.com/blog/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing>
+
+[48] Google Cloud Platform. "Open Knowledge Format — Specification v0.1." GitHub, GoogleCloudPlatform/knowledge-catalog repository. <https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md>
+
+[49] The Decoder. "Google Cloud's Open Knowledge Format turns scattered docs into Markdown files for AI agents." June 2026. <https://the-decoder.com/google-clouds-open-knowledge-format-turns-scattered-docs-into-markdown-files-for-ai-agents/>
+
+[50] MarkTechPost. "Google Cloud Introduces Open Knowledge Format (OKF): A Vendor-Neutral Markdown Spec for Giving AI Agents Curated Context." June 16, 2026. <https://www.marktechpost.com/2026/06/16/google-cloud-introduces-open-knowledge-format-okf-a-vendor-neutral-markdown-spec-for-giving-ai-agents-curated-context/>
+
+[51] Snowflake Blog. "Cortex Code and the Governed Agent Data Stack." April 21, 2026. <https://www.snowflake.com/en/blog/cortex-code-governed-agent-data-stack/>
+
+[52] Databricks Blog. "What's new with Unity Catalog at Data + AI Summit 2026." June 16, 2026. <https://www.databricks.com/blog/whats-new-unity-catalog-data-ai-summit-2026>
+
+[53] Snowflake. "Snowflake, Salesforce, dbt Labs, and More, Revolutionize Data Readiness for AI with Open Semantic Interchange Initiative." Press release, September 23, 2025. <https://www.snowflake.com/en/news/press-releases/snowflake-salesforce-dbt-labs-and-more-revolutionize-data-readiness-for-ai-with-open-semantic-interchange-initiative/>
+
+*Forward-looking statements are subject to revision as the underlying evidence develops; vendor-sourced and preliminary claims are identified in the Data and Sourcing Notes.*
+
+------------------------------------------------------------------------

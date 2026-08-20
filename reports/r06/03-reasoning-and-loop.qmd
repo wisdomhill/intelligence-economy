@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "Part III. Reasoning and the Closing Loop"
+---
+
+{{< include _03-reasoning-and-loop.qmd >}}

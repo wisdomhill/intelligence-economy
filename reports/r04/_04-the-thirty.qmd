@@ -1,0 +1,60 @@
+## 4.1 Universe Construction
+
+The analysis that follows is anchored to a defined universe: thirty large listed software companies drawn from the CompaniesMarketCap software ranking [1], with market capitalizations recorded at two dates — the last trading day of 2025 and July 1, 2026. Two limits govern what the table can bear. It is a selected universe, not a mechanical top-thirty: the underlying ranking updates continuously, and the thirty names here reflect the categorization and exclusion criteria stated below rather than a snapshot reproducible at either measurement date. And it measures market capitalization, not shareholder return: capitalization moves with share issuance and buybacks as well as with price, so these are not returns. The distortion is material in one case, Palo Alto Networks, whose H1 2026 capitalization change incorporates shares issued for the CyberArk acquisition and therefore overstates its price appreciation; that figure is qualified wherever it appears. The dispersion pattern the table reveals does not rest on the affected magnitudes. Conglomerates whose software franchises are inseparable from their equity story (Alphabet, Microsoft, Oracle, IBM) are included; security vendors are included; firms whose primary business is not software (hardware, industrial systems, measurement, crypto-treasury vehicles) are excluded at source by the ranking's categorization. Each company carries a single functional classification from a fixed taxonomy: **Productivity, Front Office, Back Office, HCM, ITSM, Infrastructure, System Integration, Commerce/Marketing, Data Infra, and Vertical/Engineering.** The first six are this report's analytical subjects; the last four are recorded, discussed where they illuminate the argument, and excluded from the function audits for reasons stated in §4.4.
+
+## 4.2 The Table
+
+| # | Company (Ticker) | Functional Classification | Core Software Segment | Mkt Cap, End-2025 (\$B) | Mkt Cap, Jul 1 2026 (\$B) | H1 2026 Change |
+|---|---|---|---|---|---|---|
+| 1 | Alphabet (GOOG) | Productivity | Google Workspace, Cloud Infrastructure, Generative AI | 3,802.00 | 4,367.00 | +14.86% |
+| 2 | Microsoft (MSFT) | Productivity | Windows OS, M365 Suite, Azure Cloud, Copilot Ecosystem | 3,625.00 | 2,854.00 | −21.27% |
+| 3 | Oracle (ORCL) | Back Office | Enterprise DBMS, Oracle Cloud Infrastructure (OCI), ERP Solutions | 568.85 | 410.46 | −27.85% |
+| 4 | Palantir (PLTR) | System Integration | Big Data Analytics Operating Systems & AI Orchestration (AIP) | 449.77 | 301.41 | −32.99% |
+| 5 | Palo Alto Networks (PANW) | Infrastructure | Enterprise Zero-Trust Network Cybersecurity Platforms | 131.34 | 286.91 | +118.45% |
+| 6 | IBM (IBM) | System Integration | Hybrid Cloud Foundations, IT Consulting, and Watsonx AI | 285.17 | 269.04 | −5.66% |
+| 7 | CrowdStrike (CRWD) | Infrastructure | Cloud-Native Endpoint Telemetry & Threat Intelligence Security | 121.30 | 196.71 | +62.17% |
+| 8 | AppLovin (APP) | Commerce/Marketing | AI-powered Mobile Ad Matching & App Marketing Automation Platforms | 241.58 | 189.67 | −21.49% |
+| 9 | SAP (SAP) | Back Office | Global Enterprise Resource Planning (ERP) Cloud Software | 287.68 | 187.62 | −34.78% |
+| 10 | Shopify (SHOP) | Commerce/Marketing | Independent E-commerce Storefront Setup & Omnichannel Operations SaaS | 222.39 | 157.83 | −29.03% |
+| 11 | Salesforce (CRM) | Front Office | Customer Relationship Management (CRM) SaaS & Data Cloud | 253.30 | 133.68 | −47.22% |
+| 12 | Fortinet (FTNT) | Infrastructure | Unified SASE Architecture & Enterprise Hardware/Software Firewalls | 62.49 | 116.47 | +86.38% |
+| 13 | ServiceNow (NOW) | ITSM | Enterprise IT Operating Systems & Cross-Departmental Workflow Automation | 159.79 | 109.11 | −31.72% |
+| 14 | Cadence Design Systems (CDNS) | Vertical/Engineering | Electronic Design Automation (EDA) Software & Silicon Emulation | 86.89 | 104.18 | +19.90% |
+| 15 | Datadog (DDOG) | ITSM | Multi-Cloud Infrastructure Monitoring, Log Analytics & Observability | 48.50 | 94.14 | +94.10% |
+| 16 | Snowflake (SNOW) | Data Infra | Multi-Cloud Unified Data Warehouse & Enterprise Data Cloud Platforms | 76.61 | 90.52 | +18.16% |
+| 17 | Automatic Data Processing (ADP) | HCM | Global Human Capital Management (HCM) & Cloud Payroll Outsourcing | 104.85 | 89.52 | −14.62% |
+| 18 | Cloudflare (NET) | Infrastructure | Edge Computing Runtimes, Global CDN, and Web Application Security | 70.89 | 87.42 | +23.32% |
+| 19 | Synopsys (SNPS) | Vertical/Engineering | Semiconductor Intellectual Property (IP) & EDA Software Tools | 91.28 | 87.03 | −4.66% |
+| 20 | Adobe (ADBE) | Productivity | Creative Cloud Design Suites & Digital Experience Marketing SaaS | 150.08 | 83.86 | −44.12% |
+| 21 | Intuit (INTU) | Back Office | Consumer/SMB Tax Filing (TurboTax) & Accounting (QuickBooks) Engines | 188.35 | 73.05 | −61.21% |
+| 22 | Autodesk (ADSK) | Vertical/Engineering | Industry-Standard 3D Architecture, Engineering, and Manufacturing Design CAD | 64.05 | 42.17 | −34.16% |
+| 23 | Constellation Software (CSU.TO) | Vertical/Engineering | Acquisition & Operation Holding Group for Vertical Market Software (VMS) | 51.40 | 39.81 | −22.55% |
+| 24 | Workday (WDAY) | HCM | Large Enterprise Cloud Core Human Resources & Financial Management ERP | 58.92 | 32.17 | −45.40% |
+| 25 | Twilio (TWLO) | Infrastructure | Developer-First Cloud Communications APIs (Automated SMS, Voice, and Auth) | 21.55 | 31.76 | +47.38% |
+| 26 | Veeva Systems (VEEV) | Vertical/Engineering | Life Sciences, Biotech, and Pharmaceutical Specialization Cloud CRM & Data | 36.92 | 28.82 | −21.94% |
+| 27 | Fair Isaac (FICO) | Vertical/Engineering | Global Financial Predictive Analytics & Consumer Credit Scoring Models | 42.08 | 27.98 | −33.51% |
+| 28 | MongoDB (MDB) | Data Infra | Developer-Centric Distributed NoSQL Cloud Document Database (Atlas) | 35.47 | 27.01 | −23.85% |
+| 29 | Zoom (ZM) | Productivity | Global Enterprise Video Architecture, Virtual Telephony, and AI Collaboration | 26.34 | 26.42 | +0.30% |
+| 30 | Atlassian (TEAM) | ITSM | Developer Project Management, Issue Tracking (Jira), and Team Collaboration | 42.94 | 21.10 | −50.86% |
+
+: {tbl-colwidths="[4,13,13,28,14,14,14]"}
+
+*Source: CompaniesMarketCap [1]; classifications per this report's taxonomy. Changes are in market capitalization, not shareholder return (§4.1); PANW's figure incorporates shares issued for the CyberArk acquisition. Aggregates: end-2025 ≈ \$11,408B; July 1, 2026 ≈ \$10,567B (−7.4%; −18.5% excluding Alphabet).*
+
+## 4.3 Reading the Dispersion
+
+The table rewards careful reading, because the pattern it contains is sharper than the "AI kills SaaS" slogan and different from the one we expected before compiling it.
+
+Begin with what did *not* happen. The dispersion is not vertical versus horizontal: the Vertical/Engineering cohort, whose regulatory embedding and domain-specific logic might have been expected to shelter it, fell almost across the board — Autodesk −34%, FICO −34%, Constellation −23%, Veeva −22%, Synopsys −5% — with Cadence (+20%) the lone gainer on AI-silicon design demand. Nor is it AI-exposure versus AI-absence: Palantir, the market's flagship AI name, fell 33% from an end-2025 capitalization that embodied extreme expectations, and Microsoft — owner of the most heavily marketed AI assistant franchise in enterprise software — fell 21%. The market did not buy "AI stories" in H1 2026; it sold several of the biggest ones.
+
+What it bought, with striking consistency, is a specific revenue structure. Rank the thirty by H1 performance and the gainers are: Palo Alto Networks (+118%, inflated by CyberArk acquisition shares), Datadog (+94%), Fortinet (+86%), CrowdStrike (+62%), Twilio (+47%), Cloudflare (+23%), Cadence (+20%), Snowflake (+18%), Alphabet (+15%), Zoom (flat). Set aside Alphabet (a full-stack AI story of its own) and Cadence (an AI-capex derivative), and every major gainer shares one property: **its revenue is denominated in machine activity, not human seats.** Security platforms bill on the devices, workloads, and — increasingly — non-human identities they protect; agents multiply all three. Observability bills on telemetry volume; agents that act generate machine-scale exhaust to monitor, and Datadog's +94% against ServiceNow's −32% *within the same ITSM classification* is the cleanest natural experiment in the table — the market paying nearly double for the company that watches machine actors while marking down the company that routes human tickets. Twilio bills per message and call; agents that execute workflows send them. Snowflake bills on compute consumed; agents that analyze, query. The mapping runs one way, and the table's own residual proves it: MongoDB, consumption-billed like Snowflake, fell 24% — machine denomination was close to necessary for an H1 re-rating, not sufficient for one.
+
+Now read the decliners: Salesforce −47%, Workday −45%, Adobe −44%, Atlassian −51%, Intuit −61%, SAP −35%, ServiceNow −32%, ADP −15%, Microsoft −21%. Different functions, different qualities of business, one shared property: revenue denominated in human seats or human-performed workflows — the denominator that agentic substitution shrinks. The market's implicit model, in other words, is precisely the toll problem of Chapter 3 read as a valuation rule: *revenue per human* is a melting asset; *revenue per machine action* is an expanding one. The aggregate arithmetic drives the point home. CrowdStrike, Fortinet, and Cloudflare — three security-and-edge names whose capitalizations moved on price rather than on acquisition issuance — gained roughly 57% between them in six months. Add Palo Alto Networks and the four were worth \$688B on July 1, more than Salesforce, Adobe, ServiceNow, Workday, Intuit, and Atlassian *combined* (\$453B). Five years ago that comparison would have been a misprint.
+
+One caution belongs in the record. Market prices are a hypothesis, not a verdict; H1 2026 also contains momentum, crowding, and the mechanical violence of multiple compression from extreme starting points (Palantir's decline says as much about its end-2025 valuation as about its prospects). This report treats the table as the market's *claim* — a claim we audit, not one we assume.
+
+## 4.4 Scope Declaration: Horizontal Functions Only
+
+The audits of Chapter 6 cover the six functions where the agentic exposure logic of Chapters 1–3 applies directly and comparably: **Productivity, Front Office, Back Office, HCM, ITSM, and Infrastructure** — eighteen of the thirty companies. The remaining twelve are recorded but not audited, for stated reasons rather than convenience. The Vertical/Engineering cohort (Cadence, Synopsys, Autodesk, Constellation, Veeva, FICO) is excluded because its exposure runs through different machinery: regulatory embedding, decades of domain physics, and coupling to physical-world processes make both the threat model and the defense model non-comparable to horizontal software — though, as §4.3 recorded, exclusion from *this analysis* is not exemption from *the de-rating*, and the cohort's H1 performance should temper any assumption that verticality is safety. Design deserves a sentence of its own: it is a real function with a real agentic story, but Adobe is its only top-30 representative (Figma trades far below the cut), leaving no cohort to audit; we treat Adobe within Productivity per the classification. System Integration (Palantir, IBM) is a services-and-platform model whose economics this series treats separately; Commerce/Marketing (AppLovin, Shopify) monetizes transactions rather than seats and faces the agentic transition as a demand-side question; Data Infra (Snowflake, MongoDB) is the substrate *toward which* the leaks of Chapter 2 flow, and appears throughout this report as context rather than as a subject.
+
+------------------------------------------------------------------------

@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "Part IV. Monitoring and Implications"
+---
+
+{{< include _05-monitoring-framework.qmd >}}

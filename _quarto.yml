@@ -54,7 +54,11 @@ website:
 
   sidebar:
     style: docked
-    collapse-level: 2
+    # Report sections sit at depth 1, so `collapse-level: 2` left all of them
+    # expanded on every page — six reports' worth of chapters at once, with
+    # nothing to navigate by. At 1 they start closed and Quarto opens only the
+    # section containing the current page.
+    collapse-level: 1
     contents:
       - href: index.qmd
         text: "All reports"

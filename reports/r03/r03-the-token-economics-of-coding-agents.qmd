@@ -1,0 +1,38 @@
+---
+title: "3. The Token Economics of Coding Agents"
+subtitle: "From autocomplete complements to metered autonomy"
+format:
+  typst: default
+---
+
+# Executive Summary
+
+{{< include _00-executive-summary.qmd >}}
+
+# Introduction
+
+{{< include _01-introduction.qmd >}}
+
+# Part I. The Coding Assistant Era
+
+{{< include _02-coding-assistant-era.qmd >}}
+
+# Part II. The Tokenmaxxing Era
+
+{{< include _03-tokenmaxxing-era.qmd >}}
+
+# Part III. The Maturation Era
+
+{{< include _04-maturation-era.qmd >}}
+
+# Part IV. Monitoring and Implications
+
+{{< include _05-monitoring-framework.qmd >}}
+
+# Appendices
+
+{{< include _06-appendices.qmd >}}
+
+# References
+
+{{< include _07-references.qmd >}}

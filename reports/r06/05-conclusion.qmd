@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "Part V. Conclusion"
+---
+
+{{< include _05-conclusion.qmd >}}

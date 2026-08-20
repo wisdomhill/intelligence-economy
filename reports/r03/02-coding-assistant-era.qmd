@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "Part I. The Coding Assistant Era"
+---
+
+{{< include _02-coding-assistant-era.qmd >}}

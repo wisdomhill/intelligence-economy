@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "Part III. The Agentic Mesh"
+---
+
+{{< include _03-agentic-mesh.qmd >}}

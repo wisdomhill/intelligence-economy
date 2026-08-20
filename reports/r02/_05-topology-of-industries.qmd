@@ -50,4 +50,6 @@ Reported experience in routine customer service is consistent with this predicti
 | Apps / books / music / games — creation | No (value in idea) | No | Idea | None identifiable ✗ |
 | Execution-bound ops (CS, back-office, commerce) | Yes | Yes | Execution (relieved) | Predicted, not yet cleanly identified |
 
+: {tbl-colwidths="[34,14,18,16,18]"}
+
 ------------------------------------------------------------------------

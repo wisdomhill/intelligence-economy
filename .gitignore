@@ -16,6 +16,18 @@
 # Keeping it in the tree would commit a stale 2.7 MB duplicate of the source.
 /intelligence-economy.zip
 
+# Manuscripts awaiting conversion. The repository is public, so a manuscript
+# is committed when its report is published, not before. Un-ignore each one as
+# it is converted — see the checklist in FRONTMATTER.md.
+/manuscripts/*
+!/manuscripts/prologue-about-this-series.md
+!/manuscripts/r01-the-agentic-inflection.md
+!/manuscripts/r02-the-idea-bottleneck.md
+!/manuscripts/r03-the-token-economics-of-coding-agents.md
+!/manuscripts/r04-the-saas-apocalypse-question.md
+!/manuscripts/r05-the-agentic-mesh.md
+!/manuscripts/r06-the-data-layer-reforged.md
+
 # Editor and OS
 .Rproj.user/
 .Rhistory

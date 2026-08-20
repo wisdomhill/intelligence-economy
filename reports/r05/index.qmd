@@ -1,0 +1,47 @@
+---
+format:
+  html: default
+title-block-style: default
+title: "5. The Agentic Mesh"
+subtitle: "Protocols, control, and settlement in the post-seat software economy"
+
+description: >-
+  Standard protocols are collapsing the integration tax that held enterprise
+  software together. What the resulting distributed operating system looks
+  like, who wins the contest for its scheduler, and how agents pay each other.
+
+order: 5
+keywords:
+  - agentic mesh
+  - MCP
+  - control plane
+  - usage pricing
+  - agent settlement
+  - service-oriented architecture
+
+---
+
+::: {.callout-note appearance="simple" icon=false}
+**Read the full report as a PDF:** [The Agentic Mesh (PDF)](r05-the-agentic-mesh.pdf)
+:::
+
+## Executive Summary
+
+{{< include _00-executive-summary.qmd >}}
+
+## Contents
+
+|      | Part                                                      | The question it answers                                                 |
+|------|-----------------------------------------------------------|-------------------------------------------------------------------------|
+| I    | [The Protocol Fabric](01-protocol-fabric.qmd)             | What replaces the N² integration tax?                                   |
+| II   | [The SOA Redemption](02-soa-redemption.qmd)               | Why does a twenty-year-old blueprint work now?                          |
+| III  | [The Agentic Mesh](03-agentic-mesh.qmd)                   | What does enterprise software become as an operating system?            |
+| IV   | [The Control Plane Stack](04-control-plane-stack.qmd)     | How does a layer become a stack, and who holds the enterprise scope?    |
+| IV   | [The Scope Contest](05-scope-contest.qmd)                 | Who holds the universal and industry scopes, and where does value pool? |
+| V    | [The Monetization Reset](06-monetization-reset.qmd)       | What replaces the seat, and what does it do to margins?                 |
+| VI   | [The Machine-Native Dollar](07-machine-native-dollar.qmd) | How do agents settle payments below the interchange floor?              |
+| VII  | [The New Value Chain](08-new-value-chain.qmd)             | From energy to settlement — what is the full chain?                     |
+| VIII | [Value Migration Map](09-value-migration-map.qmd)         | Where does value leak, and where does it pool?                          |
+| IX   | [Risks and Counter-Theses](10-risks.qmd)                  | What would falsify all of it?                                           |
+
+: {tbl-colwidths="[6,34,60]"}

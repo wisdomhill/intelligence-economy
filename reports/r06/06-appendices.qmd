@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "Appendices"
+---
+
+{{< include _06-appendices.qmd >}}

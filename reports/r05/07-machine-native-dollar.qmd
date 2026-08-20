@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "Part VI. The Machine-Native Dollar"
+---
+
+{{< include _07-machine-native-dollar.qmd >}}

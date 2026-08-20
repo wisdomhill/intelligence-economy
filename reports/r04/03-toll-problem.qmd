@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "3. The Toll Problem"
+---
+
+{{< include _03-toll-problem.qmd >}}

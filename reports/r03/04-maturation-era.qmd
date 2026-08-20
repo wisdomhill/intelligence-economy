@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "Part III. The Maturation Era"
+---
+
+{{< include _04-maturation-era.qmd >}}

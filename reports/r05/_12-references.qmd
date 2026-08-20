@@ -1,0 +1,52 @@
+1.  Anthropic. "Introducing the Model Context Protocol." November 2024. <https://www.anthropic.com/news/model-context-protocol>
+2.  Google Developers Blog. "Announcing the Agent2Agent Protocol (A2A): A New Era of Agent Interoperability." April 2025. <https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/>
+3.  Google Cloud. "Announcing the Agent Payments Protocol (AP2)." September 2025. <https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol>
+4.  Coinbase. "x402: An Open Protocol for Internet-Native Payments." 2025. <https://www.x402.org>
+5.  Chainalysis. "Inside x402: 100M Agentic Payments on Base." June 2026. <https://www.chainalysis.com/blog/x402-agentic-payments-adoption/>
+6.  Toloka. "The Future of MCP: 2026 Roadmap, Enterprise Adoption, and What Comes Next." May 2026. <https://toloka.ai/blog/the-future-of-mcp-enterprise-adoption/>
+7.  Digital Applied. "AI Agent Protocol Ecosystem Map 2026: MCP, A2A, ACP, UCP." March 2026. <https://www.digitalapplied.com/blog/ai-agent-protocol-ecosystem-map-2026-mcp-a2a-acp-ucp>
+8.  Intuz. "MCP vs A2A: AI Agent Protocol Comparison (2026)." April 2026. <https://www.intuz.com/blog/mcp-vs-a2a>
+9.  HonestAI. "MCP & A2A Agent Protocols: How Enterprises Are Creating Truly Interoperable AI Systems." April 2026. <https://www.honestai.us/blogs/mcp-a2a-agent-protocols-how-enterprises-are-creating-truly-interoperable-ai-systems>
+10. OneReach. "Guide: Choosing MCP vs A2A Protocols for Multi-Agent Collaboration." April 2026. <https://onereach.ai/blog/guide-choosing-mcp-vs-a2a-protocols/>
+11. ClickHouse Engineering. "Unifying OLTP and OLAP: HTAP Databases, Zero-ETL, and Best-of-Breed Architectures." March 2026. <https://clickhouse.com/resources/engineering/unifying-oltp-and-olap>
+12. Coeo. "Lakebase Explained: Why Databricks Is Blending OLTP, Analytics and AI." February 2026. <https://www.coeo.com/2026/02/lakebase-explained-why-databricks-is-blending-oltp-analytics-and-ai-and-what-that-means-for-your-architecture/>
+13. Qubika. "Bringing OLTP into Your Lakehouse: Why Databricks Lakebase Is a Game Changer." September 2025. <https://qubika.com/blog/oltp-lakehouse-databricks-lakebase/>
+14. Zhang et al. "Towards Generalized Routing: Model and Agent Orchestration for Adaptive and Efficient Inference (MoMA)." arXiv:2509.07571. September 2025. <https://arxiv.org/abs/2509.07571>
+15. "Explainable Model Routing for Agentic Workflows." arXiv:2604.03527. April 2026. <https://arxiv.org/abs/2604.03527>
+16. "Permission Manifests for Web Agents." arXiv:2601.02371. January 2026. <https://arxiv.org/abs/2601.02371>
+17. Stablecoin Insider. "Agentic Payments and Stablecoins: How AI Agents Are Revolutionizing Autonomous Machine-to-Machine Transactions in 2026." May 2026. <https://stablecoininsider.org/agentic-payments-and-stablecoins-how-ai-agents-are-revolutionizing-autonomous-machine-to-machine-transactions-in-2026/>
+18. Stablecoin Insider. "AI Agents for Stablecoins in 2026: Architecture, Use Cases, x402 Payments, and Real-World Data." February 2026. <https://stablecoininsider.org/ai-agents-for-stablecoins-in-2026/>
+19. Nevermined. "40 Stablecoin Payments for AI Agents Statistics." June 2026. <https://nevermined.ai/blog/stablecoin-payments-ai-agents-statistics>
+20. Indoneo. "A \$0.20 Payment Just Rewired Asia's Financial Infrastructure: Google AP2, x402, and Stablecoin Payment Rails." July 2026. <https://www.indoneo.com/tech-ai/google-ap2-x402-stablecoin-asia-payment-rails/>
+21. Autheo. "x402 and Gasless Stablecoins in 2026: A Practical Guide to AI-Agent Micropayments, Batch Settlement, and Compliance." May 2026. <https://www.autheo.com/blog/x402-gasless-stablecoins-ai-agent-micropayments-batch-settlement-2026/>
+22. The Elec. "EDB Unveils 'Agentic Lakehouse' Vision to Bring AI Directly to Enterprise Data." June 2026. <https://www.thelec.net/news/articleView.html?idxno=11084>
+23. Databricks. "Lakebase" (product documentation; GA announced February 2026). <https://www.databricks.com/product/lakebase>
+24. Google Cloud Blog. "How the Open Knowledge Format can improve data sharing." June 12, 2026. <https://cloud.google.com/blog/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing/>
+25. GoogleCloudPlatform/knowledge-catalog. OKF SPEC.md (v0.1). GitHub, Apache 2.0. <https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md>
+26. Google Developers Blog. "Announcing the Agentic Resource Discovery specification." June 17, 2026. <https://developers.googleblog.com/announcing-the-agentic-resource-discovery-specification/>
+27. AgenticResourceDiscovery.org. ARD specification and working-group documentation. 2026. <https://agenticresourcediscovery.org/>
+28. Guha, R. V. "Introducing the Agentic Resource Discovery specification." Microsoft Command Line Blog, June 17, 2026. <https://commandline.microsoft.com/agentic-resource-discovery-specification-ard/>
+29. Hugging Face Blog. "Agentic Resource Discovery: Let agents search." June 2026. <https://huggingface.co/blog/agentic-resource-discovery-launch>
+30. Databricks Blog. "Agent Bricks: Data + AI Summit 2026." June 2026. <https://www.databricks.com/blog/agent-bricks-dais-2026>
+31. SpaceXAI. "Grok on Databricks." June 18, 2026. <https://x.ai/news/grok-databricks>
+32. About Amazon. "AWS invests \$1 billion to embed AI forward deployed engineers with customers." June 30, 2026. <https://www.aboutamazon.com/news/aws/aws-1-billion-forward-deployed-ai-engineers>
+33. CNBC. "AWS puts \$1 billion into new AI unit to embed engineers with customers, joining growing wave." June 30, 2026. <https://www.cnbc.com/2026/06/30/aws-amazon-ai-forward-deployed-engineers.html>
+34. GeekWire. "Microsoft unveils \$2.5B 'Frontier Company' to embed AI engineers inside customers." July 2, 2026. <https://www.geekwire.com/2026/microsoft-announces-2-5b-frontier-company-to-embed-ai-engineers-inside-customers/>
+35. Althoff, J. "Microsoft Frontier Company: AI engineering that amplifies and protects your intelligence." The Official Microsoft Blog, July 2, 2026. <https://blogs.microsoft.com/blog/2026/07/02/microsoft-frontier-company-ai-engineering-that-amplifies-and-protects-your-intelligence/>
+36. QuantumBlack, AI by McKinsey. "The state of AI in 2025: Agents, innovation, and transformation." Global survey, November 5, 2025. <https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai>
+37. ICONIQ Growth. "State of AI: Bi-Annual Snapshot." January 2026 (AI-product gross margin data). <https://www.iconiq.com/growth/reports/2026-state-of-ai-bi-annual-snapshot>
+38. Trending Topics EU / Crunchbase data, as reported in "Q1 2026 Venture Capital Hits \$297B: AI Captures 81% of Record Funding." June 2026. Third-party tally; see Data Notes, Part IV. <https://tech-insider.org/q1-2026-venture-capital-297-billion-ai-startup-funding-record/>
+39. Challapally, A., Pease, C., Raskar, R., & Chari, P. "The GenAI Divide: State of AI in Business 2025." MIT Project NANDA, July 2025. <https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf>
+40. Bachman, M., & Berenberg, A. "Announcing Model Context Protocol (MCP) support for Google services." Google Cloud Blog, December 10, 2025. <https://cloud.google.com/blog/products/ai-machine-learning/announcing-official-mcp-support-for-google-services>
+41. Google Cloud Blog. "Managed MCP servers for Google Cloud databases." February 2026. <https://cloud.google.com/blog/products/databases/managed-mcp-servers-for-google-cloud-databases>
+42. Google Cloud Blog. "Google-managed MCP servers are available for everyone." April 29, 2026. <https://cloud.google.com/blog/products/ai-machine-learning/google-managed-mcp-servers-are-available-for-everyone>
+43. google/mcp repository (list of Google's official MCP servers). GitHub, Apache 2.0. <https://github.com/google/mcp>
+44. Palantir Technologies. "Connecting Agents to Decisions." Palantir Blog, April 2026. <https://blog.palantir.com/connecting-agents-to-decisions-277dee8ddb40>
+45. The Futurum Group. "1H 2026 Enterprise Software Decision Maker Survey Report" (830 global IT decision-makers). Summary: "41% of Firms Plan App Consolidation; Best-of-Breed Procurement Falls to 20.7%." May 2026. <https://futurumgroup.com/press-release/41-of-firms-plan-app-consolidation-best-of-breed-procurement-falls-to-20-7/>
+46. Microsoft. "What is Fabric IQ?" and related Microsoft IQ documentation (Fabric IQ, Work IQ, Foundry IQ, Fabric Data Agents). Microsoft Learn, 2026. <https://learn.microsoft.com/en-us/fabric/iq/overview>
+47. Databricks. "Databricks Sandbox." Product documentation, last updated July 1, 2026. <https://docs.databricks.com/aws/en/compute/serverless/sandbox>
+48. Mastercard. "Mastercard Launches Agent Pay for Machines to Unlock Super-Fast, Always-On Payments." June 10, 2026. <https://www.mastercard.com/my/en/news-and-trends/press/2026/june/mastercard-launches-agent-pay-for-machines.html>
+
+*Note on sourcing: Statistics cited via secondary sources (including industry survey data and third-party estimates) are identified as such in the text and in the Data Notes. Figures on x402 transaction volumes and mix derive from Chainalysis and Nevermined on-chain analyses as of Q1–Q2 2026 and are subject to revision as those datasets are updated.*
+
+------------------------------------------------------------------------

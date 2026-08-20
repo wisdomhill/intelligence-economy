@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "Part VII. The New Value Chain"
+---
+
+{{< include _08-new-value-chain.qmd >}}

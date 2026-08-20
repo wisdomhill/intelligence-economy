@@ -1,0 +1,58 @@
+---
+title: "5. The Agentic Mesh"
+subtitle: "Protocols, control, and settlement in the post-seat software economy"
+format:
+  typst: default
+---
+
+# Executive Summary
+
+{{< include _00-executive-summary.qmd >}}
+
+# Part I. The Protocol Fabric
+
+{{< include _01-protocol-fabric.qmd >}}
+
+# Part II. The SOA Redemption
+
+{{< include _02-soa-redemption.qmd >}}
+
+# Part III. The Agentic Mesh
+
+{{< include _03-agentic-mesh.qmd >}}
+
+<!-- Part IV is one chapter in the PDF. The web serves it as two pages
+     because it runs long; the split is a web-only convenience. -->
+# Part IV. The Control Plane Stack
+
+{{< include _04-control-plane-stack.qmd >}}
+
+{{< include _05-scope-contest.qmd >}}
+
+# Part V. The Monetization Reset
+
+{{< include _06-monetization-reset.qmd >}}
+
+# Part VI. The Machine-Native Dollar
+
+{{< include _07-machine-native-dollar.qmd >}}
+
+# Part VII. The New Value Chain
+
+{{< include _08-new-value-chain.qmd >}}
+
+# Part VIII. Value Migration Map
+
+{{< include _09-value-migration-map.qmd >}}
+
+# Part IX. Risks and Counter-Theses
+
+{{< include _10-risks.qmd >}}
+
+# Appendices
+
+{{< include _11-appendices.qmd >}}
+
+# References
+
+{{< include _12-references.qmd >}}

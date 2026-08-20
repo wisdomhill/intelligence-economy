@@ -1,0 +1,42 @@
+---
+format:
+  html: default
+title-block-style: default
+title: "3. The Token Economics of Coding Agents"
+subtitle: "From autocomplete complements to metered autonomy"
+
+description: >-
+  Token consumption in software development exploded while per-token prices
+  collapsed. A three-stage framework for what changed, why dollar growth and
+  token growth are about to decouple, and where the margin migrates.
+
+order: 3
+keywords:
+  - token economics
+  - coding agents
+  - verification bottleneck
+  - tokenmaxxing
+  - cost per completed task
+  - loop collapse
+
+---
+
+::: {.callout-note appearance="simple" icon=false}
+**Read the full report as a PDF:** [The Token Economics of Coding Agents (PDF)](r03-the-token-economics-of-coding-agents.pdf)
+:::
+
+## Executive Summary
+
+{{< include _00-executive-summary.qmd >}}
+
+## Contents
+
+|     | Part                                                       | The question it answers                                       |
+|-----|------------------------------------------------------------|---------------------------------------------------------------|
+| —   | [Introduction](01-introduction.qmd)                        | Why is token economics the right lens?                        |
+| I   | [The Coding Assistant Era](02-coding-assistant-era.qmd)    | What did the complementarity regime actually measure?         |
+| II  | [The Tokenmaxxing Era](03-tokenmaxxing-era.qmd)            | What did the unmetered substitution experiment build?         |
+| III | [The Maturation Era](04-maturation-era.qmd)                | What does the metered equilibrium look like?                  |
+| IV  | [Monitoring and Implications](05-monitoring-framework.qmd) | Which indicators falsify this, and where does margin migrate? |
+
+: {tbl-colwidths="[6,34,60]"}

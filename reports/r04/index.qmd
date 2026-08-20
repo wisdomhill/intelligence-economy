@@ -1,0 +1,44 @@
+---
+format:
+  html: default
+title-block-style: default
+title: "4. The SaaS Apocalypse Question"
+subtitle: "A critical examination of the enterprise SaaS ecosystem in the agentic transition"
+
+description: >-
+  Thirty incumbents, audited. Why the two-front erosion is real but the
+  apocalypse is not, why the toll problem squeezes incumbents whichever way
+  they turn, and what gridlock hands to the insurgents.
+
+order: 4
+keywords:
+  - enterprise SaaS
+  - agentic transition
+  - toll problem
+  - seat pricing
+  - interface layer
+  - incumbent gridlock
+
+---
+
+::: {.callout-note appearance="simple" icon=false}
+**Read the full report as a PDF:** [The SaaS Apocalypse Question (PDF)](r04-the-saas-apocalypse-question.pdf)
+:::
+
+## Executive Summary
+
+{{< include _00-executive-summary.qmd >}}
+
+## Contents
+
+|   | Chapter                                           | The question it answers                                          |
+|---|---------------------------------------------------|------------------------------------------------------------------|
+| 1 | [Anatomy of a Panic](01-the-question.qmd)         | What exactly is the market pricing, and how would we falsify it? |
+| 2 | [Three Layers, Three Leaks](02-three-layers.qmd)  | Where does an enterprise application leak value?                 |
+| 3 | [The Toll Problem](03-toll-problem.qmd)           | What happens when the first user reads the price list?           |
+| 4 | [The Thirty](04-the-thirty.qmd)                   | What does the market already believe, company by company?        |
+| 5 | [The Open Facade](05-open-facade.qmd)             | Did the walled gardens open, or move the gate?                   |
+| 6 | [Six Functions Under Audit](06-six-functions.qmd) | Function by function, who is exposed and who is not?             |
+| 7 | [Gridlock, Not Apocalypse](07-verdict.qmd)        | If it is not an apocalypse, what is it?                          |
+
+: {tbl-colwidths="[6,34,60]"}

@@ -1,0 +1,38 @@
+---
+title: "6. The Data Layer Reforged"
+subtitle: "Storage, semantics, and reasoning in the converged data substrate"
+format:
+  typst: default
+---
+
+# Executive Summary
+
+{{< include _00-executive-summary.qmd >}}
+
+# Part I. The Great Convergence
+
+{{< include _01-great-convergence.qmd >}}
+
+# Part II. The Context Layer
+
+{{< include _02-context-layer.qmd >}}
+
+# Part III. Reasoning and the Closing Loop
+
+{{< include _03-reasoning-and-loop.qmd >}}
+
+# Part IV. Competitive Landscape
+
+{{< include _04-competitive-landscape.qmd >}}
+
+# Part V. Conclusion
+
+{{< include _05-conclusion.qmd >}}
+
+# Appendices
+
+{{< include _06-appendices.qmd >}}
+
+# References
+
+{{< include _07-references.qmd >}}

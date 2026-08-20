@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "5. The Open Facade"
+---
+
+{{< include _05-open-facade.qmd >}}

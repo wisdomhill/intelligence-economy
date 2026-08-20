@@ -1,0 +1,38 @@
+---
+title: "8. The Functional Anatomy of Enterprise AI Demand"
+subtitle: "A seven-function framework for modeling B2B token consumption, 2026–2028"
+format:
+  typst: default
+---
+
+# 1. Executive Summary
+
+{{< include _00-executive-summary.qmd >}}
+
+# 2. Introduction
+
+{{< include _01-introduction.qmd >}}
+
+# 3. Verification × Harness
+
+{{< include _02-framework.qmd >}}
+
+# 4. The Seven Functional Categories
+
+{{< include _03-seven-functions.qmd >}}
+
+# 5. The Quantitative Demand Model
+
+{{< include _04-demand-model.qmd >}}
+
+# 6. Risks and Sensitivities
+
+{{< include _05-risks.qmd >}}
+
+# 7. Tracking Indicators
+
+{{< include _06-tracking.qmd >}}
+
+# References
+
+{{< include _07-references.qmd >}}

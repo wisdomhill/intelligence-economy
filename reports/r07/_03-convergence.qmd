@@ -1,0 +1,31 @@
+If Chapter 2 established that office software is the universal layer of knowledge work, this chapter establishes the forward-looking corollary: in the agentic era, no other software category offers a comparable lever on knowledge-work productivity — which is why the entire competitive field has converged on it. The argument has five layers.
+
+## 4.1 The Arithmetic of Productivity: Gains = Improvement Rate × Coverage
+
+The total productivity contribution of any AI deployment is the product of two terms: how much it improves a task, and how much of total work that task represents. A vertical agent that makes a specialized workflow ten times faster, where that workflow occupies two percent of the organization's knowledge-work hours, moves the aggregate by a fraction. Office and communication work — per Section 2.2 — claims the largest share of the software-mediated working day. At equal improvement rates, the agent that automates the universal layer produces the largest total effect by construction. There is no second lever of comparable length: any technology that intends to move the macroeconomic variable called "knowledge-work productivity" must pass through the office layer, because that is where the hours are.
+
+## 4.2 Delegation Requires the Substrate: Agents Must Work Where Work Lives
+
+Agentic AI's core promise is delegation — not assisting a task but receiving it whole. Delegation has a precondition: the agent must have access to the substrate in which the work exists. For knowledge work, that substrate is precisely the triad's artifacts and the communication stream — the documents, workbooks, decks, inboxes, calendars, and threads of Chapter 2.
+
+This is why, in 2025–2026, nearly every major player's agent strategy chose office as its first battlefield. Microsoft embedded Agent Mode inside Word, Excel, and PowerPoint and built Copilot Cowork; Anthropic generalized Claude Code into Cowork and shipped add-ins directly inside the Microsoft apps; Google wired Gemini Spark natively into Gmail and Workspace; and the AI-native entrants — Skywork, Genspark, Manus — uniformly lead with document, spreadsheet, and slide generation as their core value proposition. The convergence is itself the market's verdict: the home territory of the agent era is the office layer.
+
+## 4.3 The Context Ceiling: Agent Quality Is Capped by the Office Estate
+
+The decisive determinant of agent output quality is not the model but the context: what the agent knows about this organization, this project, these people, this history. Invert the proposition and a strategic theorem follows — whoever holds the best context can field the best agents.
+
+The largest store of organizational context is the office estate (Section 2.4). Microsoft's description of Work IQ makes the point explicitly: by continuously processing email, calendar, meetings, chats, files, people, and collaboration patterns, it claims to deliver "intelligence you cannot get from the data alone — a real-time model of how your organization operates." That sentence is a declaration that the raw material of the agent era is mined from office usage. The office layer is thus doubly central: it is the object of the agent's work and, simultaneously, the fuel that makes the agent competent.
+
+## 4.4 The Interface Argument: Communication as the Human–Agent Channel, the Triad as Verification Surface
+
+In the agentic era the communication layer acquires a new function: it becomes the interface through which humans work with agents. The design choices are telling. Google gives Spark a dedicated Gmail address — you delegate to it the way you email a colleague. Anthropic describes interacting with Cowork as "less like a chat back-and-forth and more like leaving messages for a coworker." The channels humans built to collaborate with humans — email, chat, meetings — are being repurposed, unmodified, as the channels for collaborating with agents.
+
+Symmetrically, the triad's artifacts acquire a new function on the output side: they are the surfaces on which humans verify agent work. A human audits an agent's quantitative reasoning in a spreadsheet grid, reviews its narrative in a document, and judges its argument in a deck. The entrance of delegation (communication) and its exit (artifacts and review) are both office surfaces.
+
+## 4.5 Form Dissolves, Function Persists: What "Office" Means After the App
+
+The deepest layer of the argument guards against a misreading. This report will project (Chapter 8) that office *apps* are demoted to actuators and office *files* to rendered views. That is a forecast about the dissolution of the category's current product form — the app, the file, the per-seat license — not of its function. The functions office software has institutionalized — qualitative reasoning, quantitative analysis, persuasion, communication, and the recording of all four — are permanent constituents of organized human activity. Agents do not abolish these functions; they become their new performers.
+
+The market for "office software in the agentic era" is therefore properly defined as the market for **owning the next form of the universal function layer of knowledge work** — and because of that universality, the value available to its winners is, by the logic of Chapter 2, among the largest prizes in enterprise software. The chapters that follow analyze the arena in which that ownership is being contested, and the players contesting it.
+
+------------------------------------------------------------------------

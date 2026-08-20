@@ -1,0 +1,33 @@
+## 2.1 The Broadest Horizontal Software: A User Base Coextensive with the Knowledge Workforce
+
+Nearly every category of enterprise software is vertical in the functional sense: it serves a department, a role, a process. CRM belongs to sales, ERP to finance and operations, HRIS to human resources, design tools to designers, observability stacks to engineers. Each addresses a subset — often a small one — of the organization's knowledge workers.
+
+Office software is the conspicuous exception. Its user base is not a subset of the knowledge workforce; it *is* the knowledge workforce. A salesperson, an accountant, an engineer, and a chief executive perform different jobs, but all of them write documents, build tables, present arguments, and communicate through email, chat, and meetings. Whatever the role, the common operations of knowledge work — qualitative description, quantitative analysis, visual persuasion, and communication — are identical, and the office suite is the institutionalized form of those common operations.
+
+The horizontality shows up immediately in scale, though the two estates' headline figures measure different things. Google says its Workspace applications are used by more than three billion people — a figure that includes free consumer accounts — while Microsoft 365 counts more than four hundred million paid commercial seats. The two numbers are not directly comparable, but together they demonstrate that the two estates reach an exceptionally large share of the world's knowledge workers — a population on the order of a billion people. Among work-specific software, no other category approaches this penetration of its addressable population.
+
+## 2.2 Time-Share Dominance: The Largest Claim on the Working Day
+
+Penetration understates the position; the deeper measure is residence time. Microsoft's Work Trend Index telemetry shows that, within Microsoft 365, the average worker spends 57 percent of application time communicating — email, meetings, chat — and 43 percent creating documents, spreadsheets, and presentations. The measurement does not directly compare Office against every other business application, but it demonstrates how much of the knowledge-work day is mediated by the office and communication layer — for most knowledge workers, plainly more than any other single software environment claims.
+
+Time share matters because it is the denominator of every productivity calculation. A technology that improves a tool used two hours a week competes for a sliver of output; a technology that improves the substrate of the entire working day competes for the whole of it. This arithmetic returns with force in Chapter 4.
+
+## 2.3 The Last Mile: Where Every Workflow Converges and Every Decision Is Made
+
+The third structural property is positional. Office software is the terminal segment — the last mile — into which the outputs of every other enterprise system flow. The ERP's numbers are extracted into Excel to be analyzed; the CRM's pipeline becomes the quarterly-review slide deck; the data warehouse's query results are pasted into a memo; and the conclusions of every system are ultimately argued in email threads and decided in meetings. The industry aphorism that "all roads lead to Excel" names a real topology: vertical systems *store* the organization's data, but the organization's actual reasoning and deciding are *performed* in the office layer.
+
+This position is why office software cannot be displaced by any combination of vertical tools. A company can in principle replace its CRM, its ERP, or its ticketing system one by one; it cannot replace the layer in which the outputs of all of them are synthesized, contested, and turned into decisions, because that layer is not a function — it is the medium of organizational cognition itself.
+
+## 2.4 The By-Product Asset: The Densest Repository of Organizational Context
+
+Because everything passes through the office layer, the office estate accumulates — as an automatic by-product of use — the densest available record of how the organization actually works: who discussed what with whom, which document fed which meeting, which analysis preceded which decision. Emails, files, calendars, chat threads, and meeting transcripts together constitute an implicit graph of the organization's structure, priorities, and reasoning history.
+
+For three decades this by-product was inert, valuable mainly for compliance and discovery. The agentic era converts it into the category's most strategic asset, because — as Chapter 4 will argue — the quality of an AI agent's work is capped not by its model but by its context, and no other system in the enterprise holds context of comparable density. Microsoft's Work IQ and Google's Workspace Intelligence, both examined in Chapter 5, are nothing more or less than the productization of this by-product.
+
+## 2.5 Economic Expression: One of Software's Largest Revenue Pools, Held by Two Players
+
+The economic expression of horizontality, time-share dominance, and last-mile position is a market of extraordinary concentration and weight. Microsoft 365's Commercial and Consumer lines generated approximately \$95 billion in FY2025 — one of the largest recurring revenue streams in the history of the software industry — before adding Google Workspace's undisclosed revenue; combined, the duopoly's office revenues rival the sum of dozens of vertical SaaS categories. The category's strategic importance derives not from equaling the rest of enterprise software in revenue, but from its reach across every role, its claim on knowledge-worker attention, and its position at the terminal point of workflows. The duopoly structure is itself evidence of the category's nature: as the historical chapters will show, repeated waves of challengers were absorbed or repelled because the category is purchased not as a set of features but as the basic infrastructure of knowledge work — and infrastructure markets consolidate.
+
+This is the structure within which everything that follows takes place. The remainder of this report treats Microsoft 365 and Google Workspace not merely as two competitors but as the two *estates* — territories of users, data, and institutional habit — upon which the entire agentic AI field, the estate owners included, must now maneuver.
+
+------------------------------------------------------------------------

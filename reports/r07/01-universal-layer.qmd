@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "2. The Universal Layer of Knowledge Work"
+---
+
+{{< include _01-universal-layer.qmd >}}

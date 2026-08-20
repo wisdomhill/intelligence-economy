@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "3. The Triad and Its Three Eras"
+---
+
+{{< include _02-triad-and-eras.qmd >}}

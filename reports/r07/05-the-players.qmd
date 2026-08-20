@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "6. The Players"
+---
+
+{{< include _05-the-players.qmd >}}

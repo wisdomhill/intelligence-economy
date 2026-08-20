@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "3. Verification × Harness"
+---
+
+{{< include _02-framework.qmd >}}

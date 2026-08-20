@@ -1,0 +1,45 @@
+---
+format:
+  html: default
+title-block-style: default
+title: "7. The Agentic Office"
+subtitle: "How Microsoft, Google, and AI agents reorder knowledge work"
+
+description: >-
+  Office software is the broadest layer of knowledge work, and agents must pass
+  through it. How the duopoly defends its estate, where lock-in relocates once
+  formats stop mattering, and what the office becomes when files become views.
+
+order: 7
+keywords:
+  - office software
+  - Microsoft 365
+  - Google Workspace
+  - context layer
+  - agent access
+  - knowledge network
+
+---
+
+::: {.callout-note appearance="simple" icon=false}
+**Read the full report as a PDF:** [The Agentic Office (PDF)](r07-the-agentic-office.pdf)
+:::
+
+## Executive Summary
+
+{{< include _00-executive-summary.qmd >}}
+
+## Contents
+
+|   | Chapter                                                         | The question it answers                                           |
+|---|-----------------------------------------------------------------|-------------------------------------------------------------------|
+| 2 | [The Universal Layer of Knowledge Work](01-universal-layer.qmd) | Why does office software sit under every knowledge worker?        |
+| 3 | [The Triad and Its Three Eras](02-triad-and-eras.qmd)           | How did document, spreadsheet and presentation become one estate? |
+| 4 | [Why the War Converges on Office](03-convergence.qmd)           | Why must agents come to where the work already lives?             |
+| 5 | [The Arena](04-the-arena.qmd)                                   | Two estates, two architectures — how do the gates compare?        |
+| 6 | [The Players](05-the-players.qmd)                               | Who is attacking, who is defending, and who supplies both?        |
+| 7 | [Files, Formats, and Protocols](06-formats-protocols.qmd)       | Where does lock-in relocate once the format war is over?          |
+| 8 | [Scenarios and Outlook](07-scenarios.qmd)                       | What are the phases to 2030, and what would signal each?          |
+| 9 | [Investment Implications](08-investment.qmd)                    | How good is the duopoly’s defense, and where else can value sit?  |
+
+: {tbl-colwidths="[6,34,60]"}

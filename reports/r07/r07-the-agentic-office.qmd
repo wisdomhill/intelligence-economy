@@ -1,0 +1,50 @@
+---
+title: "7. The Agentic Office"
+subtitle: "How Microsoft, Google, and AI agents reorder knowledge work"
+format:
+  typst: default
+---
+
+# 1. Executive Summary
+
+{{< include _00-executive-summary.qmd >}}
+
+# 2. The Universal Layer of Knowledge Work
+
+{{< include _01-universal-layer.qmd >}}
+
+# 3. The Triad and Its Three Eras
+
+{{< include _02-triad-and-eras.qmd >}}
+
+# 4. Why the War Converges on Office
+
+{{< include _03-convergence.qmd >}}
+
+# 5. The Arena
+
+{{< include _04-the-arena.qmd >}}
+
+# 6. The Players
+
+{{< include _05-the-players.qmd >}}
+
+# 7. Files, Formats, and Protocols
+
+{{< include _06-formats-protocols.qmd >}}
+
+# 8. Scenarios and Outlook
+
+{{< include _07-scenarios.qmd >}}
+
+# 9. Investment Implications
+
+{{< include _08-investment.qmd >}}
+
+# Appendices
+
+{{< include _09-appendices.qmd >}}
+
+# References
+
+{{< include _10-references.qmd >}}

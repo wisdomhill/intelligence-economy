@@ -1,0 +1,43 @@
+---
+format:
+  html: default
+title-block-style: default
+title: "8. The Functional Anatomy of Enterprise AI Demand"
+subtitle: "A seven-function framework for modeling B2B token consumption, 2026–2028"
+
+description: >-
+  Enterprise token consumption modelled function by function. Why verification
+  cost and harness design govern how much a function can absorb, and what the
+  seven categories add up to through 2028.
+
+order: 8
+keywords:
+  - token demand
+  - verification cost
+  - execution harness
+  - enterprise AI
+  - demand model
+  - inference consumption
+
+---
+
+::: {.callout-note appearance="simple" icon=false}
+**Read the full report as a PDF:** [The Functional Anatomy of Enterprise AI Demand (PDF)](r08-the-functional-anatomy-of-enterprise-ai-demand.pdf)
+:::
+
+## Executive Summary
+
+{{< include _00-executive-summary.qmd >}}
+
+## Contents
+
+|   | Chapter                                                   | The question it answers                                            |
+|---|-----------------------------------------------------------|--------------------------------------------------------------------|
+| 2 | [Introduction](01-introduction.qmd)                       | What is the unit of analysis, and what is the model not?           |
+| 3 | [Verification × Harness](02-framework.qmd)                | What governs how many tokens a function can absorb?                |
+| 4 | [The Seven Functional Categories](03-seven-functions.qmd) | Function by function, where does enterprise consumption come from? |
+| 5 | [The Quantitative Demand Model](04-demand-model.qmd)      | What do the assumptions produce through 2028?                      |
+| 6 | [Risks and Sensitivities](05-risks.qmd)                   | What breaks the model, and in which direction?                     |
+| 7 | [Tracking Indicators](06-tracking.qmd)                    | What would falsify it, and when would we know?                     |
+
+: {tbl-colwidths="[6,34,60]"}

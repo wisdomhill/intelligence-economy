@@ -1,0 +1,61 @@
+Anthropic. "Anthropic Economic Index" report series, V1–V5 (January 2025 – March 2026). <https://www.anthropic.com/economic-index> (V5 report: <https://www.anthropic.com/research/economic-index-march-2026-report>)
+
+Anthropic. "Agents for Financial Services." May 5, 2026. <https://www.anthropic.com/news/finance-agents>
+
+Anthropic. "Anthropic Raises \$65B in Series H Funding at \$965B Post-Money Valuation" (run-rate revenue crossing \$47 billion in May 2026). May 28, 2026. <https://www.anthropic.com/news/series-h>
+
+Anthropic. "Anthropic Expands Partnership with Google and Broadcom" (run-rate revenue surpassing \$30 billion, up from approximately \$9 billion at end-2025). April 6, 2026. <https://www.anthropic.com/news/google-broadcom-partnership-compute>
+
+Bureau of Labor Statistics, U.S. Department of Labor. "Occupational Employment and Wage Statistics (OEWS), May 2024 — National Employment and Wage Data (Table 1)." 2025. <https://www.bls.gov/oes/current/oes_nat.htm> (May 2024 tables: <https://www.bls.gov/oes/tables.htm>)
+
+Bureau of Labor Statistics, U.S. Department of Labor. "Life, Physical, and Social Science Occupations (SOC 19-0000)." Occupational Outlook Handbook / OEWS, May 2024. <https://www.bls.gov/ooh/life-physical-and-social-science/>
+
+Bureau of Labor Statistics, U.S. Department of Labor. "Industry and Occupational Employment Projections, 2024–34." Monthly Labor Review, 2026. <https://www.bls.gov/opub/mlr/2026/article/industry-and-occupational-employment-projections-overview.htm>
+
+CFO.com. "Inside Claude's Rapid Expansion Across Corporate Finance." May 21, 2026. <https://www.cfo.com/news/inside-anthropic-claude-rapid-expansion-across-corporate-finance-cfo-/820806/>
+
+DemandSage. "ChatGPT Statistics (2026)." Usage and adoption statistics. 2026. <https://www.demandsage.com/chatgpt-statistics/>
+
+Demirer, M., L. Musolff, and L. Yang. "Writing Code vs. Shipping Code: Productivity Effects Across Generations of AI Coding Tools." NBER Working Paper 35275, May 2026. <https://www.nber.org/papers/w35275>
+
+Digital Applied. "AI Customer Support 2026: 50+ Adoption and ROI Data Points." May 2026. <https://www.digitalapplied.com/blog/ai-customer-support-statistics-2026-adoption-roi-data>
+
+Directions on Microsoft. "Microsoft Claims 15 Million Paid M365 Copilot Seats (of 450 Million Commercial Seats)." January 29, 2026. <https://www.directionsonmicrosoft.com/microsoft-claims-15-million-paid-m365-copilot-seats/>
+
+Fintech News Switzerland. "Anthropic Launches Claude for Finance to Automate Complex Financial Workflows" (citing agentic-AI adoption survey: 6% current use, 38% planned). May 18, 2026. <https://fintechnews.ch/aifintech/anthropic-launches-claude-for-finance-to-automate-complex-financial-workflows/78940/>
+
+First Page Sage. "ChatGPT Usage Statistics: June 2026" (use-case distribution; general and academic research as leading use cases). 2026. <https://firstpagesage.com/seo-blog/chatgpt-usage-statistics/>
+
+Fortune. "Anthropic Deepens Push into Wall Street with New AI Agents, Full Microsoft 365 Integration, Moody's Data Partnership." May 5, 2026. <https://fortune.com/2026/05/05/anthropic-wall-street-financial-services-agents-jamie-dimon/>
+
+Fortune. "OpenAI's Codex Growth and the Enterprise Agent Strategy." March 4, 2026. <https://fortune.com/2026/03/04/openai-codex-growth-enterprise-ai-agents/>
+
+Google. "Google I/O 2026: Sundar Pichai's Opening Keynote" (monthly tokens processed: >3.2 quadrillion; model APIs \~19 billion tokens/minute). May 2026. <https://blog.google/innovation-and-ai/sundar-pichai-io-2026/>
+
+Panto AI. "GitHub Copilot Statistics 2026: \~150 Million Registered Developers, 4.7 Million Paid Subscribers." May 2026. <https://www.getpanto.ai/blog/github-copilot-statistics>
+
+mlq.ai. "Anthropic Reaches \$30 Billion Annual Revenue Run Rate." April 7, 2026. <https://mlq.ai/news/anthropic-reaches-30-billion-annual-revenue-run-rate/>
+
+O*NET OnLine. "13-1161.00 — Market Research Analysts and Marketing Specialists." U.S. Department of Labor. <https://www.onetonline.org/link/summary/13-1161.00>
+
+Office365 IT Pros. "Microsoft FY26 Q2 Results: Over 450 Million Microsoft 365 Commercial Paid Seats; 15 Million Paid Copilot Seats." January 30, 2026. <https://office365itpros.com/2026/01/30/microsoft-fy26-q2-results/>
+
+OpenAI. "Introducing Deep Research" (plan quotas: 25/month for Plus, Team, Enterprise, Edu; 250/month for Pro). April 2025. <https://openai.com/index/introducing-deep-research/> (current limits: <https://help.openai.com/en/articles/10500283-deep-research-in-chatgpt>)
+
+OpenRouter and Andreessen Horowitz. "State of AI: An Empirical 100-Trillion-Token Study" (programming rising from \~11% of token volume in early 2025 to above 50% by late 2025; measurement window through November 2025). December 4, 2025. <https://openrouter.ai/state-of-ai>
+
+Sacra. "Sierra Revenue, Valuation & Funding" (voice-agent call volumes and ARR trajectory). May 2026. <https://sacra.com/c/sierra/>
+
+Stack Overflow. "2025 Developer Survey: AI" (84% of professional developers use or plan to use AI tools; 51% daily use). 2025. <https://survey.stackoverflow.co/2025/ai>
+
+SQ Magazine. "Google Workspace Statistics 2026: 3 Billion Users, 11 Million Paying Customers (Organizations)." 2026. <https://sqmagazine.co.uk/google-workspace-statistics/>
+
+TechStartups. "OpenRouter Raises \$113M as AI Token Usage Surges to 100 Trillion Monthly" (citing Deloitte 2026 enterprise token study). May 26, 2026. <https://techstartups.com/2026/05/26/openrouter-raises-113m-as-ai-token-usage-surges-to-100-trillion-monthly/>
+
+Trending Topics. "Chinese AI Models Overtake US Rivals in Global Token Consumption." March 26, 2026. <https://www.trendingtopics.eu/chinese-ai-models-overtake-us-rivals-in-global-token-consumption/>
+
+VentureBeat. "Anthropic Hits \$30 Billion Annual Run Rate with 80% Enterprise Revenue." May 2026. <https://venturebeat.com/ai/anthropic-hits-30-billion-annual-run-rate-with-80-percent-enterprise-revenue>
+
+*Disclaimer: This report is for informational purposes only and does not constitute investment advice. Quantitative estimates herein are order-of-magnitude modeling assumptions, not measured data, and are documented as adjustable inputs in the companion workbook (Agentic AI Token Demand Model workbook). Vendor-disclosed figures (run-rate revenues, deflection rates) carry the caveats noted in the text.*
+
+------------------------------------------------------------------------

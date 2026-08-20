@@ -3,7 +3,11 @@
     "listing": "/index.html",
     "items": [
       "/reports/r01/index.html",
-      "/reports/r02/index.html"
+      "/reports/r02/index.html",
+      "/reports/r03/index.html",
+      "/reports/r04/index.html",
+      "/reports/r05/index.html",
+      "/reports/r06/index.html"
     ]
   }
 ]

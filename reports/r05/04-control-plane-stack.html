@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Wisdom Hill Research">
+<meta name="dcterms.date" content="2026-08-24">
+
+<title>Part IV. The Control Plane Stack – The Intelligence Economy</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../reports/r05/05-scope-contest.html" rel="next">
+<link href="../../reports/r05/03-agentic-mesh.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-e3446dd27af53b6674a1b3f085ef8410.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-7f99f34b211eff5033957506f5a06a62.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-e3446dd27af53b6674a1b3f085ef8410.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<meta property="og:title" content="Part IV. The Control Plane Stack – The Intelligence Economy">
+<meta property="og:description" content="A research series on how agentic AI is reorganising the economics of software, consumer technology, and hardware infrastructure.">
+<meta property="og:site_name" content="The Intelligence Economy">
+<meta name="twitter:title" content="Part IV. The Control Plane Stack – The Intelligence Economy">
+<meta name="twitter:description" content="A research series on how agentic AI is reorganising the economics of software, consumer technology, and hardware infrastructure.">
+<meta name="twitter:card" content="summary">
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">The Intelligence Economy</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../../index.html" aria-current="page"> 
+<span class="menu-text">Reports</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../prologue.html"> 
+<span class="menu-text">Prologue</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/wisdomhill/intelligence-economy"> <i class="bi bi-github" role="img" aria-label="GitHub repository">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reports/r05/index.html">5. The Agentic Mesh</a></li><li class="breadcrumb-item"><a href="../../reports/r05/04-control-plane-stack.html">Part IV. The Control Plane Stack</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">All reports</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../prologue.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prologue</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../reports/r01/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1. The Agentic Inflection</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r01/01-phase-transition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part I. The Phase Transition</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r01/02-anatomy-of-an-agent.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part II. Anatomy of an Agent</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r01/03-competitive-landscape.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part III. The Competitive Landscape</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r01/04-agentic-war.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part IV. The Three-Way Agentic War</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r01/05-investment-framework.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part V. Integrated Investment Framework</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r01/06-coda.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Coda</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r01/07-appendices.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Appendices</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r01/08-references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../reports/r02/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2. The Idea Bottleneck</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r02/01-productivity-paradox.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1. The Productivity Paradox</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r02/02-missing-signal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2. The Missing Signal</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r02/03-creative-industries.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3. The Creative Industries Under AI</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r02/04-theory-of-the-bottleneck.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4. A Theory of the Bottleneck</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r02/05-topology-of-industries.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5. The Topology of Industries</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r02/06-great-misallocation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6. The Great Misallocation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r02/07-data-analytics-exception.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7. The Data Analytics Exception</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r02/08-data-intelligence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">8. Data Intelligence as Economic Necessity</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r02/09-conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">9. The Bottleneck Always Moves to Judgment</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r02/10-appendices.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Appendices</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r02/11-references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../reports/r03/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3. The Token Economics of Coding Agents</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r03/01-introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r03/02-coding-assistant-era.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part I. The Coding Assistant Era</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r03/03-tokenmaxxing-era.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part II. The Tokenmaxxing Era</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r03/04-maturation-era.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part III. The Maturation Era</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r03/05-monitoring-framework.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part IV. Monitoring and Implications</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r03/06-appendices.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Appendices</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r03/07-references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../reports/r04/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4. The SaaS Apocalypse Question</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r04/01-the-question.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1. Anatomy of a Panic</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r04/02-three-layers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2. Three Layers, Three Leaks</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r04/03-toll-problem.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3. The Toll Problem</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r04/04-the-thirty.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4. The Thirty</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r04/05-open-facade.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5. The Open Facade</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r04/06-six-functions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6. Six Functions Under Audit</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r04/07-verdict.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7. Gridlock, Not Apocalypse</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r04/08-methodology-and-references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Methodology and References</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../reports/r05/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5. The Agentic Mesh</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r05/01-protocol-fabric.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part I. The Protocol Fabric</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r05/02-soa-redemption.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part II. The SOA Redemption</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r05/03-agentic-mesh.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part III. The Agentic Mesh</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r05/04-control-plane-stack.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Part IV. The Control Plane Stack</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r05/05-scope-contest.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part IV. The Scope Contest</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r05/06-monetization-reset.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part V. The Monetization Reset</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r05/07-machine-native-dollar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part VI. The Machine-Native Dollar</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r05/08-new-value-chain.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part VII. The New Value Chain</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r05/09-value-migration-map.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part VIII. Value Migration Map</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r05/10-risks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part IX. Risks and Counter-Theses</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r05/11-appendices.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Appendices</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r05/12-references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../reports/r06/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6. The Data Layer Reforged</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r06/01-great-convergence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part I. The Great Convergence</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r06/02-context-layer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part II. The Context Layer</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r06/03-reasoning-and-loop.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part III. Reasoning and the Closing Loop</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r06/04-competitive-landscape.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part IV. Competitive Landscape</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r06/05-conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part V. Conclusion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r06/06-appendices.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Appendices</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r06/07-references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../errata.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Errata</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#from-a-layer-to-a-stack-the-scope-dimension-of-control" id="toc-from-a-layer-to-a-stack-the-scope-dimension-of-control" class="nav-link active" data-scroll-target="#from-a-layer-to-a-stack-the-scope-dimension-of-control">4.1 From a Layer to a Stack: The Scope Dimension of Control</a></li>
+  <li><a href="#the-enterprise-scope-i-the-four-layer-value-chain-and-why-value-flows-to-the-model-layer-is-imprecise" id="toc-the-enterprise-scope-i-the-four-layer-value-chain-and-why-value-flows-to-the-model-layer-is-imprecise" class="nav-link" data-scroll-target="#the-enterprise-scope-i-the-four-layer-value-chain-and-why-value-flows-to-the-model-layer-is-imprecise">4.2 The Enterprise Scope I: The Four-Layer Value Chain — and Why “Value Flows to the Model Layer” Is Imprecise</a></li>
+  <li><a href="#the-enterprise-scope-ii-five-camps-converging-on-the-throne" id="toc-the-enterprise-scope-ii-five-camps-converging-on-the-throne" class="nav-link" data-scroll-target="#the-enterprise-scope-ii-five-camps-converging-on-the-throne">4.3 The Enterprise Scope II: Five Camps Converging on the Throne</a>
+  <ul class="collapse">
+  <li><a href="#databricks-the-substrate-camp-completes-its-control-plane" id="toc-databricks-the-substrate-camp-completes-its-control-plane" class="nav-link" data-scroll-target="#databricks-the-substrate-camp-completes-its-control-plane">Databricks: the substrate camp completes its control plane</a></li>
+  <li><a href="#palantir-the-constraint-restated" id="toc-palantir-the-constraint-restated" class="nav-link" data-scroll-target="#palantir-the-constraint-restated">Palantir: the constraint restated</a></li>
+  <li><a href="#microsoft-distribution-plus-an-embedded-context-layer-and-the-broadest-cross-scope-player" id="toc-microsoft-distribution-plus-an-embedded-context-layer-and-the-broadest-cross-scope-player" class="nav-link" data-scroll-target="#microsoft-distribution-plus-an-embedded-context-layer-and-the-broadest-cross-scope-player">Microsoft: distribution plus an embedded context layer — and the broadest cross-scope player</a></li>
+  <li><a href="#the-fde-arms-race-five-players-across-three-camps" id="toc-the-fde-arms-race-five-players-across-three-camps" class="nav-link" data-scroll-target="#the-fde-arms-race-five-players-across-three-camps">The FDE arms race: five players across three camps</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/wisdomhill/intelligence-economy/blob/main/reports/r05/04-control-plane-stack.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reports/r05/index.html">5. The Agentic Mesh</a></li><li class="breadcrumb-item"><a href="../../reports/r05/04-control-plane-stack.html">Part IV. The Control Plane Stack</a></li></ol></nav><h1 class="title display-7">Part IV. The Control Plane Stack</h1></header>
+
+
+<header id="title-block-header">
+
+<p class="author">Wisdom Hill Research</p>
+
+<p class="date">2026-08-24</p>
+</header>
+
+
+<p><em>Three weeks in June.</em> Between June 12 and July 2, 2026, while market attention was absorbed by a new wave of frontier model releases — Anthropic’s Claude Fable 5 tier chief among them — five moves landed that had nothing to do with model capability and everything to do with the layer above it. On June 12, Google Cloud published the Open Knowledge Format (OKF), a specification for the knowledge that agents consume, and rebranded Dataplex as a “Knowledge Catalog” to ingest it. From June 15–18, Databricks used its Data + AI Summit to relaunch Agent Bricks as a full agent platform wrapped in a runtime governance gateway, an ontology layer, and an open-source meta-harness. On June 17, Google — with Microsoft and Hugging Face as co-authors — published the Agentic Resource Discovery (ARD) specification, a standard for how agents find and verify capabilities across the open web; GitHub and Hugging Face shipped initial reference implementations at launch, while Google announced that native ARD support would follow in its Gemini Enterprise Agent Platform in the coming months. On June 30, AWS committed $1 billion to a dedicated Forward Deployed Engineering organization. On July 2, Microsoft answered with a $2.5 billion, six-thousand-person “Frontier Company.”</p>
+<p>None of these announcements moved a benchmark score. All of them were bids for context, discovery, governance, and deployment — the four functions this report groups under the control plane. Databricks CEO Ali Ghodsi stated the underlying logic from his own keynote stage: “We don’t need more intelligence for AI. We need more context.” The market watched the model layer in June 2026; the structural contest was being fought one layer up. This Part maps that contest.</p>
+<p>It also corrects a simplification in how the control plane — including in earlier reports in this series — has been discussed. The control plane is not a single layer that one company will “win.” It is a <strong>nested stack of control planes at four distinct scopes</strong> — the economy, the industry, the enterprise, and the department — and each scope controls different assets, favors different players, and supports a different quality of economic rent. The question “who captures the control plane” is ill-posed until it is scoped. Sections 4.1–4.3 treat the enterprise scope, where the contest is most advanced; 4.4–4.5 treat the universal scope, where the June announcements concentrated; 4.6 treats the industry scope, which we argue is the most underpriced; 4.7 and 4.8 draw the scenarios and the cross-scope power dynamics together.</p>
+<section id="from-a-layer-to-a-stack-the-scope-dimension-of-control" class="level2">
+<h2 class="anchored" data-anchor-id="from-a-layer-to-a-stack-the-scope-dimension-of-control">4.1 From a Layer to a Stack: The Scope Dimension of Control</h2>
+<p>Part III established <em>what</em> the control plane does — workflow decomposition, execution-unit assignment, result verification, exception handling — and <em>why</em> it is the locus of value capture as model inference commoditizes into a routable input. What Part III’s framing left implicit is <em>where</em> that function sits. In practice, orchestration and governance are being instantiated at four different scopes simultaneously, and the instances are complementary rather than substitutive: an enterprise control plane does not compete with an economy-wide discovery gateway any more than a corporate directory competes with DNS.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Scope</th>
+<th>Core assets controlled</th>
+<th>Essential function</th>
+<th>Structurally advantaged players</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Universal (economy-wide)</strong></td>
+<td>Protocols and standards; agent/tool directories; identity and payment rails</td>
+<td>Interoperability and trust across organizational boundaries</td>
+<td>Standard-setters and gateway operators (Google, Microsoft; the model labs via MCP influence)</td>
+</tr>
+<tr class="even">
+<td><strong>Industry (sector)</strong></td>
+<td>Sector-common ontologies; regulatory mappings; benchmarks; data cooperatives</td>
+<td>Shared semantics within a vertical</td>
+<td>Sector data authorities (Bloomberg-type, Veeva-type, Epic-type) and platforms descending into verticals</td>
+</tr>
+<tr class="odd">
+<td><strong>Enterprise</strong></td>
+<td>The firm’s own data authority; permissions, governance, audit; fleet-level orchestration</td>
+<td>Authority and control inside one organization</td>
+<td>Hyperscalers, data platforms, ontology vendors (Microsoft, Google, Palantir, Databricks, Snowflake)</td>
+</tr>
+<tr class="even">
+<td><strong>Departmental</strong></td>
+<td>Team workflows; local context; task-specific agents</td>
+<td>Execution at the edge</td>
+<td>Vertical app vendors and startups; the terminal nodes of the layers above</td>
+</tr>
+</tbody>
+</table>
+<p>Three properties of this stack matter for everything that follows. First, <strong>the controlled asset changes with scope</strong>. At the universal scope the asset is not data at all but standards, discovery, and identity — assets that lose value if any single firm owns them too visibly, which is why they gravitate toward foundations and open licenses. At the enterprise scope the asset is precisely the opposite: proprietary data authority and a governance perimeter that <em>must</em> be owned. Conflating the two produces incoherent strategy analysis.</p>
+<p>Second, <strong>the network-effect topology changes with scope</strong>. Enterprise control planes are instantiated once per company; each instance is an island, which caps horizontal network effects and keeps the business replicable and competitive. Universal directories and industry ontologies, by contrast, exhibit classic cross-organizational network effects — every additional publisher makes the registry more valuable to every consumer, and every additional bank on a shared sector ontology makes benchmarking and interoperation more valuable to the rest.</p>
+<p>Third, <strong>the scopes are locked in a vertical governance contest</strong> — the upper layers attempt to register, constrain, and tax the lower ones — which we take up in 4.8. The winner of the decade may be less the champion of any single scope than the player that spans several and governs downward across them.</p>
+</section>
+<section id="the-enterprise-scope-i-the-four-layer-value-chain-and-why-value-flows-to-the-model-layer-is-imprecise" class="level2">
+<h2 class="anchored" data-anchor-id="the-enterprise-scope-i-the-four-layer-value-chain-and-why-value-flows-to-the-model-layer-is-imprecise">4.2 The Enterprise Scope I: The Four-Layer Value Chain — and Why “Value Flows to the Model Layer” Is Imprecise</h2>
+<p>Within a single enterprise, the agentic stack decomposes into a four-layer vertical value chain:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 30%">
+<col style="width: 20%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Layer</th>
+<th>Description</th>
+<th>Margin character</th>
+<th>Defensibility trend</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>(A) System of record / authoritative write</strong></td>
+<td>The canonical transactional source of truth</td>
+<td>High, annuity-like</td>
+<td>The most durable residual moat; strongest in ERP</td>
+</tr>
+<tr class="even">
+<td><strong>(B) Application logic + interface</strong></td>
+<td>The packaged app enterprises historically bought</td>
+<td>Eroding</td>
+<td>Hollowed from both sides; commoditizing</td>
+</tr>
+<tr class="odd">
+<td><strong>(C) Control plane</strong></td>
+<td>Context, ontology, governance, orchestration of agents</td>
+<td>High — the contested prize</td>
+<td>Rising fast; the new battleground</td>
+</tr>
+<tr class="even">
+<td><strong>(D) Model / inference</strong></td>
+<td>The reasoning engine</td>
+<td>Cost-of-goods toll</td>
+<td>Unavoidable but commoditizing per token</td>
+</tr>
+</tbody>
+</table>
+<p>The label is no longer analytical shorthand; vendors now use it explicitly. Snowflake markets itself as a control plane for the agentic enterprise, Google describes its consolidated agent platform as a single control plane, and Microsoft frames Fabric IQ as the orchestration and context layer. Databricks’ June relaunch (4.3) extends the pattern: its Unity AI Gateway is a control plane by function and, increasingly, by name.</p>
+<p>The application profit pool is demonstrably shrinking. ICONIQ’s January 2026 State of AI snapshot places average AI-product gross margins near 52% against the ~80% benchmark of mature SaaS, with roughly $230,000 of every $1 million of AI-product revenue exiting as inference cost before any operating expense. That is a literal, mechanical transfer of margin to the model layer — as a <strong>cost of goods</strong>. But the inference line is a <em>toll, not a throne</em>: unavoidable, and commoditizing as per-token prices fall across generations. The high-margin tier of the control plane — semantic ontology, the authoritative write path, cross-application governance — favors whoever owns the enterprise’s data and decisions, and model providers, lacking both, are structurally furthest from it even as they collect the toll. Capital flows corroborate the vertical migration without resolving the intra-layer contest: of the roughly $297 billion of global venture funding deployed in Q1 2026, an estimated ~81% went to AI companies — overwhelmingly to model infrastructure and adjacent layers [third-party estimate; see Data Notes]. Capital has left the application layer; where it settles within the new stack is precisely the question this Part addresses — and the answer, we will argue, depends on scope.</p>
+</section>
+<section id="the-enterprise-scope-ii-five-camps-converging-on-the-throne" class="level2">
+<h2 class="anchored" data-anchor-id="the-enterprise-scope-ii-five-camps-converging-on-the-throne">4.3 The Enterprise Scope II: Five Camps Converging on the Throne</h2>
+<p>The enterprise-scope control plane is contested from five base camps, each carrying a different moat of origin. <strong>Model labs</strong> (OpenAI, Anthropic) descend from harnesses and connector ecosystems into orchestration; their weakness is thinness on data authority and the governance perimeter — the high-margin tier. <strong>Data platforms</strong> (Databricks, Snowflake) ascend from the governed data substrate; their pitch — the best agent lives where the governed data lives — is strongest on the read path and weakest on authoritative write. <strong>Hyperscaler full-stack players</strong> (Microsoft, Google) are the only contenders spanning silicon, data, model, and orchestration. <strong>Ontology/operational vendors</strong> (Palantir) natively bridge layers (A) and (C) — decision-centric ontology with governed write-back — a position no other pure-play holds. <strong>iPaaS/automation vendors</strong> (Workato, Power Platform, UiPath) own the integration graph and are more plausibly absorbed than crowned.</p>
+<p>June 2026 materially updated three of these camps and completed a cross-cutting dynamic. We take them in turn.</p>
+<section id="databricks-the-substrate-camp-completes-its-control-plane" class="level3">
+<h3 class="anchored" data-anchor-id="databricks-the-substrate-camp-completes-its-control-plane">Databricks: the substrate camp completes its control plane</h3>
+<p>Databricks’ Data + AI Summit (June 15–18) marked the most complete single-vendor buildout of the four-layer chain outside the hyperscalers. Mapped onto the value chain: on <strong>layer (A)/(C) context</strong>, Unity Catalog now centrally indexes external data models, vector stores, APIs, and dashboards for agent discovery; a Document Intelligence engine parses unstructured formats; a managed agent-memory service runs on Lakebase; and a new <strong>Genie Ontology</strong> grounds agents in enterprise semantics — a direct convergence on the architectural template Palantir established. On <strong>layer (C) governance</strong>, the <strong>Unity AI Gateway</strong> extends Databricks governance from assets to <em>runtime interactions</em> — a centralized policy-enforcement proxy across models, agents, MCP services, and tools — with rapidly provisioned Databricks sandboxes for downscoped code execution and, notably, stateful security policies declared in SQL: an agent that touches personally identifiable information is dynamically flagged as tainted and blocked from unverified external actions. This taint-tracking is the most concrete implementation to date of what we have called the context-aware authority tier. On <strong>layer (D)</strong>, Databricks is deliberately commoditizing the model: all frontier models are offered behind one interface — including, as of the Summit, xAI’s Grok via a partnership with SpaceX, and Moonshot’s Kimi — with intelligent routing that down-routes trivial tasks to cheap models and reserves frontier models for complex orchestration. The open-source <strong>Omnigent</strong> meta-harness (Apache 2.0) extends the commoditization one layer further, wrapping heterogeneous agent harnesses in a uniform API with cost ceilings and contextual policies.</p>
+<p>The strategic reading is unambiguous: commoditize (B) and (D), enclose (A) and (C) — a textbook execution of the toll-not-throne logic. Vendor-reported scale (100,000+ agents built on Agent Bricks; over one quadrillion tokens processed annually) is consistent with genuine traction but is unaudited [see Data Notes]. The structural caveat is equally important: Databricks’ control plane governs the perimeter of the lakehouse. Its taint policies do not reach data estates outside Unity’s gravity, it owns no consumer ecosystem, and it holds no universal-scope assets — which is precisely why it appears among the launch partners of ARD (4.4), hedging its dependence on whoever operates the gateway above it.</p>
+</section>
+<section id="palantir-the-constraint-restated" class="level3">
+<h3 class="anchored" data-anchor-id="palantir-the-constraint-restated">Palantir: the constraint restated</h3>
+<p>Palantir remains the only pure-play natively occupying the (A)+(C) intersection, and its Q1 2026 results (~85% revenue growth; ~133% U.S. commercial growth) validate the architecture [company-reported; see Data Notes]. But the June developments sharpen the correct statement of its constraint. The constraint is <strong>not</strong> primitive technology — in this framework, frontier models are the commoditizing (D) layer, and their absence is not a strategic deficit — and it is <strong>not</strong> industry experience, of which two decades in defense, government, and manufacturing are the refutation. The constraint is the <strong>scalability of distribution</strong>: an ontology-plus-FDE motion concentrated in high-complexity accounts, now numbering in the hundreds of customers against Databricks’ twenty-thousand-plus, whose go-to-market distinctiveness came under direct attack in the very same month (below). Palantir’s moat is the <em>combination</em> of ontology architecture and embedded deployment; June demonstrated that the deployment half of that combination can be imitated at hyperscaler scale, and that the architecture half is being reverse-engineered (Genie Ontology, Fabric IQ). The falsifiable question for 2026–27 is whether imitation of the parts reproduces the whole.</p>
+</section>
+<section id="microsoft-distribution-plus-an-embedded-context-layer-and-the-broadest-cross-scope-player" class="level3">
+<h3 class="anchored" data-anchor-id="microsoft-distribution-plus-an-embedded-context-layer-and-the-broadest-cross-scope-player">Microsoft: distribution plus an embedded context layer — and the broadest cross-scope player</h3>
+<p>Microsoft is the only contender present in <em>every</em> camp of the enterprise-scope contest — OS (Windows), productivity (Office), data (OneLake/Fabric), model access (Foundry), orchestration (Agent Mesh, Copilot Studio), iPaaS (Power Platform), and an operational application incumbent (Dynamics). Its Microsoft IQ context layer (Work IQ, Fabric IQ, Foundry IQ) grounds agents in enterprise knowledge graphs, and Fabric has absorbed SQL Server, Azure PostgreSQL, and Cosmos DB into a single data plane, reaching even on-premise SQL Server via Azure Arc. The architectural constraint is on the write path: Fabric Data Agents remain read-oriented today — they do not perform mutating operations — so Microsoft’s extension toward authoritative write, via “Operations Agents,” is still maturing. Its edge is the inverse of Palantir’s: unmatched installed-base distribution paired with the consolidation instinct of enterprise buyers (Futurum’s 1H 2026 survey of 830 IT decision-makers found the “mostly platform” procurement model rising to 65.9% from 60.0% six months earlier, while best-of-breed fell to 20.7%) [third-party survey; see Data Notes]. In scope terms, Microsoft’s structural question is whether distribution can buy the governance tier before ontology-native architectures enclose it — the read-to-write race, run against Palantir’s template and Databricks’ gateway.</p>
+<p>June and early July 2026 added three data points, each double-edged. First, ARD: Microsoft co-authored the discovery specification (its co-author R.V. Guha is the creator of Schema.org), and GitHub’s agent finder shipped on day one inside the developer workflow Microsoft owns — making Microsoft the only enterprise incumbent with a credible universal-scope registry position, and the reason Section 4.5 treats the gateway race as, at minimum, a two-contender contest. Second, the Frontier Company: the $2.5 billion, six-thousand-person FDE organization announced July 2 completes Microsoft’s entry into the deployment arms race, though with the capital-freshness and reorganization caveats flagged in the Data Notes. Third, the Databricks relationship deepened into a fully dual-track structure, partner and rival at once: Genie now surfaces inside Teams and M365 Copilot, and OneLake federation has reached general availability. Microsoft is thus distributing a control-plane rival through its own installed base — a bet that owning the distribution surface outranks owning every layer beneath it. Consistent with the vertical-contest analysis of Section 4.8, Microsoft has the broadest cross-scope position among the enterprise incumbents, spanning three of the four scopes — universal, enterprise, and departmental; its structural gap is the industry scope, where sector-specific semantic authority is the single asset distribution cannot quickly buy.</p>
+</section>
+<section id="the-fde-arms-race-five-players-across-three-camps" class="level3">
+<h3 class="anchored" data-anchor-id="the-fde-arms-race-five-players-across-three-camps">The FDE arms race: five players across three camps</h3>
+<p>Forward Deployed Engineering completed its transition from Palantir idiosyncrasy to industry-standard go-to-market (GTM) practice in roughly fourteen months, and June closed the loop. In May 2026, OpenAI stood up <strong>The Deployment Company</strong>, a standalone entity majority-owned by OpenAI with more than $4 billion from a private-equity consortium [backer attribution varies across reports; see Data Notes], and Anthropic formed a ~$1.5 billion joint venture with Goldman Sachs, Blackstone, and Hellman &amp; Friedman targeting mid-sized companies, beginning with the sponsors’ own portfolios. On June 30, <strong>AWS</strong> committed $1 billion of internal resources to a dedicated FDE organization seeded with thousands of engineers deployed in pods of five to six. On July 2, <strong>Microsoft</strong> announced the <strong>Frontier Company</strong>: $2.5 billion, six thousand people, led by Rodrigo Kede Lima. Google Cloud has opened FDE recruiting. The demand-side driver is well documented: McKinsey’s late-2025 global survey found roughly nine in ten organizations using AI in at least one business function, while only about 6% reported significant enterprise-wide value; MIT’s Project NANDA, studying pilot outcomes over the same period, put the share of enterprise GenAI pilots delivering no measurable P&amp;L impact at 95%. The deployment gap, not model capability, remains the binding constraint — now underscored by nearly $9 billion of announced headline commitments against it, an aggregate whose non-comparability the closing caveats of this section detail.</p>
+<p>But “FDE” is one label covering <strong>three distinct business models</strong>, and the distinction determines what each player is actually buying. For Palantir, FDE is <em>ontology installation</em>: the engagement ends with a durable software asset occupying layers (A)+(C). For the model labs, FDE is a <em>distribution channel</em> financed off balance sheet with external private-equity capital — a services wrapper around model consumption. For the hyperscalers, FDE is <em>consumption customer-acquisition cost</em>: whatever the engagement builds, it is built on the sponsor’s cloud, converting services labor into an infrastructure annuity. AWS made the divergence from the Palantir template explicit by design — engagements measured in weeks, with customer self-sufficiency as the declared exit condition — the opposite of sticky embedding, implying a high-volume/low-depth economics whose superiority over Palantir’s low-volume/high-depth model is unresolved.</p>
+<p>Two skeptical readings must accompany the headline numbers. First, <strong>when five players across three camps run FDE, FDE stops being a moat and becomes a cost of doing business</strong> — a labor-intensive arms race with margin-compression, not margin-protection, characteristics. The test that separates moat from cost is whether an engagement leaves behind a reusable semantic asset or a bespoke agent. Second, the commitments are <strong>structurally non-comparable</strong>: OpenAI’s is external capital into a separate entity; AWS’s $1 billion is internal resources, not a joint venture or conventional investment; and Microsoft’s Frontier Company is not a separate legal entity, its six thousand staff are drawn primarily from existing engineering and consulting organizations (Microsoft already operates Industry Solutions Delivery and FastTrack), and the company declined to say whether the $2.5 billion is fresh capital or repurposed budget. Aggregating these figures as equivalent “FDE investment” would overstate the capital formation involved.</p>
+<p>Within the scope framework, the FDE surge is the clearest available evidence of what <strong>Scenario 1 competition</strong> (4.7) looks like in practice: the enterprise-scope control plane must be instantiated one company at a time, by hand, and the arms race prices that instantiation cost. It also feeds the industry scope: the sector templates that FDE teams accumulate across repeated deployments are the raw material of industry ontologies (4.6).</p>
+
+
+</section>
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@report{wisdomhill_ie_r05,
+  author = {{Wisdom Hill Research}},
+  publisher = {Wisdom Hill},
+  title = {5. {The} {Agentic} {Mesh}},
+  number = {5},
+  date = {2026-08-24},
+  url = {https://wisdomhill.github.io/intelligence-economy/reports/r05/},
+  langid = {en}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-wisdom_hill_research2026" class="csl-entry quarto-appendix-citeas" role="listitem">
+Wisdom Hill Research. 2026. <span>“5. The Agentic Mesh.”</span> In
+<em>The Intelligence Economy</em>, No. 5. Wisdom Hill. <a href="https://wisdomhill.github.io/intelligence-economy/reports/r05/">https://wisdomhill.github.io/intelligence-economy/reports/r05/</a>.
+</div></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/wisdomhill\.github\.io\/intelligence-economy\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../reports/r05/03-agentic-mesh.html" class="pagination-link" aria-label="Part III. The Agentic Mesh">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Part III. The Agentic Mesh</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../reports/r05/05-scope-contest.html" class="pagination-link" aria-label="Part IV. The Scope Contest">
+        <span class="nav-page-text">Part IV. The Scope Contest</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 Wisdom Hill</p>
+</div>   
+    <div class="nav-footer-center">
+<p>Licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>. Quotation and summary permitted.</p>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/wisdomhill/intelligence-economy/blob/main/reports/r05/04-control-plane-stack.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p><a href="https://www.wisdomhill.net">Wisdom Hill Research</a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

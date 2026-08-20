@@ -24,7 +24,6 @@ intelligence-economy/
   _quarto.yml
   index.qmd
   prologue.qmd
-  about.qmd
   errata.qmd
   styles.scss
   theme-light.scss
@@ -36,6 +35,13 @@ intelligence-economy/
       _01-phase-transition.qmd         <- body text
       ... (eight wrapper / body pairs)
       r01-the-agentic-inflection.qmd   <- PDF source
+    r02/
+      ... (the same shape, eleven pairs)
+  manuscripts/
+    r01-the-agentic-inflection.md      <- the whole report, one file
+  _partials/                           <- Typst template
+  _filters/                            <- pandoc filter (PDF only)
+  _fonts/                              <- Inter, Source Serif 4
 ```
 
 Files beginning with an underscore hold the body text. They are pulled in by
@@ -70,3 +76,46 @@ A4 paper size, because none of `_quarto.yml` is in scope.
 Edit the underscore files. The wrappers are four lines each and only exist so
 the same body text can be served as separate web pages and assembled into a
 single PDF.
+
+## 6. Publishing to GitHub Pages
+
+`.github/workflows/publish.yml` renders and deploys on every push to `main`.
+It runs `quarto publish gh-pages`, which pushes the rendered site to the
+`gh-pages` branch; GitHub Pages then serves that branch.
+
+**The workflow cannot create the branch.** On a repository that has never
+published, the run fails with:
+
+```
+ERROR: Unable to publish to GitHub Pages (the remote origin does not have a
+branch named "gh-pages"). Use first `quarto publish gh-pages` locally ...
+```
+
+The advice in that message assumes an interactive terminal; `quarto publish
+gh-pages --no-prompt` refuses to create the branch and repeats the same error.
+Create it directly instead — this touches no files in the working tree:
+
+```
+blob=$(printf '' | git hash-object -w --stdin)
+tree=$(printf '100644 blob %s	.nojekyll
+' "$blob" | git mktree)
+commit=$(git commit-tree "$tree" -m "Initialise gh-pages")
+git push origin "$commit":refs/heads/gh-pages
+```
+
+Then re-run the workflow (`gh workflow run publish.yml --ref main`). It is a
+one-time step; every later push deploys on its own.
+
+`.nojekyll` matters: without it GitHub Pages runs Jekyll, which ignores
+directories beginning with an underscore and would drop `site_libs/`. Quarto
+writes the file on each publish, and the bootstrap commit above seeds it.
+
+**Settings -> Pages** should read *Source: Deploy from a branch*, *Branch:
+`gh-pages` / (root)*. GitHub selects this by itself when the branch appears.
+
+### Why CI output is the reference
+
+Render the PDFs on the runner rather than trusting a local build. A machine
+with Inter installed shadows the committed `_fonts/` copies, and
+`tools/verify_pdf.py` then fails four checks (see `HANDOFF.md`). The runner has
+no Inter, so the deployed PDFs are the ones that match `TYPOGRAPHY.md`.

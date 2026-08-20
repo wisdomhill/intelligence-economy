@@ -1,0 +1,42 @@
+---
+title: "1. The Agentic Inflection"
+subtitle: "How AI crossed from conversation to labor"
+format:
+  typst: default
+---
+
+# Executive Summary
+
+{{< include _00-executive-summary.qmd >}}
+
+# Part I. The Phase Transition
+
+{{< include _01-phase-transition.qmd >}}
+
+# Part II. Anatomy of an Agent
+
+{{< include _02-anatomy-of-an-agent.qmd >}}
+
+# Part III. The Competitive Landscape
+
+{{< include _03-competitive-landscape.qmd >}}
+
+# Part IV. The Three-Way Agentic War
+
+{{< include _04-agentic-war.qmd >}}
+
+# Part V. Integrated Investment Framework
+
+{{< include _05-investment-framework.qmd >}}
+
+# Coda
+
+{{< include _06-coda.qmd >}}
+
+# Appendices
+
+{{< include _07-appendices.qmd >}}
+
+# References
+
+{{< include _08-references.qmd >}}

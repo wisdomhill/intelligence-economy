@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "4. A Theory of the Bottleneck"
+---
+
+{{< include _04-theory-of-the-bottleneck.qmd >}}

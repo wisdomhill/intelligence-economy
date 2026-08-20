@@ -1,0 +1,19 @@
+---
+format:
+  html: default
+title: "Errata"
+description: "Substantive corrections issued after publication."
+toc: false
+---
+
+Typographical and formatting fixes are applied without notice. Every change to
+a figure, a source, or a load-bearing claim is listed below.
+
+| Date | Report | Correction |
+|------|--------|------------|
+| — | — | No substantive corrections have been issued. |
+
+: {tbl-colwidths="[14,20,66]"}
+
+To report an error, please
+[open an issue](https://github.com/wisdomhill/intelligence-economy/issues).

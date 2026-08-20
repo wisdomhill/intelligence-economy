@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "6. The Great Misallocation"
+---
+
+{{< include _06-great-misallocation.qmd >}}

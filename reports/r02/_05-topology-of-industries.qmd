@@ -1,0 +1,53 @@
+The decisive variable is not whether an industry contains ideas and execution—all do—but the **causal order** in which they occur.
+
+## 5.1 Idea-first industries — where delegation severs discovery
+
+In idea-first industries—consumer software products, music, books, film—the idea must exist before execution acquires meaning: idea → execution → value. AI cheapens the second arrow while the bottleneck sits at the first node. There is a further, subtler cost. Because ideas in creative work are often discovered *in* the act of building—the dead ends and "why won't this work?" moments that yield insight—delegating execution to an agent can sever the discovery channel itself. Driving the cost of execution to zero can drive the *input to idea-generation* to zero as well. This is the paradox at the heart of idea-first work: the friction AI removes was load-bearing.
+
+## 5.2 Execution-first industries — where labor is the input to insight
+
+In execution-first industries—most clearly data science and analytics—the order inverts: labor (ETL, data cleaning, pipeline construction, repeated analysis) → insight → value. Here repetitive labor is the *input* to the idea, not its prerequisite. One must run many analyses to surface one insight; the idea is the *output* of the labor, not its precondition. In this regime AI amplifies exactly the input whose severing damaged the idea-first case—and the same tool that destroyed value in one topology creates it in the other.
+
+## 5.3 Software is not one industry: the internal topology
+
+The topology does not stop at the software industry's border; it runs through the middle of it, and recognizing this resolves a confusion that runs through most commentary on coding agents.
+
+**Consumer content software—games, media, entertainment apps—is idea-first.** Its value is hit-driven; its demand pool is attention; its frontier is aesthetic and conceptual novelty. Applying agentic execution here runs directly into the zero-sum wall of Section 4.2, and Section 3.3 showed the result: record supply, unmoved charts.
+
+**Enterprise software and commerce are efficiency-weighted.** Demand for enterprise software derives from business processes, not from novelty; the purchase criterion is measurable—cost reduced, revenue operations improved, errors eliminated—and the outcomes are contractible. Commerce is more extreme still: catalog management, pricing, fulfillment coordination, seller support, and customer service are execution all the way down, and their value is the distribution's *center* done reliably at scale, not its tail. In these segments, "hundreds of similar implementations, produced efficiently" is not a bug but the entire point.
+
+The implication inverts the prevailing intuition about where agentic AI matters inside software. Coding agents applied to *producing more consumer software* multiply a catalog whose frontier they cannot move. The same capability applied to *operating* enterprise processes and commerce attacks a genuine execution bottleneck—the configuration this report's synthesis (Section 5.5) identifies as the necessary condition for financial ROI. The potential of agentic AI within the software economy is therefore greatest precisely in its least glamorous quarters: enterprise software and commerce, where efficiency is the product. That the technology's actual deployment concentrated at the opposite pole is the subject of Section 6.
+
+## 5.4 Firm-level case study: Uber and the timing of Claude Code
+
+Uber is the heaviest disclosed spender on coding agents, and the statistics of its deployment are unambiguous. Per-engineer AI API costs ran \$500–\$2,000 per month; 95% of engineers used AI tools monthly; roughly 70% of committed code originated from AI; AI-related costs rose roughly sixfold since 2024, and the company exhausted its entire 2026 AI budget in four months, driven by Claude Code. R&D expense rose 9% to \$3.4 billion in 2025.
+
+The revenue series, read against this deployment, shows no identifiable break. Across Q1 2024–Q1 2026, growth oscillated within a +14% to +20% year-over-year band. Claude Code launched publicly in May 2025, rolled out firm-wide in December 2025, and reached 84% of engineers only in March 2026; the one broadly deployed quarter, Q1 2026—itself a partial post-period, with adoption still ramping from 32% to 84% within the quarter—printed +14%, inside the pre-existing range.
+
+| **Quarter** | **Revenue YoY** | **Claude Code firm-wide?** |
+| --- | --- | --- |
+| Q1 2024 | +15% | No |
+| Q2 2024 | +16% | No |
+| Q3 2024 | +20% | No |
+| Q4 2024 | +20% | No |
+| Q1 2025 | +14% | No |
+| Q2 2025 | +18% | No (public launch May 2025) |
+| Q3 2025 | +20% | No |
+| Q4 2025 | +20% | Rollout begins (firm-wide, Dec 2025) |
+| Q1 2026 | +14% | Yes—ramping (32%→84% of engineers, Feb–Mar) |
+
+Management reports the same absence. Uber's president and COO stated that the link between rising Claude Code use and consumer-facing output "is not there yet," and that it is "very hard to draw a line" from usage statistics to more useful features. The cost side offers no more traction: quarterly operating income is volatile (coefficient of variation near 53%), and the bottom line is dominated by one-off items such as the Q3 2025 \$4.9B tax-valuation release recognized through the tax provision. No evidence of a productivity effect on Uber's financial results is identifiable in the post-rollout data available; Appendix B.2 names the quarters—Q2 2026 onward—that would force reassessment.
+
+## 5.5 Synthesis: where an ROI footprint should appear
+
+Uber locates the negative case: heavy coding-agent deployment into an idea-first product, with no financial break to show for it. The positive prediction is its structural mirror—a financial ROI footprint should appear only where two conditions hold jointly: (a) value lives in execution (the distribution's center is the right answer), *and* (b) that execution is the binding constraint. In Uber's engineering the second condition fails—execution has value, but it is not the binding constraint; both conditions hold in the execution-bound work of customer operations, back-office processing, and commerce (Section 6).
+
+Reported experience in routine customer service is consistent with this prediction, though no public case yet supplies clean identification. Klarna is the most-cited illustration: the company attributes a step-down in customer-service cost per transaction to AI automation, and its filings tie a falling headcount to "leveraging AI." But the case is a cautionary one as much as a confirming one—the figures are management-attributed rather than audited as a causal effect and cannot be separated from a concurrent industry-wide cost-discipline cycle, and after an aggressive automation push the firm publicly rebalanced back toward human agents for quality-sensitive cases. It supports the narrow point that routine support work is automatable at lower cost; it does not establish that full automation converts cleanly into durable financial ROI. The evidentiary weight of Section 5 therefore rests on Uber's null, not on any single positive case.
+
+| **Case** | **(a) Value in execution?** | **(b) Execution is the bottleneck?** | **Pipeline node that binds** | **Financial ROI footprint?** |
+| --- | --- | --- | --- | --- |
+| Uber — coding agents | Yes | No (bottleneck is product decisions) | Idea | None identifiable ✗ |
+| Apps / books / music / games — creation | No (value in idea) | No | Idea | None identifiable ✗ |
+| Execution-bound ops (CS, back-office, commerce) | Yes | Yes | Execution (relieved) | Predicted, not yet cleanly identified |
+
+------------------------------------------------------------------------

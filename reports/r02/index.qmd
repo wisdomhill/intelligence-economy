@@ -1,0 +1,47 @@
+---
+format:
+  html: default
+title-block-style: default
+title: "2. The Idea Bottleneck"
+subtitle: "Why agentic AI's productivity dividend hides in data, not code"
+
+description: >-
+  Agentic AI made execution abundant, but the productivity dividend is almost
+  nowhere in the financial statements. Why the constraint moved upstream to the
+  idea, why deployment pooled where it helps least, and where the dividend is
+  structurally available.
+
+order: 2
+keywords:
+  - productivity paradox
+  - idea bottleneck
+  - execution-first industries
+  - agentic misallocation
+  - data intelligence
+  - causal inference
+
+---
+
+::: {.callout-note appearance="simple" icon=false}
+**Read the full report as a PDF:** [The Idea Bottleneck (PDF)](r02-the-idea-bottleneck.pdf)
+:::
+
+## Executive Summary
+
+{{< include _00-executive-summary.qmd >}}
+
+## Contents
+
+|   | Section                                                             | The question it answers                                          |
+|---|---------------------------------------------------------------------|------------------------------------------------------------------|
+| 1 | [The Productivity Paradox](01-productivity-paradox.qmd)             | Why is explosive adoption invisible in the financial statements? |
+| 2 | [The Missing Signal](02-missing-signal.qmd)                         | Where are the returns not, and how confidently can we say so?    |
+| 3 | [The Creative Industries Under AI](03-creative-industries.qmd)      | Output exploded — did revenue, or consumer welfare, follow?      |
+| 4 | [A Theory of the Bottleneck](04-theory-of-the-bottleneck.qmd)       | Why does cheap execution multiply copies without moving value?   |
+| 5 | [The Topology of Industries](05-topology-of-industries.qmd)         | Which industries does the idea bind, and which does labor bind?  |
+| 6 | [The Great Misallocation](06-great-misallocation.qmd)               | Why did the agents land where they help least?                   |
+| 7 | [The Data Analytics Exception](07-data-analytics-exception.qmd)     | Where is the one domain that inverts the logic, and why?         |
+| 8 | [Data Intelligence as Economic Necessity](08-data-intelligence.qmd) | What capability becomes binding once execution is commoditized?  |
+| 9 | [The Bottleneck Always Moves to Judgment](09-conclusion.qmd)        | What does the argument leave to Reports 3, 4 and 5?              |
+
+: {tbl-colwidths="[6,34,60]"}

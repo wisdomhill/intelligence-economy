@@ -1,0 +1,25 @@
+## 4.1 Value as a function of idea and execution
+
+Let the value of a creative work be a function of two inputs: the idea and its execution. The observations of Sections 2 and 3 are explained at once if these inputs are **complements in the strong (Leontief) sense**—where the binding input determines the outcome—rather than additive substitutes. Under a Leontief relation, holding the idea fixed while driving the cost of execution toward zero does not raise value; it merely multiplies the number of copies of the same idea.
+
+## 4.2 Why the frontier, not the catalog, determines value — and why the game is zero-sum
+
+Consumer utility derives not from the *count* of available works but from the *quality of the best available option*—the frontier of the distribution. If the best work in a catalog scores 100, adding 900,000 works scoring 50 leaves the frontier, and thus utility, essentially unchanged. "No mainstream hit among AI works" is precisely the empirical statement that the frontier did not move, and it is the proximate reason revenue did not follow supply.
+
+The demand side completes the mechanism. In creative markets, industry revenue is set by the size of the demand pool—hours of attention, entertainment wallets, disposable time—which is approximately fixed in the short run. Producing hundreds of similar products more efficiently therefore does not expand the industry; it reallocates shares of a fixed pool. In the language of industrial organization, an execution-cost collapse without frontier movement is **business stealing, not market expansion**: privately rational for each entrant, collectively zero-sum for the industry. Consumers may still gain from the flood—in books, measurably so—but that gain is precisely what the producers do not capture; it is the surplus escaping the industry, not accruing to it.
+
+The contrapositive is the positive law of these industries, and it deserves equal emphasis: **the only thing that grows a creative industry's revenue is a frontier-moving original—a product whose quality or novelty creates demand that did not previously exist.** The historical growth episodes of every market examined in Section 3 conform: recorded music's revenue expansions came from format and business-model frontiers (the subscription-streaming category itself), publishing's growth pockets from breakout genres that recruited new readers, gaming's step-changes from new categories that enlarged the playing population. Catalog volume has never done this; frontier movement always has. An efficiency technology that multiplies the catalog while leaving the frontier fixed is therefore, for industry revenue purposes, a null operation—executed at real cost.
+
+## 4.3 Why AI compresses execution but cannot manufacture the tail
+
+A fresh idea is, by definition, an outlier—far from the center of the training distribution. A model trained to predict the most probable next token exhibits a structural regression toward the mean, which is why its output tends toward the competent average rather than the surprising tail. AI does not fail to execute; it fails to *originate*. This is not a temporary limitation of scale so much as a property of distribution-centered generation.
+
+## 4.4 The talent-pool problem
+
+A natural rejoinder is that AI amplifies the creative output of skilled practitioners. This is true but insufficient, and on closer inspection it cuts the other way. If AI multiplies a skilled creator's output by a factor k while the size of the skilled set S is fixed, total creative output rises only linearly, as k · |S|. Worse, AI may *erode the pipeline* that produces new skilled practitioners. Skill is formed through friction—the trial and error of doing the work oneself. If an agent absorbs that friction, the inflow of new experts falls, |S| shrinks over time, and AI's creative contribution contracts rather than compounds. The benefit accrues to a small, and possibly diminishing, set of incumbent talents.
+
+## 4.5 The theory in the pipeline
+
+Sections 2–4 can now be restated in the framework of Section 1.3. The agentic wave made Execution abundant; in idea-first markets the binding stage is Idea; therefore min(Idea, Execution, Verification, Adoption) did not move, and neither did value. This locates the present report precisely—and delimits it. Even where the idea *does* exist, two further gates stand between execution and realized value: the artifact must be verified (a gate that software alone has learned to pass by machine—Report 3), and it must be adopted into organizational workflows (a gate that today's enterprise-software structure holds shut—Report 4). The idea bottleneck is the first constraint, not the only one; this report explains why abundance failed upstream, and hands the downstream gates to its successors.
+
+------------------------------------------------------------------------

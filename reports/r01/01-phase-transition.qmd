@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "Part I. The Phase Transition"
+---
+
+{{< include _01-phase-transition.qmd >}}

@@ -1,0 +1,27 @@
+/*-- scss:defaults --*/
+
+$ink-1:  #12263a;   // level 1 — deepest
+$ink-2:  #1b4965;   // level 2
+$ink-3:  #38678c;   // level 3
+$rule:   #dbe2ea;
+$wash:   #f4f7fa;
+
+$body-color:  #1f2933;
+$link-color:  #0b5394;
+$primary:     $ink-2;
+
+/*-- scss:rules --*/
+
+h1, .h1 { color: $ink-1; border-bottom: 2px solid $rule; }
+h2, .h2 { color: $ink-2; }
+h3, .h3 { color: $ink-3; }
+h4, .h4 { color: $body-color; }
+
+blockquote { border-left-color: $ink-2; }
+
+.table > thead {
+  background: $wash;
+  border-bottom: 2px solid $ink-2;
+}
+.table > thead th { color: $ink-1; }
+.table > tbody > tr:nth-of-type(odd) > * { background: rgba(0, 0, 0, 0.015); }

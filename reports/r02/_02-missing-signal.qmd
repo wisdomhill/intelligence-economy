@@ -1,0 +1,42 @@
+## 2.1 Software industry revenue: deceleration, not acceleration
+
+If coding agents were materially lifting the software industry's output, the simplest place to see it would be revenue. Instead, the data show the opposite trajectory. Median revenue-growth rates for public SaaS companies, after a temporary re-acceleration in 2021, resumed a decade-long deceleration. Private B2B SaaS benchmarks are starker still: between Lighter Capital's successive benchmark editions, median annual revenue growth fell from 47% to 28%—a 40% reduction. The 2025 edition reflects connected-company data through 2024, so the deceleration *predates* the 2025 agent surge—which strengthens rather than weakens the point: cheap code arrived into a market already decelerating for reasons of its own.
+
+The cause of this deceleration is demand-side, not supply-side. The dominant driver identified across benchmark studies is a sharp slowdown in new-customer acquisition—a function of macro rates and buyer behavior, not of how cheaply software can be built. Cheaper production of code does not, by itself, create the demand that produces revenue.
+
+## 2.2 The app economy: supply decoupled from demand
+
+Mobile app stores separate *supply* (titles published) from *demand* (consumer spending) with unusual clarity. If an execution-cost collapse expanded the market, the ledger should show it. In 2025, combined gross consumer spend across the App Store and Google Play reached \$167 billion, up 10.6% year over year. On its face, a healthy figure. But total downloads rose only 0.8%, and the top 1% of apps captured 92.2% of all in-app-purchase revenue. Supply and engagement plateaued while a sliver of incumbents absorbed the spend. This is not the signature of an execution-cost collapse expanding the market; it is the signature of a market whose value lives in a frontier that did not move.
+
+The experiment is, in substantial part, a *games* experiment: games account for roughly half of global consumer app spend, and the concentration at the top of the charts is most extreme there. Section 3.3 examines the games market directly, because it is the largest creative-software category and the one where AI-assisted production has penetrated fastest.
+
+## 2.3 A statistical interlude: testing for a structural break
+
+Was the 2025 app-spend figure a genuine break from trend, or noise? We tested this directly. Taking annual year-over-year growth rates from 2020 through 2024 as the prior distribution (mean 12.5%, standard deviation 12.7%, n = 5) and asking whether 2025's 10.6% growth represents a significant departure, a prediction-interval test returns t = −0.14, p = 0.90. The 2025 value sits almost exactly on the prior mean—slightly below it. A log-linear trend extrapolation reaches the same verdict: 2025 actuals fall comfortably inside the 95% prediction interval. The methodological point matters as much as the result: with a short, high-variance annual series, the burden of proof for "acceleration" is high, and 2025 does not meet it.
+
+| **Test design** | **Trend (null)** | **2025 actual** | **p-value** | **Verdict (95%)** |
+| --- | --- | --- | --- | --- |
+| Prior YoY rates (2020–24) vs 2025, prediction interval | 12.5% mean | 10.6% | 0.90 | Not significant |
+| 2020–24 log-linear trend → 2025 point forecast | \$156.9B | \$167B | 0.49 | Inside interval |
+
+: {tbl-colwidths="[40,20,10,10,20]"}
+
+## 2.4 Reading the null correctly
+
+A statistically insignificant result is not proof of no effect. The correct reading is *underpowered identification*: at this sample size and aggregation level, any coding-agent effect is indistinguishable from the far larger demand-side cycle in which it is embedded. The honest statement is not "agentic AI raised no revenue" but "any effect is too small, too lagged, or too confounded to be identified in these data." That distinction governs the rest of the report.
+
+## 2.5 Weighing the rival explanations
+
+Four rival readings of the missing signal deserve explicit treatment, because each is partially right and none is sufficient.
+
+**The J-curve (measurement-lag) reading.** General-purpose technologies have historically delivered their statistical dividend with long delay—decades, in the case of electrification—because output gains require complementary reorganization that first appears as cost, not productivity. This is surely part of the story, and it predicts intangible investment surges of the kind now visible. What it does not predict is the *cross-sectional pattern* documented below: supply explosions with per-unit value collapse in creative markets (Section 3), gains that land with consumers rather than producers in books (Section 3.2), and a firm-level case (Uber, Section 5.4) where broad tool deployment left no discernible break in the revenue-growth trajectory. Lag explains absence of gains; it does not explain the presence of these specific distortions.
+
+**The diffusion (too-early) reading.** Adoption is indeed early in most of the economy—Section 6 shows exactly that, and builds it into the thesis. But the reading fails precisely where adoption is *not* early: among software developers, AI-tool penetration approaches saturation—roughly four in five use or plan to use the tools, and AI authors the majority of committed code at disclosing firms, while autonomous-agent use (about three in ten overall) is concentrated precisely at the heavy-spending firms Section 5 examines—and the null result persists *within* the most-diffused domain on earth. Whatever is limiting returns in software, it is not insufficient diffusion.
+
+**The competed-away-surplus reading.** Efficiency gains under competition flow to consumers as lower prices and better products, vanishing from producer revenue while raising unmeasured welfare. This mechanism is real, and in books it demonstrably operates: consumer surplus rose about 7% even as producer revenue stagnated (Section 3.2). But conceding the mechanism is not conceding the explanation, for two reasons. First, it does not generalize: in music the transfer ran to *fraud* rather than to listeners (Section 3.1), and in apps spend concentrated in incumbents rather than dissipating into consumer surplus. Second, and more decisively, it does not reach the enterprise evidence at all—where AI is most heavily deployed, neither producer returns nor any identified consumer windfall appears (Section 2.4). A hypothesis that explains one creative market while leaving the central null untouched is a component of the answer, not the answer.
+
+**The capital-cycle reading.** Report 1's Coda flagged the bear interpretation: enterprises are buying expenditure, not outcomes, and the revenue curves of the AI sellers are the signature of a capital cycle. This report's evidentiary standard (Section 1.2) takes the reading seriously—clean financial-statement identification is indeed concentrated among firms that *sell* AI. But the reading is not the whole story: the mechanism-level case for analytics (Section 7) shows a channel through which AI raises measured output that a pure capital cycle would not predict, and the topology predicts that execution-bound processes—not the AI sellers—are where operating leverage should eventually surface. A pure bubble story predicts effects nowhere real; the structural account predicts them in specific, identifiable places.
+
+The idea-bottleneck-plus-misallocation thesis subsumes what is true in each rival and adds the one thing they lack: a prediction of *where* returns appear and where they do not. The remainder of the report tests that prediction.
+
+------------------------------------------------------------------------

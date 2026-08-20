@@ -1,0 +1,25 @@
+The development of generative AI since November 2022 is best understood not as a sequence of smarter models but as a sequence of *longer-lived* ones. Each stage is distinguished by the time horizon of work the system can complete autonomously, and by where the human sits in the loop.
+
+## 1.1 Stage One — Chatbots: The Courier Problem (2022–2023)
+
+The original ChatGPT paradigm was single-turn question answering. A human composed a prompt, the model returned text, and the human carried the result back into their actual working environment — pasting code into an editor, copying prose into a document. The model was a pure probabilistic text generator with a task horizon of seconds to minutes, and the human served as a *courier* between the AI and the real work, paying a friction tax on every interaction.
+
+The economic consequence was structural: because the unit of value was a single answer, pricing anchored to software subscriptions (\$20/month), and the product captured only a sliver of the productivity it enabled.
+
+## 1.2 Stage Two — Copilots and RAG: Assistance Without Agency (2023–2024)
+
+The second stage connected models to external knowledge (retrieval-augmented generation) and embedded them inside human workflows — most successfully GitHub Copilot inside the IDE (Integrated Development Environment, the editor a programmer works in). The model gained access to context (the codebase, the document corpus) but not initiative: it proposed, the human accepted. The paradigm remained an extension of autocomplete. Value capture improved but remained bounded by the human review bottleneck — every output still passed through a person, so throughput scaled with human attention, not compute.
+
+## 1.3 Stage Three — Reasoning Models: The Prerequisite for Autonomy (2024–2025)
+
+The third stage — inference-time reasoning, exemplified by OpenAI's o-series and Anthropic's extended thinking — mattered less for benchmark scores than for what it made possible. Reinforcement learning began rewarding models for *completing tasks* rather than imitating reference text. Models learned to plan multi-step work, detect their own errors mid-stream, and self-correct. These are precisely the capabilities an autonomous agent requires; reasoning was the load-bearing prerequisite for everything that followed.
+
+## 1.4 Stage Four — Agentic AI: The Value Unit Shifts (2025–present)
+
+In the fourth stage, the model operates a loop: plan, call tools, read and write files, execute code, observe results, retry on failure — for hours, without supervision. The unit of value becomes the *completed task*, and this changes the business model categorically. An answer is priced against a software subscription; a completed task is priced against the wage of the worker who would otherwise have done it. The gap between those two reference prices — roughly two orders of magnitude — is the economic engine of the agentic explosion.
+
+## 1.5 The Master Variable: Task Horizon
+
+The transition is quantifiable. Research by METR (Model Evaluation & Threat Research, a nonprofit AI evaluation lab) on autonomous task completion shows the length of tasks AI agents can reliably finish doubling every four to seven months, with the doubling period accelerating toward roughly four months through 2024–2025. The implication is non-linear: automating a 30-second task is a convenience; automating a four-hour task is labor substitution. As the horizon extends, the total addressable market does not grow with capability — it grows with the *integral* of work that fits inside the horizon, which is why revenue curves in this industry have repeatedly outrun even their owners' forecasts.
+
+------------------------------------------------------------------------

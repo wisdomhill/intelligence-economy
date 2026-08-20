@@ -1,0 +1,48 @@
+## Appendix A. Data Sources, Measurement Caveats, and Cross-Verification Notes
+
+Readers should weigh the following limitations, which apply throughout:
+
+1.  **Run-rate vs. GAAP.** Most cited revenue figures (Anthropic \$14B→\$19B→\$30B→\$47B across Feb–May 2026; OpenAI \$25B) are annualized run-rate snapshots, not audited full-year revenue, and differ across outlets by reporting date. Where aggregators conflicted, this report preferred figures attributed to primary disclosures (company announcements, Reuters).
+2.  **Market-share methodology divergence.** For roughly the same period, ChatGPT's share reads \~68% on Similarweb web-traffic methodology, \~55% on First Page Sage web-traffic, and 46.4% on Sensor Tower's True Audience basis (unique users across mobile app, mobile web, and desktop web). Claude reads 8.2% on the first and 10.3% on the last. These are not conflicting facts but different denominators; shares should always be read with their measurement basis attached, and never compared across providers.
+3.  **Secondary-source reliability.** Several Chinese-model benchmark claims circulate through promotional secondary sources; individual claims (e.g., a specific model beating a Western flagship on a single benchmark) should be verified against primary leaderboards (SWE-bench, LMArena, Artificial Analysis) before institutional use.
+4.  **Event attribution.** The February 3, 2026 equity sell-off (\~\$285B) is Bloomberg's estimate of same-day declines in market value across software, financial-services, and asset-management equities; the sector attribution is Bloomberg's, and secondary outlets variously assign the same aggregate to a two- or four-day window. Attribution to a single product announcement is directionally supported by contemporaneous coverage but inherently approximate.
+5.  **Benchmark harness dependence.** Coding-benchmark scores are not comparable across vendors unless the scaffolding is held constant. Vendor-run SWE-bench Pro scores routinely exceed standardized-harness scores for the same model by 10–30 points, and Terminal-Bench rankings invert depending on whose CLI is used. All benchmark comparisons in Section 4.1 are drawn from vendor system cards; cross-vendor gaps should accordingly be read as directional evidence carrying wide uncertainty on their magnitudes — the qualified reading Section 4.1 itself applies in flagging harness dependence — rather than as precise rank orderings.
+6.  **Volatility in model availability.** The frontier model roster changed five times between May 28 and July 9, 2026 (Opus 4.8; Fable 5/Mythos 5 GA; their export-control suspension; Sonnet 5 and the Fable 5 restoration; the GPT-5.6 family). Any capability or market-position ranking in this report is a snapshot at July 22, 2026 — the date of the most recent disclosure incorporated — and has a short half-life. The benchmarks themselves proved unstable over the same window: the coding evaluation on which the largest vendor gap rests was audited and withdrawn from recommendation by one of the labs it ranks.
+7.  **Survey-series comparability.** The Menlo Ventures figures cited in Section 3 come from two editions with different sample sizes (150+ technical leaders mid-2025; \~500 enterprise decision-makers year-end 2025) and, more importantly, different instruments: the mid-year edition measures production *usage* share, the year-end edition estimates *spend* share. Neither is measured revenue, and the text keeps the two instruments separate rather than chaining them into one series. The Ramp figures in Section 3.3 are a third instrument again — transaction data on corporate cards, covering Ramp's customer base rather than the full market. All readings predate this report by two to twelve months.
+
+## Appendix B. Glossary
+
+-   **Agent / Agentic AI:** an AI system that autonomously plans, calls tools, executes, observes results, and retries across multi-step tasks without per-step human review.
+-   **Harness:** the deterministic software layer (loop, tools, context management, permissions, skills, orchestration) wrapped around a probabilistic model to make agents reliable.
+-   **Task horizon:** the length of work an agent can complete autonomously at a given reliability threshold; the master capability variable of the agent era.
+-   **Context lock-in:** switching cost created by an agent's accumulated, non-transferable knowledge of a customer's codebase, procedures, history, and preferences.
+-   **Cascade routing:** production architecture that routes workloads across multiple models by difficulty, sending bulk traffic to cheap open-weight models and reserving frontier models for hard steps.
+-   **Distillation:** training a model on the outputs of a stronger model, transferring capability at a fraction of original training cost.
+-   **MCP (Model Context Protocol):** an open standard for connecting AI systems to external tools and data sources.
+-   **IDE (Integrated Development Environment):** the visual editor a programmer works in, combining code editing, debugging, and version control.
+-   **CLI (Command-Line Interface):** the text-based terminal through which a user issues commands directly to the operating system; the universal interface to file systems, processes, and networks.
+-   **SWE-bench:** a benchmark scoring a model on its ability to resolve real GitHub issues. *Verified* uses 500 human-validated tasks; *Pro* draws on actively maintained repositories and resists memorization (see Appendix A on harness dependence).
+-   **Elo:** a rating scale, borrowed from chess, that ranks models by head-to-head preference outcomes; used by LMArena.
+-   **TPU (Tensor Processing Unit):** Google's in-house AI accelerator, an alternative to merchant GPUs.
+-   **Commoditize the complement:** strategy of giving away or underpricing an adjacent layer (e.g., models) to expand demand for one's core product (e.g., inference hardware).
+-   **Intelligence economy:** this series' term for the economic system in which cognitive task-completion becomes a purchasable, meterable input, priced against labor rather than software (see Prologue).
+-   **Run-rate revenue:** an annualized projection formed by multiplying a recent month's billings by twelve; not audited GAAP revenue, and sensitive to prepayments and one-time effects (see Appendix A).
+-   **Harness dependence:** the sensitivity of an agentic benchmark score to the scaffolding used to run it; the reason vendor-reported coding scores are not comparable across labs (see Appendix A).
+
+## Appendix C. Timeline of Key Events (Nov 2022 – Jul 2026)
+
+-   **Nov 2022** — ChatGPT launches; chatbot era begins.
+-   **2023** — Copilot/RAG wave; first autonomous-agent experiments (AutoGPT) fail on reliability.
+-   **Late 2024** — Inference-time reasoning models arrive; RL training shifts toward task completion.
+-   **Jan 2025** — DeepSeek R1 release resets assumptions about Chinese capability and cost.
+-   **Mid 2025** — Claude Code public launch; CLI emerges as the agent-native interface.
+-   **Nov 2025** — Claude Code passes \$1B run-rate \~6 months post-launch. Gemini 3 generation begins Google's consumer share surge.
+-   **Dec 2025** — NVIDIA launches Nemotron 3 open-model family.
+-   **Jan 2026** — Claude Cowork launches in research preview (Jan 12). ChatGPT share at 68% (Similarweb web traffic), down \~19pp YoY; still above half on web-traffic measures, though already below it on U.S. daily-mobile measures.
+-   **Feb 2026** — Claude Code passes \$2.5B run-rate; Anthropic closes \$30B Series G at \$380B valuation. Cowork professional plug-ins launch; \~\$285B single-day software/services equity sell-off (Feb 3).
+-   **Mar–Apr 2026** — ChatGPT's True Audience share falls below 50% for the first time since launch (Sensor Tower); it settles at 46.4% by end-May, against Gemini's 27.7% and Claude's 10.3%. Codex (GPT-5.4) and Claude Opus 4.7 releases bring agentic coding to benchmark parity. Anthropic reaches \~\$30B run-rate (Apr); Amodei cites 80x annualized Q1 growth.
+-   **May 2026** — Google I/O (May 19): Gemini 3.5 Flash, Antigravity 2.0, and the Managed Agents API — the harness thesis becomes all three players' explicit strategy. Anthropic ships Claude Opus 4.8 (May 28, 69.2% SWE-bench Pro) and closes a \$65B Series H at a \$965B post-money valuation, disclosing \$47B run-rate revenue. ChatGPT becomes the fastest mobile app ever to reach 1 billion monthly active users.
+-   **Jun 2026** — NVIDIA Nemotron 3 Ultra becomes the strongest US open-weight model; Chinese open models retain the global open-weight lead. Anthropic releases Fable 5 and Mythos 5 (Jun 9) above the Opus tier; the U.S. Commerce Department suspends both on export-control grounds three days later (Jun 12). OpenAI previews GPT-5.6 as a government-gated limited release (Jun 26). Anthropic releases Claude Sonnet 5 (Jun 30) at 63.2% SWE-bench Pro and roughly half of Opus 4.8's price, making near-frontier agentic capability the mid-tier default; Commerce lifts the export-control order the same day.
+-   **Jul 2026** — Fable 5 is restored to general availability (Jul 1); Mythos 5 remains limited to approved partners. OpenAI publishes an audit finding \~30% of SWE-bench Pro tasks broken and retracts its recommendation of the benchmark (Jul 8), then ships the GPT-5.6 family — Sol, Terra, Luna — to general availability the following day (Jul 9). Google's Gemini 3.5 Pro passes its announced June window without shipping, and no revised date is published.
+
+------------------------------------------------------------------------

@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "5. The Topology of Industries"
+---
+
+{{< include _05-topology-of-industries.qmd >}}

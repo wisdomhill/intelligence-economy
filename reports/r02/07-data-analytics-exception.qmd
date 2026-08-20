@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "7. The Data Analytics Exception"
+---
+
+{{< include _07-data-analytics-exception.qmd >}}

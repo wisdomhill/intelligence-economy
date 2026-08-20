@@ -1,0 +1,50 @@
+## 1.1 The puzzle — explosive adoption, invisible macro returns
+
+By mid-2026, agentic coding tools have crossed from novelty to infrastructure. Industry surveys place AI-tool use among developers at roughly four in five—about 84% including those planning adoption, with nearly two-thirds using the tools daily or weekly—while autonomous coding agents proper, at roughly three in ten developers in 2025 surveys, are earlier in the curve but climbing steeply; at firms that disclose internal telemetry the share of AI-authored code routinely exceeds two-thirds. Anthropic's Claude Code and OpenAI's Codex are the leading exemplars of a new category: tools that do not merely autocomplete but read entire codebases, plan multi-step changes, run tests, and open pull requests with diminishing human oversight.
+
+And yet, when one turns from the micro evidence—time saved per task, pull requests merged—to the macro evidence of industry revenue and firm-level financial statements, the productivity dividend largely disappears. Software-industry revenue growth has decelerated, not accelerated, through the very period of fastest adoption. The firms spending most aggressively on coding agents cannot point to a corresponding inflection in their own results. This is the paradox the report sets out to explain — the question Report 1's Coda posed and could not resolve from the supply side alone.
+
+## 1.2 Scope and method: what "evidence" means here
+
+This report applies a deliberately strict evidentiary standard. We distinguish three tiers of claim, and privilege the last:
+
+-   **Anecdotal** — "Tool X saved engineer Y two hours." Abundant, but unfalsifiable at the level of economic outcomes.
+-   **Project-level** — "Migration Z completed in days, not weeks." Real, but not traceable to the income statement.
+-   **Financial-statement identification** — a revenue or operating-income effect that can be causally attributed to AI in quarterly or annual data. This is the standard we hold throughout.
+
+This standard is demanding by design. As we show, it is met by almost no firm outside the small group that *sells* AI rather than merely uses it—and that scarcity is itself the central piece of evidence.
+
+## 1.3 The framework: Idea → Execution → Verification → Adoption
+
+Knowledge work, viewed as a production process, passes through four stages. An **idea** must exist—a conception of what is worth making and why anyone would value it. The idea must be **executed**—turned into an artifact: code, a document, a track, an analysis. The artifact must be **verified**—confirmed to be correct, safe, and fit for purpose. And the verified artifact must be **adopted**—integrated into the workflows, systems, and habits of the people and organizations it is meant to serve. Value is realized only at the end of the pipeline, and the throughput of the pipeline is governed, as in any serial process, by its scarcest stage:
+
+**Value throughput ≈ min( Idea, Execution, Verification, Adoption )**
+
+The significance of 2025–2026, established in Report 1, is that agentic AI made the second stage hyper-abundant. Execution—once the costly, time-consuming center of knowledge work—became cheap, fast, and parallelizable. But making one stage of a serial pipeline abundant does not raise throughput; it *relocates the constraint*. The economic question of the agentic era is therefore not "how capable are the agents?" but "which stage binds now, where, and for whom?"
+
+This question organizes the next four reports of the series:
+
+| Report | Pipeline node | Question |
+|---|---|---|
+| **2 — The Idea Bottleneck** *(this report)* | **Idea** | Why does abundant execution fail to create value where the idea is the scarce input — and where does the idea constraint *not* bind? |
+| 3 — The Token Economics of Coding Agents | Execution → Verification | How did software uniquely close the verification loop by machine, and how does the loop get cheaper (from tokenmaxxing to valuemaxxing)? |
+| 4 — The SaaS Apocalypse Question | Adoption | Why does today's enterprise-software gateway block agentic capability from reaching the work it could transform? |
+| 5 — The Agentic Mesh | The pipeline entire | What architecture unblocks all four stages at once? |
+
+: {tbl-colwidths="[25,25,50]"}
+
+Two clarifications guard against misreading. First, the stages are not equally automatable: execution has been industrialized, verification has been industrialized *in one domain* (software—Report 3), while idea and adoption remain, for now, dominated by human inputs and human institutions. Second, the constraint is not the same everywhere. Which stage binds depends on the structure of the industry—the subject of Section 5—and mapping that variation correctly is what dissolves the apparent paradox.
+
+## 1.4 The central thesis — and its rivals
+
+The thesis of this report is a conjunction of two claims:
+
+**Structural:** *Agentic AI lowers the cost of execution but cannot supply the idea; where the idea is the binding input, abundant execution multiplies copies without expanding value, and industry revenue—set by demand, not supply—does not move.*
+
+**Compositional:** *Agentic adoption has so far concentrated precisely in those idea-bound domains, while the execution-bound work of general industry—where the same capability would bind against the true constraint—remains largely unreached, because it lives behind an enterprise-software gateway the agents cannot yet pass.*
+
+The paradox is the product of the two: the capability landed where it helps least and has not yet arrived where it would help most. Its one systematic exception—data analytics, where execution is the *input* to the idea—is where the dividend becomes structurally available, and it is gated by judgment rather than labor (Sections 7–8).
+
+This thesis competes with at least four rival explanations of the missing productivity: that the gains are real but *unmeasured or lagged* (the J-curve reading); that adoption is simply *too early* (the diffusion reading); that the gains are real but *competed away* into consumer surplus; and that the spending is real but the value is not (the capital-cycle reading Report 1's Coda flagged). Section 2.5 confronts each. We do not claim they are wrong so much as insufficient: each explains a piece of the null result, but only the idea-bottleneck-plus-misallocation reading predicts the *pattern*—where returns appear, where they do not, and why the exceptions look the way they do.
+
+------------------------------------------------------------------------

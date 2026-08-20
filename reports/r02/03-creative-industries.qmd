@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "3. The Creative Industries Under AI"
+---
+
+{{< include _03-creative-industries.qmd >}}

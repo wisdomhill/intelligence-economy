@@ -1,0 +1,84 @@
+THE INTELLIGENCE ECONOMY — LICENSE
+==================================
+
+Copyright (c) 2026 Wisdom Hill. All rights reserved except as
+granted below.
+
+
+1. SCOPE
+--------
+
+This license applies to the written content of this repository: the reports,
+their abstracts, figures, tables, and accompanying prose, in all output
+formats (Markdown, Quarto, HTML, and PDF).
+
+It does NOT apply to source code. All code in the `code/` directory is
+licensed separately under the MIT License; see `code/LICENSE`.
+
+Third-party material quoted or reproduced under fair use remains the property
+of its respective rights holders and is not covered by this license.
+
+
+2. LICENSE
+----------
+
+The written content is licensed under the Creative Commons
+Attribution-NonCommercial-NoDerivatives 4.0 International License
+(CC BY-NC-ND 4.0).
+
+    Human-readable summary:
+    https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+    Full legal text:
+    https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
+
+You are free to share — copy and redistribute the material in any medium or
+format — under the following terms:
+
+    Attribution   — You must give appropriate credit, provide a link to the
+                    license, and indicate if changes were made.
+    NonCommercial — You may not use the material for commercial purposes.
+    NoDerivatives — If you remix, transform, or build upon the material, you
+                    may not distribute the modified material.
+
+
+3. ADDITIONAL PERMISSIONS GRANTED BY THE COPYRIGHT HOLDER
+---------------------------------------------------------
+
+The following permissions are granted in addition to, and without limiting,
+the rights conferred by CC BY-NC-ND 4.0. Where they conflict with the
+NoDerivatives or NonCommercial conditions, these additional permissions
+prevail.
+
+3.1  Quotation and summary
+
+     Brief quotation, excerpting, and short summary or commentary are freely
+     permitted for the purposes of review, reporting, teaching, scholarly
+     discussion, and public commentary, including in commercial publications
+     and broadcast media, provided that:
+
+         (a) the report and Wisdom Hill Research are credited by name; and
+         (b) a link or citation to the original report is included; and
+         (c) the excerpt does not substitute for the report itself.
+
+3.2  Machine-readable indexing
+
+     Indexing and retrieval by search engines and reference managers is
+     permitted.
+
+3.3  What is not covered
+
+     Translation of a report in full or in substantial part, republication of
+     substantial portions, and inclusion in a paid or subscription product
+     are not covered by these additional permissions and require prior
+     written permission. Such permission is generally granted on request.
+
+
+4. CONTACT
+----------
+
+Permission requests and correction reports:
+https://github.com/wisdomhill/intelligence-economy/issues
+
+Wisdom Hill
+https://www.wisdomhill.net

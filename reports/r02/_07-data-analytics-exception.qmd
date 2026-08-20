@@ -1,0 +1,25 @@
+## 7.1 Why analytics inverts the creative-industry logic
+
+Section 5 located one execution-first domain where AI's contribution should turn positive: data analytics. The inversion is precise. In creative work, the friction AI removes (the act of building) is where ideas are born, so removing it destroys value. In analytics, the friction AI removes (ETL, cleaning, pipeline plumbing) is *not* where ideas are born—insight arises later, in the interpretation of results. Friction and discovery are *separable* in analytics and *fused* in creation. That single structural difference is why the same agent helps here and harms there.
+
+## 7.2 A search model of insight
+
+Model insight generation as search. Let p be the (small) probability that a single analysis surfaces a meaningful insight, and n the number of analyses a practitioner can run. The probability of at least one insight is 1 − (1 − p)ⁿ. Human labor constrains n to a handful per day, keeping this probability low. An agent that raises n a hundredfold drives 1 − (1 − p)ⁿ toward 1.
+
+The crucial distinction from the creative case is what n counts. In analytics, n counts *analyses*—and insight is the direct output of that search, so scaling n scales discovery. In idea-first creation, the n that AI scales counts *implemented copies* of an idea, not ideas themselves; scaling it yields the "more copies, same frontier" outcome of Sections 2–3.
+
+## 7.3 Origination versus discovery: how AI relieves a bottleneck it cannot break
+
+At this point the report's two central claims appear to collide. Section 4.3 argued that AI cannot supply the idea—distribution-centered generation regresses to the mean and cannot manufacture the tail. This section argues that agentic analytics is the most powerful idea-generation mechanism available. Both are true, and the distinction between them is the most important conceptual move in the report.
+
+Ideas reach the pipeline by two different routes. **Origination** produces the out-of-distribution conception—the new genre, the unprecedented product—by an act of imagination that has no search space to enumerate. This is what AI does not do, and Section 4 stands. **Discovery** produces the idea by *finding* it: the pattern is already latent in the world—in transaction data, telemetry, experiments, customer behavior—and becoming aware of it is a matter of searching a space that very much can be enumerated. Discovery is execution-intensive by nature: hypotheses must be formulated in bulk, tested in bulk, discarded in bulk. It is, in the terms of Section 5, execution-first idea generation—and that is precisely the configuration agents amplify.
+
+The economic significance is that discovery is the only *industrializable* relief of the idea bottleneck. Origination scales with the talent pool (Section 4.4), which is fixed or shrinking. Discovery scales with n—with the number of analyses run against the organization's data—and n is exactly what agentic AI multiplies without limit. An enterprise cannot order up a visionary; it can order up a hundredfold expansion of systematic search over its own data, and harvest ideas as *outputs* of that search. This—not coding—is where the technology attacks the binding constraint of Section 4 directly, and it is the precise sense in which the productivity dividend hides in data, not code.
+
+## 7.4 The new bottleneck: from labor to judgment
+
+But scaling n has a cost that the search model makes visible. Running a hundredfold more analyses mass-produces not only genuine insights (p) but also *false positives*—the multiple-comparisons problem. At large n, many results will appear statistically significant by chance alone. For AI's net contribution in analytics to remain positive, a new capability must select genuine insight from the inflated pool of candidates: critical interpretation, causal reasoning, and the discipline to distinguish statistical from substantive significance.
+
+When AI dissolves the labor bottleneck in analytics, the bottleneck does not vanish—it moves to **judgment**. And judgment, unlike code, cannot be delegated to the agent that created the surplus of candidates in the first place.
+
+------------------------------------------------------------------------

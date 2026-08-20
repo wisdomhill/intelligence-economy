@@ -1,0 +1,43 @@
+## 5.1 The Value Migration Map
+
+Across the landscape surveyed in this report, value is migrating in a consistent pattern:
+
+| Layer                                  | Direction               | Mechanism                                                                                                                                |
+|------------------------|------------------------|------------------------|
+| Raw model capability                   | **Compressing**         | Open weights, distillation, and Chinese price competition cut the half-life of capability advantages to months                           |
+| Harness / agent infrastructure         | **Compressing (newly)** | Managed-agent APIs commoditize what was 2025's differentiator                                                                                   |
+| Mid-tier model APIs                    | **Compressing**         | Cascade routing caps pricing for undifferentiated workloads                                                                              |
+| Accumulated customer context           | **Accumulating**        | Memory, skills, and workflow integration compound and do not transfer between vendors                                                    |
+| Enterprise trust & governance          | **Accumulating**        | Agents touching corporate data are bought on reliability and accountability, not token price                                             |
+| Distribution (OS, search, social)      | **Accumulating**        | Zero-marginal-cost reach persists independent of model cycles                                                                            |
+| Inference compute                      | **Accumulating**        | Price cuts drive volume (Jevons); multimodal generation will add a second, more compute-intensive demand wave (Reports 10–11)            |
+| Incumbent SaaS / professional services | **At risk**             | Three-way agent price competition pulls forward the substitution crossover; February 3, 2026 was the first repricing event, not the last |
+
+: {tbl-colwidths="[26,22,52]"}
+
+The summary heuristic for the 2026–2027 window: **sell the middle of the barbell, own the ends, and track context lock-in as the new switching cost.**
+
+## 5.2 Bear Cases and Falsification Conditions
+
+Intellectual honesty requires stating what would invalidate each thesis:
+
+-   **Against Thesis 1 (task horizon):** if METR-style doubling stalls — e.g., horizons plateau at hours rather than days through 2027 — the addressable-labor expansion thesis weakens materially, and agent revenue growth should decelerate toward conventional SaaS rates.
+-   **Against Thesis 2 (harness moat → context moat):** if managed-agent APIs plus open standards (MCP and successors) make accumulated context portable across vendors, no durable software-layer moat exists and the industry converges on pure price competition above commodity compute.
+-   **Against Thesis 3/4 (Anthropic's value-layer lead):** sustained decline in enterprise win rates, or a Gemini 3.5 Pro that delivers frontier-class quality at Flash-class economics, would compress the premium segment faster than context lock-in can mature.
+-   **Against Thesis 4 (rapid commoditization):** a Gemini 3.5 Pro delay extending materially beyond Q3 2026, or a shipped model that fails to reach agentic parity, would indicate that frontier capability is not replicable by capital and distribution alone — weakening the three-firm-oligopoly-with-commoditized-models premise on which §4.3 rests.
+-   **Systemic bear case:** agent reliability incidents at enterprise scale (data loss, security breaches via agent permissions) could trigger a regulatory or procurement freeze that resets the adoption curve irrespective of capability.
+
+## 5.3 Consolidated Monitoring Indicators (Quarterly Checklist)
+
+1.  Autonomous task-horizon measurements (METR and successors)
+2.  Convergence speed on remaining high-difficulty benchmarks (SWE-bench Pro and successors)
+3.  Effective cost per completed task, by vendor (token efficiency × price)
+4.  Enterprise head-to-head win rates among first-time business AI buyers (currently \~70% Anthropic on Ramp data) and enterprise LLM share
+5.  Managed-agent API adoption; share of revenue on task/compute-based billing
+6.  Agent-driven SaaS displacement events (earnings commentary, equity repricings)
+7.  Western frontier vs. best Chinese open-weight gap (Elo and price), and the share of enterprise workloads on cascade routing
+8.  Regulatory availability of frontier models: export-control actions, gated previews, and the lag between a model's release and its general availability
+
+*Indicators specific to the multimodal and physical-context front — video-model economics, world-model simulation consistency time, wearable shipments, and robotics commercialization — are maintained in Report 10.*
+
+------------------------------------------------------------------------

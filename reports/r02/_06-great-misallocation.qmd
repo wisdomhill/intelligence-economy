@@ -1,0 +1,43 @@
+The structural argument of Sections 3–5 explains why abundant execution created little value *where it was deployed*. This section supplies the second half of the paradox: *where it was deployed* is itself the anomaly. Agentic capability has pooled in the domains least able to convert it, and barely touched the domains most able to.
+
+An old parable describes a man searching for his keys under a streetlight—not because he lost them there, but because that is where the light is. Agentic AI's first deployment wave followed the light: it went where verification was native, workflows were digital, and adoption required no one's permission. It did not go where the value was.
+
+## 6.1 Where the agents actually went
+
+The concentration is measurable from several independent directions.
+
+**Usage composition.** Occupation-level analyses of AI-assistant usage—Anthropic's Economic Index being the most granular public source—consistently find computer and mathematical occupations absorbing the largest share of all AI conversations by a wide margin, at a multiple of several times those occupations' share of employment. Software development is not merely the leading use case; it is over-represented relative to its labor-market weight by roughly an order of magnitude.
+
+**Revenue composition.** Report 1 documented the same skew from the seller's side: the fastest-scaling agentic product in history is a *coding* agent, API traffic skews roughly 77% toward automation patterns, and the enterprise customers driving the revenue explosion are overwhelmingly buying software-engineering capacity.
+
+**The other side of the ledger.** Against this saturation stands the adoption picture in general industry. Official business surveys through 2025–2026 place formal AI adoption at roughly one firm in five across the U.S. economy—the Census Bureau's Business Trends and Outlook Survey reports about 18% in its late-2025 waves and just under 20% by May 2026, led by the information sector near 40% and finance and insurance near 34%; and the most widely cited enterprise study of 2025 found the overwhelming majority of corporate generative-AI pilots—on the order of 95%—producing no measurable P&L impact. Developer AI-tool penetration (use or planned use) runs at roughly 80% economy-wide—with 95% monthly active use at heavy adopters such as Uber; the median firm in the broader economy has not adopted at all.
+
+The distribution of the capability, in short, is close to the inverse of the distribution of the opportunity.
+
+## 6.2 Why they pooled there
+
+Three selection variables, none of them "where is the value largest?", determined the deployment order.
+
+**Verifiability.** Report 1 (Section 2.1.3) established that domains acquire agentic automation roughly in order of their verifiability, because both the RL training loop and the deployment loop need an objective success signal. Code compiles or it does not; a test passes or it fails. Nothing in a claims-processing workflow or a merchandising decision verifies itself—yet.
+
+**Digital-native workflows.** A developer can meet an agent at the terminal, hand it a repository, and let it work; the entire working context is already machine-legible. The general-industry knowledge worker's context lives in ERPs, CRMs, ticketing systems, and document stores—behind authentication, permissions, and vendor boundaries.
+
+**Deployment friction.** Coding agents spread bottom-up through individual adoption—a developer with a subscription—bypassing procurement, integration projects, and change management entirely. Execution-bound enterprise work admits no such path: deploying an agent into an order-to-cash process is an organizational project, not a download.
+
+Code and content sat at the maximum of all three variables simultaneously. They were also, by the topology of Section 5, precisely the domains where execution abundance converts worst into value. The correlation is not accidental—verifiable, digital, frictionless domains are disproportionately the *making-artifacts* domains, and making artifacts is where the idea binds. The light and the keys are in different places by construction.
+
+## 6.3 Where the latent gains live
+
+The mirror image of the misallocation is the map of unrealized potential: the execution-bound work of general industry, where both conditions of Section 5.5 hold and agents have barely arrived.
+
+The contours are visible in every services organization: routine customer operations of the kind now being automated at scale; back-office processing—reconciliation, claims, compliance documentation, invoice and exception handling; commerce operations—catalog and content management, pricing, seller and partner support, fulfillment coordination; supply-chain administration and scheduling; the reporting and documentation layer that consumes a large fraction of professional time in every function. This work shares three properties: its value is the distribution's center done reliably (no frontier problem), human labor is demonstrably its binding constraint (queues, backlogs, headcount-linear scaling), and it is measured in wage bills, not attention.
+
+The aggregate stakes follow from composition: execution-bound functions of this kind account for a large majority of the knowledge-work wage bill, dwarfing the creative-origination occupations where agents currently concentrate. A function-by-function quantification of this demand—which processes, in which order, at what depth—is the subject of Report 8; here it suffices to establish the direction: the economy's agentic upside is concentrated exactly where its agentic deployment is not.
+
+## 6.4 The gateway: productivity must travel through work software
+
+Why, then, have the agents not simply gone where the value is? Because execution-bound general-industry work has an address, and the address is enterprise software. Order-to-cash lives in the ERP; customer operations live in the CRM and the contact-center stack; commerce operations live in the platform; claims live in the claims system. The workers who perform this execution-bound labor cannot meet an agent at a command line, because their work does not pass through one. For agentic capability to reach the general economy, it must pass *through or around* the enterprise software layer in which that economy's work is embedded.
+
+This reframes the productivity paradox in its final form. The first half of the paradox is structural: where agents went, the idea binds (Sections 3–5). The second half is a routing failure: where execution binds, the gateway is closed. Today's enterprise-software incumbents guard that gateway with captive, siloed agents that operate only within their own walls—and, as Report 4 will argue, are structurally disinclined to open it, because a genuinely effective agent threatens the per-seat economics of the software itself. Diagnosing why the gateway fails is Report 4's task; designing its replacement is Report 5's. This report's contribution is to establish that the gateway is where the economy-wide dividend now waits.
+
+------------------------------------------------------------------------

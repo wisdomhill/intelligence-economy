@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "Part IV. The Three-Way Agentic War"
+---
+
+{{< include _04-agentic-war.qmd >}}

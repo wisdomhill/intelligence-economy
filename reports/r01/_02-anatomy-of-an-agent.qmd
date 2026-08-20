@@ -1,0 +1,60 @@
+## 2.1 The Architecture Shift: Probabilistic Models + Deterministic Harnesses
+
+### 2.1.1 The Error-Compounding Problem
+
+Large language models (LLMs) are inherently probabilistic. The same input can yield different outputs; hallucination is endemic; errors accumulate over long sequences. In the chatbot era this was a tolerable defect, because a human inspected every output. An agent enjoys no such safety net. Simple arithmetic exposes the problem: a system that succeeds 99% of the time per step completes a 100-step task only 37% of the time. **A probabilistic model alone cannot be an agent.** Early autonomous-agent experiments (the AutoGPT wave of 2023) failed on exactly this point — the models were weak, but more fatally, nothing deterministic surrounded them.
+
+### 2.1.2 Six Components of the Harness
+
+The solution is the *harness*: a deterministic software layer wrapped around the probabilistic model. Its six core components:
+
+1.  **The agent loop.** Plan → act → observe → re-plan is deterministic code; the model supplies only the judgment inside each step.
+2.  **Tools and execution environments.** File I/O, shell execution, search, browsers. Critically, code execution converts probabilistic output into deterministically *verifiable* output — a program compiles or it does not; a test passes or it fails.
+3.  **Context management.** Context windows are finite. Compaction, sub-agent delegation, and external memory files determine how long a task an agent can sustain; memory architecture, more than model size, sets the practical task horizon.
+4.  **Permissions and sandboxing.** File-system scoping, network egress controls, and human-approval gates. These are not compliance afterthoughts; they are the precondition of enterprise adoption.
+5.  **Skills and procedural knowledge.** Verified procedures packaged as documents and code, so the model does not re-derive workflows from scratch — and the channel through which an organization's tacit knowledge is installed into its agents.
+6.  **Orchestration.** Multi-agent decomposition, parallelization, and rollback on failure.
+
+The division of labor is clean: **the model supplies judgment; the harness supplies reliability.** As model quality converges among the vendors currently shipping at the agentic frontier, competitive differentiation migrates toward the harness — a thesis this report's competitive sections repeatedly confirm. The full architecture of this layer, and why the control plane rather than the model is becoming the economic center of gravity of agentic software, is the subject of Report 5 (*The Agentic Mesh*).
+
+### 2.1.3 Code as the First Killer App: Verifiability as the Hidden Variable
+
+It is not an accident that coding became the first commercial breakthrough for agents. Software is the rare knowledge-work domain with *built-in verification*: compilers, type checkers, and test suites give the agent (and its RL training process) an objective success signal at every step. Domains acquire agentic automation roughly in order of their verifiability — coding first, then data analysis and finance, then law and general office work — a sequencing that has held throughout 2025–2026 and is a useful predictor of where agents land next.
+
+## 2.2 The Interface as Agency: Web → IDE → CLI → Desktop
+
+The evolution of AI interfaces looks like a user-interface story but is really a story about *how much of the world the AI is allowed to touch*.
+
+-   **Web chat** isolated the AI in a conversation pane; the human couriered context in and results out.
+-   **IDE integration** gave the AI access to the codebase but kept it subordinate to the human's visual workspace.
+-   **The CLI** (Command-Line Interface, the text-based terminal) was the paradoxical leap. The terminal appears primitive, but it is the universal interface to everything a computer can do — file systems, processes, version control, networks. Choosing the CLI meant giving the agent *the computer itself* rather than a human-shaped window onto it. Claude Code's success is a direct consequence of this agent-native design decision.
+-   **The desktop app** generalizes CLI-grade agency to non-developers. Claude Cowork — launched in research preview in January 2026, with professional plug-ins following in February — brings the same autonomous, file-system-level execution into a consumer desktop application: point it at a folder, and it reads, edits, creates, and organizes multi-step deliverables without terminal literacy.
+
+The endpoint of interface evolution is not a better chat box. It is an AI that shares the human's working environment — files, applications, browsers — as a colleague would.
+
+## 2.3 Case Study — Claude Code and Cowork: The Proof of Concept at Scale
+
+### 2.3.1 Growth Data
+
+Claude Code, publicly launched in mid-2025, became by several measures the fastest-scaling commercial software product on record: a \$1 billion annualized run-rate within six months of launch, surpassing \$2.5 billion by February 2026 — a 2.5x jump in roughly three months. Anthropic's company-wide annualized revenue rose from \$87 million in January 2024 to roughly \$30 billion by April 2026, a pace CEO Dario Amodei described as 80x annualized growth in Q1 2026, eight times the company's own plan. Usage statistics corroborate the revenue: by mid-2026 Claude Code was writing approximately 4% of all public GitHub commits, with the average developer-user spending around 20 hours per week in the tool, and enterprise subscriptions quadrupling in early 2026.
+
+### 2.3.2 The Model–Harness Co-Evolution Flywheel
+
+The durable insight from the case is not the growth rate but its mechanism. Anthropic trains its models *inside its own harness*; the model becomes optimized for that harness's tools, and the harness is iterated against the model's observed failure modes. This co-evolution flywheel explains why third parties consuming the same model via API have struggled to reproduce the product's performance — and why "harness engineering" displaced "model capability" as the operative competitive variable in 2025–2026.
+
+### 2.3.3 February 3, 2026: The First Market Repricing Event
+
+Cowork's expansion update — including eleven professional plug-ins spanning legal, finance, sales, and data work — was followed within the same trading session by an estimated \$285 billion decline in the market capitalization of global software, financial-services, and asset-management equities — the selling opening in legal- and data-services names before spreading outward, with the Goldman Sachs basket of U.S. software stocks closing down 6%, its steepest one-day fall since April 2025. Whatever one thinks of the magnitude, the event marked the first time public markets treated agentic substitution of SaaS and professional services as a present-tense, repricing-grade risk rather than a distant narrative.
+
+## 2.4 Four Curves That Crossed in 2025
+
+The explosive growth was overdetermined: four independent curves crossed within roughly the same twelve months.
+
+1.  **Capability threshold.** RL-trained reasoning pushed task horizons from minutes to hours — across the line where automation becomes labor substitution rather than convenience.
+2.  **Harness maturity.** The deterministic layer caught up to the model, converting capability into reliability.
+3.  **Agent-native interfaces.** CLI and desktop form factors, plus the MCP standard for tool connectivity, gave agents access to real working context.
+4.  **Labor-referenced pricing.** Once the value unit became the completed task, willingness-to-pay re-anchored from software budgets to wage bills. Roughly 80% of Anthropic's revenue now comes from enterprise and API customers, whose API usage skews \~77% toward automation — direct evidence of the pricing migration.
+
+Remove any one of the four and the explosion likely does not happen. This is also why the 2023 agent experiments failed and the 2025 products succeeded: the difference was never a single breakthrough, but a conjunction.
+
+------------------------------------------------------------------------

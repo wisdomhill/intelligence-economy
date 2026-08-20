@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "1. The Productivity Paradox"
+---
+
+{{< include _01-productivity-paradox.qmd >}}

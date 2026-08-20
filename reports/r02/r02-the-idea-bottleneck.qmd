@@ -1,0 +1,54 @@
+---
+title: "2. The Idea Bottleneck"
+subtitle: "Why agentic AI's productivity dividend hides in data, not code"
+format:
+  typst: default
+---
+
+# Executive Summary
+
+{{< include _00-executive-summary.qmd >}}
+
+# 1. The Productivity Paradox
+
+{{< include _01-productivity-paradox.qmd >}}
+
+# 2. The Missing Signal
+
+{{< include _02-missing-signal.qmd >}}
+
+# 3. The Creative Industries Under AI
+
+{{< include _03-creative-industries.qmd >}}
+
+# 4. A Theory of the Bottleneck
+
+{{< include _04-theory-of-the-bottleneck.qmd >}}
+
+# 5. The Topology of Industries
+
+{{< include _05-topology-of-industries.qmd >}}
+
+# 6. The Great Misallocation
+
+{{< include _06-great-misallocation.qmd >}}
+
+# 7. The Data Analytics Exception
+
+{{< include _07-data-analytics-exception.qmd >}}
+
+# 8. Data Intelligence as Economic Necessity
+
+{{< include _08-data-intelligence.qmd >}}
+
+# 9. The Bottleneck Always Moves to Judgment
+
+{{< include _09-conclusion.qmd >}}
+
+# Appendices
+
+{{< include _10-appendices.qmd >}}
+
+# References
+
+{{< include _11-references.qmd >}}

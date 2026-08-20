@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "Part V. Integrated Investment Framework"
+---
+
+{{< include _05-investment-framework.qmd >}}

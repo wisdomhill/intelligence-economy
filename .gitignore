@@ -1,0 +1,27 @@
+# Quarto build output
+/_site/
+/.quarto/
+/_freeze/
+*_files/
+*.quarto_ipynb
+
+# Local render artefacts
+# these live one level deeper than the original patterns assumed
+/reports/**/*.pdf
+/reports/**/*.html
+/reports/**/*.typ
+/reports/**/*.tex
+
+# Handoff bundle: a snapshot of this repository, which git already carries.
+# Keeping it in the tree would commit a stale 2.7 MB duplicate of the source.
+/intelligence-economy.zip
+
+# Editor and OS
+.Rproj.user/
+.Rhistory
+.venv/
+__pycache__/
+.DS_Store
+Thumbs.db
+
+**/*.quarto_ipynb

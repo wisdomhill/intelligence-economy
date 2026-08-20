@@ -1,0 +1,42 @@
+/*-- scss:defaults --*/
+
+$ink-1:  #e8eef5;   // level 1 headings — lightest
+$ink-2:  #a9c8e4;   // level 2
+$ink-3:  #7ea9cc;   // level 3
+$rule:   #33414f;
+$wash:   #232c36;
+
+$link-color: #8ab8e0;
+$primary:    $ink-2;
+
+// Quarto paints the navbar with $navbar-bg, which falls back to $primary.
+// $primary here is a pale blue chosen for headings and links, so without an
+// explicit value the header comes out almost white and swallows its own text.
+$navbar-bg: #141c26;
+$navbar-fg: #e8eef5;
+$navbar-hl: #ffffff;
+
+// The docked sidebar and the footer follow the same surface.
+$sidebar-bg:     #1a2430;
+$sidebar-fg:     #cdd8e4;
+$sidebar-hl:     $ink-2;
+$footer-bg:      #141c26;
+$footer-fg:      #cdd8e4;
+
+/*-- scss:rules --*/
+
+h1, .h1 { color: $ink-1; border-bottom: 2px solid $rule; }
+h2, .h2 { color: $ink-2; }
+h3, .h3 { color: $ink-3; }
+
+.table > thead {
+  background: $wash;
+  border-bottom: 2px solid $ink-2;
+}
+.table > tbody > tr:nth-of-type(odd) > * { background: rgba(255, 255, 255, 0.025); }
+
+// Secondary (mobile) nav strip inherits the header surface.
+nav.quarto-secondary-nav.color-navbar {
+  background-color: $navbar-bg;
+  color: $navbar-fg;
+}

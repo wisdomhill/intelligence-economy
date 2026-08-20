@@ -1,0 +1,27 @@
+---
+format:
+  html: default
+title: "The Intelligence Economy"
+subtitle: "How agentic AI is reorganising the economy, layer by layer"
+listing:
+  id: reports
+  contents: reports/*/index.qmd
+  type: default
+  sort: "order asc"
+  sort-ui: [order, title]
+  filter-ui: true
+  fields: [title, subtitle, description, date]
+  image-align: left
+  page-size: 20
+toc: false
+---
+
+A fifteen-part research series examining how agentic artificial intelligence
+is reorganising the software, consumer, and hardware-infrastructure layers of
+the economy. Each report states its claims in falsifiable form, separates
+measured figures from estimated ones, and cites primary sources only.
+
+Every report is available as a web page and as a PDF.
+
+::: {#reports}
+:::

@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "Part III. The Competitive Landscape"
+---
+
+{{< include _03-competitive-landscape.qmd >}}

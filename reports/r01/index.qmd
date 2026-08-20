@@ -1,0 +1,42 @@
+---
+format:
+  html: default
+title-block-style: default
+title: "1. The Agentic Inflection"
+subtitle: "How AI crossed from conversation to labor"
+
+description: >-
+  The four-stage phase transition from chatbot to agent, and the three-way
+  contest for the agentic value layer. Why user share and value capture have
+  decoupled.
+
+order: 1
+keywords:
+  - agentic AI
+  - task horizon
+  - agent harness
+  - context lock-in
+  - model commoditization
+
+---
+
+::: {.callout-note appearance="simple" icon=false}
+**Read the full report as a PDF:** [The Agentic Inflection (PDF)](r01-the-agentic-inflection.pdf)
+:::
+
+## Executive Summary
+
+{{< include _00-executive-summary.qmd >}}
+
+## Contents
+
+| | Part | The question it answers |
+|---|---|---|
+| I | [The Phase Transition](01-phase-transition.qmd) | What separates the four stages of generative AI? |
+| II | [Anatomy of an Agent](02-anatomy-of-an-agent.qmd) | Why did the explosion happen when it did? |
+| III | [The Competitive Landscape](03-competitive-landscape.qmd) | Who leads on which dimension, and why three? |
+| IV | [The Three-Way Agentic War](04-agentic-war.qmd) | Where does the moat move as the harness commoditizes? |
+| V | [Integrated Investment Framework](05-investment-framework.qmd) | Where is value migrating, and what would falsify it? |
+| — | [Coda](06-coda.qmd) | What can this report not resolve? |
+
+: {tbl-colwidths="[6,34,60]"}

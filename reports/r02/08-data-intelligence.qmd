@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "8. Data Intelligence as Economic Necessity"
+---
+
+{{< include _08-data-intelligence.qmd >}}

@@ -1,0 +1,31 @@
+## Appendix A — Data Sources and Statistical Methods
+
+Software and SaaS revenue: SaaS Capital long-term growth studies; Lighter Capital 2025 B2B SaaS benchmarks; ChartMogul retention reports. App economy: Sensor Tower State of Mobile 2025 and 2026; State of AI 2026. Music: IFPI Global Music Report 2025 and 2026; Billboard, Music Business Worldwide, Variety coverage; Deezer disclosures. Books: R.R. Bowker self-publishing and ISBN registration data; Reimers and Waldfogel (2026), NBER Working Paper 34777; AAP StatShot; Circana BookScan. Games: Steam release and generative-AI disclosure series (SteamDB-derived analyses); Sensor Tower mobile-games spend data; platform chart-concentration reporting. Duolingo: company investor-relations releases, shareholder letters, and contemporaneous coverage of the April 2025 course expansion and the late-2025 engagement repricing. Usage and adoption composition: Anthropic Economic Index; U.S. Census Bureau Business Trends and Outlook Survey (AI supplement); MIT Project NANDA enterprise GenAI study (2025). Firm financials: Uber SEC filings and earnings releases (Q1 2024–Q1 2026); Klarna Group plc investor relations releases and S-1; reporting by The Information, Fortune, TechCrunch.
+
+Statistical methods: prior-distribution prediction-interval tests use Student's t with n−1 degrees of freedom and the standard error inflated by √(1+1/n) for a single new observation; log-linear trend extrapolation uses ordinary least squares on log revenue with a 95% prediction interval. All app-spend series are annual gross consumer spend (App Store + Google Play; iOS only for China), inclusive of store commissions.
+
+## Appendix B — Limitations, Identification Caveats, and Falsification Conditions
+
+### B.1 Limitations and identification caveats
+
+-   **Small-sample power.** Annual macro series (n = 5–6) are underpowered to detect a single-year break; statistical insignificance reflects identification limits, not proven absence of effect.
+-   **Reconstructed values.** Certain app-spend years (2022–23) and global book-revenue figures are reconstructed or vary across sources; perturbing them widens prior variance and weakens, rather than strengthens, any acceleration claim.
+-   **Confounding.** Firm-level margin improvements (Klarna and others) coincide with a 2024–26 cost-discipline cycle across technology; cleanly separating AI from layoffs and burn reduction would require a difference-in-differences design against non-adopting peers, which public data do not yet support.
+-   **Provider-specific usage data.** Occupation-share figures from the Anthropic Economic Index measure the usage composition of one provider's assistant, not of all AI systems; the developer skew is directionally corroborated by revenue composition (Report 1) but the precise multiples should not be over-read.
+-   **Attribution in the Duolingo case.** The decomposition of Duolingo's 2025 results into catalog-driven versus feature-driven revenue relies on management disclosure and reasonable inference, not on a counterfactual; the case is presented as an illustration of the frontier logic, not as causal identification.
+-   **Selling vs. using AI.** Clear financial acceleration is concentrated in firms that sell AI (hyperscalers, model and tooling vendors); this report concerns firms that use it, where identification is structurally harder.
+
+### B.2 Falsification conditions
+
+Consistent with the series' method, the report states what would invalidate its theses:
+
+-   **Against the structural claim (Sections 3–4):** an AI-originated work moving a creative-industry frontier—a chart-topping AI-native game, album, or bestseller that demonstrably recruits new demand rather than redistributing existing spend—would falsify the regression-to-the-mean argument in its strong form.
+-   **Against the timing argument (Section 5.4):** subsequent full post-rollout quarters for heavy coding-agent adopters (e.g., Uber Q2 2026 onward) showing revenue or margin growth breaking above the pre-deployment range and cleanly attributed to engineering productivity would require reassessment.
+-   **Against the compositional claim (Section 6):** broad general-industry deployment of agents into execution-bound processes that *fails* to produce execution-bound operating leverage would falsify the latent-gains map; conversely, a macro TFP inflection arriving *without* any redistribution of agentic deployment toward execution-bound work would indicate the composition mechanism is not load-bearing.
+-   **Against the analytics exception (Section 7):** if scaled agentic analysis in mature deployments produces predominantly false-positive-driven decision degradation despite interpretive investment, the "discovery" route would be narrower than claimed.
+
+### B.3 Pre-publication verification queue
+
+New data points introduced in this edition, to be verified against primary sources before institutional distribution: games-share of 2025 consumer app spend (Sensor Tower); Steam 2024–2025 release counts and generative-AI disclosure shares; Duolingo April 2025 course-expansion figures, FY2025 bookings drivers, and the late-2025 drawdown magnitude; Anthropic Economic Index occupation shares (latest edition); MIT Project NANDA 95% figure and its methodology; Klarna KLAR post-listing quarterly figures.
+
+------------------------------------------------------------------------

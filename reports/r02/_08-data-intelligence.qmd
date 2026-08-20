@@ -1,0 +1,33 @@
+## 8.1 Defining Data Intelligence
+
+We use **Data Intelligence** to denote the capability that becomes binding once AI commoditizes analytical execution. It is broader than "data literacy" as commonly used and distinct from Gartner's "decision intelligence." It is the meta-capability of recognizing the differences and proper uses of descriptive, predictive, and causal methods—and deploying the right methodology, in the right place, to reach the most effective decision. It is a discipline of inference, not a toolkit.
+
+## 8.2 The methodological triad: descriptive, predictive, causal
+
+The core of Data Intelligence is fluency in the distinctions among three modes of analysis that are routinely conflated, each answering a different question:
+
+-   **Descriptive** — what happened? Summary, comparison, distribution. Answers about the past.
+-   **Predictive** — what is likely next? Correlational structure exploited for forecasting, valid only while the data-generating process is stable.
+-   **Causal** — what would happen if we intervened? The only mode that licenses action, and the one most often illegitimately inferred from the other two.
+
+Knowing which question is being asked—and refusing to answer a causal question with a predictive method—is the discriminating skill. AI will generate the code for any of the three on request; it will not, reliably, tell the user which one the situation demands.
+
+## 8.3 Why it must be universal, not specialized
+
+The conclusion is a claim about human capital across all roles, and it follows directly from the bottleneck argument. If AI performs analytical execution but cannot perform interpretive judgment, then the scarce capability in an AI-saturated economy is not the ability to *run* an analysis but the ability to *interrogate* one. Because every function will increasingly receive AI-generated analysis as an input to its decisions, every function must be able to interrogate it. Data Intelligence cannot remain the preserve of a data-science team; the surplus of AI-generated analysis is distributed across the organization, and so must be the judgment to evaluate it.
+
+## 8.4 What it is not: tool fluency AI has already commoditized
+
+This is where the argument most often goes wrong. "Everyone must become data literate" is too readily translated into "everyone must learn SQL, Python, and chart-reading." The bottleneck argument implies the opposite. If AI already performs the execution—writing queries, building pipelines, generating charts—then teaching execution is teaching what AI has commoditized. The capability that remains scarce is interpretive: Is this correlation causal? Is the sample representative? Are confounders controlled? Is this effect size practically meaningful (statistical ≠ substantive significance)? Is this a false positive from multiple comparisons? Does the analysis answer the question I actually asked?
+
+Train judgment, not tools. In a world where AI has democratized technical execution, the scarce skill is not knowing how to use the instrument but knowing whether to believe what it returns.
+
+## 8.5 The organizational stakes
+
+The final point elevates Data Intelligence from a training recommendation to an economic precondition. Because scaled analysis mass-produces spurious findings alongside genuine ones (Section 7.4), an organization without interpretive capability does not merely fail to capture AI's analytical upside—it actively accelerates *systematic error*, making more confident decisions on more false signals. Data Intelligence is therefore not a complement to AI value in analytics; it is the condition under which that value is positive rather than negative. The same abundance-without-discernment dynamic that collapsed per-title economics in the book market operates inside the firm—except that a firm, unlike a reader, has no wider market to diffuse the cost of bad signals into.
+
+## 8.6 The machinery question
+
+Data Intelligence is a human capability, but it does not operate on air. Systematic discovery at the scale Section 7 describes presupposes an enterprise data layer the agents can actually search—governed, semantically coherent, and organized for interrogation rather than for reporting. The architecture of that layer—semantic models, ontologies, and the platforms on which agentic analytics runs—is the subject of Reports 6 and 7, and the function-level demand it must serve is quantified in Report 8. This report establishes what the layer is *for*: it is the factory floor of the idea factory.
+
+------------------------------------------------------------------------

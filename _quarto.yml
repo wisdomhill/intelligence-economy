@@ -1,0 +1,165 @@
+project:
+  type: website
+  output-dir: _site
+  # Quarto derives the BibTeX key from author + year, giving all fifteen
+  # reports the same key. This rewrites it to wisdomhill_ie_rNN.
+  post-render: tools/fix_bibtex_keys.py
+  resources:
+    - assets/fonts/*.woff2
+  render:
+    - index.qmd
+    - prologue.qmd
+    - errata.qmd
+    - reports/*/*.qmd
+
+website:
+  title: "The Intelligence Economy"
+  description: >-
+    A research series on how agentic AI is reorganising the economics of
+    software, consumer technology, and hardware infrastructure.
+
+  # Switch this one line when the custom domain goes live; every citation
+  # URL is generated from it.
+  #   now  -> https://wisdomhill.github.io/intelligence-economy/
+  #   then -> https://research.wisdomhill.net
+  site-url: https://wisdomhill.github.io/intelligence-economy/
+  repo-url: https://github.com/wisdomhill/intelligence-economy
+  repo-actions: [source]
+
+  # font files must be copied into the rendered site
+
+  open-graph: true
+  twitter-card: true
+  page-navigation: true          # previous / next arrows at the foot of each page
+  back-to-top-navigation: true
+  reader-mode: true
+
+  search:
+    location: navbar
+    type: overlay
+
+  navbar:
+    title: "The Intelligence Economy"
+    left:
+      - href: index.qmd
+        text: Reports
+      - href: prologue.qmd
+        text: Prologue
+      # - href: epilogue.qmd      # takes this slot once the Epilogue lands
+      #   text: Epilogue
+    right:
+      - icon: github
+        href: https://github.com/wisdomhill/intelligence-economy
+        aria-label: GitHub repository
+
+  sidebar:
+    style: docked
+    collapse-level: 2
+    contents:
+      - href: index.qmd
+        text: "All reports"
+      - href: prologue.qmd
+        text: "Prologue"
+      - section: "1. The Agentic Inflection"
+        href: reports/r01/index.qmd
+        contents:
+          - reports/r01/01-phase-transition.qmd
+          - reports/r01/02-anatomy-of-an-agent.qmd
+          - reports/r01/03-competitive-landscape.qmd
+          - reports/r01/04-agentic-war.qmd
+          - reports/r01/05-investment-framework.qmd
+          - reports/r01/06-coda.qmd
+          - reports/r01/07-appendices.qmd
+          - reports/r01/08-references.qmd
+      - section: "2. The Idea Bottleneck"
+        href: reports/r02/index.qmd
+        contents:
+          - reports/r02/01-productivity-paradox.qmd
+          - reports/r02/02-missing-signal.qmd
+          - reports/r02/03-creative-industries.qmd
+          - reports/r02/04-theory-of-the-bottleneck.qmd
+          - reports/r02/05-topology-of-industries.qmd
+          - reports/r02/06-great-misallocation.qmd
+          - reports/r02/07-data-analytics-exception.qmd
+          - reports/r02/08-data-intelligence.qmd
+          - reports/r02/09-conclusion.qmd
+          - reports/r02/10-appendices.qmd
+          - reports/r02/11-references.qmd
+      - text: "---"
+      - href: errata.qmd
+        text: "Errata"
+
+  page-footer:
+    left: "&copy; 2026 Wisdom Hill"
+    center: >-
+      Licensed under
+      [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).
+      Quotation and summary permitted.
+    right: "[Wisdom Hill Research](https://www.wisdomhill.net)"
+
+lang: en
+
+# `name.literal` marks this as an organisation. Written as a plain string,
+# BibTeX parses it as a personal name and emits
+# `author = {Hill Research, Wisdom}`.
+author:
+  - name:
+      literal: "Wisdom Hill Research"
+    affiliation: "Wisdom Hill"
+    url: https://www.wisdomhill.net
+
+copyright:
+  holder: "Wisdom Hill"
+  year: "2026"
+
+license: "CC BY-NC-ND 4.0"
+citation: true
+
+format:
+  html:
+    theme:
+      light: [litera, styles.scss, theme-light.scss]
+      dark:  [darkly, styles.scss, theme-dark.scss]
+    grid:
+      body-width: 780px
+      sidebar-width: 290px
+      margin-width: 200px
+    toc: true
+    toc-depth: 3
+    toc-location: right
+    number-sections: false
+    anchor-sections: true
+    link-external-newwindow: true
+    code-copy: false
+
+  typst:
+    # Rescues the apostrophe after a digit, which Typst would otherwise render
+    # as a prime. See the filter's own header for why nothing simpler works.
+    filters:
+      - _filters/typst-apostrophe.lua
+    template-partials:
+      - _partials/typst-show.typ
+      - _partials/typst-template.typ
+      - _partials/definitions.typ
+    papersize: a4
+    margin:
+      x: 2.5cm
+      y: 2.5cm
+    fontsize: 11pt
+    linestretch: 1.15
+    font-paths: ["_fonts"]
+    mainfont: "Source Serif 4"
+    headingfont: "Inter"
+    titlecolor: "2251FF"
+    series-label: "The Intelligence Economy · A Wisdom Hill Research Series"
+    # The closing colophon needs the clean series name and the series root URL.
+    # `citation.container-title` carries the name, but only inside reports/rNN/,
+    # and `website.site-url` is not passed through to Typst at all. Both are
+    # therefore declared here so every document — Prologue and Epilogue
+    # included — inherits them. `series-url` duplicates `site-url` by
+    # necessity; both are listed in the domain-change check in HANDOFF.md.
+    series-title: "The Intelligence Economy"
+    series-url: "https://wisdomhill.github.io/intelligence-economy/"
+    number-sections: false
+    toc: true
+    toc-depth: 2

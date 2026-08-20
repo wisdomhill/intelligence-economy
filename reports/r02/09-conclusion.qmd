@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "9. The Bottleneck Always Moves to Judgment"
+---
+
+{{< include _09-conclusion.qmd >}}

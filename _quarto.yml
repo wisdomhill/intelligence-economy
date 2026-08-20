@@ -135,6 +135,29 @@ website:
           - reports/r06/05-conclusion.qmd
           - reports/r06/06-appendices.qmd
           - reports/r06/07-references.qmd
+      - section: "7. The Agentic Office"
+        href: reports/r07/index.qmd
+        contents:
+          - reports/r07/01-universal-layer.qmd
+          - reports/r07/02-triad-and-eras.qmd
+          - reports/r07/03-convergence.qmd
+          - reports/r07/04-the-arena.qmd
+          - reports/r07/05-the-players.qmd
+          - reports/r07/06-formats-protocols.qmd
+          - reports/r07/07-scenarios.qmd
+          - reports/r07/08-investment.qmd
+          - reports/r07/09-appendices.qmd
+          - reports/r07/10-references.qmd
+      - section: "8. The Functional Anatomy of Enterprise AI Demand"
+        href: reports/r08/index.qmd
+        contents:
+          - reports/r08/01-introduction.qmd
+          - reports/r08/02-framework.qmd
+          - reports/r08/03-seven-functions.qmd
+          - reports/r08/04-demand-model.qmd
+          - reports/r08/05-risks.qmd
+          - reports/r08/06-tracking.qmd
+          - reports/r08/07-references.qmd
       - text: "---"
       - href: errata.qmd
         text: "Errata"

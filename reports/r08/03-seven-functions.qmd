@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "4. The Seven Functional Categories"
+---
+
+{{< include _03-seven-functions.qmd >}}

@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "5. The Arena"
+---
+
+{{< include _04-the-arena.qmd >}}

@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "8. Scenarios and Outlook"
+---
+
+{{< include _07-scenarios.qmd >}}

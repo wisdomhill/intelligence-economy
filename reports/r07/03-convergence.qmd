@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "4. Why the War Converges on Office"
+---
+
+{{< include _03-convergence.qmd >}}

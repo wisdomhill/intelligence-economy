@@ -1,0 +1,102 @@
+## Microsoft — Primary Sources
+
+1.  Microsoft 365 Blog, "Copilot Cowork: A new way of getting work done," March 9, 2026. <https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/>
+2.  Microsoft 365 Blog, "Powering Frontier Transformation with Copilot and agents," March 9, 2026. <https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/powering-frontier-transformation-with-copilot-and-agents/>
+3.  The Official Microsoft Blog, "Introducing the First Frontier Suite built on Intelligence + Trust," March 9, 2026. <https://blogs.microsoft.com/blog/2026/03/09/introducing-the-first-frontier-suite-built-on-intelligence-trust/>
+4.  Microsoft 365 Blog, "Copilot Cowork: Now available in Frontier," March 30, 2026. <https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/30/copilot-cowork-now-available-in-frontier/>
+5.  Microsoft 365 Blog, "Announcing the new Work IQ APIs," June 2, 2026. <https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/announcing-the-new-work-iq-apis/>
+6.  Microsoft 365 Blog, "Bring your everyday business apps into the flow of work with agents in Microsoft 365 Copilot," April 13, 2026. <https://www.microsoft.com/en-us/microsoft-365/blog/2026/04/13/bring-your-everyday-business-apps-into-the-flow-of-work-with-agents-in-microsoft-365-copilot/>
+7.  Microsoft Learn, "Agent Store in Microsoft 365 Copilot," accessed June 2026. <https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-agent-store>
+8.  Microsoft Learn, "Work IQ MCP overview (preview)," accessed June 2026. <https://learn.microsoft.com/en-us/microsoft-agent-365/tooling-servers-overview>
+9.  Microsoft Learn, "Get started with Copilot Cowork (Frontier)," accessed June 2026. <https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/get-started>
+10. Microsoft Learn, "Agents for Microsoft 365 Copilot Chat," accessed June 2026. <https://learn.microsoft.com/en-us/copilot/agents>
+11. Microsoft Learn, "What's new in Copilot Studio" (monthly release notes), accessed June 2026. <https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new>
+12. Microsoft 365 Roadmap (Agent Mode, Work IQ, Agent 365 entries), accessed June 2026. <https://www.microsoft.com/en-us/microsoft-365/roadmap>
+13. Microsoft Corporation, FY2025 Annual Report (Microsoft 365 Commercial and Consumer revenue). <https://www.microsoft.com/investor/reports/ar25/index.html>
+14. Microsoft WorkLab, "Will AI Fix Work?" Work Trend Index Annual Report, May 9, 2023 (57/43 communication-vs-creation time split within Microsoft 365). <https://www.microsoft.com/en-us/worklab/work-trend-index/will-ai-fix-work>
+15. Microsoft Learn, "History of Microsoft — 1983" (origin of Microsoft Word on Xenix/MS-DOS), accessed July 2026. <https://learn.microsoft.com/en-us/shows/history/history-of-microsoft-1983>
+
+## Google — Primary Sources
+
+16. Google Cloud Blog, "Introducing Gemini Enterprise Agent Platform," April 22, 2026. <https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform>
+17. Google Cloud Blog, "Innovations from Google I/O 26 on Google Cloud," May 19, 2026. <https://cloud.google.com/blog/products/ai-machine-learning/innovations-from-google-io-26-on-google-cloud>
+18. Google Workspace Updates, "New: Agent tools and security updates for Google Workspace developers," May 2026. <https://workspaceupdates.googleblog.com/2026/05/agent-tools-and-security-updates-for-workspace-developers.html>
+19. Google Cloud Blog, "I/O '26 news for agent developers on Google Cloud," May 2026. <https://cloud.google.com/blog/topics/developers-practitioners/io26-news-for-agent-developers-on-google-cloud>
+20. Google Cloud Documentation, "Gemini Enterprise Agent Platform release notes" and "Agents overview," accessed June 2026. <https://docs.cloud.google.com/gemini-enterprise-agent-platform/release-notes;> <https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/overview>
+21. Google Workspace Blog, "Announcing new ways to build and integrate applications in Google Workspace" (source of the three-billion-user figure, inclusive of free consumer accounts), accessed July 2026. <https://workspace.google.com/blog/product-announcements/announcing-new-ways-to-build-and-integrate-applications-in-google-workspace>
+
+## Anthropic and OpenAI — Primary Sources
+
+22. Anthropic, "Claude 3.7 Sonnet and Claude Code," February 24, 2025 (Claude Code research-preview launch). <https://www.anthropic.com/news/claude-3-7-sonnet>
+23. Anthropic, "Cowork: Claude Code power for knowledge work" (product page), accessed June 2026. <https://claude.com/product/cowork>
+24. Anthropic, "Collaborate with Claude across Excel, PowerPoint, Word, and Outlook," May 7, 2026 (general availability of Excel/PowerPoint/Word; Outlook public beta). <https://claude.com/blog/collaborate-with-claude-across-excel-powerpoint-word-and-outlook>
+25. Anthropic, "Best Practices for Claude in Excel and PowerPoint" (Partner Series webinar), March 18, 2026. <https://www.anthropic.com/webinars/best-practices-for-claude-in-excel-and-powerpoint>
+26. OpenAI, "Introducing OpenAI Frontier," February 5, 2026. <https://openai.com/index/introducing-openai-frontier/>
+27. OpenAI, "Introducing workspace agents in ChatGPT," April 22, 2026. <https://openai.com/index/introducing-workspace-agents-in-chatgpt/>
+28. OpenAI, "The next phase of enterprise AI" (enterprise revenue mix), 2026. <https://openai.com/index/next-phase-of-enterprise-ai/;> see also "How frontier firms are pulling ahead," May 6, 2026. <https://openai.com/index/introducing-b2b-signals/>
+29. OpenAI, "Genspark ships no-code personal agents with GPT-4.1 and OpenAI Realtime API" (customer story), 2025. <https://openai.com/index/genspark/>
+
+## Press and Analyst Coverage — Incumbents and Model Labs
+
+30. TechCrunch, "Google introduces Gemini Spark, a 24/7 agentic assistant with Gmail integration, at I/O 2026," May 19, 2026. <https://techcrunch.com/2026/05/19/google-introduces-gemini-spark-a-24-7-agentic-assistant-with-gmail-integration/>
+31. Engadget, "Google's Gemini Spark is an agentic AI assistant," May 2026. <https://www.engadget.com/2176556/googles-gemini-spark-is-an-agentic-ai-assistant/>
+32. The Next Web, "Google launches Gemini Spark agentic AI assistant at I/O 2026," May 2026. <https://thenextweb.com/news/google-gemini-spark-agentic-assistant-gmail-io-2026>
+33. InfoQ, "Google Workspace CLI: Unified Command-Line Tool Built for Humans and AI Agents," June 2, 2026. <https://www.infoq.com/news/2026/06/google-workspace-cli/>
+34. Tekedia, "Google Releases Open-source Command-line Interface for Google Workspace," March 8, 2026. <https://www.tekedia.com/google-releases-open-source-command-line-interface-for-google-workspace/>
+35. FindArticles, "Google Releases Workspace CLI For AI Agents," March 6, 2026. <https://www.findarticles.com/google-releases-workspace-cli-for-ai-agents/>
+36. Ars Technica, "Anthropic launches Cowork, a Claude Code-like for general computing," January 13, 2026. <https://arstechnica.com/ai/2026/01/anthropic-launches-cowork-a-claude-code-like-for-general-computing/>
+37. Techstrong.ai, "Anthropic Launches Cowork, Bringing Claude's Agentic AI to Non-Developers," January 14, 2026. <https://techstrong.ai/features/anthropic-launches-cowork-bringing-claudes-agentic-ai-to-non-developers/>
+38. The New Stack, "Claude can now follow users across Outlook, Word, Excel, and PowerPoint," May 10, 2026. <https://thenewstack.io/claude-word-excel-powerpoint-outlook-microsoft-office/>
+39. EdTech Innovation Hub, "Anthropic launches Claude in PowerPoint and Excel," February 17, 2026. <https://www.edtechinnovationhub.com/news/anthropic-brings-claude-into-powerpoint-and-excel-in-enterprise-push>
+40. VentureBeat, "OpenAI unveils Workspace Agents, a successor to custom GPTs for enterprises," April 22, 2026. <https://venturebeat.com/orchestration/openai-unveils-workspace-agents-a-successor-to-custom-gpts-for-enterprises-that-can-plug-directly-into-slack-salesforce-and-more>
+41. Reworked, "OpenAI Replaces Custom GPTs With Workspace Agents Built for Team Workflows," April 27, 2026. <https://www.reworked.co/digital-workplace/openai-launches-workspace-agents-for-enterprise-workflow-automation/>
+42. Windows Forum, "Microsoft Copilot in 2026: the agentic Work IQ layer for work, trust, and AI delivery," April 14, 2026. <https://windowsforum.com/threads/microsoft-copilot-in-2026-the-agentic-work-iq-layer-for-work-trust-and-ai-delivery.412408/>
+43. Aitoolsbee, "Data residency complicates Copilot Cowork rollout in Microsoft 365" (E7/Agent 365 pricing; Azure agreement; subprocessor status), March 26, 2026. <https://aitoolsbee.com/news/data-residency-complicates-copilot-cowork-rollout-in-microsoft-365/>
+44. Office Watch, "What the !@^? Is Microsoft Copilot 'Work IQ'?," May 1, 2026. <https://office-watch.com/2026/microsoft-copilot-work-iq/>
+
+## Press Coverage — AI-Natives and Adjacent SaaS
+
+45. VentureBeat, "Why Meta bought Manus — and what it signals for your enterprise AI agent strategy," December 30, 2025. <https://venturebeat.com/orchestration/why-meta-bought-manus-and-what-it-means-for-your-enterprise-ai-agent>
+46. AI Magazine, "Inside Meta's Groundbreaking Acquisition of Manus," January 6, 2026. <https://aimagazine.com/news/how-manus-puts-meta-ahead-in-the-agentic-ai-economy>
+47. CNBC, "Meta faces China probe over acquisition of AI agent startup Manus," January 8, 2026. <https://www.cnbc.com/2026/01/08/china-investigate-meta-acquisition-manus-export.html>
+48. SiliconANGLE, "China blocks Meta's acquisition of AI agent developer Manus" (transaction value and ARR), April 27, 2026. <https://siliconangle.com/2026/04/27/china-blocks-metas-acquisition-ai-agent-developer-manus/>
+49. AIbase, "Kunlun releases Skywork Super Agents for the global market," May 22, 2025. <https://www.aibase.com/news/18256>
+50. KAD, "Skywork Desktop Launches on Windows as a Cowork Alternative," February 7, 2026. <https://www.kad8.com/software/skywork-desktop-launches-on-windows-as-a-cowork-alternative/>
+51. Lindy, "I tested Genspark AI's 2026 features: Here's what worked," January 8, 2026. <https://www.lindy.ai/blog/genspark-ai-features>
+52. Notion, "February 24, 2026 — Notion 3.3: Custom Agents" (release notes) and "Introducing Custom Agents" (blog), February 24, 2026. <https://www.notion.com/releases/2026-02-24;> <https://www.notion.com/blog/introducing-custom-agents>
+53. eesel AI, "Notion AI review 2026: agents, pricing, and the honest verdict," May 7, 2026. <https://www.eesel.ai/blog/notion-ai-review>
+54. Reworked, "Canva Unveils 'Creative Operating System' to Take on Adobe Creative Cloud," February 2026. <https://www.reworked.co/collaboration-productivity/canva-bets-big-on-a-creative-operating-system-makes-affinity-free-forever/>
+55. The AI Economy (Ken Yeung), "Canva Unveils AI Design Model as Part of 'Creative Operating System'," October 30, 2025. <https://theaieconomy.substack.com/p/canva-creative-operating-system-ai-design-model-assistant>
+56. CMSWire, "Canva Acquires Simtheory and Ortto, Pushes Into Agentic AI and Marketing Automation," April 9, 2026. <https://www.cmswire.com/digital-marketing/canva-acquires-simtheory-and-ortto-pushes-into-agentic-ai-and-marketing-automation/>
+
+## Formats, Standards, and Protocols
+
+57. Ecma International, ECMA-376: Office Open XML File Formats (1st ed. 2006; subsequent editions). <https://ecma-international.org/publications-and-standards/standards/ecma-376/>
+58. ISO/IEC 29500-1:2016, Information technology — Document description and processing languages — Office Open XML File Formats — Part 1: Fundamentals and Markup Language Reference. <https://www.iso.org/standard/71691.html>
+59. ISO 32000-2:2020, Document management — Portable document format — Part 2: PDF 2.0. <https://www.iso.org/standard/75839.html>
+60. Codersera, "llms.txt Explained (May 2026): The Honest Guide to the Spec, Adoption, and How to Ship One," May 9, 2026. <https://codersera.com/blog/llms-txt-complete-guide-2026/>
+61. Save, "Why Markdown Is the Language of AI in 2026," March 11, 2026. <https://www.savemarkdown.co/blog/markdown-language-of-ai-2026>
+62. Digital Applied, "Markdown-First Content Architecture: The llms.txt Spec," April 27, 2026. <https://www.digitalapplied.com/blog/markdown-first-content-architecture-llms-txt-spec>
+63. Augment Code, "How to Build Your AGENTS.md (2026): The Context File That Makes AI Coding Agents Actually Work," March 31, 2026. <https://www.augmentcode.com/guides/how-to-build-agents-md>
+64. Google Cloud Blog, "Announcing Agent Payments Protocol (AP2)" (AP2 as a Google-led, industry-collaborative protocol), accessed July 2026. <https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol>
+65. Shero Commerce, "llms.txt and agents.md for eCommerce (2026 guide)" (secondary overview of the UCP/ACP/AP2/MCP commerce-protocol landscape), June 2026. <https://sherocommerce.com/blogs/insights/llms-txt-and-agents-md-for-ecommerce>
+66. Windows Forum, "Merge Agent Handler on Microsoft Agent Store: Governed MCP Access for M365 Copilot," June 2026. <https://windowsforum.com/threads/merge-agent-handler-on-microsoft-agent-store-governed-mcp-access-for-m365-copilot.421910/>
+67. Model Context Protocol documentation (Anthropic origin; Linux Foundation stewardship), accessed June 2026. <https://modelcontextprotocol.io/>
+
+## Gemini Notebook (formerly NotebookLM), Knowledge Formats, and the Knowledge Network
+
+68. Google Workspace Updates, "New ways to customize and interact with your content in NotebookLM," March 2026. <https://workspaceupdates.googleblog.com/2026/03/new-ways-to-customize-and-interact-with-your-content-in-NotebookLM.html>
+69. Google Cloud Documentation, "What is NotebookLM Enterprise?," accessed July 2026. <https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/overview>
+70. Wikipedia, "NotebookLM" (feature chronology: Audio Overviews, September 2024; slide decks and infographics, November 2025; Data Tables, December 2025; Gemini 3.5 as of June 2026), accessed July 2026. <https://en.wikipedia.org/wiki/NotebookLM>
+71. DigitalOcean, "What Is NotebookLM? Features and How to Use It in 2026," accessed July 2026. <https://www.digitalocean.com/resources/articles/what-is-notebooklm>
+72. Su, J., "NotebookLM in 2026: What Changed and What Matters," March 2026. <https://www.jeffsu.org/notebooklm-changed-completely-heres-what-matters-in-2026/>
+73. Google (The Keyword), "NotebookLM is now Gemini Notebook," July 16, 2026. <https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/>
+74. Google Cloud Blog, "How the Open Knowledge Format can improve data sharing," June 12, 2026. <https://cloud.google.com/blog/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing>
+75. Google Cloud Platform, "Open Knowledge Format — Specification v0.1," GitHub, GoogleCloudPlatform/knowledge-catalog repository. <https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md>
+76. The Decoder, "Google Cloud's Open Knowledge Format turns scattered docs into Markdown files for AI agents," June 2026. <https://the-decoder.com/google-clouds-open-knowledge-format-turns-scattered-docs-into-markdown-files-for-ai-agents/>
+77. MarkTechPost, "Google Cloud Introduces Open Knowledge Format (OKF): A Vendor-Neutral Markdown Spec for Giving AI Agents Curated Context," June 16, 2026. <https://www.marktechpost.com/2026/06/16/google-cloud-introduces-open-knowledge-format-okf-a-vendor-neutral-markdown-spec-for-giving-ai-agents-curated-context/>
+78. Apache Software Foundation, Apache Parquet documentation and format specification. <https://parquet.apache.org/>
+
+*Note on sourcing: company figures (user counts, seat counts, pricing, transaction values) are as stated in the cited primary announcements and contemporaneous press coverage; where outlets reported ranges (e.g., the Manus transaction value), the report states the range and, where a single figure is needed, uses the conservative bound. Several secondary sources above aggregate primary announcements and were used for corroboration rather than as sole authority. Token-efficiency figures circulating in practitioner literature (Section 7.6) are unaudited and treated as directional only. The scenario sections (7.7 and 8.5) present explicitly labeled analytical visions subject to the stated falsifiers, not forecasts. Cross-references to Reports 5 and 6 of this series are internal navigation, not sources; reference lists in this series contain external primary and secondary sources only.*
+
+------------------------------------------------------------------------

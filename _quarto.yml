@@ -22,6 +22,10 @@ website:
   # URL is generated from it.
   #   now  -> https://wisdomhill.github.io/intelligence-economy/
   #   then -> https://research.wisdomhill.net
+  # Shown in the browser tab. SVG rather than a raster size: the tab renders at
+  # 16 CSS px, twice that on a HiDPI display, and one scalable file covers both.
+  favicon: assets/brand/favicon.svg
+
   site-url: https://wisdomhill.github.io/intelligence-economy/
   repo-url: https://github.com/wisdomhill/intelligence-economy
   repo-actions: [source]
@@ -39,6 +43,15 @@ website:
     type: overlay
 
   navbar:
+    # Displayed at 36px tall (styles.scss raises Quarto's 24px cap), so this
+    # is the source at 2x rather than the 2475x591 original, which every page
+    # would otherwise download at 171 KB to show it 151 px wide.
+    logo: assets/brand/wisdomhill-horizontal-nav.png
+    logo-alt: "Wisdom Hill"
+    # No `logo-href`: Quarto applies it to the logo *and* the title beside it,
+    # with no separate option for the two, so pointing the logo at the company
+    # site dragged the series title there as well. Both now go to the series
+    # home, which is what the title has to do.
     title: "The Intelligence Economy"
     left:
       - href: index.qmd

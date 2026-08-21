@@ -233,6 +233,8 @@ not.
 grep -rn "wisdomhill.github.io" _quarto.yml reports/*/_metadata.yml
 ```
 
+The DNS and `CNAME` steps that go with it are in `SETUP.md` § 7.
+
 ## Still open
 
 1. Reports 2–14 and the Epilogue are not yet converted. `about.qmd` has been

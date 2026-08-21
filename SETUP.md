@@ -119,3 +119,30 @@ Render the PDFs on the runner rather than trusting a local build. A machine
 with Inter installed shadows the committed `_fonts/` copies, and
 `tools/verify_pdf.py` then fails four checks (see `HANDOFF.md`). The runner has
 no Inter, so the deployed PDFs are the ones that match `TYPOGRAPHY.md`.
+
+## 7. Moving to the custom domain
+
+Planned migration: `research.wisdomhill.net`.
+
+1. Add a `CNAME` DNS record pointing `research` at `wisdomhill.github.io`.
+2. Set the custom domain in the repository's Pages settings and enable
+   *Enforce HTTPS*.
+3. Create a file named `CNAME` in the project root containing the single line
+   `research.wisdomhill.net`, and add it to `resources:` in `_quarto.yml` so
+   that it survives each render.
+4. Update the three places that carry the domain. `HANDOFF.md` lists them and
+   gives the grep that finds them all:
+
+   ```
+   grep -rn "wisdomhill.github.io" _quarto.yml reports/*/_metadata.yml
+   ```
+
+   `site-url` generates every citation URL, `series-url` is the copy the PDF
+   colophon prints, and each report's `citation.url` is its own canonical
+   address.
+
+**Do not create the `CNAME` file before the DNS record resolves.** Doing so
+takes the site offline until it does.
+
+PDFs embed their own URL and, unlike the site, cannot be redirected. Hold off
+on distributing PDF files externally until the domain is settled.

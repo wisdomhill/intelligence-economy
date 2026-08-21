@@ -68,3 +68,7 @@ blockquote { border-left-width: 3px; font-style: normal; }
 
 // Long URLs in the reference list should wrap, not overflow.
 a { overflow-wrap: anywhere; }
+
+// Quarto caps `.navbar-logo` at 24px, which leaves the mark smaller than the
+// series title standing next to it. 36px reads as a pair.
+.navbar-logo { max-height: 36px; }

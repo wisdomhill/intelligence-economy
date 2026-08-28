@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "6. Beyond Content"
+---
+
+{{< include _06-beyond-content.qmd >}}

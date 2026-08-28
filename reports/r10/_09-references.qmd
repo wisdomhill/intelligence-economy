@@ -1,0 +1,78 @@
+Artificial Analysis. "Text-to-Video Leaderboard" and "Video Model Comparisons" (Seedance, HappyHorse, Kling, Veo Arena Elo and per-minute pricing). Accessed July 2026. https://artificialanalysis.ai/video/leaderboard/text-to-video
+
+BuildMVPFast. "Best Text-to-Video AI Generators July 2026: Top 10 Models Ranked" (Sora shutdown dates; Seedance 2.5, Kling 3.0 Turbo, Gemini Omni Flash pricing). July 2026. https://www.buildmvpfast.com/articles/best-llms-2026-guide/video-generation-ai
+
+GMI Cloud. "GPU Cloud Cost for AI Inference at Scale in 2026" (managed-inference video pricing ~$0.07/clip; H100 on-demand rates). March 2026. https://www.gmicloud.ai/en/blog/gpu-cloud-cost-ai-inference-at-scale
+
+AI/ML API. "Best AI Video Generators 2026: Veo 3.1, Kling, Sora 2, Seedance & More Compared." April 2026. https://aimlapi.com/blog/best-ai-video-generators-2026-veo-3-1-kling-sora-2-seedance-more-compared
+
+Amazon seller and marketplace statistics. Marketplace Pulse and Seller Assistant, "Amazon Statistics for Sellers 2026" (~1.6M active sellers; third-party GMV). April 2026. https://www.sellerassistant.app/blog/amazon-statistics-for-sellers-in-2026-key-insights/
+
+
+Atlas Cloud. "Seedance vs Kling vs Sora vs Veo: Head-to-Head Comparison." May 2026. https://www.atlascloud.ai/blog/guides/seedance-vs-kling-vs-sora-vs-veo
+
+Campus Technology. "Google Unveils Android XR Smart Glasses, Powered by Gemini AI." May 22, 2026. https://campustechnology.com/articles/2026/05/22/google-unveils-android-xr-smart-glasses-powered-by-gemini-ai.aspx
+
+CoderSera / CatDoes / Composio (agentic-war context for OpenAI resource reallocation): "Claude Code vs OpenAI Codex" comparison series. April–June 2026. https://codersera.com/blog/claude-code-vs-openai-codex-2026/
+
+DevTk.AI. "AI Video API Pricing 2026." February 2026. https://devtk.ai/en/blog/ai-video-generation-pricing-2026/
+
+The Gadgeteer. "Google AI Smart Glasses Introduced" (EssilorLuxottica 7M+ Meta AI glasses sold in 2025). April 2026. https://the-gadgeteer.com/2026/04/27/google-android-xr-ai-smart-glasses/
+
+Forbes (Liu, P.). "How Much OpenAI May Be Spending on AI-Generated Sora Videos" (outside estimate of Sora inference costs and its stated assumptions). November 10, 2025. https://www.forbes.com/sites/phoebeliu/2025/11/10/openai-spending-ai-generated-sora-videos/
+
+Google. "Android XR at I/O 2026" (consumer AI glasses: fall 2026 launch, audio-first design, Android and iPhone support). May 2026. https://blog.google/products-and-platforms/platforms/android/android-xr-io-2026/
+
+Google Blog. "Project Genie: AI world model now available for Ultra users." January–February 2026. https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie/
+
+Google Blog. "Project Genie Expands" (worldwide Ultra availability; Street View integration). May 2026. https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie-expands/
+
+Google DeepMind. "Genie 3: A New Frontier for World Models" (720p/24fps real-time interactive environments; parameter count undisclosed). https://deepmind.google/blog/genie-3-a-new-frontier-for-world-models/
+
+IDC. "Smart Glasses Surge: The XR Market Is Rewriting Its Own Rules" (Q1 2026 display-less shipments 2.25M; Meta share 69.2%; 2026 forecast 13.6M units, ~$5.1B). 2026. https://www.idc.com/resource-center/blog/smart-glasses-surge-the-xr-market-is-rewriting-its-own-rules/
+
+Google Blog. "I/O 2026 developer highlights: Antigravity, Gemini API, AI Studio." May 2026. https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/
+
+Google DeepMind. "Gemini Robotics" model pages and blog series (2025–2026). https://deepmind.google/models/gemini-robotics/
+
+Google DeepMind. "Gemini Robotics ER-1.6." April 2026. https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-robotics-er-1-6/
+
+Meta Platforms. "Meta's AI Product News from Connect" (more than 1 million advertisers using generative AI ad tools; 15 million ads generated in one month). September 2024. https://about.fb.com/news/2024/09/metas-ai-product-news-connect/
+
+Meta Platforms. "Performance Talks: How Zenith and Farfetch Are Using AI to Drive Results" (more than 10 million advertising businesses). https://about.fb.com/news/performance-talks-how-zenith-and-farfetch-are-using-ai-to-drive-results/
+
+Netflix. Second Quarter 2025 Earnings Interview (first generative-AI final footage in a released title). July 2025. https://ir.netflix.net/investor-news-and-events/investor-events/event-details/2025/Netflix-Second-Quarter-2025-Earnings-Interview-2025--ZzeVaVp2V/default.aspx
+
+NVIDIA. "NVIDIA Launches Cosmos 3, the Open Frontier Foundation Model for Physical AI." 2026. https://nvidianews.nvidia.com/news/nvidia-launches-cosmos-3-the-open-frontier-foundation-model-for-physical-ai
+
+OpenAI. "What to Know About the Sora Discontinuation" (app discontinued April 26, 2026; API September 24, 2026). 2026. https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation
+
+Runway. "Runway Partners with Lionsgate." September 2024. https://runwayml.com/news/runway-partners-with-lionsgate
+
+Lushbinary. "AI Video Generation 2026: Sora 2 vs Veo 3.1 vs Kling 3.0 Compared." April 2026. https://lushbinary.com/blog/ai-video-generation-sora-veo-kling-seedance-comparison/
+
+Memeburn. "Google AI Smart Glasses 2026: Gemini, iPhone Support, Meta Rival." May 2026. https://memeburn.com/google-ai-smart-glasses-2026-gemini-iphone-meta/
+
+Notebookcheck. "Google Android XR smart glasses launching this fall with Gemini AI." May 2026. https://www.notebookcheck.net/Google-Android-XR-smart-glasses-launching-this-fall-with-Gemini-AI.1300619.0.html
+
+Pinggy. "Best Video Generation AI Models in 2026." May 2026 (leaderboard details as of the May snapshot). https://pinggy.io/blog/best_video_generation_ai_models/
+
+Stack Overflow. "2025 Developer Survey: AI" (84% of professional developers use or plan to use AI tools; 51% daily use). 2025. https://survey.stackoverflow.co/2025/ai
+
+Pixflow. "Best AI Video Generator in 2026." June 2026. https://pixflow.net/blog/best-ai-video-generator/
+
+Shopify. "Global Ecommerce Sales Growth Report 2026" (global e-commerce base and SKU context). 2026. https://www.shopify.com/blog/global-ecommerce-sales
+
+Teleprompter. "2025 YouTube Statistics: Global Overview and Key Trends" (~500 hours uploaded per minute; ~65M active creators). December 2025. https://www.teleprompter.com/blog/2025-youtube-statistics
+
+YouTube Official Blog. "Second Chances on YouTube" (more than 3 million channels in the YouTube Partner Program). https://blog.youtube/inside-youtube/second-chances-on-youtube/
+
+TechCrunch. "Google's Genie world model can now simulate real streets with Street View." May 19, 2026. https://techcrunch.com/2026/05/19/googles-genie-world-model-can-now-simulate-real-streets-with-street-view/
+
+TechTimes. "DeepMind World Models Train Robots in Imagined Worlds: SIMA Practices Inside Genie 3." June 6, 2026. https://www.techtimes.com/articles/317932/20260606/deepmind-world-models-train-robots-imagined-worlds-sima-practices-inside-genie-3-model.htm
+
+UploadVR. "Google Gemini Smart Glasses Launching in Fall to Take on Ray-Ban Meta." June 2026. https://www.uploadvr.com/gemini-smart-glasses-are-launching-in-fall-to-take-on-ray-ban-meta/
+
+---
+
+*Disclaimer: This report is for informational purposes only and does not constitute investment advice. Quantitative estimates herein are order-of-magnitude modeling assumptions, not measured data, and are documented as adjustable inputs in the media sheet of the companion workbook (Agentic AI Token Demand Model workbook: Section C and the Media Model derivation sheet). Vendor-disclosed figures (pricing, unit shipments, leaderboard positions) carry the verification caveats noted in Sections 6–7.*

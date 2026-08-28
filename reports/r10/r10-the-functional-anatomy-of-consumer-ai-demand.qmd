@@ -1,0 +1,44 @@
+---
+title: "10. The Functional Anatomy of Consumer AI Demand"
+subtitle: "Generative media economics, world models, and the conquest of physical-life context, 2026–2028"
+format:
+  typst: default
+---
+
+# 1. Executive Summary
+
+{{< include _00-executive-summary.qmd >}}
+
+# 2. Introduction
+
+{{< include _01-introduction.qmd >}}
+
+# 3. The Framework Extended
+
+{{< include _02-framework.qmd >}}
+
+# 4. The Supply Side
+
+{{< include _03-supply-side.qmd >}}
+
+# 5. The Functional Anatomy of Media Demand
+
+{{< include _04-media-demand-method.qmd >}}
+
+{{< include _05-media-demand-totals.qmd >}}
+
+# 6. Beyond Content
+
+{{< include _06-beyond-content.qmd >}}
+
+# 7. Risks and Sensitivities
+
+{{< include _07-risks.qmd >}}
+
+# 8. Tracking Indicators
+
+{{< include _08-tracking-indicators.qmd >}}
+
+# References
+
+{{< include _09-references.qmd >}}

@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "3. The Framework Extended"
+---
+
+{{< include _02-framework.qmd >}}

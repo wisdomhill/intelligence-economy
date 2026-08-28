@@ -288,7 +288,7 @@ figures: `Mkt Cap, End-2025 ($B)` sets the minimum, not `568.85`.
 ## 4. Where the values live
 
 ```
-_filters/typst-apostrophe.lua     apostrophe after a digit (PDF only)
+_filters/typst-apostrophe.lua     apostrophe next to a digit (PDF only)
 _partials/definitions.typ         Part separator rule (`horizontalrule`)
 _quarto.yml                       per-series switches
   format.typst.fontsize           body size (11pt)

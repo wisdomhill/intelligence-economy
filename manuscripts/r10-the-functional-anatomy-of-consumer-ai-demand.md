@@ -181,7 +181,7 @@ Each segment is estimated as *generated minutes = installed base × AI-adoption 
 **Table 1. Generated video volume by segment: bases, penetration paths, and generation intensity**
 
 | Video segment | Base (anchor) | Penetration 26→28E | 2026E | 2027E | 2028E | GPU-hr/min |
-|---|---|---|---|---|---|---|
+|---|---|---|---:|---:|---:|---:|
 | 1. Performance ad creative | ~15M platform-advertiser accounts | 15% → 55% | 160 | 460 | 1,155 | 0.25 |
 | 2. E-commerce SKU video | ~2,000M live marketplace listings | 5% → 28% of stock (~35% → ~88% GMV-weighted) | 60 | 220 | 505 | 0.15 |
 | 3. Creator economy / UGC | ~15M weekly-cadence creators | 12% → 40% | 140 | 585 | 1,560 | 0.30 |

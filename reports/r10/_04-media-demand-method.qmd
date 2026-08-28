@@ -15,7 +15,7 @@ Each segment is estimated as *generated minutes = installed base × AI-adoption 
 | 5. Corporate internal | ~4M organizations (50+ employees) | 5% → 30% | 31 | 120 | 240 | 0.20 |
 | **Video total (M generated minutes)** | | | **416** | **1,505** | **3,710** | **0.38–0.43 blended** |
 
-: {tbl-colwidths="[18,22,22,7,7,7,17]"}
+: {tbl-colwidths="[24,20,18,8,8,8,14]"}
 
 Two headline movements inside the table deserve immediate notice. Generated minutes expand roughly nine-fold over two years, faster than any single segment because breadth and depth compound. And the volume leadership changes hands: performance advertising leads in 2026 (38% of minutes), but the creator economy overtakes it from 2027 and holds 42% of minutes by 2028 — advertising's growth is bounded by advertiser count and fatigue-cycle economics, while creator demand compounds on generation depth per video. The sections below derive each row.
 

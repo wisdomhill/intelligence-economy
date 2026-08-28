@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "6. The Scoring Matrix"
+---
+
+{{< include _05-scoring-matrix.qmd >}}

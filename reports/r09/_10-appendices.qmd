@@ -1,0 +1,29 @@
+## A. Event Timeline (January–June 2026)
+
+| Date | Event | Significance in framework |
+|---|---|---|
+| Jan 11–12, 2026 | Google unveils UCP with retail coalition at NRF; Apple–Google arrangement announced — Gemini technology to underpin next-gen Apple Foundation Models / Siri (terms earlier reported by Bloomberg at \~\$1B/yr for a custom \~1.2T-parameter model; unconfirmed) | Protocol war opens; OS model-supply beachhead set |
+| Feb 16, 2026 | OpenAI launches "Buy it in ChatGPT" Instant Checkout (ACP/Stripe) to all U.S. users | Intent layer attempts descent into execution |
+| Feb 27, 2026 | Amazon announces up-to-\$50B investment in OpenAI + AWS Trainium/Bedrock/Frontier compute pact (compute & equity, not commerce) | Compute-layer partnership coexists with commerce-layer exclusion |
+| Mar 9, 2026 | District court enjoins Perplexity Comet from Amazon logged-in pages (CFAA/CDAFA) | Platform-authorization theory wins at trial court |
+| Mar 17–30, 2026 | Ninth Circuit stays the injunction pending appeal; Comet keeps operating on Amazon during appeal | Uncommon appellate stay signals CFAA theory may not hold |
+| Mar 24, 2026 | OpenAI retires native Instant Checkout (fewer than thirty Shopify merchants ever live); pivots to discovery-first, merchant-controlled checkout, ChatGPT apps | Execution proves harder than intent; "AI discovers, merchant checks out" becomes the 2026 settlement |
+| Apr–May 2026 | Meta unveils Muse Spark (codename "Avocado"); begins paid Meta AI subscription test (late May) | Meta completes pivot to standalone AI business |
+| May 19, 2026 | Google I/O: Gemini Intelligence on Android 17; AppFunctions repositioned as the agentic action layer (Jetpack library in alpha since 2025); Gemini Spark, Antigravity 2.0, Gemini 3.5 Flash; agentic features preview on Galaxy S26 / Pixel 10 | Android positions itself as full-stack agentic platform |
+| May 13, 2026 | Amazon launches Alexa for Shopping (Rufus + Alexa+ merged); ASA offered via AWS; Shop Direct / Buy for Me | Bottom-of-funnel fortress consolidates and expands outward |
+| Jun 8, 2026 | Apple WWDC (iOS 27 unveiling; Tim Cook's final keynote before Ternus transition): Siri redesign detailed; App Intents positioned as agent action registry; full conversational Siri targeted for iOS 27 GA (\~Sept) | Apple's action registry announced, not yet shipped |
+| Jun 11, 2026 | Ninth Circuit hears Amazon v. Perplexity oral argument in Seattle (Mozilla, EFF amicus for Perplexity); no ruling yet | Highest-value binary in consumer agentic commerce remains open |
+| Jun 23, 2026 | Meta launches first own-brand AI glasses (Adventurer, Fury, Kylie ed.) from \$299 with Meta AI powered by Muse Spark; 69.2% smart-glasses share per IDC; display-free glasses shipments +167% YoY (Q1) | OS-bypass hardware hedge materializes |
+| Jun 23–26, 2026 | Prime Day 2026: \~\$26.4B U.S. retail spend; AI-chatbot referrals highest-converting cohort (+40% vs search/email/social, a first); Amazon buys sponsored ChatGPT placements while blocking organic agent access | First hard empirical read on funnel collapse |
+
+: {tbl-colwidths="[20,50,30]"}
+
+## B. Glossary
+
+**App Intents** — Apple's framework through which apps declare invocable actions; Apple's stated channel for Siri-to-app invocation in the rebuilt Siri (rolling out through the iOS 26.4–iOS 27 cycle in 2026). **AppFunctions** — Android's platform API for exposing app capabilities to authorized agents; the Android counterpart to App Intents. **ACP (Agentic Commerce Protocol)** — OpenAI/Stripe open standard for agent-merchant product discovery and (originally) checkout. **UCP (Universal Commerce Protocol)** — Google's coalition-backed agent-commerce standard, integrated with Search AI Mode and Gemini. **AP2 (Agent Payments Protocol)** — Google's protocol work on agent-initiated payment settlement. **MCP (Model Context Protocol)** — the open standard for agent-to-tool connection whose enterprise standardization was analyzed in Part I; referenced by both Android AppFunctions integration and Gemini Spark. **Private Cloud Compute** — Apple's attested server-side execution environment preserving on-device privacy guarantees for overflow workloads. **Funnel collapse** — this report's term for the compression of discovery, comparison, and checkout into a single agent-mediated session.
+
+## C. Methodology Notes
+
+This report synthesizes public reporting and primary announcements current through early July 2026. Figures identified as "reported" or "estimated" — including the \~\$1B/yr Gemini arrangement, the \~\$20B/yr search default payment, ChatGPT weekly-active-user counts, advertising-revenue magnitudes, and cross-platform user-base comparisons — are press-reported or analyst estimates rather than company-disclosed line items, and readers should treat them accordingly. The six-attribute scoring in Section 6 and the scenario probability weights in Section 7 reflect Wisdom Hill Research's qualitative judgment as of publication. Full citations are listed in the References section below; where a claim rests on an analyst estimate or single-source report rather than a company disclosure, that status is noted inline.
+
+------------------------------------------------------------------------

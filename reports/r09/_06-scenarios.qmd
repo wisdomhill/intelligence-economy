@@ -1,0 +1,21 @@
+## 7.1. Base Case — Layered Partition (probability-weighted: \~50%)
+
+The funnel does not consolidate under one agent; it partitions by layer. Intent capture distributes across Google (search-adjacent and Android-default), OpenAI (conversational habit and the non-Amazon retail alliance), and Meta (inspiration-stage and messaging-commerce in emerging markets). Execution concentrates in Amazon's fortress for marketplace categories, with non-Amazon retail served through ACP/UCP protocol coalitions and merchant-controlled checkout. The OS duopoly collects tolls on context access and action invocation without winning the demand war outright (Siri's agent becomes good enough to keep iOS users inside Apple surfaces, not good enough to displace ChatGPT/Gemini habits). Monetization migrates from auctions toward a blend of placement-inside-agents, protocol take rates, and assistant subscriptions. No player's existing franchise collapses, but ad-auction yield growth decelerates structurally at both Google and Amazon.
+
+## 7.2. Bull Case for Google — Full-Stack Consolidation (\~20%)
+
+Google accepts front-loaded auction erosion, presses its three-layer advantage, and Gemini becomes the default agent for the Android installed base plus a large minority of iOS users (via app habit and the model-supply relationship), while UCP becomes the dominant commerce protocol. Required conditions: agent-native ad/placement formats replacing auction yield at better than \~0.7:1, with UCP take rates and assistant-subscription revenue bridging the residual gap to the roughly one-for-one standard Section 4.2.2 sets for the P&L to hold; regulatory remedies that constrain conduct but not architecture; and continued OpenAI execution stumbles on commerce. This is the scenario the user-facing market currently prices most readily, and it is genuinely available to Google — but it requires sustained board-level tolerance for revenue self-disruption that few incumbents in history have demonstrated, which is why we weight it below the partition case.
+
+## 7.3. Disruption Case — Regulation Forces Open Action Surfaces (\~15%)
+
+The DMA (first) and U.S. remedies (later) mandate third-party agent access to App Intents/AppFunctions on non-discriminatory terms, converting the OS action registries into common carriage. Third-party agents gain device-level reach; the OS toll position degrades to a utility; OpenAI and Meta are the principal beneficiaries; the intent-capture contest becomes a pure product contest. The EU's exclusion from consumer Siri AI at launch is best read as Apple pre-positioning for exactly this fight. A Ninth Circuit reversal in Amazon v. Perplexity — a live possibility given the appellate stay, not a remote hypothetical — would compound this scenario by re-legalizing permissionless agents at the merchant layer as well, and would raise the probability weighting on this branch relative to the \~15% assigned here.
+
+## 7.4. Hardware Discontinuity Case (\~15%)
+
+Glasses, pendants, or an OpenAI-class device achieve a smartphone-adjacent adoption curve in a meaningful demographic, resetting the intent-capture layer at a surface where the smartphone OS duopoly holds no registry. Meta is the best-positioned incumbent (shipping volume, content ecosystem, ad model ready to follow attention); OpenAI is the highest-beta entrant. We assign this scenario real weight precisely because all three non-OS players are spending as if it is their primary long-term remedy — which it is.
+
+## 7.5. Milestones and Falsifiers
+
+For the base case: App Intents adoption breadth in transactional verticals by iOS 27 GA (fall 2026); whether agent-era ad formats appear in Alexa for Shopping and Gemini with disclosed pricing; ACP/UCP merchant counts. Falsifiers for the partition case: a credible relaunch of native checkout inside ChatGPT at four-digit merchant scale (would signal intent-layer players *can* descend the funnel); Amazon opening catalog access to an external agent under negotiated terms (would signal fortress economics failing); Gemini agent share materially penetrating iOS (would signal consolidation). For the regulatory case: any DMA specification decision touching assistant access to action registries.
+
+------------------------------------------------------------------------

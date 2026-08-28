@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "7. Scenarios and Equilibria"
+---
+
+{{< include _06-scenarios.qmd >}}

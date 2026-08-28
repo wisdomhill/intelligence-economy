@@ -1,0 +1,54 @@
+---
+title: "9. Who Owns the Consumer Agent?"
+subtitle: "Funnel collapse, the OS duopoly, and the five-way battle for personalized commerce"
+format:
+  typst: default
+---
+
+# 1. Executive Summary
+
+{{< include _00-executive-summary.qmd >}}
+
+# 2. Framework
+
+{{< include _01-framework.qmd >}}
+
+# 3. The OS Layer
+
+{{< include _02-os-layer.qmd >}}
+
+# 4. The Demand Side
+
+{{< include _03-demand-side.qmd >}}
+
+# 5. The Protocol War
+
+{{< include _04-protocol-war.qmd >}}
+
+# 6. The Scoring Matrix
+
+{{< include _05-scoring-matrix.qmd >}}
+
+# 7. Scenarios and Equilibria
+
+{{< include _06-scenarios.qmd >}}
+
+# 8. Monetization Models
+
+{{< include _07-monetization.qmd >}}
+
+# 9. Investment Implications
+
+{{< include _08-investment.qmd >}}
+
+# 10. Watch List
+
+{{< include _09-watch-list.qmd >}}
+
+# Appendices
+
+{{< include _10-appendices.qmd >}}
+
+# References
+
+{{< include _11-references.qmd >}}

@@ -171,6 +171,20 @@ website:
           - reports/r08/05-risks.qmd
           - reports/r08/06-tracking.qmd
           - reports/r08/07-references.qmd
+      - section: "9. Who Owns the Consumer Agent?"
+        href: reports/r09/index.qmd
+        contents:
+          - reports/r09/01-framework.qmd
+          - reports/r09/02-os-layer.qmd
+          - reports/r09/03-demand-side.qmd
+          - reports/r09/04-protocol-war.qmd
+          - reports/r09/05-scoring-matrix.qmd
+          - reports/r09/06-scenarios.qmd
+          - reports/r09/07-monetization.qmd
+          - reports/r09/08-investment.qmd
+          - reports/r09/09-watch-list.qmd
+          - reports/r09/10-appendices.qmd
+          - reports/r09/11-references.qmd
       - text: "---"
       - href: errata.qmd
         text: "Errata"

@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "4. The Demand Side"
+---
+
+{{< include _03-demand-side.qmd >}}

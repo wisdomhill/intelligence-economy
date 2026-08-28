@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Wisdom Hill Research">
+<meta name="dcterms.date" content="2026-08-24">
+
+<title>3. The OS Layer – The Intelligence Economy</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../reports/r09/03-demand-side.html" rel="next">
+<link href="../../reports/r09/01-framework.html" rel="prev">
+<link href="../../assets/brand/favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-b0397a7446277a8d8bdd598c86cc202e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-d0d1ba7cc6f8037f9a0e9b153e429932.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-b0397a7446277a8d8bdd598c86cc202e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<meta property="og:title" content="3. The OS Layer – The Intelligence Economy">
+<meta property="og:description" content="A research series on how agentic AI is reorganising the economics of software, consumer technology, and hardware infrastructure.">
+<meta property="og:site_name" content="The Intelligence Economy">
+<meta name="twitter:title" content="3. The OS Layer – The Intelligence Economy">
+<meta name="twitter:description" content="A research series on how agentic AI is reorganising the economics of software, consumer technology, and hardware infrastructure.">
+<meta name="twitter:card" content="summary">
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../assets/brand/wisdomhill-horizontal-nav.png" alt="Wisdom Hill" class="navbar-logo light-content">
+    <img src="../../assets/brand/wisdomhill-horizontal-nav.png" alt="Wisdom Hill" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">The Intelligence Economy</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../../index.html" aria-current="page"> 
+<span class="menu-text">Reports</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../prologue.html"> 
+<span class="menu-text">Prologue</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/wisdomhill/intelligence-economy"> <i class="bi bi-github" role="img" aria-label="GitHub repository">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reports/r09/index.html">9. Who Owns the Consumer Agent?</a></li><li class="breadcrumb-item"><a href="../../reports/r09/02-os-layer.html">3. The OS Layer</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">All reports</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../prologue.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prologue</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../reports/r01/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1. The Agentic Inflection</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r01/01-phase-transition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part I. The Phase Transition</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r01/02-anatomy-of-an-agent.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part II. Anatomy of an Agent</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r01/03-competitive-landscape.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part III. The Competitive Landscape</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r01/04-agentic-war.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part IV. The Three-Way Agentic War</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r01/05-investment-framework.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part V. Integrated Investment Framework</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r01/06-coda.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Coda</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r01/07-appendices.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Appendices</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r01/08-references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../reports/r02/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2. The Idea Bottleneck</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r02/01-productivity-paradox.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1. The Productivity Paradox</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r02/02-missing-signal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2. The Missing Signal</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r02/03-creative-industries.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3. The Creative Industries Under AI</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r02/04-theory-of-the-bottleneck.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4. A Theory of the Bottleneck</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r02/05-topology-of-industries.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5. The Topology of Industries</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r02/06-great-misallocation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6. The Great Misallocation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r02/07-data-analytics-exception.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7. The Data Analytics Exception</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r02/08-data-intelligence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">8. Data Intelligence as Economic Necessity</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r02/09-conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">9. The Bottleneck Always Moves to Judgment</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r02/10-appendices.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Appendices</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r02/11-references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../reports/r03/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3. The Token Economics of Coding Agents</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r03/01-introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r03/02-coding-assistant-era.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part I. The Coding Assistant Era</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r03/03-tokenmaxxing-era.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part II. The Tokenmaxxing Era</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r03/04-maturation-era.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part III. The Maturation Era</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r03/05-monitoring-framework.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part IV. Monitoring and Implications</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r03/06-appendices.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Appendices</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r03/07-references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../reports/r04/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4. The SaaS Apocalypse Question</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r04/01-the-question.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1. Anatomy of a Panic</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r04/02-three-layers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2. Three Layers, Three Leaks</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r04/03-toll-problem.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3. The Toll Problem</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r04/04-the-thirty.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4. The Thirty</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r04/05-open-facade.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5. The Open Facade</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r04/06-six-functions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6. Six Functions Under Audit</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r04/07-verdict.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7. Gridlock, Not Apocalypse</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r04/08-methodology-and-references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Methodology and References</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../reports/r05/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5. The Agentic Mesh</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r05/01-protocol-fabric.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part I. The Protocol Fabric</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r05/02-soa-redemption.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part II. The SOA Redemption</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r05/03-agentic-mesh.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part III. The Agentic Mesh</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r05/04-control-plane-stack.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part IV. The Control Plane Stack</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r05/05-scope-contest.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part IV. The Scope Contest</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r05/06-monetization-reset.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part V. The Monetization Reset</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r05/07-machine-native-dollar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part VI. The Machine-Native Dollar</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r05/08-new-value-chain.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part VII. The New Value Chain</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r05/09-value-migration-map.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part VIII. Value Migration Map</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r05/10-risks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part IX. Risks and Counter-Theses</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r05/11-appendices.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Appendices</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r05/12-references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../reports/r06/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6. The Data Layer Reforged</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r06/01-great-convergence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part I. The Great Convergence</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r06/02-context-layer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part II. The Context Layer</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r06/03-reasoning-and-loop.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part III. Reasoning and the Closing Loop</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r06/04-competitive-landscape.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part IV. Competitive Landscape</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r06/05-conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part V. Conclusion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r06/06-appendices.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Appendices</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r06/07-references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../reports/r07/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7. The Agentic Office</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r07/01-universal-layer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2. The Universal Layer of Knowledge Work</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r07/02-triad-and-eras.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3. The Triad and Its Three Eras</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r07/03-convergence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4. Why the War Converges on Office</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r07/04-the-arena.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5. The Arena</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r07/05-the-players.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6. The Players</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r07/06-formats-protocols.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7. Files, Formats, and Protocols</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r07/07-scenarios.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">8. Scenarios and Outlook</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r07/08-investment.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">9. Investment Implications</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r07/09-appendices.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Appendices</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r07/10-references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../reports/r08/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">8. The Functional Anatomy of Enterprise AI Demand</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r08/01-introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2. Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r08/02-framework.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3. Verification × Harness</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r08/03-seven-functions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4. The Seven Functional Categories</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r08/04-demand-model.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5. The Quantitative Demand Model</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r08/05-risks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6. Risks and Sensitivities</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r08/06-tracking.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7. Tracking Indicators</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r08/07-references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../reports/r09/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">9. Who Owns the Consumer Agent?</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r09/01-framework.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2. Framework</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r09/02-os-layer.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">3. The OS Layer</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r09/03-demand-side.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4. The Demand Side</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r09/04-protocol-war.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5. The Protocol War</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r09/05-scoring-matrix.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6. The Scoring Matrix</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r09/06-scenarios.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7. Scenarios and Equilibria</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r09/07-monetization.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">8. Monetization Models</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r09/08-investment.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">9. Investment Implications</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r09/09-watch-list.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">10. Watch List</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r09/10-appendices.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Appendices</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reports/r09/11-references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../errata.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Errata</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#wwdc-2026-apples-asymmetric-bet-procured-intelligence-owned-context" id="toc-wwdc-2026-apples-asymmetric-bet-procured-intelligence-owned-context" class="nav-link active" data-scroll-target="#wwdc-2026-apples-asymmetric-bet-procured-intelligence-owned-context">3.1. WWDC 2026 — Apple’s Asymmetric Bet: Procured Intelligence, Owned Context</a>
+  <ul class="collapse">
+  <li><a href="#the-gemini-arrangement-reported-terms-shipped-architecture-and-the-limits-of-the-price-comparison" id="toc-the-gemini-arrangement-reported-terms-shipped-architecture-and-the-limits-of-the-price-comparison" class="nav-link" data-scroll-target="#the-gemini-arrangement-reported-terms-shipped-architecture-and-the-limits-of-the-price-comparison">3.1.1. The Gemini Arrangement: Reported Terms, Shipped Architecture, and the Limits of the Price Comparison</a></li>
+  <li><a href="#app-intents-as-emerging-action-registry-sirikit-deprecation" id="toc-app-intents-as-emerging-action-registry-sirikit-deprecation" class="nav-link" data-scroll-target="#app-intents-as-emerging-action-registry-sirikit-deprecation">3.1.2. App Intents as Emerging Action Registry; SiriKit Deprecation</a></li>
+  <li><a href="#private-cloud-compute-and-the-data-firewall-against-google" id="toc-private-cloud-compute-and-the-data-firewall-against-google" class="nav-link" data-scroll-target="#private-cloud-compute-and-the-data-firewall-against-google">3.1.3. Private Cloud Compute and the Data Firewall Against Google</a></li>
+  <li><a href="#open-question-apple-foundation-models-licensed-gemini-or-co-developed-apple-ip" id="toc-open-question-apple-foundation-models-licensed-gemini-or-co-developed-apple-ip" class="nav-link" data-scroll-target="#open-question-apple-foundation-models-licensed-gemini-or-co-developed-apple-ip">3.1.4. Open Question: Apple Foundation Models — Licensed Gemini or Co-Developed Apple IP?</a></li>
+  </ul></li>
+  <li><a href="#google-io-2026-android-as-a-full-stack-agentic-platform" id="toc-google-io-2026-android-as-a-full-stack-agentic-platform" class="nav-link" data-scroll-target="#google-io-2026-android-as-a-full-stack-agentic-platform">3.2. Google I/O 2026 — Android as a Full-Stack Agentic Platform</a>
+  <ul class="collapse">
+  <li><a href="#gemini-intelligence-android-halo-and-gemini-spark" id="toc-gemini-intelligence-android-halo-and-gemini-spark" class="nav-link" data-scroll-target="#gemini-intelligence-android-halo-and-gemini-spark">3.2.1. Gemini Intelligence, Android Halo, and Gemini Spark</a></li>
+  <li><a href="#appfunctions-from-screen-scraping-to-declarative-action-apis" id="toc-appfunctions-from-screen-scraping-to-declarative-action-apis" class="nav-link" data-scroll-target="#appfunctions-from-screen-scraping-to-declarative-action-apis">3.2.2. AppFunctions: From Screen-Scraping to Declarative Action APIs</a></li>
+  </ul></li>
+  <li><a href="#convergent-architecture-why-both-os-owners-are-building-the-same-declarative-action-layer" id="toc-convergent-architecture-why-both-os-owners-are-building-the-same-declarative-action-layer" class="nav-link" data-scroll-target="#convergent-architecture-why-both-os-owners-are-building-the-same-declarative-action-layer">3.3. Convergent Architecture: Why Both OS Owners Are Building the Same Declarative Action Layer</a></li>
+  <li><a href="#the-2008-app-store-analogy-distribution-gatekeeping-execution-surface-gatekeeping" id="toc-the-2008-app-store-analogy-distribution-gatekeeping-execution-surface-gatekeeping" class="nav-link" data-scroll-target="#the-2008-app-store-analogy-distribution-gatekeeping-execution-surface-gatekeeping">3.4. The 2008 App Store Analogy: Distribution Gatekeeping → Execution-Surface Gatekeeping</a></li>
+  <li><a href="#structural-consequences-third-party-assistants-demoted-to-apps-within-the-os-agent" id="toc-structural-consequences-third-party-assistants-demoted-to-apps-within-the-os-agent" class="nav-link" data-scroll-target="#structural-consequences-third-party-assistants-demoted-to-apps-within-the-os-agent">3.5. Structural Consequences: Third-Party Assistants Demoted to “Apps Within the OS Agent”</a></li>
+  <li><a href="#constraints-on-the-duopoly-cold-start-regulatory-exposure-and-launch-gaps" id="toc-constraints-on-the-duopoly-cold-start-regulatory-exposure-and-launch-gaps" class="nav-link" data-scroll-target="#constraints-on-the-duopoly-cold-start-regulatory-exposure-and-launch-gaps">3.6. Constraints on the Duopoly: Cold Start, Regulatory Exposure, and Launch Gaps</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/wisdomhill/intelligence-economy/blob/main/reports/r09/02-os-layer.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reports/r09/index.html">9. Who Owns the Consumer Agent?</a></li><li class="breadcrumb-item"><a href="../../reports/r09/02-os-layer.html">3. The OS Layer</a></li></ol></nav><h1 class="title display-7">3. The OS Layer</h1></header>
+
+
+<header id="title-block-header">
+
+<p class="author">Wisdom Hill Research</p>
+
+<p class="date">2026-08-24</p>
+</header>
+
+
+<section id="wwdc-2026-apples-asymmetric-bet-procured-intelligence-owned-context" class="level2">
+<h2 class="anchored" data-anchor-id="wwdc-2026-apples-asymmetric-bet-procured-intelligence-owned-context">3.1. WWDC 2026 — Apple’s Asymmetric Bet: Procured Intelligence, Owned Context</h2>
+<section id="the-gemini-arrangement-reported-terms-shipped-architecture-and-the-limits-of-the-price-comparison" class="level3">
+<h3 class="anchored" data-anchor-id="the-gemini-arrangement-reported-terms-shipped-architecture-and-the-limits-of-the-price-comparison">3.1.1. The Gemini Arrangement: Reported Terms, Shipped Architecture, and the Limits of the Price Comparison</h3>
+<p>Bloomberg reported in November 2025 that Apple was finalizing an arrangement of roughly $1 billion per year under which a custom Gemini model of approximately 1.2 trillion parameters would power the new Siri. By WWDC 2026 (June 8, Tim Cook’s final keynote before handing the CEO role to John Ternus in September), however, Apple described the deployed foundation models as Apple-owned models developed with the aid of Gemini technology, and post-keynote reporting stated that the final models contain no Google code. The reported economic terms — and the extent to which the originally reported supply arrangement survived unchanged into the shipped architecture — remain unconfirmed.</p>
+<p>With that caveat stated, the reported figure invites comparison with the estimated ~$20 billion Google pays Apple annually for search default placement. The asymmetry is directionally consistent with a market in which frontier intelligence has become abundant enough to be procured at component prices while default access to two billion devices remains scarce. It should not, however, be read as a like-for-like market valuation of models versus distribution: the two figures reflect negotiations of different vintages and structures, and the search payment bundles considerations — regulatory exposure, search distribution, cloud support — that have no counterpart in a model-supply arrangement.</p>
+</section>
+<section id="app-intents-as-emerging-action-registry-sirikit-deprecation" class="level3">
+<h3 class="anchored" data-anchor-id="app-intents-as-emerging-action-registry-sirikit-deprecation">3.1.2. App Intents as Emerging Action Registry; SiriKit Deprecation</h3>
+<p>The structural core of Apple’s strategy is not the model deal but the action layer. In Apple’s design, App Intents becomes the principal channel through which Siri invokes third-party app functionality, with several SiriKit intent domains on a deprecation path — meaning an app that does not expose its core actions as intents risks being, in developer-community shorthand, invisible to the new Siri. Developer commentary has compared the direction to App Tracking Transparency: a unilateral platform rule that re-architects the ecosystem’s economics. The rebuilt Siri is described as both a standalone app (with conversation history synced via iCloud) and a system-wide presence with on-screen awareness, able to chain multi-step actions across applications. Two caveats matter for analysis, both a function of timing. First, the cross-app-action capability is the part of Siri that has slipped repeatedly since its 2024 preview and is now tied to the iOS 27 wave (roughly September 2026), so the registry’s centrality is a stated destination whose enforcement has not yet been observed in the wild. Second, the early-partner list frequently cited (Uber, Amazon, Temu, YouTube, WhatsApp, Facebook, Threads, AllTrails) reflects reported onboarding rather than a shipped, GA integration set. The analytical point stands — Apple is building an OS-level action registry — but it is a stated destination, not yet a locked-in reality.</p>
+<p>Two observations on this partner list. First, its breadth across categories (mobility, marketplace, social, content) signals that Apple is seeding the registry horizontally rather than focusing on a single high-value vertical. Second, and more telling, the list is light on high-value transactional categories — airlines, hotels, financial services — where the economics of becoming a “callable endpoint” inside someone else’s agent remain unresolved. Aggregators have weak incentives to volunteer for disintermediation before transaction-fee structures are settled. This is the largest near-term bottleneck for the monetization of any OS-level action registry.</p>
+</section>
+<section id="private-cloud-compute-and-the-data-firewall-against-google" class="level3">
+<h3 class="anchored" data-anchor-id="private-cloud-compute-and-the-data-firewall-against-google">3.1.3. Private Cloud Compute and the Data Firewall Against Google</h3>
+<p>Apple’s privacy architecture is competitively load-bearing. On-device execution for the most common tasks, with Private Cloud Compute handling overflow, means that — by design — the model supplier does not accumulate user context from iOS interactions. Google supplies intelligence to Apple’s agent but is structurally prevented from harvesting the interaction data that would normally be the strategic compensation for supplying intelligence below cost. Apple keeps the customer relationship, the context graph, and the trust positioning (user data is processed on-device or, when necessary, within Apple’s attested Private Cloud Compute environment), which is precisely the asset bundle this report identifies as the consumer control plane.</p>
+</section>
+<section id="open-question-apple-foundation-models-licensed-gemini-or-co-developed-apple-ip" class="level3">
+<h3 class="anchored" data-anchor-id="open-question-apple-foundation-models-licensed-gemini-or-co-developed-apple-ip">3.1.4. Open Question: Apple Foundation Models — Licensed Gemini or Co-Developed Apple IP?</h3>
+<p>Reporting on the architecture is genuinely contradictory and the distinction matters. Bloomberg-lineage reporting frames the arrangement as Apple licensing a custom Gemini model. AppleInsider, by contrast, reports that the shipped Apple Foundation Models “don’t contain a drop of Gemini” — that Google provided technology and assistance in developing models that are Apple’s own, running on-device and in Private Cloud Compute. If the latter framing is closer to the truth, Apple’s model dependency is substantially weaker than the headline suggests: a co-development/distillation arrangement with exit optionality rather than a perpetual supply relationship. We flag this as an unresolved factual question with direct implications for how durable Google’s iOS beachhead is, and recommend monitoring developer-facing documentation (the Foundation Models framework now exposes a model abstraction layer that can reportedly swap Apple’s on-device model, Gemini, or Claude with minimal code changes — itself evidence that Apple is engineering for supplier interchangeability).</p>
+</section>
+</section>
+<section id="google-io-2026-android-as-a-full-stack-agentic-platform" class="level2">
+<h2 class="anchored" data-anchor-id="google-io-2026-android-as-a-full-stack-agentic-platform">3.2. Google I/O 2026 — Android as a Full-Stack Agentic Platform</h2>
+<section id="gemini-intelligence-android-halo-and-gemini-spark" class="level3">
+<h3 class="anchored" data-anchor-id="gemini-intelligence-android-halo-and-gemini-spark">3.2.1. Gemini Intelligence, Android Halo, and Gemini Spark</h3>
+<p>Three weeks earlier (I/O, May 19, 2026), Google announced Gemini Intelligence for Android 17: system-level agentic capability that can navigate apps, execute multi-step tasks in the background, and act on on-screen context, debuting on Samsung Galaxy S26 and Pixel 10 devices. Agentic task execution had already been previewed earlier in the year — Gemini booking rides and ordering food by operating apps in a virtualized window with user oversight and final-confirmation gates on checkout. Alongside the OS work, Google introduced Gemini Spark, a 24/7 agentic personal assistant built from Gemini base models and an agentic harness derived from Google Antigravity, reachable by email through a dedicated Gmail address, able to act on the web through Chrome, integrated with external services over MCP, with progress on mobile surfaced through the new Android Halo system.</p>
+</section>
+<section id="appfunctions-from-screen-scraping-to-declarative-action-apis" class="level3">
+<h3 class="anchored" data-anchor-id="appfunctions-from-screen-scraping-to-declarative-action-apis">3.2.2. AppFunctions: From Screen-Scraping to Declarative Action APIs</h3>
+<p>The Android equivalent of App Intents is AppFunctions: a platform API (with Jetpack libraries) through which apps expose capabilities to agents, assistants, and other authorized callers, with the system managing permissions, call boundaries, and security constraints, and simplifying MCP integration. Maturity matters here: the Jetpack library entered alpha in May 2025 and, as of July 2026, its latest release remained an alpha version rather than a stable API — I/O 2026 repositioned and expanded the framework rather than shipping it as a finished platform surface. The significance is architectural: the design is intended to reduce mobile automation’s reliance on recognizing screens, simulating taps, and retrying after UI changes. Apps declare what they can do; agents call those capabilities with authorization. Future Android apps will need not only human-facing UIs but agent-callable capability surfaces — the same redefinition of “what an app is” that App Intents imposes on iOS.</p>
+</section>
+</section>
+<section id="convergent-architecture-why-both-os-owners-are-building-the-same-declarative-action-layer" class="level2">
+<h2 class="anchored" data-anchor-id="convergent-architecture-why-both-os-owners-are-building-the-same-declarative-action-layer">3.3. Convergent Architecture: Why Both OS Owners Are Building the Same Declarative Action Layer</h2>
+<p>That Apple and Google publicly converged on similar declarative action architectures within weeks of each other — albeit at different stages of maturity and deployment — is not coincidence; it is convergent strategy under identical incentives. A declarative action registry solves three problems simultaneously for an OS owner. It makes agent actions reliable (screen-scraping is brittle; declared APIs are not). It makes them governable (the OS mediates permissions and can gate which agents may call which intents). And — potentially decisively — it makes them governable at the point of access: the OS owner mediates which agents may call the registry. As of mid-2026, first-party agents (Siri, Gemini) are best positioned to exploit these registries. Android’s published AppFunctions design, however, explicitly contemplates access by AI assistants more broadly, and the degree of functional parity or OS-level privilege ultimately extended to third-party agents remains to be observed. Excludability, in other words, is a capability the OS owners are building rather than an outcome already locked in — but it is the mechanism by which the duopoly could convert its distribution incumbency into agentic-era incumbency.</p>
+</section>
+<section id="the-2008-app-store-analogy-distribution-gatekeeping-execution-surface-gatekeeping" class="level2">
+<h2 class="anchored" data-anchor-id="the-2008-app-store-analogy-distribution-gatekeeping-execution-surface-gatekeeping">3.4. The 2008 App Store Analogy: Distribution Gatekeeping → Execution-Surface Gatekeeping</h2>
+<p>In 2008, the App Store inserted the OS owner between developers and users at the point of distribution, and the resulting toll (30%, later tiered) financed a decade of platform economics. In 2026, the action registry inserts the OS owner between agents and apps at the point of execution. Developer-facing analysis has already framed it in exactly these terms: developers build App Intents, and the platform owns the AI execution surface — same pattern, same harness, different era. The open question is what the toll will be — and here one asymmetry with 2008 must be stated plainly. The App Store’s 15–30% commissions apply to digital goods and services; under current rules, both Apple and Google explicitly exempt ordinary physical-goods and physical-services transactions from those commissions, and neither company has announced any agentic transaction toll. What both have built is infrastructure that would make future monetization possible — Apple through Apple Pay plus the App Intents registry, Google through UCP, payments, and the ad system — most plausibly via payment facilitation, discovery services, or sponsored placement rather than a direct extension of app-store commissions to physical commerce.</p>
+</section>
+<section id="structural-consequences-third-party-assistants-demoted-to-apps-within-the-os-agent" class="level2">
+<h2 class="anchored" data-anchor-id="structural-consequences-third-party-assistants-demoted-to-apps-within-the-os-agent">3.5. Structural Consequences: Third-Party Assistants Demoted to “Apps Within the OS Agent”</h2>
+<p>For Meta, Amazon, and OpenAI, the duopoly’s action-layer enclosure has a common consequence: on mobile, their agents are apps inside someone else’s agent-capable OS. They can be reached by user habit (opening the ChatGPT or Amazon app) but currently lack comparable OS-level orchestration reach. This single constraint explains an otherwise heterogeneous set of strategic behaviors: Meta’s smart-glasses program, OpenAI’s hardware ambitions, and Amazon’s continued investment in Echo devices are all, at root, OS-bypass strategies — attempts to own a hardware surface where their agent is the system agent. It also explains why all three are simultaneously protocol entrepreneurs (ACP, Amazon’s merchant-facing stack): if you cannot own the device action layer, you try to own the commerce action layer.</p>
+</section>
+<section id="constraints-on-the-duopoly-cold-start-regulatory-exposure-and-launch-gaps" class="level2">
+<h2 class="anchored" data-anchor-id="constraints-on-the-duopoly-cold-start-regulatory-exposure-and-launch-gaps">3.6. Constraints on the Duopoly: Cold Start, Regulatory Exposure, and Launch Gaps</h2>
+<p>Three forces limit how completely the OS owners can enclose the consumer control plane. First, the cold-start problem: as sell-side commentary (MoffettNathanson) framed it ahead of WWDC, Siri only becomes credibly agentic if developers adopt App Intents at scale, but developers rationally wait for evidence of consumer usage before investing — a chicken-and-egg dynamic that early partner programs are designed to break but have not yet broken, particularly in high-value transactional verticals. Second, regulation: the consumer Siri AI features are not launching in the EU or China at launch (developer APIs ship; consumer features do not). Under the DMA, an architecture in which only the gatekeeper’s own agent enjoys system-level action access is an obvious enforcement target; a plausible medium-term scenario is mandated third-party agent access to App Intents/AppFunctions on equal terms, which would convert the registries from proprietary moats into common carriage — radically improving the position of OpenAI and Meta in Europe first. Third, the trust burden runs both ways: an OS agent with reach into every app and payment credential is also the maximal privacy and security attack surface, and consumer-sentiment data on agentic features consistently shows enthusiasm lagging executive enthusiasm by wide margins.</p>
+<hr>
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@report{wisdomhill_ie_r09,
+  author = {{Wisdom Hill Research}},
+  publisher = {Wisdom Hill},
+  title = {9. {Who} {Owns} the {Consumer} {Agent?}},
+  number = {9},
+  date = {2026-08-24},
+  url = {https://wisdomhill.github.io/intelligence-economy/reports/r09/},
+  langid = {en}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-wisdom_hill_research2026" class="csl-entry quarto-appendix-citeas" role="listitem">
+Wisdom Hill Research. 2026. <span>“9. Who Owns the Consumer
+Agent?”</span> In <em>The Intelligence Economy</em>, No. 9. Wisdom Hill.
+<a href="https://wisdomhill.github.io/intelligence-economy/reports/r09/">https://wisdomhill.github.io/intelligence-economy/reports/r09/</a>.
+</div></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/wisdomhill\.github\.io\/intelligence-economy\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../reports/r09/01-framework.html" class="pagination-link" aria-label="2. Framework">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">2. Framework</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../reports/r09/03-demand-side.html" class="pagination-link" aria-label="4. The Demand Side">
+        <span class="nav-page-text">4. The Demand Side</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 Wisdom Hill</p>
+</div>   
+    <div class="nav-footer-center">
+<p>Licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>. Quotation and summary permitted.</p>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/wisdomhill/intelligence-economy/blob/main/reports/r09/02-os-layer.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p><a href="https://www.wisdomhill.net">Wisdom Hill Research</a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

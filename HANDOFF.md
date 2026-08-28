@@ -22,7 +22,7 @@ to rebuild them.
 | `_partials/typst-show.typ` (118 lines) | Forwards the custom YAML keys into the template. |
 | `_partials/definitions.typ` (265 lines) | Quarto internal; only the separator rule is changed. |
 | `_quarto.yml` | Wires the partials and holds the format block. |
-| `_filters/typst-apostrophe.lua` | Rescues the apostrophe after a digit. Without it every `Report 1's` in the PDF becomes `Report 1′s`. |
+| `_filters/typst-apostrophe.lua` | Rescues the apostrophe next to a digit. Without it every `Report 1's` in the PDF becomes `Report 1′s`, and every `Cloud Next '26` becomes `Cloud Next ‘26`. |
 | `_fonts/` (3.7 MB, 14 files) | Inter and Source Serif 4. Typst substitutes silently if absent. |
 | `assets/fonts/` (700 KB) | Inter woff2 for the website. |
 | `styles.scss`, `theme-light.scss`, `theme-dark.scss` | Web typography and colour. |
@@ -117,17 +117,26 @@ always a working directory outside the project root.
   enough, and the symptom — sans headings over serif body copy — looks
   deliberate rather than broken.
 
-## Digit-apostrophe constructions
+## Apostrophes next to digits
 
 **Write them normally. Do not rephrase around them.**
 
-Typst reads an apostrophe following a digit as a unit mark and renders it as a
-prime, so `Report 1's` came out as `Report 1′s`. This is now handled by
-`_filters/typst-apostrophe.lua`, a pandoc filter wired into `format.typst` in
-`_quarto.yml`. It re-emits only those apostrophes as raw Typst, which the
-writer cannot normalise and Typst cannot reinterpret. Ordinary apostrophes and
-both kinds of quotation mark keep their normal smart-quote treatment, and HTML
-is untouched because HTML never had the defect.
+Typst mis-sets the mark in **both** directions, and one filter covers both.
+
+*After* a digit it is read as a unit mark and rendered as a prime, so
+`Report 1's` came out as `Report 1′s`. *Before* a digit it is read as an
+opening quotation mark, so a year elision comes out reversed: `Cloud Next '26`
+printed as `Cloud Next ‘26`, and `'000 accelerators` as `‘000`. The second case
+was found in Report 10 and had been silently wrong in Reports 5–8 as well;
+correcting it changed five occurrences in four already-published PDFs.
+
+Both are handled by `_filters/typst-apostrophe.lua`, a pandoc filter wired into
+`format.typst` in `_quarto.yml`. It re-emits only apostrophes adjacent to a
+digit as raw Typst, which the writer cannot normalise and Typst cannot
+reinterpret. Ordinary apostrophes and both kinds of quotation mark keep their
+normal smart-quote treatment, and HTML is untouched because HTML never had
+either defect — which is also how to spot the defect: compare the web page
+against the PDF.
 
 Nothing simpler works, and each of these was tested through the real pipeline
 before the filter was written:
@@ -145,9 +154,11 @@ about the cause — the curly apostrophe never reaches Typst — and the twelve
 rephrasings it produced across Reports 1 and 2 have been reverted to the
 author's wording.
 
-`tools/verify_pdf.py` checks for this automatically — the **no primes after
-digits** line. It is the fastest way to catch a regression in the filter, which
-is otherwise easy to miss at a glance.
+`tools/verify_pdf.py` checks the prime case automatically — the **no primes
+after digits** line. It is the fastest way to catch a regression in the filter,
+which is otherwise easy to miss at a glance. The reversed-quote case has no
+check of its own; it is caught by reading `'` followed by two digits in the
+PDF text layer.
 
 ## Colour scheme
 

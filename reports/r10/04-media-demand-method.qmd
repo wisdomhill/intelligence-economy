@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "5. Media Demand: Method and Segments 1–3"
+---
+
+{{< include _04-media-demand-method.qmd >}}

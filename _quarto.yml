@@ -185,6 +185,18 @@ website:
           - reports/r09/09-watch-list.qmd
           - reports/r09/10-appendices.qmd
           - reports/r09/11-references.qmd
+      - section: "10. The Functional Anatomy of Consumer AI Demand"
+        href: reports/r10/index.qmd
+        contents:
+          - reports/r10/01-introduction.qmd
+          - reports/r10/02-framework.qmd
+          - reports/r10/03-supply-side.qmd
+          - reports/r10/04-media-demand-method.qmd
+          - reports/r10/05-media-demand-totals.qmd
+          - reports/r10/06-beyond-content.qmd
+          - reports/r10/07-risks.qmd
+          - reports/r10/08-tracking-indicators.qmd
+          - reports/r10/09-references.qmd
       - text: "---"
       - href: errata.qmd
         text: "Errata"

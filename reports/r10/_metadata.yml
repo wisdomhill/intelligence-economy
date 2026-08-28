@@ -1,0 +1,14 @@
+title-block-style: none
+
+date: 2026-08-28
+date-modified: 2026-08-28
+
+# Applied to every page in this report, so each chapter cites the report as a
+# whole rather than itself. `title` and `url` override the per-page values.
+citation:
+  type: report
+  title: "10. The Functional Anatomy of Consumer AI Demand"
+  container-title: "The Intelligence Economy"
+  number: 10
+  publisher: "Wisdom Hill"
+  url: https://wisdomhill.github.io/intelligence-economy/reports/r10/

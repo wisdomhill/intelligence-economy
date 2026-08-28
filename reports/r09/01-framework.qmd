@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "2. Framework"
+---
+
+{{< include _01-framework.qmd >}}

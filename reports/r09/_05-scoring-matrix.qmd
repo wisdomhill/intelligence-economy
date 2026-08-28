@@ -1,0 +1,33 @@
+## 6.1. Methodology
+
+We score each player on six attributes, rated 0–3 (3 = decisive advantage). *Intent capture* measures default position at the moment of need expression. *Context/data* measures the depth and permission status of the personal graph. *Execution* measures payment, catalog ground truth, and fulfillment. *OS action surface* measures privileged access to a device-level action registry. *Model capability* measures frontier-model position including procurement optionality. *Self-cannibalization burden* is scored inversely (3 = little or nothing to lose; 0 = maximal conflict between agentic success and existing P&L).
+
+## 6.2. Matrix Results
+
+| Attribute                                      | Google | Apple  | Amazon | Meta  | OpenAI |
+| ---------------------------------------------- | ------ | ------ | ------ | ----- | ------ |
+| Intent capture                                 | 3      | 1      | 1      | 2     | 3      |
+| Context / data                                 | 3      | 3      | 2      | 2     | 1      |
+| Execution (payment, ground truth, fulfillment) | 1      | 1      | 3      | 0     | 0      |
+| OS action surface                              | 3      | 3      | 0      | 0     | 0      |
+| Model capability                               | 3      | 1      | 1      | 2     | 3      |
+| Self-cannibalization burden (inverse)          | 0      | 3      | 1      | 1     | 3      |
+| **Total (unweighted)**                         | **13** | **12** | **8**  | **7** | **10** |
+
+: {tbl-colwidths="[40,12,12,12,12,12]"}
+
+*The scores are illustrative qualitative judgments, not statistically estimated quantities; one-point differences in totals should not be read as measured advantages.*
+
+Three readings of the matrix. First, Google's raw-asset lead is real, and its single zero — cannibalization burden — sits on an attribute that bears on _willingness_, not _ability_. Google's integration effort has not in fact been restrained by it, so asset totals that include this attribute may understate its potential to consolidate the full stack. Second, Apple's score is inflated by defensive attributes (context, OS, little-to-lose) and deflated by the two attributes that win demand (intent, model); this is the quantitative signature of a toll strategy. Third, OpenAI and Amazon are mirror images on the merits — OpenAI scores 6/6 on the demand-side attributes Amazon lacks, Amazon scores 3/0 against OpenAI on execution — yet the relationship between them is not clean antagonism. It is a *layer-selective* posture: the two are simultaneously capital-and-compute partners (Amazon's up-to-\$50B investment in OpenAI announced February 27, 2026, plus a large AWS Trainium/Bedrock/Frontier compute agreement), commerce adversaries (Amazon continues to block roughly 100 agents, ChatGPT included, from its catalog), and — most tellingly — advertiser-and-platform (Amazon bought sponsored placements *inside* ChatGPT to promote Prime Day in late June 2026). The \$50B deal is an infrastructure and equity arrangement, not a commerce alliance, so it does not soften Amazon's catalog exclusion; the two engage on the axes where cooperation is non-cannibalizing (compute, awareness-stage advertising) while walling each other off on the axis where it is existential (organic access to Amazon's product graph). The durable strategic fact survives — ChatGPT remains the natural demand ally of *non-Amazon* retail, since Amazon still refuses to let ChatGPT recommend Amazon products organically — but the two are best modeled as selective counterparties, not pure antagonists.
+
+Sensitivity: weighting execution and context 2x (on the thesis that habit and trust dominate late-stage adoption) lifts Amazon and Apple relative to OpenAI; weighting intent 2x (on the thesis that the front door takes all) concentrates the contest on the two intent-capture leaders, Google and OpenAI — Apple's arithmetic total survives that reweighting (tying OpenAI at 13 against Google's 16), but a front-door-takes-all world is precisely the one in which Apple's intent score of 1 is disqualifying, whatever its defensive attributes sum to. The base case in Section 7 deliberately avoids resolving this weighting question, because the funnel itself is partitioning along exactly these lines.
+
+## 6.3. Vulnerability Analysis: Which App Categories Get Disintermediated
+
+Applying Part I's vulnerability taxonomy to consumer app categories: maximal exposure attaches to *aggregation-without-assets* — comparison and affiliate services (travel meta-search, coupon/cashback, review aggregators, SEO-dependent affiliate publishers) whose entire economic function (assembling options for a human to compare) is the function agents internalize. High exposure attaches to *vertical commerce front-ends* (food delivery, ride-hailing, ticketing) which survive as fulfillment networks but lose interface ownership, compressing their ability to upsell, advertise, and cross-promote — the reported App Intents partner list (Uber among them) suggests such players are choosing endpoint status over invisibility. Moderate exposure attaches to *destination retailers with differentiated assets* (inventory, brand, loyalty), who gain a new demand channel (ACP/UCP) even as they cede interface. Lowest exposure attaches to *identity- and entertainment-driven surfaces* (social, video, gaming), where the session is the product and there is no task to delegate — though their *commerce attachment* revenue is exposed per Section 4.4.5.
+
+## 6.4. The Asymmetry of Incumbency
+
+A unifying result across the matrix: in agentic commerce, incumbency is simultaneously the largest asset (context, rails, habit) and the largest liability (every incumbent monetization model is a tax on friction that agents remove). OpenAI's strategic identity is that it is the player least encumbered by an incumbent commerce monetization model — though it remains constrained by compute costs and by the execution assets it lacks — which, given capital-market patience, is historically the profile of the actor that forces an industry transition onto everyone else's P&L.
+
+------------------------------------------------------------------------

@@ -1,0 +1,29 @@
+## 2.1. Recap: The Four-Layer Value Chain from Part I
+
+Part I ("The Control Plane Decade") proposed a four-layer value chain for agentic AI in the enterprise: foundation models at the base; the agent harness and orchestration layer above it; the control plane governing tool, data, and permission access; and the application/workflow surface at the top. The report's core claim was that the control plane is the layer where switching costs, data gravity, and governance requirements compound — and therefore where durable economics concentrate — while the model layer faces commoditization pressure from open weights, distillation, and multi-vendor procurement.
+
+## 2.2. What Changes in B2C: Intent Capture, Context Ownership, and Trust as the Scarce Assets
+
+The consumer market preserves the layer logic but changes which resources are scarce. Enterprises buy agents to reduce labor cost; consumers adopt agents to reduce decision cost. This makes three assets decisive in B2C that have no direct enterprise equivalent. The first is intent capture: the privileged position of being the surface where a consumer first expresses a need ("I need running shoes," "book me a table"). In the search era this was the query box; in the agent era it is whichever conversational surface the consumer habitually addresses. The second is context ownership: the longitudinal personal data — purchase history, location patterns, communications, calendar, health signals — that converts a generic recommendation into a trusted, personalized one. The third is transactional trust: the payment credentials, dispute-resolution track record, and fulfillment reliability that let a consumer comfortably delegate spending authority to software.
+
+The enterprise control plane was a governance artifact; the consumer control plane is a habit-and-trust artifact. This distinction explains why distribution incumbents (Apple, Google, Amazon, Meta) hold stronger defensive positions in B2C than enterprise incumbents did against agentic disruption: habits and stored credentials are stickier than procurement contracts.
+
+## 2.3. The Funnel Collapse Hypothesis: Discovery → Comparison → Checkout in a Single Conversation
+
+The organizing hypothesis of this report is that agentic AI collapses the consumer commerce funnel. In the pre-agent economy, a purchase journey traversed separately owned stages: inspiration and demand creation (social feeds, video, display advertising), active intent and comparison (search, marketplaces, review sites), and transaction and fulfillment (retailer checkout, payment networks, logistics). Each stage supported its own monetization model — brand advertising at the top, auction-based performance advertising in the middle, take rates and sponsored placement at the bottom — and each stage had a dominant owner.
+
+An agent that receives a need, researches options, compares them against the user's stored preferences, and completes checkout performs the entire journey inside a single conversational session. Every handoff that disappears is a monetization event that disappears with it: the impression, the click, the search ad, the affiliate link, the marketplace search ranking. Funnel collapse does not destroy the value of the journey; it relocates that value to whoever operates the agent and whoever owns the protocol through which the agent transacts.
+
+## 2.4. Mapping the Incumbent Triumvirate to Funnel Stages
+
+The three strongest consumer applications of the last two decades map cleanly onto the funnel: Meta owns demand creation (roughly 3.4–3.5 billion daily active people across Facebook, Instagram, WhatsApp, and Messenger, monetized through the most sophisticated demand-generation advertising machine ever built); Google owns intent capture (the search query as the canonical expression of commercial intent, monetized through the keyword auction); and Amazon owns transaction and fulfillment (the default purchase endpoint in most Western markets, monetized through marketplace take rates and a sponsored-products advertising business that has grown into one of the largest ad platforms in the world). Advertising and commerce were already converging before agents arrived — retail media networks, social commerce, and shoppable video all blurred the stage boundaries. Agentic AI accelerates this convergence to its logical endpoint: a single mediated decision.
+
+The strategic question for each incumbent is identical in form: can it extend its franchise into the funnel stages it does not own faster than agents erode the stage it does?
+
+## 2.5. The Harness Thesis Revisited: Why Orchestration Beats Raw Model Capability in Consumer
+
+Our prior comparative work on Claude, ChatGPT, and Gemini concluded that harness engineering — the scaffolding of tools, memory, context management, and reliability engineering around a model — has become the primary competitive differentiator in the agentic era, ahead of raw model capability. The consumer market is the strongest confirmation of this thesis to date. Apple is explicitly betting that frontier intelligence can be procured while the harness (Siri orchestration, App Intents, on-device context) is owned. Amazon's Alexa for Shopping competes not on model quality but on grounding: real inventory, real delivery estimates, real purchase history. Google's Gemini Spark is described by Google itself as a Gemini base model wrapped in an agentic harness derived from its Antigravity platform. In consumer agentic AI, the model answers; the harness acts. Consumers pay for action.
+
+It must be said, however, that the harness thesis cuts both ways for Apple specifically: if orchestration is the differentiator, then Apple's 2024–2025 Siri failures were harness failures, and Apple's harness engineering capability remains the least proven among the five players analyzed here.
+
+------------------------------------------------------------------------

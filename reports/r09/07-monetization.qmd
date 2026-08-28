@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "8. Monetization Models"
+---
+
+{{< include _07-monetization.qmd >}}

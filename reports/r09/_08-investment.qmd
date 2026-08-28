@@ -1,0 +1,21 @@
+## 9.1. Positioning Summary
+
+**Google (beneficiary with embedded hedge, highest variance among incumbents).** The only full-stack contestant; the long thesis is that it monetizes the transition twice (Android/UCP tolls plus agent ad formats), the short thesis is auction compression outrunning replacement yield. The position is effectively long optionality on management's willingness to self-cannibalize — historically the scarcest input. Antitrust outcomes function as a persistent multiple governor.
+
+**Apple (low-beta royalty on the transition).** Wins a toll on agentic activity across two billion devices in most scenarios without needing to win any contest outright. Key swing factors: harness-execution credibility of Siri AI at iOS 27 GA, and regulatory treatment of the action-registry toll position. The reported economics of the Gemini arrangement, to the extent they are confirmed, support rather than undermine the margin thesis.
+
+**Amazon (execution fortress, advertising at risk).** Ground truth plus fulfillment make it the hardest position to disrupt; sponsored-products exposure makes it the incumbent whose highest-margin line is most directly in the agent's path. Watch the rollout of conversational ad formats and any negotiated external-agent access as the tells on whether ad economics survive the interface shift.
+
+**Meta (widest distribution of outcomes).** Supply-side agentification (Advantage+, URL-plus-budget) defends near-term ad yield; the structural question is whether inspiration-stage demand formation survives delegated purchasing. WhatsApp commerce remains the underpriced execution-layer option; the own-brand glasses (shipped June 2026 at \$299, roughly 70% category share per IDC) are now a live OS-bypass bet rather than a latent one, but their value must be marked against imminent Gemini-integrated entry from Google/Samsung and a persistent Meta AI assistant-adoption gap. Muse Spark and AI subscriptions extend the model story without yet changing the commerce story.
+
+**OpenAI (private; relevant to public investors through suppliers, partners, and victims).** The pace-setter and the field's only unconflicted actor. The Instant Checkout failure was operational, not strategic — the discovery-first alliance with non-Amazon retail is, if anything, the more dangerous configuration for incumbents. Public-market expressions: long its compute and payment partners; cautious on businesses whose economics assume the persistence of the comparison journey.
+
+## 9.2. Second-Order Exposures
+
+Payments: Stripe (ACP) and the networks' agent-credentialing programs are direct beneficiaries of protocol-mediated commerce regardless of which agent wins. Ad-tech intermediaries built on auction observability face structural headwinds from the measurement problem (8.3). Affiliate, coupon, meta-search, and SEO-dependent publishers are the clearest structural shorts in the framework (6.3). Vertical commerce front-ends bifurcate on whether they own irreplaceable supply (exposure moderate) or merely interface (exposure severe). Retail media networks outside Amazon gain a narrative (every retailer needs agent-legible catalog and placement infrastructure) — the picks-and-shovels of merchant-side agent readiness are a coherent basket.
+
+## 9.3. Signposts to Monitor (Quarterly Checklist)
+
+App Intents coverage among top-200 iOS apps, especially transactional verticals; AppFunctions adoption post-Android 17 GA; disclosed ACP and UCP merchant counts and any published take-rate schedules; appearance and pricing of sponsored formats inside Alexa for Shopping, Gemini, and ChatGPT; Amazon v. Perplexity appellate ruling; DMA proceedings touching assistant/action-registry access; Gemini app and ChatGPT MAU/engagement on iOS specifically; Meta AI subscription conversion and WhatsApp Business commerce metrics; any OpenAI native-checkout relaunch; OpenAI and Meta hardware milestones.
+
+------------------------------------------------------------------------

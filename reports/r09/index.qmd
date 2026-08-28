@@ -1,0 +1,46 @@
+---
+format:
+  html: default
+title-block-style: default
+title: "9. Who Owns the Consumer Agent?"
+subtitle: "Funnel collapse, the OS duopoly, and the five-way battle for personalized commerce"
+
+description: >-
+  Discovery, comparison and checkout are collapsing into one conversation. Why
+  the consumer control plane is the operating system's action registry rather
+  than the model, and which of five players can reach it.
+
+order: 9
+keywords:
+  - consumer agent
+  - action registry
+  - funnel collapse
+  - agentic commerce
+  - OS duopoly
+  - take rate
+
+---
+
+::: {.callout-note appearance="simple" icon=false}
+**Read the full report as a PDF:** [Who Owns the Consumer Agent? (PDF)](r09-who-owns-the-consumer-agent.pdf)
+:::
+
+## Executive Summary
+
+{{< include _00-executive-summary.qmd >}}
+
+## Contents
+
+|    | Chapter                                      | The question it answers                                                       |
+|----|----------------------------------------------|-------------------------------------------------------------------------------|
+| 2  | [Framework](01-framework.qmd)                | What changes when the control plane thesis moves from enterprise to consumer? |
+| 3  | [The OS Layer](02-os-layer.qmd)              | Why does a duopoly form at the operating system first?                        |
+| 4  | [The Demand Side](03-demand-side.qmd)        | Five players, three competitions — who is positioned where?                   |
+| 5  | [The Protocol War](04-protocol-war.qmd)      | Which commerce protocol wins, and who sets the take rate?                     |
+| 6  | [The Scoring Matrix](05-scoring-matrix.qmd)  | Scored on six attributes, how do the five compare?                            |
+| 7  | [Scenarios and Equilibria](06-scenarios.qmd) | What are the paths to 2030, and what would falsify each?                      |
+| 8  | [Monetization Models](07-monetization.qmd)   | What replaces the click when the funnel collapses?                            |
+| 9  | [Investment Implications](08-investment.qmd) | Where does the positioning land, and what is second-order?                    |
+| 10 | [Watch List](09-watch-list.qmd)              | Who was excluded, and what would bring them in?                               |
+
+: {tbl-colwidths="[6,34,60]"}

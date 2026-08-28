@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "9. Investment Implications"
+---
+
+{{< include _08-investment.qmd >}}

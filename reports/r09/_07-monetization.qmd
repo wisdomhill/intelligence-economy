@@ -1,0 +1,13 @@
+## 8.1. What Replaces CPC?
+
+The keyword auction monetized a measurable, repeated moment of revealed intent. Agents do not eliminate that moment; they internalize it and strip its observability from third parties. Three successor models are visible in current deployments. *Placement-within-recommendation*: sponsored eligibility or ranking inside an agent's consideration set — economically a successor to both search ads and retail media, with the critical difference that an agent presenting two options creates radically scarcer inventory than a results page presenting twenty, implying fewer, more expensive slots and brutal competition for "default eligibility." *Transaction take rates*: protocol- or platform-level fees on completed agentic purchases (the reported 4% Shopify-merchant fee under ACP as the early reference). *Assistant subscriptions*: consumer-paid capacity, now tested by every player (ChatGPT tiers, Google AI Ultra at \$100/month for power users, Meta AI's May 2026 subscription test) — significant as margin, but structurally a minority revenue stream next to commerce flows.
+
+## 8.2. Take-Rate Economics vs. Placement Economics
+
+Arithmetic favors placement over take rates as the larger pool. Commerce margins constrain take rates to low single digits at scale, whereas placement pricing is bounded only by the advertiser value of default eligibility inside a radically scarcer consideration set. The strategic implication: the players who can operate an *auction for agent attention* — which requires both volume and a neutral-enough position that merchants will bid — are Google and Amazon (conflicted but equipped) and OpenAI (unconflicted, not yet equipped). Apple's instrument is the take rate and the toll, not the auction. Meta's instrument is upstream: selling demand into other players' agents.
+
+## 8.3. The Measurement Problem
+
+Funnel collapse breaks attribution. When discovery, comparison, and purchase occur inside one opaque session, traditional last-click attribution degrades, and incrementality measurement becomes far more dependent on agent-operator cooperation and protocol-level data; the agent operator becomes the primary owner of journey data, and advertising effectiveness becomes difficult for the buyer to audit independently. Expect (a) a repricing of advertising toward surfaces that can prove agent-influenced conversion, (b) protocol-level attribution standards becoming a UCP/ACP battleground, and (c) the structured-product-data layer (feeds, schemas) becoming the new SEO — visibility inside agents is already documented to depend heavily on machine-legible catalog quality.
+
+------------------------------------------------------------------------

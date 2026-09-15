@@ -28,6 +28,7 @@ to rebuild them.
 | `styles.scss`, `theme-light.scss`, `theme-dark.scss` | Web typography and colour. |
 | `reports/r01/` | The reference implementation of the document structure. |
 | `manuscripts/` | The manuscripts. The only place a report exists as one document; the fragments are this text split by chapter. |
+| `tools/split_manuscript.py` | Performs that split. The pandoc round-trip it runs is not optional — see below. |
 
 The three partials began as copies of files inside the Quarto installation.
 Asking a fresh session to write them from scratch produces something that
@@ -89,6 +90,38 @@ Always run Quarto from the directory containing `_quarto.yml`. Rendering a
 single `.qmd` from elsewhere drops the theme, the sidebar, the page geometry
 and the A4 paper size without warning — that is what produced the earlier
 US-Letter, unthemed output.
+
+## Splitting a manuscript into fragments
+
+```
+python tools/split_manuscript.py r08 --check     # compare, change nothing
+python tools/split_manuscript.py r08 --write     # overwrite the fragments
+```
+
+A fragment is **not** the manuscript chapter copied across. The prose goes
+through a pandoc markdown round-trip, and skipping it is not cosmetic: a
+references chapter written with bare URLs renders as plain text rather than as
+links. Report 10 shipped that way, with all thirty-seven of its reference URLs
+dead, because the fragments were produced by a plain split.
+
+Three details in that round-trip were each established by reproducing an
+already-published report byte for byte:
+
+| Detail | What goes wrong without it |
+| --- | --- |
+| `-tex_math_dollars` on the reader | `$1 billion ... $9 billion` parses as a math span |
+| Output read from a file, not stdout | `quarto pandoc` clips its stdout on Windows, dropping ~2 KB mid-word, no error, exit 0 |
+| Tables passed through verbatim | pandoc rewrites a compact pipe table as a multiline table |
+
+`tbl-colwidths` lives only in the qmd and never in the manuscript, so
+regenerating a fragment drops it. The tool reads the widths back off the
+fragment it is about to overwrite and re-attaches them per table; a **new**
+table, or one that has gained a column, still needs its proportions chosen by
+hand.
+
+A report whose chapter is served as two web pages — Report 5's Part IV,
+Report 10's chapter 5 — has more fragments than the manuscript has chapters.
+The tool stops rather than guess where the boundary falls; give it by hand.
 
 ## Verifying
 

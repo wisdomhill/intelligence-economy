@@ -52,9 +52,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-b0397a7446277a8d8bdd598c86cc202e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-d0d1ba7cc6f8037f9a0e9b153e429932.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-b0397a7446277a8d8bdd598c86cc202e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-003b56c2873ae6cbd8d893febcf58adf.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-6d4d792f0f3079297a9e05d85b4812ec.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-003b56c2873ae6cbd8d893febcf58adf.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -1020,17 +1020,24 @@ ul.task-list li input[type="checkbox"] {
 <p>This is the anatomical core of the report. The media track is not one demand curve but five, each with a distinct function, a distinct content requirement, a distinct customer, a distinct platform owner, and — decisively — a distinct demand-shape: some segments multiply generated <strong>minutes</strong> while others barely register in minutes yet dominate <strong>GPU-hours</strong>. This chapter builds each segment forward from a stated reference anchor in the existing online-video economy, states the penetration logic explicitly, and then screens the resulting total against the monetization constraint of Section 3.3, which operates as a qualitative economic consistency check on the volume assumptions rather than as a computed ceiling.</p>
 <section id="method-anchor-penetrate-deepen-then-screen-against-the-pool" class="level2">
 <h2 class="anchored" data-anchor-id="method-anchor-penetrate-deepen-then-screen-against-the-pool">5.1 Method: anchor, penetrate, deepen — then screen against the pool</h2>
-<p>Each segment is estimated as <em>generated minutes = installed base × AI-adoption penetration × output per adopter × generation depth</em>, where generation depth is the retake-and-variant multiplier converting one published minute into several generated ones. The denominators are reference anchors and scenario constructions of differing evidentiary strength rather than uniformly observable statistics: Meta’s officially disclosed base of more than 10 million advertising businesses, widened to ~15 million <em>platform-advertiser accounts</em> across the major ad platforms (an account basis that tolerates cross-platform duplication, since campaigns generate creative per platform); the ~2 billion live product listings of the global marketplaces; YouTube’s upload firehose (~500 hours per minute, roughly 15.8 billion published minutes a year) and its creator hierarchy (~3 million monetizing channels inside a ~15 million weekly-cadence creator population); an order-of-magnitude construction of ~60,000 professional productions completed annually (features, scripted-television episodes, music videos, premium documentaries); and a scenario denominator of ~4 million organizations above fifty employees. The volume coefficients carry wide error bands, and the sections that follow state the confidence attached to each; every input is explicit and adjustable.</p>
-<p><strong>Table 1. Generated video volume by segment: bases, penetration paths, and generation intensity</strong></p>
+<p>Four of the five video segments are estimated in two stages. The first stage produces <strong>delivered minutes</strong> — the minutes that actually reach an audience — as <em>installed base × AI-adoption penetration × output per adopter</em>. The second stage converts delivered minutes into compute through an explicit two-pass intensity:</p>
+<blockquote class="blockquote">
+<p><em>GPU-hours per delivered minute = exploration passes × workhorse rate + finishing passes × delivery rate</em></p>
+</blockquote>
+<p>This is the structure practitioners work in, and the separation is not cosmetic. Creators and studios do not render every attempt at final quality. They explore widely and cheaply — storyboard frames, low-resolution motion tests, alternative takes of a single shot — and then render the selected concept once or twice at whatever quality the finished piece requires. Pricing every generated minute at a single blended rate therefore charges delivery-quality rates for drafts that were never rendered at delivery quality, and it does so most heavily in the segments that explore hardest.</p>
+<p>Two properties of the two-pass structure govern every segment below. <strong>Exploration depth per task is held flat across the forecast</strong> rather than escalating year by year. What bounds it is not generation cost, which is collapsing, but the human review bandwidth needed to look at the results: a creative director who can screen fifty candidates today will not screen five hundred in 2028 because each one became ten times cheaper. This is the media analogue of the review-bandwidth cap that governs qualitative work in the enterprise model. The flat assumption applies to depth per task, not to a project’s total exploration volume: where AI spreads into a larger number of shots and workflow stages — the professional case — total exploration per project rises even though the number of candidates reviewed for any one shot does not. <strong>Finishing passes are held near-constant at 1.5 to 2</strong> across every segment, independent of how deep the exploration runs. Only the selected concept is rendered for delivery, and in practice it rarely emerges exactly to plan on the first attempt — a small defect in a hand, a lip-sync drift, a lighting mismatch — so one to two finished renders per delivered minute is the working norm regardless of whether exploration ran to four passes or twenty-five. The <em>rate</em> at which those renders run is a separate question, and it varies by an order of magnitude across the five segments: it is set by the consistency requirement of Section 3.4, not by a universal premium tier. A templated e-commerce clip is delivered barely above workhorse cost (0.30), a performance ad or a corporate module only modestly above it (0.40), a creator’s hero shot at mid-tier (1.20), and professional footage at the full premium rate (3.00). Only the last two reach the premium band described in Section 3.4; the other three are finished at rates that sit close to exploration cost, which is why those segments’ effective intensities stay near or below one GPU-hour per delivered minute.</p>
+<p>The exploration depths below are calibrated against published production accounts rather than vendor claims, because vendors have an evident interest in presenting their models as first-time-right: documented workflows report roughly two to four generations per finished clip for light social work, around four for narrative work with character consistency, and substantially higher ratios for ad-grade and broadcast-grade material, where ten to forty prompts per final clip is commonly described. Where a segment’s evidence spans a range, the upper end is taken. These ratios are clip-level: they describe how many candidates are generated for one finished clip. They inform the exploration assumptions in the four delivered-minute segments, where each segment’s own verification logic then adjusts them — advertising sits below the ad-grade range because the auction, not a director, does the selecting, and variants are published rather than discarded. The professional segment adopts the upper end of the range directly, but at the level of the individual shot rather than the delivered minute, through the derivation in Section 5.6.</p>
+<p>Professional media and entertainment is the exception, and Section 5.6 sets it out in full. Because the great majority of that segment’s compute is consumed by project-level exploratory work — concept development and pre-visualization that has no one-to-one relationship with anything that reaches the screen — its exploration workload is estimated directly per adopting project, and its delivered footage is modeled separately alongside it. The per-delivered-minute figure quoted for that segment in Table 1 is therefore a derived diagnostic, not an input.</p>
+<p>The denominators are reference anchors and scenario constructions of differing evidentiary strength rather than uniformly observable statistics: Meta’s officially disclosed base of more than 10 million advertising businesses, widened to ~15 million <em>platform-advertiser accounts</em> across the major ad platforms (an account basis that tolerates cross-platform duplication, since campaigns generate creative per platform); the ~2 billion live product listings of the global marketplaces; YouTube’s upload firehose (~500 hours per minute, roughly 15.8 billion published minutes a year) and its creator hierarchy (~3 million monetizing channels inside a ~15 million weekly-cadence creator population); an order-of-magnitude construction of ~60,000 professional productions completed annually (features, scripted-television episodes, music videos, premium documentaries); and a scenario denominator of ~4 million organizations above fifty employees. The volume coefficients carry wide error bands, and the sections that follow state the confidence attached to each; every input is explicit and adjustable.</p>
+<p><strong>Table 1. Delivered video volume by segment (millions of minutes reaching an audience)</strong></p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 24%">
-<col style="width: 20%">
-<col style="width: 18%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 14%">
+<col style="width: 26%">
+<col style="width: 22%">
+<col style="width: 22%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -1040,7 +1047,6 @@ ul.task-list li input[type="checkbox"] {
 <th style="text-align: right;">2026E</th>
 <th style="text-align: right;">2027E</th>
 <th style="text-align: right;">2028E</th>
-<th style="text-align: right;">GPU-hr/min</th>
 </tr>
 </thead>
 <tbody>
@@ -1048,59 +1054,134 @@ ul.task-list li input[type="checkbox"] {
 <td>1. Performance ad creative</td>
 <td>~15M platform-advertiser accounts</td>
 <td>15% → 55%</td>
-<td style="text-align: right;">160</td>
-<td style="text-align: right;">460</td>
-<td style="text-align: right;">1,155</td>
-<td style="text-align: right;">0.25</td>
+<td style="text-align: right;">54</td>
+<td style="text-align: right;">144</td>
+<td style="text-align: right;">330</td>
 </tr>
 <tr class="even">
 <td>2. E-commerce SKU video</td>
 <td>~2,000M live marketplace listings</td>
 <td>5% → 28% of stock (~35% → ~88% GMV-weighted)</td>
-<td style="text-align: right;">60</td>
-<td style="text-align: right;">220</td>
-<td style="text-align: right;">505</td>
-<td style="text-align: right;">0.15</td>
+<td style="text-align: right;">43</td>
+<td style="text-align: right;">138</td>
+<td style="text-align: right;">280</td>
 </tr>
 <tr class="odd">
 <td>3. Creator economy / UGC</td>
 <td>~15M weekly-cadence creators</td>
 <td>12% → 40%</td>
-<td style="text-align: right;">140</td>
-<td style="text-align: right;">585</td>
-<td style="text-align: right;">1,560</td>
-<td style="text-align: right;">0.30</td>
+<td style="text-align: right;">56</td>
+<td style="text-align: right;">234</td>
+<td style="text-align: right;">624</td>
 </tr>
 <tr class="even">
 <td>4. Professional M/E</td>
 <td>~60K professional productions/yr</td>
 <td>25% → 75% (any-use)</td>
-<td style="text-align: right;">25</td>
-<td style="text-align: right;">120</td>
-<td style="text-align: right;">250</td>
-<td style="text-align: right;">2.50</td>
+<td style="text-align: right;">0.15</td>
+<td style="text-align: right;">0.54</td>
+<td style="text-align: right;">1.1</td>
 </tr>
 <tr class="odd">
 <td>5. Corporate internal</td>
 <td>~4M organizations (50+ employees)</td>
 <td>5% → 30%</td>
-<td style="text-align: right;">31</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">54</td>
 <td style="text-align: right;">120</td>
-<td style="text-align: right;">240</td>
-<td style="text-align: right;">0.20</td>
 </tr>
 <tr class="even">
-<td><strong>Video total (M generated minutes)</strong></td>
+<td><strong>Video total delivered</strong></td>
 <td></td>
 <td></td>
-<td style="text-align: right;"><strong>416</strong></td>
-<td style="text-align: right;"><strong>1,505</strong></td>
-<td style="text-align: right;"><strong>3,710</strong></td>
-<td style="text-align: right;"><strong>0.38–0.43 blended</strong></td>
+<td style="text-align: right;"><strong>169</strong></td>
+<td style="text-align: right;"><strong>571</strong></td>
+<td style="text-align: right;"><strong>1,355</strong></td>
 </tr>
 </tbody>
 </table>
-<p>Two headline movements inside the table deserve immediate notice. Generated minutes expand roughly nine-fold over two years, faster than any single segment because breadth and depth compound. And the volume leadership changes hands: performance advertising leads in 2026 (38% of minutes), but the creator economy overtakes it from 2027 and holds 42% of minutes by 2028 — advertising’s growth is bounded by advertiser count and fatigue-cycle economics, while creator demand compounds on generation depth per video. The sections below derive each row.</p>
+<p><strong>Table 1b. Compute-intensity structure, and generated video volume by segment (millions of minutes actually produced)</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 21%">
+<col style="width: 16%">
+<col style="width: 15%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 10%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Video segment</th>
+<th>Exploration workload × workhorse rate</th>
+<th>Finishing passes × delivery rate</th>
+<th style="text-align: right;">GPU-hr per delivered minute</th>
+<th style="text-align: right;">2026E</th>
+<th style="text-align: right;">2027E</th>
+<th style="text-align: right;">2028E</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1. Performance ad creative</td>
+<td>4.0 × 0.25</td>
+<td>1.5 × 0.40</td>
+<td style="text-align: right;">1.60</td>
+<td style="text-align: right;">297</td>
+<td style="text-align: right;">792</td>
+<td style="text-align: right;">1,815</td>
+</tr>
+<tr class="even">
+<td>2. E-commerce SKU video</td>
+<td>2.0 × 0.15</td>
+<td>1.5 × 0.30</td>
+<td style="text-align: right;">0.75</td>
+<td style="text-align: right;">151</td>
+<td style="text-align: right;">483</td>
+<td style="text-align: right;">980</td>
+</tr>
+<tr class="odd">
+<td>3. Creator economy / UGC</td>
+<td>5.0 × 0.25</td>
+<td>2.0 × 1.20</td>
+<td style="text-align: right;">3.65</td>
+<td style="text-align: right;">393</td>
+<td style="text-align: right;">1,638</td>
+<td style="text-align: right;">4,368</td>
+</tr>
+<tr class="even">
+<td>4. Professional M/E</td>
+<td>project-level: ~1,700 → ~5,550 exploration min/title × 0.30</td>
+<td>2.0 × 3.00</td>
+<td style="text-align: right;">57 → 73 (derived)</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">121</td>
+<td style="text-align: right;">252</td>
+</tr>
+<tr class="odd">
+<td>5. Corporate internal</td>
+<td>2.0 × 0.20</td>
+<td>1.5 × 0.40</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">56</td>
+<td style="text-align: right;">189</td>
+<td style="text-align: right;">420</td>
+</tr>
+<tr class="even">
+<td><strong>Video total generated</strong></td>
+<td></td>
+<td></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"><strong>922</strong></td>
+<td style="text-align: right;"><strong>3,223</strong></td>
+<td style="text-align: right;"><strong>7,835</strong></td>
+</tr>
+</tbody>
+</table>
+<p><em>Generated minutes are delivered minutes multiplied by the total pass count — exploration plus finishing — and are the volume the models actually produce; delivered minutes are the subset that reaches an audience. Professional M/E is the exception noted in Section 5.6: its exploration is set per project rather than per delivered minute, so its per-minute intensity is derived from the two figures rather than assumed.</em></p>
+<p><em>Evidentiary status of the inputs.</em> The bases divide into three grades, and readers should weight them accordingly. <strong>Observable anchors</strong> (grade A–B): Meta’s disclosed advertiser base, YouTube’s published upload rate and monetizing-channel count, Microsoft and Google seat and customer disclosures. <strong>Constructed anchors</strong> (grade C): the ~15 million platform-advertiser accounts widened across platforms, the ~15 million weekly-cadence creator population, the ~2 billion marketplace listings, the ~60,000 annual professional productions, the ~4 million organizations above fifty employees — each assembled from public components rather than reported as such. <strong>Scenario assumptions</strong> (grade D): every penetration path, every output-per-adopter figure, and the exploration and finishing coefficients, including the professional segment’s shot counts and candidate ratios. Nothing in the last group is a measurement, and the totals inherit that status.</p>
+<p>Three movements across the two tables deserve immediate notice. Delivered minutes expand eight-fold over two years, and generated minutes expand with them, because breadth and depth compound. The volume leadership is contested at the start and settled by the end: advertising and the creator economy are within a few percent of one another in 2026 delivered minutes, but the creator economy pulls decisively ahead from 2027 and holds 46% of delivered minutes by 2028 — advertising’s growth is bounded by advertiser count and fatigue-cycle economics, while creator demand compounds on both breadth and depth. And the intensity column of Table 1b, not the minutes column of Table 1, is where the compute ranking is decided: professional media and entertainment delivers a rounding error in minutes but carries more than seventy GPU-hours behind each one, while e-commerce delivers two hundred and fifty times as many minutes at roughly one-hundredth the intensity. The professional row is also the one segment whose intensity is derived rather than assumed: its exploration is set at project level and divided through by delivered minutes, for the reasons given in Section 5.6. A third reading belongs to Table 1b alone — the ratio of generated to delivered minutes, which runs from 3.5 in e-commerce to 5.5 in advertising, 7 in the creator economy, and above 200 in professional production. That ratio is the exploration structure of Section 5.1 made visible, and it is why compute rankings and volume rankings do not agree. The sections below derive each row.</p>
 </section>
 <section id="why-the-penetration-rates-differ-denominators-deciders-and-forcing-functions" class="level2">
 <h2 class="anchored" data-anchor-id="why-the-penetration-rates-differ-denominators-deciders-and-forcing-functions">5.2 Why the penetration rates differ: denominators, deciders, and forcing functions</h2>
@@ -1149,7 +1230,7 @@ ul.task-list li input[type="checkbox"] {
 <td>5. Corporate internal</td>
 <td>Stock — most organizations have no video function today</td>
 <td>Dispersed, plus procurement friction</td>
-<td>None — a new workflow must be created</td>
+<td>Weak — suite bundling lowers the friction but a new workflow must still be created</td>
 <td>Slow</td>
 </tr>
 <tr class="odd">
@@ -1165,23 +1246,24 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="segment-1-performance-ad-creative-supplier-push-not-customer-pull" class="level2">
 <h2 class="anchored" data-anchor-id="segment-1-performance-ad-creative-supplier-push-not-customer-pull">5.3 Segment 1 — Performance Ad Creative: supplier-push, not customer-pull</h2>
-<p><strong>Function, content, customer.</strong> Short performance-marketing video — feed ads, Reels, Shorts, and TikTok placements — typically eight to fifteen seconds, produced in large variant sets for continuous A/B testing. The requirement is volume and freshness rather than cinematic polish, so workhorse-tier generation (0.25 GPU-hours per minute) is fully sufficient. The customer base is the ~15 million platform-advertiser accounts across the major platforms (anchored on Meta’s officially disclosed base of more than 10 million advertising businesses, plus the Google, TikTok, and Amazon account bases, counted with cross-platform duplication since creative is generated per platform), overwhelmingly SMBs for whom video production was previously uneconomic; a $10 generation budget now yields dozens of usable clips, dropping video creation to roughly the cost structure of copywriting.</p>
-<p><strong>The verification logic.</strong> This is the one media workload whose final verifier is not a human but the platform’s A/B auction: publish many variants and let click-through and conversion select winners, with human review shrinking to brand-safety screening. As Section 3.2 argued, the market plays the role the compiler plays in software — and creative-fatigue cycles (ad sets decay in two to four weeks on short-form platforms) then make continuous refresh rational, so that when the marginal cost of a variant approaches zero the profit-maximizing variant count rises.</p>
+<p><strong>Function, content, customer.</strong> Short performance-marketing video — feed ads, Reels, Shorts, and TikTok placements — typically eight to fifteen seconds, produced in large variant sets for continuous A/B testing. The requirement is volume and freshness rather than cinematic polish, so exploration runs entirely at the workhorse rate (0.25 GPU-hours per minute) and finishing is only lightly upgraded (0.40). The customer base is the ~15 million platform-advertiser accounts across the major platforms (anchored on Meta’s officially disclosed base of more than 10 million advertising businesses, plus the Google, TikTok, and Amazon account bases, counted with cross-platform duplication since creative is generated per platform), overwhelmingly SMBs for whom video production was previously uneconomic; a $10 generation budget now yields dozens of usable clips, dropping video creation to roughly the cost structure of copywriting.</p>
+<p><strong>The verification logic.</strong> This is the purest case in media of a workload whose final verifier is machine-mediated rather than human — the platform’s A/B auction: publish many variants and let click-through and conversion select winners, with human review shrinking to brand-safety screening. As Section 3.2 argued, the market plays the role the compiler plays in software — and creative-fatigue cycles (ad sets decay in two to four weeks on short-form platforms) then make continuous refresh rational, so that when the marginal cost of a variant approaches zero the profit-maximizing variant count rises.</p>
 <p><strong>The penetration logic (15% → 55%).</strong> The steepest non-professional ramp in the model rests on the observation that adoption here is not a customer decision but a platform decision. Meta disclosed as early as September 2024 that more than one million advertisers were using its generative ad tools, generating fifteen million ads in a single month; Meta’s Advantage+ and Google’s Performance Max increasingly generate video variants server-side from an advertiser’s existing assets, which means that by 2028 the operative definition of penetration shifts from “adopted” to “did not opt out.” The 55% ceiling reflects the residual: categories adequately served by static imagery, regulated verticals (pharmaceutical, financial) whose creative-approval chains block automated variants, and the low-activity advertiser tail that supplies no usable source assets. Our 2026 figure of 2.25 million <em>video-specific</em> AI advertisers is a deliberate subset of the larger disclosed any-generative-AI base.</p>
-<p><strong>Parameters.</strong> Advertisers using AI video rise 2.25M → 4.5M → 8.25M; published AI clips per advertiser rise 120 → 160 → 200 per year on the fatigue-refresh logic; average published clip ~12 seconds (0.2 minutes); and the generation-to-published multiplier runs 3.0 → 3.2 → 3.5 as variant testing widens. Product: <strong>160 → 460 → 1,155 million generated minutes.</strong></p>
+<p><strong>Parameters.</strong> Advertisers using AI video rise 2.25M → 4.5M → 8.25M; published AI clips per advertiser rise 120 → 160 → 200 per year on the fatigue-refresh logic; average published clip ~12 seconds (0.2 minutes). Product: <strong>54 → 144 → 330 million delivered minutes.</strong> Intensity is four exploration passes at the workhorse rate plus 1.5 finishing passes at 0.40 — a lower exploration depth than the creator and professional segments, because the auction, not a creative director, does the selecting: variants are the deliverable rather than candidates for discard, so relatively little of what is generated is thrown away. At 1.60 GPU-hours per delivered minute the segment consumes <strong>86 → 230 → 528 million GPU-hours.</strong></p>
+<p><strong>One layer above this segment is not counted.</strong> Agencies and brand marketing teams use video models heavily, but for a different purpose: idea exploration. A single campaign concept may be sketched as hundreds of short clips, shown internally and to the client, and discarded — with the delivered commercial then shot conventionally and finished with AI-assisted post-production. Compute is consumed at volume while almost nothing generated reaches air, and the exploration depth involved plausibly exceeds even the professional-production figure in Table 1. Anchoring that demand would require a campaign-level base population that no published source supports, so it sits outside this estimate — and its absence biases the advertising figures downward by a margin that is not small.</p>
 <p><strong>The platform reading.</strong> Meta and Google own this segment three times over: the auction that verifies the creative, the advertising pool that monetizes it, and increasingly the generation model that produces it. The supply-side injection that drives the penetration curve exists precisely because of that vertical integration — a platform that owns both the model and the monetization pool has every incentive to generate the creative itself, a dynamic this series’ analysis of consumer agentic platform competition among Google, Meta, and Amazon develops at length.</p>
 </section>
 <section id="segment-2-e-commerce-sku-video-lowest-penetration-of-stock-highest-penetration-of-commerce" class="level2">
 <h2 class="anchored" data-anchor-id="segment-2-e-commerce-sku-video-lowest-penetration-of-stock-highest-penetration-of-commerce">5.4 Segment 2 — E-commerce SKU Video: lowest penetration of stock, highest penetration of commerce</h2>
-<p><strong>Function, content, customer.</strong> Conversion of static product listings into short demonstration and lifestyle clips — five to ten seconds, templated, lightly retaken — verified by the listing’s own conversion rate, hence machine-graded and priced at the cheapest tier in the model (0.15 GPU-hours per minute). The decision-relevant customers are the platforms and their seller bases: Amazon’s ~1.6 million active sellers and its advertising console (whose AI video generator has been offered to advertisers at no charge since 2024), Shopify’s ~4.9 million stores, and the Chinese marketplaces, several of which already run listing-image-to-video conversion at platform scale. The <em>unit</em>, however, is the SKU: roughly 2 billion live listings globally (the weakest-grade anchor in the model), of which Amazon alone accounts for several hundred million.</p>
+<p><strong>Function, content, customer.</strong> Conversion of static product listings into short demonstration and lifestyle clips — five to ten seconds, templated, lightly retaken — verified by the listing’s own conversion rate, hence machine-graded and run at the cheapest tier in the model (0.15 GPU-hours per minute for exploration, 0.30 for the finished clip). The decision-relevant customers are the platforms and their seller bases: Amazon’s ~1.6 million active sellers and its advertising console (whose AI video generator has been offered to advertisers at no charge since 2024), Shopify’s ~4.9 million stores, and the Chinese marketplaces, several of which already run listing-image-to-video conversion at platform scale. The <em>unit</em>, however, is the SKU: roughly 2 billion live listings globally (the weakest-grade anchor in the model), of which Amazon alone accounts for several hundred million.</p>
 <p><strong>The penetration logic (5% → 28% of stock; ~35% → ~88% of GMV).</strong> The intuition that e-commerce should be the most-penetrated segment is correct — the low figure in the table is a denominator effect, not a slow-adoption claim. Video creates value only where there is traffic to convert, so the economically rational application order is GMV-weighted from the top: under the marketplace-typical Pareto structure in which the top decile of listings carries roughly 85% of merchandise value, our 2028 stock coverage of 28% decomposes as the entire top decile plus roughly a fifth of the dormant tail — which is approximately <strong>88% of GMV-weighted commerce</strong> (85% + 0.2 × 15%). On the measure that matters commercially, this segment ends the forecast as the <em>most</em> penetrated function in the taxonomy; the stock-based figure is retained in the table because GPU-hours are generated per listing, not per dollar. One reconciling note: the 2026 GMV figure of ~35% embeds imperfectly traffic-ordered early application — platform auto-conversion sweeps mid-tail listings alongside the head — rather than a strict top-down fill, which at 5% stock coverage would imply roughly 42% of GMV. The dormant tail below the traffic line is not late-adopting; it is rationally never addressed.</p>
-<p><strong>Parameters.</strong> Covered SKUs rise ~100M → ~300M → ~560M (5% → 15% → 28% of stock); annual generated minutes per covered SKU run 0.6 → 0.73 → 0.9 (two to three clips of ~10 seconds at retake multiples of 1.4–1.8). Product: <strong>60 → 220 → 505 million generated minutes.</strong> Amazon is this segment’s platform owner in the West on the same triple logic as Meta in advertising — it owns the traffic, the conversion data that verifies the creative, and now the generation tooling — with Taobao and Douyin commerce playing the equivalent role in China.</p>
+<p><strong>Parameters.</strong> Covered SKUs rise ~100M → ~300M → ~560M (5% → 15% → 28% of stock); annual delivered minutes per covered SKU run 0.43 → 0.46 → 0.50 (two to three published clips of ~10 seconds). Product: <strong>43 → 138 → 280 million delivered minutes.</strong> Intensity is the lowest in the model — two exploration passes at 0.15 plus 1.5 finishing passes at 0.30, for 0.75 GPU-hours per delivered minute — because the output is templated, the clips are short, and the verifier is a conversion rate rather than a human eye, so there is little to explore and little to perfect. The segment consumes <strong>32 → 104 → 210 million GPU-hours.</strong> Amazon is this segment’s platform owner in the West on the same triple logic as Meta in advertising — it owns the traffic, the conversion data that verifies the creative, and now the generation tooling — with Taobao and Douyin commerce playing the equivalent role in China.</p>
 </section>
 <section id="segment-3-creator-economy-ugc-the-depth-driven-leader-from-2027" class="level2">
 <h2 class="anchored" data-anchor-id="segment-3-creator-economy-ugc-the-depth-driven-leader-from-2027">5.5 Segment 3 — Creator Economy / UGC: the depth-driven leader from 2027</h2>
-<p><strong>Function, content, customer.</strong> The individual and small-business creator economy: YouTube channels, short-form operators, the video-podcast wave that Spotify and YouTube are both pushing, and independent musicians. Content spans B-roll and intros today, graduating toward assembled segments and AI-hosted formats; mixed intensity is modeled at 0.30 GPU-hours per minute. The base is the ~15 million creators publishing on a weekly cadence — anchored on YouTube’s ~3 million monetizing channels and widened to regular non-monetizing uploaders, video podcasters, and short-form businesses, while deliberately excluding the ~65 million casual-creator figure whose long tail publishes too irregularly to matter for volume.</p>
+<p><strong>Function, content, customer.</strong> The individual and small-business creator economy: YouTube channels, short-form operators, the video-podcast wave that Spotify and YouTube are both pushing, and independent musicians. Content spans B-roll and intros today, graduating toward assembled segments and AI-hosted formats; exploration runs at the workhorse rate of 0.25 GPU-hours per minute and finishing at a mid-tier 1.20, reflecting the native audio and character consistency that hero shots increasingly require. The base is the ~15 million creators publishing on a weekly cadence — anchored on YouTube’s ~3 million monetizing channels and widened to regular non-monetizing uploaders, video podcasters, and short-form businesses, while deliberately excluding the ~65 million casual-creator figure whose long tail publishes too irregularly to matter for volume.</p>
 <p><strong>The penetration logic (12% → 40%): no forcing function, and a genre-fit ceiling.</strong> Adoption here is fully dispersed individual decision-making with no platform injection, so the curve is pure cost-and-quality pull — and its ceiling is set by genre structure rather than by willingness. A large share of creator output is in genres where AI generation is structurally inapplicable or only marginally applicable: gaming (the screen capture is the content), vlogging and IRL formats (authenticity is the product), reaction and commentary. Treating the high-applicability genres — education and explainers, ambient and music channels, kids’ content, listicle and documentary-style formats — as roughly 50–60% of serious-creator output, and assuming adoption within that applicable pool reaches ~70% by 2028, yields the 40% aggregate: the headline rate is the product of genre fit and within-genre adoption, not a free-hand S-curve. The 2026 figure of 12% reflects that the tooling is already trivially accessible to this population and that platform integration is underway — YouTube has embedded Veo-powered generation directly into Shorts — but that full-video workflows remain immature.</p>
-<p><strong>Why depth, not breadth, is the growth engine.</strong> The creator base is roughly stable and upload cadence is fixed by format (~52 videos per creator-year), so this segment’s growth is carried almost entirely by <em>generation depth</em>: minutes generated per video rising 1.5 → 3 → 5 as the technology traverses the insert-to-segment-to-full-generation progression of Section 5.8, with retakes included. The product — 15M × 12%/25%/40% × 52 × 1.5/3/5 — yields <strong>140 → 585 → 1,560 million generated minutes</strong>, a near-elevenfold rise that overtakes advertising in 2027 and reaches 42% of all generated minutes by 2028. A scale check disciplines the optimism: 1,560 million generated minutes divided by a retake multiple of ~2.5 implies ~620 million <em>published</em> AI minutes in 2028 — roughly 2–3% of the current annual upload volume of YouTube and the short-form platforms combined, comfortably inside any plausible slop-saturation ceiling.</p>
+<p><strong>Why content depth, not creator count, drives growth.</strong> The creator base is roughly stable and upload cadence is fixed by format (~52 videos per creator-year), so this segment’s growth is carried by adoption and by content depth rather than by head-count. Delivered AI minutes per video rise 0.6 → 1.2 → 2.0 as the technology traverses the insert-to-segment-to-full-generation progression of Section 5.8. The product — 15M × 12%/25%/40% × 52 × 0.6/1.2/2.0 — yields <strong>56 → 234 → 624 million delivered minutes</strong>, which overtakes advertising in 2027 and reaches 46% of all delivered minutes by 2028. Exploration depth is not the second growth term but the amplifier applied to both: five workhorse passes per delivered minute in every forecast year, a depth consistent with documented narrative workflows where roughly one generated clip in four survives the edit and the surviving clip is itself trimmed. It sets the level of this segment’s compute rather than its slope. Two finishing passes at 1.20 reflect the mid-tier rendering that hero shots increasingly receive as native audio and character consistency become table stakes. At 3.65 GPU-hours per delivered minute this segment consumes <strong>205 → 854 → 2,278 million GPU-hours</strong>, roughly 70% of the video track by 2028 — the single largest concentration of compute in the media demand function. A scale check disciplines the optimism: 624 million delivered AI minutes in 2028 is roughly 4% of the current annual upload volume of YouTube and the short-form platforms combined, comfortably inside any plausible slop-saturation ceiling.</p>
 <p><strong>The platform reading.</strong> Google is this segment’s vertically integrated owner: YouTube supplies the distribution, the Partner Program supplies the monetization pool (a share of the same advertising dollars that fund Segment 1 — the double-counting the cap of Section 3.3 exists to prevent), and Veo, embedded in the creation surface, increasingly supplies the generation itself. No other player holds all three layers of any segment this completely.</p>
 
 

@@ -52,9 +52,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-b0397a7446277a8d8bdd598c86cc202e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-d0d1ba7cc6f8037f9a0e9b153e429932.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-b0397a7446277a8d8bdd598c86cc202e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-003b56c2873ae6cbd8d893febcf58adf.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-6d4d792f0f3079297a9e05d85b4812ec.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-003b56c2873ae6cbd8d893febcf58adf.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -999,6 +999,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#the-2026-inflection-and-the-unit-of-analysis" id="toc-the-2026-inflection-and-the-unit-of-analysis" class="nav-link active" data-scroll-target="#the-2026-inflection-and-the-unit-of-analysis">2.1 The 2026 inflection and the unit of analysis</a></li>
   <li><a href="#what-the-model-is-and-is-not" id="toc-what-the-model-is-and-is-not" class="nav-link" data-scroll-target="#what-the-model-is-and-is-not">2.2 What the model is and is not</a></li>
+  <li><a href="#scope-of-this-estimate" id="toc-scope-of-this-estimate" class="nav-link" data-scroll-target="#scope-of-this-estimate">2.3 Scope of this estimate</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/wisdomhill/intelligence-economy/blob/main/reports/r08/01-introduction.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li></ul></div></nav>
     </div>
@@ -1025,6 +1026,14 @@ ul.task-list li input[type="checkbox"] {
 <section id="what-the-model-is-and-is-not" class="level2">
 <h2 class="anchored" data-anchor-id="what-the-model-is-and-is-not">2.2 What the model is and is not</h2>
 <p>The quantitative model presented in Section 5 is deliberately coarse: a single multiplicative identity per category (base population or volume × activity rate × tokens per task × penetration), with one compute weight per category, and no prefill/decode decomposition. Every coefficient is an explicit, adjustable assumption, and the model is built to deliver order-of-magnitude conclusions about mix and trajectory rather than point estimates. Section 6 documents the sensitivity of each input and the confidence attached to it.</p>
+</section>
+<section id="scope-of-this-estimate" class="level2">
+<h2 class="anchored" data-anchor-id="scope-of-this-estimate">2.3 Scope of this estimate</h2>
+<p>The demand modeled here is not the whole of enterprise AI. It is a deliberately narrow slice, and the exclusions are larger than the inclusions.</p>
+<p>We exclude chatbot-tier knowledge work entirely — background research, email drafting, summarization, proofreading, translation. By volume of interactions this is almost certainly the largest single block of enterprise AI usage today, and it is growing. It is excluded not because it is unimportant but because it is a different object: a single-turn request answered from a single model call, with no tool loop, no autonomous execution, and no verification structure of the kind this report is built around. For the same reason we exclude what employees do on personal free-tier and consumer accounts, whether or not the work is for their employer: it is chatbot-tier usage by another route, and it appears in no paid-seat base.</p>
+<p>Within agentic work, the seven functions modeled here were selected on one criterion: each has a verification mechanism that can be named and reasoned about. That criterion selects for tractability, not for size. Enterprise R&amp;D — computational chemistry, materials discovery, simulation-in-the-loop engineering, scientific literature work — is agentic, is verification-rich, and may in time exceed several of the functions modeled here. It is absent because no defensible base population for it can yet be constructed. The same applies to industrial process optimization and supply-chain planning.</p>
+<p>Demand arising inside China is likewise outside the estimate, though the exclusion operates differently across the model and one route is weaker than the others. The non-coding workforce categories are built on Microsoft 365 commercial seats, a base from which China-domiciled demand is largely absent by construction. The two volume-based categories do not run on seat bases at all — Category 3 is sized on addressable transaction items and Category 5 on customer interactions — and both are defined here on an ex-China basis. Category 1 is the exception: its base is a published global developer population from which China-domiciled developers cannot be separately identified, so the exclusion there operates only through the intensity-normalized penetration term, which measures the share of that population operating at the reference intensity of this report’s frontier-class agentic tooling. Readers should treat Category 1’s base as global and its penetration term as carrying the geographic adjustment, as Section 4.1 sets out.</p>
+<p>The figures that follow should therefore be read as a floor on the seven functions named, not as an estimate of enterprise AI demand. For the same reason, they are not expressed anywhere as a share of installed accelerator capacity: that comparison would set a narrowly scoped floor against an all-purpose stock. Where scale needs conveying, the companion infrastructure volume does so in gigawatts, capital expenditure, and annual increments.</p>
 <hr>
 
 

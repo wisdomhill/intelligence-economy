@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "6. GPU/HBM Demand: Methodology and the Fleet"
+---
+
+{{< include _05-gpu-methodology.qmd >}}

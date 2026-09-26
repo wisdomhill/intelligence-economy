@@ -1,0 +1,49 @@
+---
+format:
+  html: default
+title-block-style: default
+title: "11. Reading the Shadow onto Silicon"
+subtitle: "Mapping AI demand onto compute, memory, and storage, 2026–2028"
+
+description: >-
+  The infrastructure volume of the series. Enterprise token demand and consumer
+  media demand are carried onto three hardware rails, and the H100-equivalent
+  inference fleet is derived function by function to 2028.
+
+order: 11
+keywords:
+  - inference fleet
+  - HBM
+  - H100-equivalent
+  - compute weight
+  - deterministic rail
+  - storage flywheel
+
+---
+
+::: {.callout-note appearance="simple" icon=false}
+**Read the full report as a PDF:** [Reading the Shadow onto Silicon (PDF)](r11-reading-the-shadow-onto-silicon.pdf)
+:::
+
+## Executive Summary
+
+{{< include _00-executive-summary.qmd >}}
+
+## Contents
+
+|    | Chapter                                                                   | The question it answers                                                    |
+|----|---------------------------------------------------------------------------|----------------------------------------------------------------------------|
+| 2  | [Introduction](01-introduction.qmd)                                       | Why can't one coefficient turn token demand into silicon demand?           |
+| 3  | [The AI Stack Value Chain](02-value-chain.qmd)                            | What are the three rails, and what is each one made of?                    |
+| 4  | [The Evolutionary Path](03-evolutionary-path.qmd)                         | Does the agentic stage replace the chatbot stage, or sit on top of it?     |
+| 5  | [The Analytical Framework](04-framework.qmd)                              | How does a demand function acquire a hardware signature?                   |
+| 6  | [GPU/HBM Demand: Methodology and the Fleet](05-gpu-methodology.qmd)       | How are frontier-equivalent tokens converted into H100-equivalents?        |
+| 6  | [GPU/HBM Demand: Reading the Fleet](06-gpu-readings.qmd)                  | What do the five workload profiles imply, and what decouples from what?    |
+| 7  | [CPU/DRAM Demand](07-cpu-dram.qmd)                                        | What does the token metric miss on the deterministic rail?                 |
+| 8  | [Storage Systems Demand](08-storage.qmd)                                  | Where does the data exhaust go, and what does it feed?                     |
+| 9  | [The Function × Infrastructure Matrix](09-matrix.qmd)                     | Put together, which function loads which rail?                             |
+| 10 | [Investment Implications](10-investment.qmd)                              | Where does the positioning land across the three rails?                    |
+| 11 | [Risks and Sensitivities](11-risks.qmd)                                   | Which assumptions carry the widest bands?                                  |
+| 12 | [Tracking Indicators](12-tracking.qmd)                                    | What would confirm or falsify the mapping within two quarters?             |
+
+: {tbl-colwidths="[5,42,53]"}

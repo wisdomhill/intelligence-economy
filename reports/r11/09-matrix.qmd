@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "9. The Function × Infrastructure Matrix"
+---
+
+{{< include _09-matrix.qmd >}}

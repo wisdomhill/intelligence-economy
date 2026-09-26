@@ -39,6 +39,13 @@ EXPECT_FONTS = {"Inter-SemiBold", "Inter-Regular", "SourceSerif4-Regular"}
 ALLOWED_PREFIXES = ("Inter", "SourceSerif4", "DejaVuSansMono")
 EXPECT_HEADING_PT = {1: 15.0, 2: 12.0, 3: 11.0}
 EXPECT_BODY_PT = 11.0
+# Headings are found by face and size, and a figure defeats that on its own:
+# an SVG sets its labels in the heading face too, and scaling a 1600px drawing
+# into the text block lands them around 4-5pt, which read as an undersized
+# level-3 heading. Nothing below this floor is a heading — the smallest the
+# template sets is 11pt — so the floor separates the two with room to spare
+# while still catching a real heading rendered at the wrong size.
+MIN_HEADING_PT = 8.0
 EXPECT_H1_RGB = (0.184, 0.294, 0.561)   # 2F4B8F
 PRIME = "′"                        # Typst renders 1's as 1′s unescaped
 
@@ -111,6 +118,8 @@ def main(path: Path) -> int:
                         body_sizes.get(round(ch["size"], 1), 0) + 1
                 if "Inter-SemiBold" in ch["fontname"]:
                     size = round(ch["size"], 1)
+                    if size < MIN_HEADING_PT:
+                        continue            # figure label, not a heading
                     if size >= EXPECT_HEADING_PT[1] - 0.05:
                         h1 = size
                         h1_colour = ch.get("non_stroking_color")

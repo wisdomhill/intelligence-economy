@@ -1,0 +1,31 @@
+## 4.1 Three stages of the workload
+
+The three-rail load profile is not static; it has evolved through three recognizable stages, and the direction of travel is the single most important qualitative fact in this report.
+
+**Stage 1 — the Chatbot (generative-AI foundation model).** A human types; the model decodes; the human reads. The workload is almost purely the probabilistic rail: HBM-bound decode, with trivial CPU orchestration (a web server) and trivial storage (chat logs). This is the regime in which the industry's "AI infrastructure = GPU" intuition was formed, and for Stage 1 it was approximately correct.
+
+**Stage 2 — the Coding Agent.** The agent writes code, then *runs* it: compile, test, execute, observe, revise. The GPU rail remains fully loaded — indeed more heavily, since autonomous loops amplify tokens by orders of magnitude — but now every loop iteration also spins CPU cycles in sandboxes, build systems, and test harnesses, and materializes intermediate artifacts on disk. CPU and general DRAM join the demand function at medium intensity; storage begins to accumulate.
+
+**Stage 3 — the Agentic Enterprise.** Agents operate across enterprise systems at machine speed: reconciling records, researching leads, orchestrating workflows, generating analyses and media. Usage that was once throttled by human typing and reading becomes throttled only by business volume and verification budgets. CPU load rises to high (every cross-system action is deterministic execution), and storage rises to high (machine-speed work generates machine-scale data exhaust, which the analytical function then consumes — the flywheel of Section 8).
+
+**Table 2. Development stage × hardware intensity (Exhibit B)**
+
+| Stage | GPU/HBM | CPU/DRAM | Storage |
+|---|---|---|---|
+| 1 · Chatbot (Generative AI FM) | High | Low | Low |
+| 2 · Coding Agent | High | Medium | Medium |
+| 3 · Agentic Enterprise SW | High | High | High |
+
+: {tbl-colwidths="[40,20,20,20]"}
+
+*GPU/HBM stays high throughout; CPU and Storage climb as the stack matures — the whole stack expands cumulatively, it does not migrate. Grades here describe the load profile at each stage's emergence, not the 2026–2028 forecast intensity of any single function: the coding workload that debuts at Stage 2 with medium CPU intensity matures into the Very High grade Table 5 assigns it, and Stage 2's Medium storage cell reflects transient in-loop artifacts, where Table 5 grades Software Engineering Low on a net-retention basis.*
+
+## 4.2 Cumulative, not migratory
+
+The table's most important reading is what it does *not* show: no cell ever declines. The GPU column does not recede as the CPU and storage columns rise; Stage 3 contains Stage 2 contains Stage 1. This distinguishes the AI stack from prior platform transitions (client-server did partially cannibalize mainframe; cloud did partially cannibalize on-premises). Here the probabilistic engine remains load-bearing at every stage while the surrounding infrastructure thickens around it. The investment translation is that the three columns are complements in aggregate even where they are substitutes in a single workload's budget.
+
+## 4.3 The Saaspocalypse question
+
+A common objection holds that agentic AI will hollow out the enterprise-software stack — the "Saaspocalypse" — and with it the CPU and storage demand that stack generates. The framework here suggests the objection confuses the software *market* with the hardware *load*. Whether agents substitute for SaaS applications (issuing their work through harnesses and connectors) or complement them (driving usage of the systems they orchestrate), the physical work still executes: records are still written, workflows still run, data is still stored — but now initiated at machine speed rather than human speed. Substitution reallocates which vendor's software mediates the CPU cycle; it does not eliminate the cycle. On either branch, aggregate deterministic compute rises, because the binding constraint on transaction volume shifts from human attention to business volume — precisely the shift Report 8 identified as the growth mechanism of its volume-based categories. The Saaspocalypse is a revenue-redistribution scenario, not a hardware-demand-destruction scenario.
+
+------------------------------------------------------------------------

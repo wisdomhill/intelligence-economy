@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "4. The Evolutionary Path"
+---
+
+{{< include _03-evolutionary-path.qmd >}}

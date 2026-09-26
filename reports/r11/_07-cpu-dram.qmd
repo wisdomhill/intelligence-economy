@@ -1,0 +1,23 @@
+## 7.1 Why the token metric misses it
+
+Report 8 states the gap itself, in a parenthesis worth elevating: Category 2's coefficient measures "code-*generation* tokens rather than the CPU load of code execution." The same blindness applies across the taxonomy. Token counts capture what the model *says*; they capture nothing of what the harness *does* — and in agentic systems the harness does a great deal. Every autonomous coding iteration triggers a compile, a test run, often a container build; every analytical task executes data-preparation and model-fitting code against real datasets; every workflow chain invokes connectors, transforms payloads, and writes to enterprise systems. All of this is deterministic computation on conventional CPUs with conventional DRAM, billed today inside general cloud compute where no one labels it "AI demand." This section grades it qualitatively; the grades are stated judgments, not measurements.
+
+## 7.2 The primary drivers
+
+**Software Engineering (Very High).** The compile-test-run loop is the canonical case: a single agentic session can execute hundreds of builds and test suites, each a burst of CPU and memory pressure. As full-delegation rates rise and autonomous task horizons lengthen (the intensity migration Report 8's companion coding report tracks), execution load scales with loop count — the quantity that generational loop-count collapse deflates. Report 8's base case treats lengthening task horizons as neutral to total token demand, on the reasoning that a longer horizon consolidates delegations rather than multiplying work; whether it is equally neutral to *CPU* load, where each additional tool call is a separate sandbox operation regardless of how the delegations are bundled, is a question this report raises as a separate sensitivity rather than an assumption inherited from the demand model. The sandbox fleet behind the world's coding agents is, we judge, already the largest unlabeled AI-CPU workload in existence.
+
+**Quantitative Analysis & Data Science (High).** Data preparation, not modeling, is where most agent iterations go — and data preparation is often CPU-intensive work: parsing, joining, cleaning, materializing. Text-to-SQL loops typically execute queries against warehouses; backtests replay data through pipelines that are frequently CPU-bound. As Category 2's penetration runs 10% → 42%, its execution load compounds on the same curve as its tokens.
+
+**Workflow Integration & Automation (High).** Category 7 is orchestration by definition: multi-application chains across CRM, ERP, ticketing, and mail, each step a CPU-mediated API transaction wrapped in schema validation and approval logic. Its GPU claim is light (74,000 H100-equivalents in 2028); its CPU claim is structural, scaling with the 3,240 trillion tokens' worth of actions it fires into enterprise systems.
+
+The remaining functions grade lower — Medium for Categories 3, 4, and 6 (batch pipeline management, retrieval infrastructure), Low for Categories 5 and 8 (thin session logic; media's compute lives almost entirely on the GPU rail).
+
+## 7.3 Engine and harness, DDR5 and LPDDR
+
+The silicon translation: the probabilistic engine buys HBM; the deterministic harness buys server CPUs and general DRAM (DDR5, and LPDDR in dense and edge configurations). The memory market's AI narrative has been an HBM narrative, but the Stage-3 transition of Section 4 implies a second, quieter leg: rising server-CPU attach rates to GPU clusters, and rising general-DRAM content per agentic deployment — sandbox pools, orchestration tiers, warehouse compute — none of it visible in token or GPU telemetry.
+
+## 7.4 A path to quantification
+
+The CPU column can be promoted from grades to numbers when three telemetry series become available, and we specify them as the falsification targets for a future revision: **loop iterations per task** (published by agent platforms or inferable from build-system telemetry) times CPU-seconds per iteration for Categories 1–2; **execution runtime per analytical task** from warehouse query logs; and **connector/tool-call counts** (MCP-server production metrics) times per-call CPU cost for Category 7. Each is the CPU rail's analogue of the tokens-per-task coefficient, and none is yet disclosed at usable granularity.
+
+------------------------------------------------------------------------

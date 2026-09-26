@@ -1,0 +1,60 @@
+---
+title: "11. Reading the Shadow onto Silicon"
+subtitle: "Mapping AI demand onto compute, memory, and storage, 2026–2028"
+format:
+  typst: default
+---
+
+# 1. Executive Summary
+
+{{< include _00-executive-summary.qmd >}}
+
+# 2. Introduction
+
+{{< include _01-introduction.qmd >}}
+
+# 3. The AI Stack Value Chain
+
+{{< include _02-value-chain.qmd >}}
+
+# 4. The Evolutionary Path
+
+{{< include _03-evolutionary-path.qmd >}}
+
+# 5. The Analytical Framework
+
+{{< include _04-framework.qmd >}}
+
+# 6. GPU/HBM Demand
+
+{{< include _05-gpu-methodology.qmd >}}
+
+{{< include _06-gpu-readings.qmd >}}
+
+# 7. CPU/DRAM Demand
+
+{{< include _07-cpu-dram.qmd >}}
+
+# 8. Storage Systems Demand
+
+{{< include _08-storage.qmd >}}
+
+# 9. The Function × Infrastructure Matrix
+
+{{< include _09-matrix.qmd >}}
+
+# 10. Investment Implications
+
+{{< include _10-investment.qmd >}}
+
+# 11. Risks and Sensitivities
+
+{{< include _11-risks.qmd >}}
+
+# 12. Tracking Indicators
+
+{{< include _12-tracking.qmd >}}
+
+# References
+
+{{< include _13-references.qmd >}}

@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "6. First Read on 2026"
+---
+
+{{< include _06-first-read-2026.qmd >}}

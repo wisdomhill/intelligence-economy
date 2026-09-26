@@ -1,0 +1,45 @@
+## 4.1 The most diagnostic gap: cost share minus capacity share
+
+For each owner, the gap between share of cumulative estimated chip cost and share of cumulative compute measures procurement efficiency:
+
+| Owner | Delivered H100e (M) | Est. chip cost (\$B) | Cost share | Capacity share | Gap (pp) | \$/H100e | H100e per \$B |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Google | **5.03** | 48.7 | 14.4% | **25.1%** | **+10.7** | 9,683 | 103,272 |
+| Microsoft | 3.41 | 63.6 | 18.8% | 17.0% | −1.8 | 18,666 | 53,573 |
+| Other | 3.36 | 61.8 | 18.2% | 16.7% | −1.5 | 18,389 | 54,379 |
+| Amazon | 2.34 | 32.6 | 9.6% | 11.7% | +2.1 | 13,941 | 71,731 |
+| Meta | 2.30 | 39.7 | 11.7% | 11.4% | −0.3 | 17,296 | 57,818 |
+| Oracle | 1.14 | 20.1 | 5.9% | 5.7% | −0.2 | 17,597 | 56,829 |
+| China | 1.12 | 46.1 | 13.6% | 5.6% | **−8.0** | 41,194 | 24,276 |
+| CoreWeave | 0.83 | 15.9 | 4.7% | 4.1% | −0.6 | 19,161 | 52,189 |
+| xAI | 0.55 | 10.2 | 3.0% | 2.7% | −0.3 | 18,509 | 54,028 |
+
+: {tbl-colwidths="[14,14,14,11,12,10,11,14]"}
+
+*Note: Price-covered chips only; Trainium1 and Cambricon Siyuan 590 are excluded from all quantitative calculations. "China" here comprises Huawei's price-covered Ascend chips only; the other domestic designer, Cambricon, is \~5% of Chinese-designed H100e and carries no cost estimate, so it is excluded.*
+
+Google extracts \~103,000 H100e per billion dollars of estimated chip cost — \~1.9× Microsoft's \~53,600. China sits at \~24,300, paying roughly 2.4× its capacity weight in estimated dollars.
+
+By compute, Google ranks #1, Microsoft #2, and the "Other" residual #3; by estimated chip cost, Microsoft ranks #1 and "Other" #2. The "Other" cohort spans Tier-2 clouds, sovereign AI, and enterprise; because Epoch attributes cloud-provided compute to the cloud owner, it does not isolate individual cloud tenants.
+
+## 4.2 The Big Four
+
+**Google** holds the largest estimated compute fleet by H100e while ranking third by estimated chip cost — TPU supplies \~75.6% of its compute at \~51% of its estimated cost. Google also owns an estimated \~1.2M H100e of Nvidia capacity, likely serving a mix of Google Cloud customer workloads and internal applications; the dataset does not identify the workloads assigned to these GPUs.
+
+**Microsoft** is Google's mirror image: the largest cumulative estimated chip-cost deployer (\~\$64B) extracting roughly half the compute per dollar. Its structural exposure is a large cumulative H100/H200 base — the installed asset most exposed to Blackwell-driven repricing, a capex treadmill Google and Amazon partially escape by self-supplying.
+
+**Amazon** holds the second-best cost position (\~\$13,900/H100e) on the strength of Trainium2. Amazon is not substituting away from Nvidia but scaling both in parallel: roughly 58% of its 2025 net H100e additions came from Nvidia (merchant frontier compute and EC2 GPU instances) against \~42% from Trainium2 (dedicated large-scale workloads, most prominently Anthropic's Project Rainier training cluster).
+
+**Meta** demonstrates the third route: no in-house silicon at scale, but the heaviest AMD adoption among hyperscalers (\~20% of compute at \~11% of cost). The result: Meta's \~\$17,300/H100e beats Microsoft's \~\$18,700 despite equal dependence on merchant silicon.
+
+## 4.3 The specialty cohort
+
+**Oracle** is executing a leveraged Nvidia bet on OCI bookings, with a moderate AMD hedge. **CoreWeave** is the textbook neocloud profile: 100% Nvidia, the highest unit cost among non-China owners (\~\$19,200/H100e). **xAI** grew in a single step function in Q3 2025 in Epoch's lumpy, data-center-based allocation; the dataset does not establish the precise deployment event responsible. The **"Other" residual** is quietly a top-cohort by both compute and estimated cost, with healthy AMD penetration.
+
+## 4.4 China — the most expensive compute, substituting fast
+
+China's cumulative estimated chip cost reached \~\$46B — larger than Meta's — but corresponds to only 1.12M H100e at \~\$41,200 each, roughly 2.7× the rest-of-sample average. Two dynamics run in parallel. First, the H20's punishing arithmetic: \~1.49M cumulative units delivering \~223k H100e implies an effective \~\$80,000/H100e. Second, substitution is accelerating: within the price-covered universe, Huawei took about 85% of China's 2025 net compute additions, moving its share of China's cumulative compute from \~36% to \~63% in twelve months.
+
+The 2.7× figure is a descriptive gap (\~\$29B against the rest-of-sample blended rate), **not a causal estimate of the cost of export controls**, because product mix, supplier pricing, and procurement timing are not controlled for.
+
+------------------------------------------------------------------------

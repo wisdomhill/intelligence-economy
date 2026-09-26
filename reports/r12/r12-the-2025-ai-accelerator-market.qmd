@@ -1,0 +1,46 @@
+---
+title: "12. The 2025 AI Accelerator Market"
+subtitle: "Stock, flow, and the vertical-integration wedge — with a first read on 2026"
+format:
+  typst: default
+---
+
+# Executive Summary
+
+{{< include _00-executive-summary.qmd >}}
+
+# 1. Data and Method
+
+{{< include _01-data-and-method.qmd >}}
+
+# 2. The 2025 Build-Out
+
+{{< include _02-build-out.qmd >}}
+
+# 3. The Supplier Landscape
+
+{{< include _03-suppliers.qmd >}}
+
+# 4. The Owner Landscape
+
+{{< include _04-owners.qmd >}}
+
+# 5. The Vertical-Integration Wedge
+
+{{< include _05-wedge.qmd >}}
+
+# 6. First Read on 2026
+
+{{< include _06-first-read-2026.qmd >}}
+
+# 7. Strategic Implications
+
+{{< include _07-implications.qmd >}}
+
+# Appendix A
+
+{{< include _08-appendix.qmd >}}
+
+# References
+
+{{< include _09-references.qmd >}}

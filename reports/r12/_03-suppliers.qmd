@@ -1,0 +1,72 @@
+## 3.1 The concentration snapshot — and its first derivative
+
+At Q4 2025, Nvidia holds 80.8% of cumulative estimated chip cost but only 66.8% of delivered compute. That \~14pp gap reflects the merchant-silicon premium. Every alternative platform trades at a discount per unit of compute except Huawei, whose premium reflects domestic-substitution pricing rather than market power.
+
+| Supplier | H100e share Q4 2024 | H100e share Q4 2025 | Δ (pp) | Cost share Q4 2024 | Cost share Q4 2025 | Δ (pp) |
+|---|---:|---:|---:|---:|---:|---:|
+| **Nvidia** | 71.12% | 66.84% | **−4.28** | 83.25% | 80.81% | **−2.45** |
+| **Google TPU** | 14.53% | 18.94% | **+4.41** | 7.63% | 7.37% | **−0.26** |
+| Amazon Trainium2 | 3.16% | 4.58% | +1.41 | 0.85% | 1.65% | +0.81 |
+| AMD | 8.42% | 6.12% | −2.30 | 3.55% | 3.68% | +0.13 |
+| **Huawei** | 2.77% | 3.53% | +0.76 | 4.72% | 6.49% | **+1.77** |
+
+: {tbl-colwidths="[20,15,15,9,16,16,9]"}
+
+*Note: Price-covered chips only; Trainium1 and Cambricon Siyuan 590 are excluded from all quantitative calculations.*
+
+Three patterns carry the supply-side thesis.
+
+**Nvidia lost cumulative share on both metrics while dominating the flow.** Nvidia captured roughly two-thirds of 2025 net compute additions and about four-fifths of net dollar additions — and still ceded 4.3pp of compute share, because TPU and Huawei grew proportionally faster. A methodological note bounds the forward extrapolation: cumulative share converges toward the ongoing flow share. Nvidia's 2025 flow share of net compute additions was below its opening stock share of 71.1%, which pulled cumulative share down to 66.8%. If future flow share holds near its 2025 level, cumulative share converges toward that level — not below it. A sub-60% cumulative outcome would require Nvidia's *future flow share* to fall below 60%, or disproportionate retirement of its installed stock.
+
+**Google TPU's share shift is uniquely asymmetric.** TPU gained +4.41pp of compute share while its cost share slipped −0.26pp — a pattern visible nowhere else. As chips with an estimated \~\$4,000–5,000/H100e cost replace v4/v5 generations in the cumulative mix, TPU adds compute more cheaply than the industry blend. Its estimated unit economics are improving faster than the market's — the strongest single signal for the durability of Google's vertical-integration advantage.
+
+**AMD shows the opposite asymmetry.** AMD's compute share fell (−2.30pp) even as its cost share crept up — it added dollars at lower compute-per-dollar than its own 2024 mix. Absent an MI400-class step change or a second hyperscaler anchor, AMD's share trajectory is structurally constrained.
+
+## 3.2 Nvidia — \~\$274B of stock, and a Blackwell-only future
+
+Nvidia's cumulative estimated chip cost reached \~\$273.7B at Q4 2025, on 13.42M H100e. The composition of its 2025 net additions tells the strategic story:
+
+| SKU | 2025 net H100e adds (M) | 2025 net chip cost (\$B) | \$/H100e on adds | Cumulative H100e Q4 2025 (M) |
+|---|---:|---:|---:|---:|
+| B200 | +4.27 | +62.6 | 14,662 | 4.76 |
+| B300 | +3.74 | +63.7 | 17,024 | 3.74 |
+| H100/H200 | +0.70 | +17.6 | 25,219 | 4.25 |
+| H20 (China) | +0.08 | +6.4 | 80,231 | 0.22 |
+
+: {tbl-colwidths="[14,22,22,18,24]"}
+
+*Note: Price-covered chips only. A100 is omitted (zero net additions in 2025). Figures use Epoch AI Chip Sales cost estimates applied to owner unit counts.*
+
+Blackwell (B200 + B300) supplied the overwhelming majority of 2025 net additions — roughly \$126B of \~\$150B, or about 84%. Hopper effectively stopped growing (+0.70M H100e against a 4.25M cumulative base), leaving a large 2024-vintage fleet depreciating against Blackwell-priced marginal capacity. The China-market H20 remains an economic anomaly: about 1.49M cumulative units delivering only \~223k H100e (an effective \~\$80,000/H100e).
+
+## 3.3 Google TPU — the industry's cost curve, bent
+
+On Epoch's cost estimates, applying the AI Chip Sales per-chip costs (v6e \$4,059/chip, v7 \$11,737/chip), Google's TPU program is the most cost-efficient large-scale silicon effort in the dataset:
+
+| TPU generation (cumulative Q4 2025) | H100e (M) | Est. chip cost (\$B) | \$/H100e |
+|---|---:|---:|---:|
+| v6e (Trillium) | 2.29 | 10.0 | **4,375** |
+| v7 (Ironwood) | 0.69 | 3.5 | **5,034** |
+| v5e | 0.47 | 6.5 | 13,616 |
+| v5p | 0.31 | 4.0 | 12,982 |
+| v4 | 0.04 | 0.9 | 24,388 |
+
+: {tbl-colwidths="[40,16,24,20]"}
+
+The discontinuity sits between v5p and v6e — roughly a 3× improvement in estimated cost per H100e in one generation. TPU v6e at \~\$4,375/H100e is \~5.7× cheaper than H100/H200 and \~3.3× cheaper than B200 per unit of peak compute: the single most disruptive number in this dataset.
+
+## 3.4 Amazon Trainium — the same playbook, two years behind
+
+Trainium2 carries an estimated chip cost of \~\$6,100/H100e — 2.4× cheaper than B200, though above TPU v6e. Amazon's entire quantified in-house growth came from Trainium2, whose cumulative H100e **more than quadrupled** during 2025 (0.21M → 0.92M). Within the price-covered universe, Trainium2 supplies \~39% of Amazon's compute at \~17% of its estimated chip cost. (Trainium1, deployed since 2022, is discussed only as qualitative context for the length of AWS's in-house program; because Epoch provides no cost estimate for it, it is excluded from all calculations in this report.) Scale and NRE amortization are plausible contributors to the cost gap versus TPU, but the Epoch dataset does not decompose or causally attribute it.
+
+## 3.5 AMD — one anchor customer, structural ceiling
+
+AMD's \~\$12.5B cumulative estimated chip cost (3.7% of industry) is strategically pivotal despite its size: MI300X at \~\$9,500/H100e is one of the cheapest large-volume *merchant* accelerators, well below H100/H200. But the customer book exposes the constraint. Meta is the only hyperscaler using AMD at scale (\~20% of Meta's compute); Microsoft and Oracle hold modest hedge positions; Google, Amazon, CoreWeave, and xAI are absent — the first two because in-house silicon answers the second-source question, the latter two because of CUDA-locked stacks or Nvidia-only fleets. AMD's constraint is the absence of a second hyperscaler anchor customer approaching Meta's scale; its growth path runs through the "Other" cohort and sovereign buyers.
+
+## 3.6 Huawei — domestic substitution without a price discount
+
+Huawei's fleet sits entirely within China: \~0.71M H100e at \~\$22B — a blended \~\$31,000 per H100e once earlier-generation Ascend volumes are included. On Epoch's assumptions, the current Ascend 910C is priced roughly at parity with H100/H200 per peak H100-equivalent (\~\$26,000/H100e vs \$25,000) despite its lower per-chip compute (\~0.77 H100e/unit) — i.e., Chinese buyers acquire domestic supply at Nvidia-level or higher per-H100e cost, which is the premium visible in §3.1. Within the price-covered universe, Huawei captured about 85% of China's 2025 compute additions and was the industry's largest cost-share gainer (+1.77pp). China has only two domestic accelerator designers in the dataset, Huawei and Cambricon; Cambricon's Siyuan 590 accounts for only \~5% of Chinese-designed H100e and carries no cost estimate, so this report's China figures reflect Huawei alone. They therefore describe domestic Huawei supply, not the entirety of China's domestically designed accelerator base.
+
+The combined supply-side message: **Nvidia's cumulative-stock position is eroding simultaneously from the high-volume end (hyperscaler in-house silicon) and the geopolitical end (domestic substitution)** — neither driven by merchant-market competition.
+
+------------------------------------------------------------------------

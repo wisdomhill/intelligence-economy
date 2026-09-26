@@ -1,0 +1,44 @@
+---
+format:
+  html: default
+title-block-style: default
+title: "12. The 2025 AI Accelerator Market"
+subtitle: "Stock, flow, and the vertical-integration wedge — with a first read on 2026"
+
+description: >-
+  What was actually built. Four years of accelerator deliveries measured in
+  H100-equivalents and in dollars, the gap between cost share and capacity
+  share, and the wedge vertical integration opens.
+
+order: 12
+keywords:
+  - AI accelerator
+  - H100-equivalent
+  - TPU
+  - Trainium
+  - vertical integration
+  - cost share
+
+---
+
+::: {.callout-note appearance="simple" icon=false}
+**Read the full report as a PDF:** [The 2025 AI Accelerator Market (PDF)](r12-the-2025-ai-accelerator-market.pdf)
+:::
+
+## Executive Summary
+
+{{< include _00-executive-summary.qmd >}}
+
+## Contents
+
+|   | Chapter                                                     | The question it answers                                                  |
+|---|-------------------------------------------------------------|--------------------------------------------------------------------------|
+| 1 | [Data and Method](01-data-and-method.qmd)                   | What is an H100-equivalent, and what is counted?                         |
+| 2 | [The 2025 Build-Out](02-build-out.qmd)                      | How much was delivered, and at what cost?                                |
+| 3 | [The Supplier Landscape](03-suppliers.qmd)                  | Who shipped it, and where is Nvidia's share eroding?                     |
+| 4 | [The Owner Landscape](04-owners.qmd)                        | Who owns the fleet, and why does cost share exceed capacity share?       |
+| 5 | [The Vertical-Integration Wedge](05-wedge.qmd)              | What does building your own silicon actually buy?                        |
+| 6 | [First Read on 2026](06-first-read-2026.qmd)                | What did Q1 change, and what would falsify each reading?                 |
+| 7 | [Strategic Implications](07-implications.qmd)               | What follows for the supplier and the owner?                             |
+
+: {tbl-colwidths="[5,40,55]"}

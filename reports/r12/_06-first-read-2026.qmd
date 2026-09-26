@@ -1,0 +1,39 @@
+## 6.1 Basis and coverage
+
+This section uses **quarterly shipment flows** from the AI Chip Sales data, not cumulative stock. Q1 2026 coverage is provisional and includes only Nvidia and Google, so no industry-wide share can be computed. All shares here are two-player shares (Google ÷ \[Google + Nvidia\]) — defensible because Nvidia versus Google TPU was the principal axis of the 2025 erosion in §3.1 (TPU's +4.4pp was the largest single-supplier compute-share gain of the year); the second axis, Huawei, has no 2026 data yet and is therefore invisible to this section.
+
+## 6.2 The quarterly flow record
+
+| Quarter | Nvidia H100e (M) | Google H100e (M) | Google 2-player share | Nvidia \$/H100e | Google \$/H100e |
+|---|---:|---:|---:|---:|---:|
+| Q1 2025 | 1.70 | 0.44 | 20.6% | 18,741 | 5,648 |
+| Q2 2025 | 1.90 | 0.63 | 25.0% | 17,362 | 4,579 |
+| Q3 2025 | 2.37 | 0.80 | **25.3%** | 16,637 | 4,474 |
+| Q4 2025 | 2.96 | 0.83 | 21.9% | 16,237 | 4,741 |
+| **Q1 2026** | **3.39** | **0.85** | **20.0%** | 16,404 | 4,931 |
+
+: {tbl-colwidths="[14,16,16,18,18,18]"}
+
+## 6.3 Nvidia re-accelerated — and went all-Blackwell
+
+Nvidia shipped 3.39M H100e in Q1 2026, up 14.5% QoQ and \~99% YoY, worth \~\$55.5B — its largest quarterly flow on record. The two-supplier Q1 2026 flow alone (4.24M H100e) nearly matches the aggregate Q4 2025 flow across the five price-covered suppliers analyzed in this report (4.37M). The mix completed a generational turn: Q1 2026 is Nvidia's first quarter with **zero Hopper shipments**. B300 supplied 74% of Nvidia's compute flow (992,874 units), with B200 the remaining 26%. Note that on the H100e metric the B300 registers only marginally above the B200 and Google's TPU v7, because H100e counts peak throughput alone; the B300's substantially larger HBM stack — its principal upgrade — is invisible to this metric (§1.2), so the flow figures understate the effective capability Nvidia shipped.
+
+## 6.4 Google's flow stalled — inside a generational handoff
+
+Google shipped 0.85M H100e, up just 2.1% QoQ (still +92% YoY). The flat headline conceals a mix rotation: TPU v7 (Ironwood) units ramped 51k → 198k → 306k (+55% QoQ) and now carry 84% of Google's compute flow, but v6e shipments collapsed from 397k units to 144k (−64%), and the v7 ramp only just offset the rundown. Because v7 costs more per H100e than v6e, Google's blended flow cost drifted up for two consecutive quarters.
+
+## 6.5 The share inflection
+
+Google's share of the two-player compute flow peaked at 25.3% in Q3 2025 and has since declined for two consecutive quarters, to 21.9% and now 20.0%. A supplier's cumulative share rises only while its flow share exceeds its cumulative share. In Q1 2026 Google's flow share (20.0%) fell below its cumulative two-player share for the first time, and **Google's cumulative two-player compute share ticked down — the first decline in the dataset's history.** (Cumulative two-player shares in this section are obtained by cumulating the shipment dataset itself; owner-snapshot stock shares from §3–5 reconcile with it only to within \~1% (§1.3) and, because the crossover margin is smaller than that tolerance, are not mixed into this comparison.)
+
+What did *not* change: the estimated unit-cost wedge is intact at \~3.3× (\$16,404 vs \$4,931 per H100e on the flow), and TPU's power efficiency lead persists — Google's Q1 2026 shipments deliver \~2.43 H100e per kW of chip TDP against Nvidia's \~1.87. Nvidia's single-quarter flow embodied \~1.81 GW of aggregate chip-level nameplate TDP against Google's \~0.35 GW (nameplate TDP of shipped chips, not actual power demand). Q1 2026 challenges the *volume trajectory* of the TPU thesis, not its economics.
+
+## 6.6 Two readings, and what would falsify each
+
+**The Nvidia-momentum reading.** Blackwell demand genuinely re-accelerated; B300's full-volume quarter is a step function TPU could not match. On this reading, the 2025 erosion reflected a Hopper-era interregnum that Blackwell has closed.
+
+**The transition-trough reading.** Google's flow is gated by the v6e→v7 handoff, not demand: v7 unit growth of +55% QoQ is among the steepest ramps in the dataset, and external reporting suggests TPU supply may be allocation-constrained at the packaging/HBM level — though the Epoch dataset itself cannot confirm this. On this reading, Q1 2026 is a trough, not a trend break.
+
+The falsification criteria are observable within two quarters. If Google's two-player compute flow share remains below its cumulative share (\~21%) through Q3 2026, the transition-trough reading fails and the TPU component of the §3.1 erosion thesis needs downward revision. If the v7 ramp pushes flow share back above 25% by Q3 2026 — its 2025 peak — the momentum reading fails and the 2025 trajectory resumes. An intermediate outcome, flow share between \~21% and 25%, would resume slow cumulative-share gains without restoring the 2025 pace: directional support for the transition-trough reading, but at a magnitude that would still warrant trimming the erosion thesis. Independently, if Huawei's Q1 2026 figures (once published) extend its 2025 trajectory, Nvidia's *industry-wide* share can keep eroding from the geopolitical side even in quarters where it out-ships Google.
+
+------------------------------------------------------------------------

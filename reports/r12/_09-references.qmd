@@ -1,0 +1,10 @@
+1.  Epoch AI (2026). *Data on AI Chip Sales.* Published online at epoch.ai. Retrieved from <https://epoch.ai/data/ai-chip-sales> \[AI Chip Sales, July 2026 snapshot; accessed July 2026\].
+2.  Epoch AI (2026). *Data on AI Chip Owners.* Published online at epoch.ai. Retrieved from <https://epoch.ai/data/ai-chip-owners> \[AI Chip Owners, May 2026 snapshot; accessed July 2026\].
+3.  Epoch AI. *About Epoch AI.* <https://epoch.ai/about>
+4.  Epoch AI. *Transparency.* <https://epoch.ai/about/transparency> \[accessed July 2026\]
+5.  Coefficient Giving (2025). *Press Release: Open Philanthropy Becomes Coefficient Giving.* <https://coefficientgiving.org/research/press-release-open-philanthropy-becomes-coefficient-giving-expanding-work-with-multiple-donors/>
+6.  Visual Capitalist (2026). *Companies That Sell the Most AI Chips.* (visualization of Epoch AI chip-sales data)
+
+All Epoch AI data is licensed under CC BY 4.0 (<https://creativecommons.org/licenses/by/4.0/>).
+
+*Disclosure (per Ref. 4, accessed July 2026): Epoch discloses funding and contractual relationships with AI-affected organizations including large AI companies (e.g., Google), and partnered with OpenAI on FrontierMath; its principal funder, formerly Open Philanthropy, was renamed Coefficient Giving in November 2025 (Ref. 5).*

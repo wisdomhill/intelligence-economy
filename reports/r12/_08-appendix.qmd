@@ -1,0 +1,11 @@
+**Stock (§2–5).** Cumulative delivered/allocated compute per owner from Epoch AI's AI Chip Owners data (May 2026 snapshot). Estimated chip cost applies a single per-chip cost per chip type (from AI Chip Sales cost estimates) to owner unit counts. Chip types without a cost estimate (Trainium1, Cambricon Siyuan 590; together 0.6% of Q4 2025 H100e) are excluded from every quantitative calculation — compute, shares, growth, flows, and cost alike — and appear only as qualitative context. Epoch cautions against using ownership data for financial-asset analysis.
+
+**Flow (§6).** Quarterly shipment volumes from AI Chip Sales data (July 2026 snapshot); per-quarter flows, not running totals.
+
+**H100e** normalizes peak dense 8-bit throughput to the H100's; it does not capture HBM memory capacity, memory bandwidth, interconnect, or software efficiency (see §1.2 for why this systematically understates Nvidia's effective position on memory-bound workloads).
+
+**Cost** is estimated chip purchase cost, not full-system TCO. Unit-count and H100e estimates generally include 90% intervals (typically \~2×); chip-cost estimates do not. Counterfactuals are gross chip-cost only.
+
+**Coverage.** Ownership ≠ usage. "Other" is a residual. Q1 2026 figures are provisional and cover Nvidia and Google only.
+
+------------------------------------------------------------------------

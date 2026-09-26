@@ -1,0 +1,26 @@
+## 1.1 Sources
+
+This report combines two Epoch AI public datasets: **Data on AI Chip Owners** (owner × chip-type cumulative snapshots; May 2026 snapshot) and **Data on AI Chip Sales** (quarterly shipments by designer × chip; July 2026 snapshot). Owner data is used for the cumulative stock analysis (§2–5); shipment data for the Q1 2026 flow analysis (§6). Epoch AI is a non-profit research institute; its datasets are published under CC BY with methodology notebooks and are anchored against primary disclosures (Nvidia data-center revenue, AMD Instinct commentary, Broadcom TPU-related revenue).
+
+A conflict-of-interest note: Epoch AI discloses funding and contractual relationships with organizations affected by AI, including large AI companies (e.g., Google), and partnered with OpenAI on the FrontierMath benchmark; its principal funder, formerly Open Philanthropy, was renamed Coefficient Giving in November 2025. Since Google, Nvidia, and Amazon are the subjects of this analysis, readers should weight the estimates accordingly. The datasets remain the most complete public reconstruction of the global AI compute stock, and have been cited or visualized by third parties including Visual Capitalist.
+
+## 1.2 The H100e metric and cost basis
+
+Compute is normalized in **H100-equivalents**: each chip's peak dense 8-bit throughput divided by the H100's, multiplied by unit count. A TPU v7 counts as \~2.3 H100e; a TPU v6e \~0.93. H100e is a peak-throughput proxy — it does not capture memory bandwidth, interconnect, or workload-specific software efficiency, and therefore overstates the workload-equivalence of chips with weaker memory systems.
+
+One dimension of this limitation deserves emphasis, because it works against Nvidia — and in Google's favor — throughout this report. **H100e reflects only peak arithmetic throughput (FLOPs) and assigns no credit to HBM memory capacity.** Nvidia chips frequently pair a given level of compute with substantially more HBM than same-generation alternatives: the B300, for example, carries similar peak throughput to the B200 and to Google's TPU v7, but a markedly larger HBM stack. For memory-bound workloads — long-context inference, large KV caches, and mixture-of-experts serving — an H100e of Nvidia capacity can therefore deliver more effective performance than an H100e of TPU capacity. This report's central finding is that TPU compute is cheaper per H100e; because H100e credits only peak compute and ignores Nvidia's larger memory, that finding overstates Google's true cost advantage and understates Nvidia's effective position. The vertical-integration wedge in §5 should be read with this bias in mind.
+
+Because the owner dataset does not carry chip cost, **estimated chip cost is computed by applying a single per-chip cost to each chip type** (from Epoch's AI Chip Sales chip-cost estimates) across owner unit counts. This is estimated chip purchase cost only — it excludes servers, networking, power, and facilities, and is not full-system TCO. The custom-versus-merchant comparison is not fully like-for-like: on Epoch's methodology, custom-chip figures estimate payments to supply partners, while merchant-chip figures estimate average end-customer purchase prices. Both exclude server- and facility-level costs.
+
+## 1.3 Stock versus flow
+
+- **§2–5 analyze the stock**: cumulative delivered/allocated compute per owner/supplier. "Net additions" are differences between cumulative snapshots.
+- **§6 analyzes the flow**: quarterly shipments per supplier. This is the appropriate lens for the Q1 2026 update, which reports shipments only.
+
+The two reconcile: cumulating shipment data through Q4 2025 matches the cumulative stock totals within \~1%.
+
+## 1.4 Scope, exclusions, confidence
+
+The datasets cover the major designers (Nvidia, Google, Amazon, AMD, Huawei, and Cambricon). **All quantitative analyses in this report — compute volume, ownership and supplier shares, growth, quarterly flows, and cost — are restricted to chip types for which Epoch provides a cost estimate.** Trainium1 and Cambricon Siyuan 590 carry no cost estimate and are therefore excluded from every quantitative calculation; they may be discussed qualitatively but never enter numerical totals or denominators. Together they represent 0.6% of Q4 2025 H100e, so the restriction does not affect any conclusion. We refer to this as the report's *price-covered analytical universe*. Data excludes chips smuggled into China and offshore compute rented by Chinese firms. Ownership tracks who *holds* the chip, not who *uses* it; Epoch attributes cloud-provided compute to the cloud owner, and explicitly cautions against using the ownership data for financial-asset analysis. Q1 2026 shipment data is provisional and covers only Nvidia and Google. Data extracted from Epoch AI: AI Chip Owners (May 2026 snapshot), AI Chip Sales (July 2026 snapshot).
+
+------------------------------------------------------------------------

@@ -213,6 +213,18 @@ website:
           - reports/r11/11-risks.qmd
           - reports/r11/12-tracking.qmd
           - reports/r11/13-references.qmd
+      - section: "12. The 2025 AI Accelerator Market"
+        href: reports/r12/index.qmd
+        contents:
+          - reports/r12/01-data-and-method.qmd
+          - reports/r12/02-build-out.qmd
+          - reports/r12/03-suppliers.qmd
+          - reports/r12/04-owners.qmd
+          - reports/r12/05-wedge.qmd
+          - reports/r12/06-first-read-2026.qmd
+          - reports/r12/07-implications.qmd
+          - reports/r12/08-appendix.qmd
+          - reports/r12/09-references.qmd
       - text: "---"
       - href: errata.qmd
         text: "Errata"

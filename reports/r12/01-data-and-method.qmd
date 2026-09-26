@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "1. Data and Method"
+---
+
+{{< include _01-data-and-method.qmd >}}

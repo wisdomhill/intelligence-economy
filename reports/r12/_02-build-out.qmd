@@ -1,0 +1,20 @@
+## 2.1 Four years of cumulative trajectory
+
+| Year-end (Q4) | Delivered H100e | YoY adds | Cumulative chip cost (\$B) | YoY adds (\$B) | Blended \$/H100e |
+|---|---:|---:|---:|---:|---:|
+| 2022 | 0.28M | — | 10.1 | — | 36,346 |
+| 2023 | 1.57M | +1.30M | 42.1 | +32.0 | 26,774 |
+| 2024 | 6.51M | +4.94M | 148.2 | +106.0 | 22,761 |
+| **2025** | **20.08M** | **+13.57M** | **338.7** | **+190.6** | **16,870** |
+
+: {tbl-colwidths="[14,17,13,21,15,20]"}
+
+*Note: Price-covered chips only; Trainium1 and Cambricon Siyuan 590 are excluded from all quantitative calculations. YoY adds and blended \$/H100e are computed from unrounded source data and may differ marginally from arithmetic on the displayed cumulative figures.*
+
+Delivered compute grew \~72-fold in three years while blended estimated chip cost per H100e fell by more than half. Three forces drove the decline: the Hopper→Blackwell transition (B200 at \~\$14,645/H100e vs H100 at \$25,000), custom-silicon penetration at \~\$4,000–5,000/H100e for the latest TPU/Trainium generations, and AMD's MI300-family pricing in the \~\$9,000–11,500 range.
+
+## 2.2 Quarterly momentum within 2025
+
+Net additions accelerated every quarter, ending at a Q4 run-rate of roughly +4.4M H100e and +\$60B per quarter. The estimated chip cost of marginal capacity fell across the year, with the steepest improvement mid-year as B200 and TPU v6e hit volume; the decline then flattened into Q4 as costlier chips entered the blend — B300 alongside B200, TPU v7 replacing v6e. This is a composition effect, not like-for-like repricing: Nvidia's own blended flow cost continued to fall through Q4 as Hopper exited the mix (§6.2), and B300's first full-volume quarter arrived only in Q1 2026.
+
+------------------------------------------------------------------------

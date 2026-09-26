@@ -1,0 +1,55 @@
+## 5.1 Unit economics
+
+On Epoch's estimated chip costs, the in-house platforms carry a large advantage in cost per H100e over the merchant Nvidia capacity the same owners buy:
+
+| Owner | In-house platform | \$/H100e (in-house) | \$/H100e (own Nvidia mix) | Wedge |
+|---|---|---:|---:|---:|
+| Google | TPU (blended) | 6,562 | 19,330 | 2.9× |
+| Google | TPU v6e vs H100/H200 | 4,375 | 25,005 | **5.7×** |
+| Google | TPU v7 vs B200 | 5,034 | 14,645 | 2.9× |
+| Amazon | Trainium2 (blended) | 6,094 | 19,010 | 3.1× |
+| Amazon | Trainium2 vs B200 | 6,094 | 14,645 | 2.4× |
+
+: {tbl-colwidths="[12,24,22,30,12]"}
+
+*Note: Q4 2025 cumulative, price-covered chips only; Trainium1 excluded (no cost estimate). "Own Nvidia mix" is the blended \$/H100e of the Nvidia chips that same owner holds. B200 rows use the per-chip cost estimate (\~\$14,645/H100e); the realized figure on Nvidia's 2025 additions (§3.2) differs marginally due to rounding of the unit mix.*
+
+A 2.4–5.7× per-unit advantage is consistent with why both companies sustain large in-house silicon programs, though the dataset does not measure their NRE or full program economics. The comparison is also not fully like-for-like: custom-chip figures estimate payments to supply partners, while merchant-chip figures estimate average end-customer purchase prices; both exclude server- and facility-level costs. And per §1.2, the comparison is on peak compute only — it assigns no value to the larger HBM stacks Nvidia chips typically carry, so it overstates the in-house advantage on memory-bound workloads.
+
+## 5.2 The gross chip-cost counterfactual
+
+Repricing the Q4 2025 in-house fleets (Google TPU 3.80M H100e; Amazon Trainium2 0.92M H100e) at merchant rates, as a **gross chip-cost-only counterfactual assuming full H100e substitution** (it does not reflect memory, networking, software, or real-world performance):
+
+| Scenario | Google | Amazon | Total |
+|---|---:|---:|---:|
+| Actual estimated chip cost | \~\$25.0B | \~\$5.6B | \~\$30.6B |
+| At B200 pricing (\~\$14,645/H100e) | \~\$55.7B | \~\$13.5B | \~\$69.2B |
+| At H100/H200 pricing (\$25,000/H100e) | \~\$95.1B | \~\$23.0B | \~\$118.1B |
+| **Chip-cost counterfactual (vs B200 / vs Hopper)** | **\~\$31B / \~\$70B** | **\~\$8B / \~\$17B** | **\~\$39B / \~\$88B** |
+
+: {tbl-colwidths="[40,20,20,20]"}
+
+## 5.3 The share consequence
+
+All four hyperscalers roughly tripled their fleets in 2025, but the industry grew \~3.1× — so each owner's share moved with whether it compounded faster or slower than that benchmark. What separated the two pairs around it was compute per estimated dollar on the margin:
+
+| Owner | H100e share Q4 2024 | H100e share Q4 2025 | Δ (pp) |
+|---|---:|---:|---:|
+| Google | 21.18% | 25.07% | **+3.88** |
+| Amazon | 10.19% | 11.66% | +1.47 |
+| Meta | 11.87% | 11.44% | −0.44 |
+| Microsoft | 18.97% | 16.97% | **−2.01** |
+| **Integrated pair (Google + Amazon)** | **31.37%** | **36.73%** | **+5.36** |
+| **Merchant pair (Microsoft + Meta)** | **30.85%** | **28.40%** | **−2.44** |
+
+: {tbl-colwidths="[34,24,24,18]"}
+
+*Note: Pair rows are computed from unrounded data; components may not sum exactly to pair rows.*
+
+The integrated pair moved from roughly tied with the merchant pair to \~8.3pp ahead. The divergence is driven by capacity per estimated dollar, not by cost intensity — the demand-side mirror of the supplier-side asymmetry in §3.1.
+
+## 5.4 Why Microsoft and Meta lack the same lever
+
+Three plausible reasons, offered as interpretation rather than dataset findings: time-to-volume (Google began TPU production in 2015 and Amazon shipped Trainium1 in 2022, while Maia and MTIA do not yet appear in Epoch's tracked volume data); workload concentration (Google's Search, YouTube, and Gemini each independently amortize a custom chip, whereas Microsoft's tracked fleet remains heavily Nvidia-weighted — the dataset does not identify workload-level or contractual causes); and market positioning (AWS sells Trainium2 externally as a cheaper alternative, a route Microsoft has not taken at tracked scale).
+
+------------------------------------------------------------------------

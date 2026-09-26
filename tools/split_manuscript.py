@@ -52,6 +52,23 @@ def roundtrip(text):
     return out
 
 
+def escape_cells(row):
+    """Escape `$` and `~` in a table row.
+
+    The prose round-trip does this for body text, but tables never reach
+    pandoc, so it has to happen here. `$` opens TeX math and `~` opens a
+    subscript; either silently eats the text that follows.
+    """
+    out, i = [], 0
+    while i < len(row):
+        c = row[i]
+        if c == chr(92):                  # already escaped, take both
+            out.append(row[i:i + 2]); i += 2; continue
+        out.append(chr(92) + c if c in '$~' else c)
+        i += 1
+    return ''.join(out)
+
+
 def convert(chunk, widths=None):
     lines, out, buf, i, n = chunk.split('\n'), [], [], 0, 0
 
@@ -66,7 +83,7 @@ def convert(chunk, widths=None):
             while j < len(lines) and lines[j].startswith('|'):
                 j += 1
             flush()
-            out.append('\n'.join(lines[i:j]))
+            out.append('\n'.join(escape_cells(l) for l in lines[i:j]))
             if widths:
                 out.append(': {tbl-colwidths="%s"}' % widths[n])
             n += 1

@@ -159,6 +159,46 @@ headings by face and size: SVG labels are set in the heading face at 4–5 pt an
 read as an undersized level-3 heading. The script now ignores anything below
 `MIN_HEADING_PT`, 8 pt, which nothing in the template ever sets.
 
+## When the PDF and the web page need different column widths
+
+`tbl-colwidths` drives both formats and there is no way to split it. Quarto
+consumes the attribute before any filter runs -- including one pinned at
+`pre-quarto` -- and rewrites `colspecs` afterwards, so a Lua filter cannot
+reach it from either side. That was tested; do not spend the afternoon again.
+
+What works is writing the table twice, once per format:
+
+```
+::: {.content-visible when-format="html"}
+| ... |
+: {tbl-colwidths="[28,16,16,40]"}
+:::
+
+::: {.content-visible when-format="typst"}
+| ... |
+: {tbl-colwidths="[28,30,24,18]"}
+:::
+```
+
+Only in the qmd. The manuscript keeps **one** copy of the table, so it stays
+readable as a document; the duplication is a publication value like
+`tbl-colwidths` itself. `tools/split_manuscript.py` refuses to overwrite a
+fragment containing `.content-visible`, because regenerating it from the
+manuscript would collapse the pair and silently drop the print widths.
+
+Use it sparingly -- it is two copies to keep in step. It earns its cost when
+the same proportions cannot serve both: a browser column reflows to the
+reader's window, while a PDF column is fixed against 16 cm of A4. Report 11's
+matrix needed a wide GPU column and a narrow Storage column in print, and the
+same widths on the web wrapped `Very High (direct - media files)` over four
+lines.
+
+**Forcing a break inside a word.** Typst's hyphenation dictionary will not
+split every word -- it breaks `nominal` as `nomi-nal` but refuses `weighted`
+at any column width. A soft hyphen (U+00AD) in the source authorises the
+break. Keep it in the typst copy only: it is a print control, not the author's
+text, and the manuscript should stay clean.
+
 ## Verifying
 
 ```

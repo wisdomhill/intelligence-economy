@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "6. GPU/HBM Demand: Reading the Fleet"
+---
+
+{{< include _06-gpu-readings.qmd >}}

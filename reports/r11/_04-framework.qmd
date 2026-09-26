@@ -1,0 +1,36 @@
+## 5.1 The demand-side inputs
+
+The demand side of this model is inherited whole. From Report 8: seven B2B functions (Categories 1–7), classified by verification mechanism and execution harness, each with a token trajectory and a compute weight (Table 3 recaps the weights). From Report 10: five commercially monetized media segments, denominated in GPU-hours rather than tokens, plus supplementary image and audio tracks, together growing roughly eight-fold to 3,392 million GPU-hours by 2028. Twelve core workloads in all — seven business functions on the LLM track and five media segments on the media-generation track — plus the supplementary image and audio tracks. The two demand tracks are computed separately, per the source reports' own instruction, and aggregated only conditionally on the H100-equivalent basis set out in Section 6.2. Table 4 resolves all twelve; the qualitative matrices of Sections 5 and 9 collapse the Media Track into a single row, Generative Media, because its CPU and storage signatures are uniform across the five segments even where its GPU requirement is not.
+
+Two features of the source models shape everything downstream. Report 8's token series is built from fixed reference intensities and moving penetration paths, so its growth is concentrated early: coding peaks as a growth engine in 2026 and decelerates to 1.18x and 1.11x thereafter, while the machine-verified and outcome-verified functions expand four- to ten-fold from small bases. Report 10's media series is built from *delivered* minutes and a two-pass intensity — exploration passes at workhorse quality plus one and a half to two finishing passes at the segment's delivery quality — with exploration depth per task held flat across the forecast, so its growth comes from adoption and content depth rather than from ever-deeper iteration. Professional media and entertainment is the exception in that model, anchored on projects rather than delivered minutes because most of what a studio generates never reaches the screen.
+
+**Table 3. Compute weights by function (from Report 8, Table 1; Report 10)**
+
+| # | Function | Compute weight | Unit of account |
+|---|---|---:|---|
+| 1 | Software Engineering | 0.70 | LLM tokens |
+| 2 | Quantitative Analysis & Data Science | 0.60 | LLM tokens |
+| 3 | Transaction Record Operations | 0.10 | LLM tokens |
+| 4 | Sales & Outreach | 0.15 | LLM tokens |
+| 5 | Customer Interaction | 0.20 | LLM tokens |
+| 6 | Qualitative Review & Research | 0.80 | LLM tokens |
+| 7 | Workflow Integration & Automation | 0.25 | LLM tokens |
+| 8 | Generative Media — five segments (Report 10) | n/a | GPU-hours |
+
+: {tbl-colwidths="[6,46,20,28]"}
+
+*Compute weights are relative to the contemporary frontier model. Because the reference model itself grows over the forecast, the conversion in Section 6.1 applies a frontier-reference drift multiplier of 1.00 / 1.15 / 1.30 across 2026–2028 to the LLM track, so that a constant frontier-equivalent token costs more silicon in later years.*
+
+## 5.2 Three hardware load signatures
+
+Each function imposes load on the three rails in a characteristic signature. The **GPU signature** is probabilistic inference: tokens decoded (Categories 1–7) or frames diffused (Category 8), weighted by model tier and workload physics. The **CPU signature** is deterministic execution and orchestration: code executed in sandboxes, tests run, tools called, connectors chained, data pipelines processed — work that occurs *between* inference calls and is invisible to token telemetry. The **storage signature** is data exhaust: the artifacts, logs, media files, and records a function generates, plus — critically — the data infrastructure its activity induces others to build. Section 9's matrix scores every function on all three signatures.
+
+## 5.3 The four-distribution principle
+
+Report 8 established that token share, revenue share, and compute share are three different distributions. This report adds the hardware dimension and restates the principle in its full form: **token share, GPU share, CPU share, and storage share are four different distributions over the same taxonomy.** (Adding Report 8's revenue distribution makes five; revenue is set aside in this restatement because it prices the columns rather than loading them, and Section 6.7 reintroduces it.) No pair is a reliable proxy for another. The report's exhibits are best read as four rankings that agree only at the top (Software Engineering is heavy everywhere except storage) and disagree nearly everywhere else.
+
+## 5.4 Direct and indirect demand
+
+Finally, a distinction that matters most for the storage column: hardware demand can be **direct** (the function's own workload consumes the resource — media files fill SSDs) or **indirect** (the function's growth raises the economic value of infrastructure that others then provision — analytical demand justifies warehouse expansion). Token models capture only direct demand. The indirect channel, formalized as the data flywheel in Section 8, is where we believe the largest single storage driver of the forecast period hides.
+
+------------------------------------------------------------------------

@@ -197,6 +197,22 @@ website:
           - reports/r10/07-risks.qmd
           - reports/r10/08-tracking-indicators.qmd
           - reports/r10/09-references.qmd
+      - section: "11. Reading the Shadow onto Silicon"
+        href: reports/r11/index.qmd
+        contents:
+          - reports/r11/01-introduction.qmd
+          - reports/r11/02-value-chain.qmd
+          - reports/r11/03-evolutionary-path.qmd
+          - reports/r11/04-framework.qmd
+          - reports/r11/05-gpu-methodology.qmd
+          - reports/r11/06-gpu-readings.qmd
+          - reports/r11/07-cpu-dram.qmd
+          - reports/r11/08-storage.qmd
+          - reports/r11/09-matrix.qmd
+          - reports/r11/10-investment.qmd
+          - reports/r11/11-risks.qmd
+          - reports/r11/12-tracking.qmd
+          - reports/r11/13-references.qmd
       - text: "---"
       - href: errata.qmd
         text: "Errata"

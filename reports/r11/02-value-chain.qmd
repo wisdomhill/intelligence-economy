@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "3. The AI Stack Value Chain"
+---
+
+{{< include _02-value-chain.qmd >}}

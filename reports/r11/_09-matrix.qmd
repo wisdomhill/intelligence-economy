@@ -1,0 +1,30 @@
+Table 5 assembles the three columns into the report's summary exhibit.
+
+**Table 5. Eight functions × three infrastructures (Exhibit D)**
+
+| Function | GPU/HBM | CPU/DRAM | Storage Systems |
+|---|---|---|---|
+| 1 Software Engineering | Very High | Very High | Low |
+| 2 Quant Analysis & Data Science | High | High | **Very High (indirect — flywheel)** |
+| 3 Transaction Record Ops | Low | Medium | High |
+| 4 Sales & Outreach | Low | Medium | High |
+| 5 Customer Interaction | Medium (latency-inflated) | Low | High |
+| 6 Qualitative Review & Research | High | Medium | High |
+| 7 Workflow Integration & Automation | Medium | High | Medium |
+| 8 Generative Media | Very High (dense-FLOP) | Low | **Very High (direct — media files)** |
+
+: {tbl-colwidths="[28,16,16,40]"}
+
+*Two storage apexes with different mechanisms — Media = direct (raw media files), Quant Analysis = indirect (induces DB/warehouse expansion via the flywheel). GPU "Very High" splits into HBM-bandwidth-bound (Cat 1) versus dense-FLOP/compute-bound (Cat 8). Cat 5's Medium GPU grade reflects the latency provisioning of Section 6.1, which is already inside its Table 4 fleet count: served at the batch-equivalent throughput of Cat 3 and Cat 4, Category 5 would require roughly 3,000 accelerators in 2028 against Category 4's 4,100, and the ordering of the two reverses once the latency constraint is priced.*
+
+![Figure 3. Eight functions by three hardware infrastructures.](R11_fig3_matrix.svg)
+
+**Figure 3. The function × three-infrastructure demand matrix (four-level, with the indirect storage flywheel); the five media segments are collapsed into a single Generative Media row.**
+
+**Reading the rows** gives each function's silicon profile. Software Engineering is a two-rail giant (compute-heavy on both rails, storage-light). Generative Media is a barbell (extreme GPU, extreme storage, negligible CPU). Quantitative Analysis is the only function grading High-or-above on all three — the stack's most infrastructure-complete workload, fittingly for the function that mediates the flywheel. The volume categories (3–5) are storage-tilted: cheap to compute, expensive to remember.
+
+**Reading the columns** gives each infrastructure's customer list. The GPU column is driven by Categories 1 and 8 — the two giants, on two physics. The CPU column is driven by Categories 1, 2, and 7 — the execution-and-orchestration cluster. The storage column is driven by Categories 8 and 2 — one direct, one indirect — with a broad High plateau beneath them.
+
+**The trajectory overlay** is the matrix in motion. The qualitative grades suggest — but this report does not yet quantify — the hypothesis that CPU and storage demand may rise *relative to* GPU demand as agentic workloads mature and the stack traverses Stage 2 into Stage 3, with the volume categories' roughly 10–13x growth multiples landing disproportionately on the rails their rows favor. On this hypothesis the matrix's 2028 reading would be more balanced across the three columns than its 2026 reading; that potential rebalancing, not any single cell, is the qualitative investment thesis of Section 10, and Sections 7.4 and 8.4 set out the telemetry that would confirm or refute it.
+
+------------------------------------------------------------------------

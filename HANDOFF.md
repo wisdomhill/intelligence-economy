@@ -123,6 +123,42 @@ A report whose chapter is served as two web pages — Report 5's Part IV,
 Report 10's chapter 5 — has more fragments than the manuscript has chapters.
 The tool stops rather than guess where the boundary falls; give it by hand.
 
+## Figures
+
+Report 11 is the first with figures. A manuscript references them by bare
+filename:
+
+```
+![Figure 1. The AI Stack value chain — …](R11_fig1_value_chain.svg)
+```
+
+so the file has to sit **next to the qmd that includes it**, in `reports/rNN/`.
+The author's copy lives in `manuscripts/` beside the manuscript, which is what
+makes the manuscript render on its own; the conversion copies it across. Both
+copies are committed, the same way the fragments duplicate the manuscript
+prose. SVG is the format — it stays sharp in the PDF and costs a few KB.
+
+Set figure text in **Inter**, the series heading face, and give it a fallback
+stack. Typst finds it through `--font-path _fonts`, so the PDF matches the web
+page.
+
+**Size the drawing for the page, not the screen.** The text block is 16 cm, or
+453.5 pt, and Quarto scales a figure to fill it, so a label's printed size is
+
+```
+printed_pt = label_px * 453.5 / canvas_width_px
+```
+
+Report 11's figures are 1600 px wide with 17 px labels, which prints at 4.8 pt
+against an 11 pt body — legible but small. A canvas around **950 px** wide at
+the same nominal font sizes puts labels near 8 pt. Scaling the fonts up on the
+existing canvas does the same thing.
+
+A figure also defeats `tools/verify_pdf.py`'s heading check, which finds
+headings by face and size: SVG labels are set in the heading face at 4–5 pt and
+read as an undersized level-3 heading. The script now ignores anything below
+`MIN_HEADING_PT`, 8 pt, which nothing in the template ever sets.
+
 ## Verifying
 
 ```

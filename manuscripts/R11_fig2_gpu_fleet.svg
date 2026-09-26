@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1160" viewBox="0 0 1600 1160" role="img" aria-labelledby="title desc">
+<title id="title">H100-equivalent Accelerator Capacity by Workload</title>
+<desc id="desc">A 2026 to 2028 dumbbell chart showing thirteen workload rows, with token and media tracks distinguished by color.</desc>
+<style>text{font-family:Inter,"Segoe UI",Arial,sans-serif}.num{font-variant-numeric:tabular-nums}.caps{letter-spacing:1.6px}</style>
+<rect width="100%" height="100%" fill="#F8FAFC"/>
+<text x="80" y="66" font-size="34" fill="#111827" font-weight="700" text-anchor="start" class="caps">H100-EQUIVALENT CAPACITY BY WORKLOAD</text>
+<text x="80" y="105" font-size="20" fill="#5B6474" font-weight="400" text-anchor="start" >2026 → 2028E · capacity-equivalent units, not physical device counts</text>
+<line x1="80" y1="130" x2="1520" y2="130" stroke="#CBD5E1" stroke-width="2"/>
+<rect x="80" y="155" width="430" height="125" rx="14" fill="#EEF4FA" stroke="none" stroke-width="0" />
+<text x="104" y="187" font-size="14" fill="#1F5A93" font-weight="800" text-anchor="start" class="caps">TOTAL FLEET</text>
+<text x="104" y="238" font-size="30" fill="#111827" font-weight="750" text-anchor="start" class="num">1.203M  →  3.364M</text>
+<text x="486" y="238" font-size="24" fill="#1F5A93" font-weight="800" text-anchor="end" class="num">2.8×</text>
+<rect x="535" y="155" width="430" height="125" rx="14" fill="#E8F1FA" stroke="none" stroke-width="0" />
+<text x="559" y="187" font-size="14" fill="#1F5A93" font-weight="800" text-anchor="start" class="caps">TOKEN-DEMAND TRACK</text>
+<text x="559" y="238" font-size="30" fill="#111827" font-weight="750" text-anchor="start" class="num">1.095M  →  2.420M</text>
+<text x="941" y="238" font-size="24" fill="#1F5A93" font-weight="800" text-anchor="end" class="num">2.2×</text>
+<rect x="990" y="155" width="530" height="125" rx="14" fill="#FBF1DD" stroke="none" stroke-width="0" />
+<text x="1014" y="187" font-size="14" fill="#C58A24" font-weight="800" text-anchor="start" class="caps">MEDIA-GENERATION TRACK</text>
+<text x="1014" y="238" font-size="30" fill="#111827" font-weight="750" text-anchor="start" class="num">0.108M  →  0.944M</text>
+<text x="1496" y="238" font-size="24" fill="#C58A24" font-weight="800" text-anchor="end" class="num">8.8×</text>
+<line x1="465" y1="330" x2="465" y2="1072" stroke="#DCE3EC" stroke-width="1"/>
+<text x="465" y="322" font-size="15" fill="#64748B" font-weight="500" text-anchor="middle" class="num">0</text>
+<line x1="690" y1="330" x2="690" y2="1072" stroke="#DCE3EC" stroke-width="1"/>
+<text x="690" y="322" font-size="15" fill="#64748B" font-weight="500" text-anchor="middle" class="num">0.4M</text>
+<line x1="915" y1="330" x2="915" y2="1072" stroke="#DCE3EC" stroke-width="1"/>
+<text x="915" y="322" font-size="15" fill="#64748B" font-weight="500" text-anchor="middle" class="num">0.8M</text>
+<line x1="1140" y1="330" x2="1140" y2="1072" stroke="#DCE3EC" stroke-width="1"/>
+<text x="1140" y="322" font-size="15" fill="#64748B" font-weight="500" text-anchor="middle" class="num">1.2M</text>
+<line x1="1365" y1="330" x2="1365" y2="1072" stroke="#DCE3EC" stroke-width="1"/>
+<text x="1365" y="322" font-size="15" fill="#64748B" font-weight="500" text-anchor="middle" class="num">1.6M</text>
+<text x="1520" y="322" font-size="14" fill="#475569" font-weight="700" text-anchor="end" class="caps">2028E</text>
+<rect x="70" y="330" width="1460" height="50" rx="5" fill="#F1F5F9" stroke="none" stroke-width="0" />
+<text x="90" y="362" font-size="17" fill="#253047" font-weight="550" text-anchor="start" >1  Software Engineering</text>
+<line x1="990.375" y1="355" x2="1359.375" y2="355" stroke="#1F5A93" stroke-width="4" opacity="0.62"/>
+<circle cx="990.375" cy="355" r="7" fill="#F8FAFC" stroke="#A9C4DD" stroke-width="4"/>
+<circle cx="1359.375" cy="355" r="8" fill="#1F5A93" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1515" y="362" font-size="17" fill="#1F5A93" font-weight="750" text-anchor="end" class="num">1.59M</text>
+<text x="90" y="418" font-size="17" fill="#253047" font-weight="550" text-anchor="start" >10  Media · creator economy</text>
+<line x1="499.65" y1="411" x2="849.8625" y2="411" stroke="#C58A24" stroke-width="4" opacity="0.62"/>
+<circle cx="499.65" cy="411" r="7" fill="#F8FAFC" stroke="#E8C98D" stroke-width="4"/>
+<circle cx="849.8625" cy="411" r="8" fill="#C58A24" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1515" y="418" font-size="17" fill="#C58A24" font-weight="750" text-anchor="end" class="num">684.2K</text>
+<rect x="70" y="442" width="1460" height="50" rx="5" fill="#F1F5F9" stroke="none" stroke-width="0" />
+<text x="90" y="474" font-size="17" fill="#253047" font-weight="550" text-anchor="start" >2  Quant Analysis &amp; Data Science</text>
+<line x1="519.5625" y1="467" x2="763.6875" y2="467" stroke="#1F5A93" stroke-width="4" opacity="0.62"/>
+<circle cx="519.5625" cy="467" r="7" fill="#F8FAFC" stroke="#A9C4DD" stroke-width="4"/>
+<circle cx="763.6875" cy="467" r="8" fill="#1F5A93" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1515" y="474" font-size="17" fill="#1F5A93" font-weight="750" text-anchor="end" class="num">531K</text>
+<text x="90" y="530" font-size="17" fill="#253047" font-weight="550" text-anchor="start" >6  Qualitative Review &amp; Research</text>
+<line x1="495.9375" y1="523" x2="582" y2="523" stroke="#1F5A93" stroke-width="4" opacity="0.62"/>
+<circle cx="495.9375" cy="523" r="7" fill="#F8FAFC" stroke="#A9C4DD" stroke-width="4"/>
+<circle cx="582" cy="523" r="8" fill="#1F5A93" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1515" y="530" font-size="17" fill="#1F5A93" font-weight="750" text-anchor="end" class="num">208K</text>
+<rect x="70" y="554" width="1460" height="50" rx="5" fill="#F1F5F9" stroke="none" stroke-width="0" />
+<text x="90" y="586" font-size="17" fill="#253047" font-weight="550" text-anchor="start" >8  Media · performance ad creative</text>
+<line x1="477.31875" y1="579" x2="540.31875" y2="579" stroke="#C58A24" stroke-width="4" opacity="0.62"/>
+<circle cx="477.31875" cy="579" r="7" fill="#F8FAFC" stroke="#E8C98D" stroke-width="4"/>
+<circle cx="540.31875" cy="579" r="8" fill="#C58A24" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1515" y="586" font-size="17" fill="#C58A24" font-weight="750" text-anchor="end" class="num">133.9K</text>
+<text x="90" y="642" font-size="17" fill="#253047" font-weight="550" text-anchor="start" >7  Workflow Integration &amp; Automation</text>
+<line x1="468.9375" y1="635" x2="506.625" y2="635" stroke="#1F5A93" stroke-width="4" opacity="0.62"/>
+<circle cx="468.9375" cy="635" r="7" fill="#F8FAFC" stroke="#A9C4DD" stroke-width="4"/>
+<circle cx="506.625" cy="635" r="8" fill="#1F5A93" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1515" y="642" font-size="17" fill="#1F5A93" font-weight="750" text-anchor="end" class="num">74K</text>
+<rect x="70" y="666" width="1460" height="50" rx="5" fill="#F1F5F9" stroke="none" stroke-width="0" />
+<text x="90" y="698" font-size="17" fill="#253047" font-weight="550" text-anchor="start" >9  Media · e-commerce product video</text>
+<line x1="468.76875" y1="691" x2="489.525" y2="691" stroke="#C58A24" stroke-width="4" opacity="0.62"/>
+<circle cx="468.76875" cy="691" r="7" fill="#F8FAFC" stroke="#E8C98D" stroke-width="4"/>
+<circle cx="489.525" cy="691" r="8" fill="#C58A24" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1515" y="698" font-size="17" fill="#C58A24" font-weight="750" text-anchor="end" class="num">43.6K</text>
+<text x="90" y="754" font-size="17" fill="#253047" font-weight="550" text-anchor="start" >Image + audio tracks</text>
+<line x1="472.03125" y1="747" x2="487.44375" y2="747" stroke="#C58A24" stroke-width="4" opacity="0.62"/>
+<circle cx="472.03125" cy="747" r="7" fill="#F8FAFC" stroke="#E8C98D" stroke-width="4"/>
+<circle cx="487.44375" cy="747" r="8" fill="#C58A24" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1515" y="754" font-size="17" fill="#C58A24" font-weight="750" text-anchor="end" class="num">39.9K</text>
+<rect x="70" y="778" width="1460" height="50" rx="5" fill="#F1F5F9" stroke="none" stroke-width="0" />
+<text x="90" y="810" font-size="17" fill="#253047" font-weight="550" text-anchor="start" >12  Media · corporate internal</text>
+<line x1="466.85625" y1="803" x2="479.00625" y2="803" stroke="#C58A24" stroke-width="4" opacity="0.62"/>
+<circle cx="466.85625" cy="803" r="7" fill="#F8FAFC" stroke="#E8C98D" stroke-width="4"/>
+<circle cx="479.00625" cy="803" r="8" fill="#C58A24" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1515" y="810" font-size="17" fill="#C58A24" font-weight="750" text-anchor="end" class="num">24.9K</text>
+<text x="90" y="866" font-size="17" fill="#253047" font-weight="550" text-anchor="start" >11  Media · professional M/E</text>
+<line x1="466.0125" y1="859" x2="474.5625" y2="859" stroke="#C58A24" stroke-width="4" opacity="0.62"/>
+<circle cx="466.0125" cy="859" r="7" fill="#F8FAFC" stroke="#E8C98D" stroke-width="4"/>
+<circle cx="474.5625" cy="859" r="8" fill="#C58A24" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1515" y="866" font-size="17" fill="#C58A24" font-weight="750" text-anchor="end" class="num">17K</text>
+<rect x="70" y="890" width="1460" height="50" rx="5" fill="#F1F5F9" stroke="none" stroke-width="0" />
+<text x="90" y="922" font-size="17" fill="#253047" font-weight="550" text-anchor="start" >5  Customer Interaction</text>
+<line x1="465.5625" y1="915" x2="471.46875" y2="915" stroke="#1F5A93" stroke-width="4" opacity="0.62"/>
+<circle cx="465.5625" cy="915" r="7" fill="#F8FAFC" stroke="#A9C4DD" stroke-width="4"/>
+<circle cx="471.46875" cy="915" r="8" fill="#1F5A93" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1515" y="922" font-size="17" fill="#1F5A93" font-weight="750" text-anchor="end" class="num">11.5K</text>
+<text x="90" y="978" font-size="17" fill="#253047" font-weight="550" text-anchor="start" >4  Sales &amp; Outreach</text>
+<line x1="465.16875" y1="971" x2="467.30625" y2="971" stroke="#1F5A93" stroke-width="4" opacity="0.62"/>
+<circle cx="465.16875" cy="971" r="7" fill="#F8FAFC" stroke="#A9C4DD" stroke-width="4"/>
+<circle cx="467.30625" cy="971" r="8" fill="#1F5A93" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1515" y="978" font-size="17" fill="#1F5A93" font-weight="750" text-anchor="end" class="num">4.1K</text>
+<rect x="70" y="1002" width="1460" height="50" rx="5" fill="#F1F5F9" stroke="none" stroke-width="0" />
+<text x="90" y="1034" font-size="17" fill="#253047" font-weight="550" text-anchor="start" >3  Transaction Record Ops</text>
+<line x1="465.1125" y1="1027" x2="466.0125" y2="1027" stroke="#1F5A93" stroke-width="4" opacity="0.62"/>
+<circle cx="465.1125" cy="1027" r="7" fill="#F8FAFC" stroke="#A9C4DD" stroke-width="4"/>
+<circle cx="466.0125" cy="1027" r="8" fill="#1F5A93" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1515" y="1034" font-size="17" fill="#1F5A93" font-weight="750" text-anchor="end" class="num">1.8K</text>
+<circle cx="93" cy="1112" r="7" fill="#F8FAFC" stroke="#94A3B8" stroke-width="3"/><text x="110" y="1118" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="16" fill="#475569">2026</text>
+<circle cx="190" cy="1112" r="8" fill="#334155" stroke="#FFFFFF" stroke-width="2"/><text x="207" y="1118" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="16" fill="#475569">2028E</text>
+<rect x="325" y="1104" width="18" height="18" rx="4" fill="#1F5A93"/><text x="352" y="1118" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="16" fill="#475569">Token-demand</text>
+<rect x="500" y="1104" width="18" height="18" rx="4" fill="#C58A24"/><text x="527" y="1118" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="16" fill="#475569">Media-generation</text>
+<text x="1520" y="1118" font-size="14" fill="#64748B" font-weight="600" text-anchor="end" >Source: Report 11 · Table 4</text>
+</svg>

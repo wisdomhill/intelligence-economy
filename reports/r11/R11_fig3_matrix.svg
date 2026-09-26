@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1020" viewBox="0 0 1600 1020" role="img" aria-labelledby="title desc">
+<title id="title">Function by Infrastructure Demand Matrix</title>
+<desc id="desc">An eight by three matrix grading GPU and HBM, CPU and DRAM, and storage demand from Low to Very High.</desc>
+<style>text{font-family:Inter,"Segoe UI",Arial,sans-serif}.num{font-variant-numeric:tabular-nums}.caps{letter-spacing:1.6px}</style>
+<rect width="100%" height="100%" fill="#F8FAFC"/>
+<text x="80" y="66" font-size="34" fill="#111827" font-weight="700" text-anchor="start" class="caps">FUNCTION × INFRASTRUCTURE DEMAND MATRIX</text>
+<text x="80" y="105" font-size="20" fill="#5B6474" font-weight="400" text-anchor="start" >Four-level qualitative grading · direct and indirect storage effects shown explicitly</text>
+<line x1="80" y1="130" x2="1520" y2="130" stroke="#CBD5E1" stroke-width="2"/>
+<rect x="560" y="160" width="280" height="86" rx="12" fill="#1F5A93" stroke="none" stroke-width="0" />
+<text x="700" y="196" font-size="19" fill="#FFFFFF" font-weight="800" text-anchor="middle" class="caps">GPU / HBM</text>
+<text x="700" y="225" font-size="16" fill="#FFFFFF" font-weight="500" text-anchor="middle" >Probabilistic rail</text>
+<rect x="870" y="160" width="280" height="86" rx="12" fill="#C58A24" stroke="none" stroke-width="0" />
+<text x="1010" y="196" font-size="19" fill="#FFFFFF" font-weight="800" text-anchor="middle" class="caps">CPU / DRAM</text>
+<text x="1010" y="225" font-size="16" fill="#FFFFFF" font-weight="500" text-anchor="middle" >Deterministic rail</text>
+<rect x="1180" y="160" width="280" height="86" rx="12" fill="#147A72" stroke="none" stroke-width="0" />
+<text x="1320" y="196" font-size="19" fill="#FFFFFF" font-weight="800" text-anchor="middle" class="caps">STORAGE SYSTEMS</text>
+<text x="1320" y="225" font-size="16" fill="#FFFFFF" font-weight="500" text-anchor="middle" >SSD · HDD · archive</text>
+<text x="90" y="216" font-size="16" fill="#64748B" font-weight="800" text-anchor="start" class="caps">FUNCTION</text>
+<rect x="70" y="267" width="1420" height="64" rx="6" fill="#F1F5F9" stroke="none" stroke-width="0" />
+<text x="90" y="307" font-size="18" fill="#253047" font-weight="600" text-anchor="start" >1  Software Engineering</text>
+<rect x="560" y="270" width="280" height="58" rx="9" fill="#1F5A93" stroke="#FFFFFF" stroke-width="2" />
+<text x="700" y="306" font-size="17" fill="#FFFFFF" font-weight="750" text-anchor="middle" >Very High</text>
+<rect x="870" y="270" width="280" height="58" rx="9" fill="#A96F11" stroke="#FFFFFF" stroke-width="2" />
+<text x="1010" y="306" font-size="17" fill="#FFFFFF" font-weight="750" text-anchor="middle" >Very High</text>
+<rect x="1180" y="270" width="280" height="58" rx="9" fill="#E8F5F2" stroke="#FFFFFF" stroke-width="2" />
+<text x="1320" y="306" font-size="17" fill="#172033" font-weight="750" text-anchor="middle" >Low</text>
+<text x="90" y="383" font-size="18" fill="#253047" font-weight="600" text-anchor="start" >2  Quant Analysis &amp; Data Science</text>
+<rect x="560" y="346" width="280" height="58" rx="9" fill="#79A8CE" stroke="#FFFFFF" stroke-width="2" />
+<text x="700" y="382" font-size="17" fill="#172033" font-weight="750" text-anchor="middle" >High</text>
+<rect x="870" y="346" width="280" height="58" rx="9" fill="#DDAE55" stroke="#FFFFFF" stroke-width="2" />
+<text x="1010" y="382" font-size="17" fill="#172033" font-weight="750" text-anchor="middle" >High</text>
+<rect x="1180" y="346" width="280" height="58" rx="9" fill="#147A72" stroke="#FFFFFF" stroke-width="2" />
+<text x="1320" y="382" font-size="17" fill="#FFFFFF" font-weight="750" text-anchor="middle" >Very High · indirect</text>
+<rect x="70" y="419" width="1420" height="64" rx="6" fill="#F1F5F9" stroke="none" stroke-width="0" />
+<text x="90" y="459" font-size="18" fill="#253047" font-weight="600" text-anchor="start" >3  Transaction Record Ops</text>
+<rect x="560" y="422" width="280" height="58" rx="9" fill="#EDF4FA" stroke="#FFFFFF" stroke-width="2" />
+<text x="700" y="458" font-size="17" fill="#172033" font-weight="750" text-anchor="middle" >Low</text>
+<rect x="870" y="422" width="280" height="58" rx="9" fill="#F1D9AA" stroke="#FFFFFF" stroke-width="2" />
+<text x="1010" y="458" font-size="17" fill="#172033" font-weight="750" text-anchor="middle" >Medium</text>
+<rect x="1180" y="422" width="280" height="58" rx="9" fill="#63B4A9" stroke="#FFFFFF" stroke-width="2" />
+<text x="1320" y="458" font-size="17" fill="#172033" font-weight="750" text-anchor="middle" >High</text>
+<text x="90" y="535" font-size="18" fill="#253047" font-weight="600" text-anchor="start" >4  Sales &amp; Outreach</text>
+<rect x="560" y="498" width="280" height="58" rx="9" fill="#EDF4FA" stroke="#FFFFFF" stroke-width="2" />
+<text x="700" y="534" font-size="17" fill="#172033" font-weight="750" text-anchor="middle" >Low</text>
+<rect x="870" y="498" width="280" height="58" rx="9" fill="#F1D9AA" stroke="#FFFFFF" stroke-width="2" />
+<text x="1010" y="534" font-size="17" fill="#172033" font-weight="750" text-anchor="middle" >Medium</text>
+<rect x="1180" y="498" width="280" height="58" rx="9" fill="#63B4A9" stroke="#FFFFFF" stroke-width="2" />
+<text x="1320" y="534" font-size="17" fill="#172033" font-weight="750" text-anchor="middle" >High</text>
+<rect x="70" y="571" width="1420" height="64" rx="6" fill="#F1F5F9" stroke="none" stroke-width="0" />
+<text x="90" y="611" font-size="18" fill="#253047" font-weight="600" text-anchor="start" >5  Customer Interaction</text>
+<rect x="560" y="574" width="280" height="58" rx="9" fill="#C7DAEB" stroke="#FFFFFF" stroke-width="2" />
+<text x="700" y="610" font-size="17" fill="#172033" font-weight="750" text-anchor="middle" >Medium · latency</text>
+<rect x="870" y="574" width="280" height="58" rx="9" fill="#FCF5E8" stroke="#FFFFFF" stroke-width="2" />
+<text x="1010" y="610" font-size="17" fill="#172033" font-weight="750" text-anchor="middle" >Low</text>
+<rect x="1180" y="574" width="280" height="58" rx="9" fill="#63B4A9" stroke="#FFFFFF" stroke-width="2" />
+<text x="1320" y="610" font-size="17" fill="#172033" font-weight="750" text-anchor="middle" >High</text>
+<text x="90" y="687" font-size="18" fill="#253047" font-weight="600" text-anchor="start" >6  Qualitative Review &amp; Research</text>
+<rect x="560" y="650" width="280" height="58" rx="9" fill="#79A8CE" stroke="#FFFFFF" stroke-width="2" />
+<text x="700" y="686" font-size="17" fill="#172033" font-weight="750" text-anchor="middle" >High</text>
+<rect x="870" y="650" width="280" height="58" rx="9" fill="#F1D9AA" stroke="#FFFFFF" stroke-width="2" />
+<text x="1010" y="686" font-size="17" fill="#172033" font-weight="750" text-anchor="middle" >Medium</text>
+<rect x="1180" y="650" width="280" height="58" rx="9" fill="#63B4A9" stroke="#FFFFFF" stroke-width="2" />
+<text x="1320" y="686" font-size="17" fill="#172033" font-weight="750" text-anchor="middle" >High</text>
+<rect x="70" y="723" width="1420" height="64" rx="6" fill="#F1F5F9" stroke="none" stroke-width="0" />
+<text x="90" y="763" font-size="18" fill="#253047" font-weight="600" text-anchor="start" >7  Workflow Integration &amp; Automation</text>
+<rect x="560" y="726" width="280" height="58" rx="9" fill="#C7DAEB" stroke="#FFFFFF" stroke-width="2" />
+<text x="700" y="762" font-size="17" fill="#172033" font-weight="750" text-anchor="middle" >Medium</text>
+<rect x="870" y="726" width="280" height="58" rx="9" fill="#DDAE55" stroke="#FFFFFF" stroke-width="2" />
+<text x="1010" y="762" font-size="17" fill="#172033" font-weight="750" text-anchor="middle" >High</text>
+<rect x="1180" y="726" width="280" height="58" rx="9" fill="#BDE1DA" stroke="#FFFFFF" stroke-width="2" />
+<text x="1320" y="762" font-size="17" fill="#172033" font-weight="750" text-anchor="middle" >Medium</text>
+<text x="90" y="839" font-size="18" fill="#253047" font-weight="600" text-anchor="start" >8  Generative Media</text>
+<rect x="560" y="802" width="280" height="58" rx="9" fill="#1F5A93" stroke="#FFFFFF" stroke-width="2" />
+<text x="700" y="838" font-size="17" fill="#FFFFFF" font-weight="750" text-anchor="middle" >Very High · dense</text>
+<rect x="870" y="802" width="280" height="58" rx="9" fill="#FCF5E8" stroke="#FFFFFF" stroke-width="2" />
+<text x="1010" y="838" font-size="17" fill="#172033" font-weight="750" text-anchor="middle" >Low</text>
+<rect x="1180" y="802" width="280" height="58" rx="9" fill="#147A72" stroke="#FFFFFF" stroke-width="2" />
+<text x="1320" y="838" font-size="17" fill="#FFFFFF" font-weight="750" text-anchor="middle" >Very High · direct</text>
+<rect x="80" y="910" width="450" height="72" rx="12" fill="#E8F1FA" stroke="none" stroke-width="0" />
+<text x="105" y="939" font-size="13" fill="#1F5A93" font-weight="800" text-anchor="start" class="caps">GPU LEADERS</text>
+<text x="105" y="965" font-size="17" fill="#253047" font-weight="600" text-anchor="start" >Software Engineering + Generative Media</text>
+<rect x="550" y="910" width="450" height="72" rx="12" fill="#FBF1DD" stroke="none" stroke-width="0" />
+<text x="575" y="939" font-size="13" fill="#A96F11" font-weight="800" text-anchor="start" class="caps">CPU LEADERS</text>
+<text x="575" y="965" font-size="17" fill="#253047" font-weight="600" text-anchor="start" >Software + Quant + Workflow</text>
+<rect x="1020" y="910" width="500" height="72" rx="12" fill="#E4F3F0" stroke="none" stroke-width="0" />
+<text x="1045" y="939" font-size="13" fill="#147A72" font-weight="800" text-anchor="start" class="caps">STORAGE APEXES</text>
+<text x="1045" y="965" font-size="17" fill="#253047" font-weight="600" text-anchor="start" >Media direct · Quant indirect flywheel</text>
+<text x="1520" y="1004" font-size="14" fill="#64748B" font-weight="600" text-anchor="end" >Source: Report 11 · Table 5</text>
+</svg>

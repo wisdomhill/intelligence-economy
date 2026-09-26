@@ -1,0 +1,17 @@
+## 8.1 Direct generation by function
+
+The direct channel is straightforward to rank, if not yet to measure. **Generative Media is the direct apex**: video is among the largest common AI-generated artifact classes, and Report 10's 7,835 million generated video minutes per year by 2028 — most of them retakes and variants that must be stored at least transiently, many retained for reuse and rights reasons — lands directly on enterprise SSD and object storage. **Customer Interaction, Qualitative Research, Transaction Records, and Sales** follow: conversation logs and call audio at hundreds of millions of interactions, research memos with their retrieval corpora, processed record archives with audit trails, and per-lead research packages respectively — each function's data exhaust scaling with the same volume drivers as its tokens. Software Engineering, by contrast, grades Low on storage: code is tiny, and even prodigious loop artifacts are transient.
+
+## 8.2 The indirect apex: the Category 2 flywheel
+
+The largest storage driver of the forecast, in our judgment, is not any function's own exhaust but an induced-demand channel that no per-function coefficient captures. **Quantitative Analysis & Data Science is the indirect apex.** The mechanism runs in a loop we formalize as the **data flywheel**: (i) every function's agents generate data — records, logs, media, documents — at machine speed; (ii) Category 2's analytical agents, whose penetration runs from 10% to 42% over the forecast, consume that data, and their cheap, abundant analysis raises the economic value of having data *queryable*; (iii) enterprises respond by expanding databases, warehouses, and lakehouses — retaining data they would previously have discarded, structuring data they would previously have left dark, because the marginal analysis it now supports is nearly free; (iv) storage capacity is provisioned ahead of that retention; and (v) the enlarged, better-governed data estate makes the next round of agentic analysis more valuable still, closing the loop. Analysis demand creates storage demand; storage makes analysis more valuable. This is the semantic-layer thesis of Report 8 read down the stack to L1: the same build-out that gates Category 2's second wave *is* a storage-provisioning event.
+
+## 8.3 The control plane above the rail
+
+The flywheel's software expression is the data/analytics layer — databases, lakehouses, and the semantic layer above them — which functions as the storage rail's control plane: it decides what is retained, structured, certified, and therefore provisioned. This is why Section 12's storage indicators are software bookings, not just NAND bit shipments: the control plane's growth leads the rail's.
+
+## 8.4 A path to quantification
+
+The storage column's coefficient is **bytes generated per task**, by function — media minutes times bitrate for Category 8; audio and transcript volume per interaction for Category 5; document and corpus volume per research run for Category 6 — plus an induced-retention multiplier for the flywheel channel, estimable from the ratio of warehouse-capacity growth to analytical-query growth at the major data platforms. These are wider-band judgments than anything in the GPU chapter, and we grade the entire column qualitative accordingly.
+
+------------------------------------------------------------------------

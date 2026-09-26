@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "7. CPU/DRAM Demand"
+---
+
+{{< include _07-cpu-dram.qmd >}}

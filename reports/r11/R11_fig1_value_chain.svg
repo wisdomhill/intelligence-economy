@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">The AI Stack Value Chain</title>
+<desc id="desc">Four stack layers mapped across probabilistic, deterministic, and storage rails, with CPU and DRAM as the control-plane hub.</desc>
+<style>text{font-family:Inter,"Segoe UI",Arial,sans-serif}.num{font-variant-numeric:tabular-nums}.caps{letter-spacing:1.6px}</style>
+<rect width="100%" height="100%" fill="#F8FAFC"/>
+<text x="90" y="72" font-size="36" fill="#111827" font-weight="700" text-anchor="start" class="caps">THE AI STACK VALUE CHAIN</text>
+<text x="90" y="112" font-size="21" fill="#5B6474" font-weight="400" text-anchor="start" >Four layers × three infrastructure rails · CPU/DRAM as the control-plane hub</text>
+<line x1="90" y1="138" x2="1510" y2="138" stroke="#CBD5E1" stroke-width="2"/>
+<rect x="300" y="160" width="360" height="78" rx="12" fill="#1F5A93" stroke="none" stroke-width="0" />
+<text x="480" y="193" font-size="17" fill="#FFFFFF" font-weight="700" text-anchor="middle" class="caps">PROBABILISTIC RAIL</text>
+<text x="480" y="220" font-size="18" fill="#FFFFFF" font-weight="500" text-anchor="middle" >GPU / TPU + HBM</text>
+<rect x="710" y="160" width="360" height="78" rx="12" fill="#C58A24" stroke="none" stroke-width="0" />
+<text x="890" y="193" font-size="17" fill="#FFFFFF" font-weight="700" text-anchor="middle" class="caps">DETERMINISTIC RAIL · HUB</text>
+<text x="890" y="220" font-size="18" fill="#FFFFFF" font-weight="500" text-anchor="middle" >CPU + LPDDR / DRAM</text>
+<rect x="1120" y="160" width="360" height="78" rx="12" fill="#147A72" stroke="none" stroke-width="0" />
+<text x="1300" y="193" font-size="17" fill="#FFFFFF" font-weight="700" text-anchor="middle" class="caps">STORAGE RAIL</text>
+<text x="1300" y="220" font-size="18" fill="#FFFFFF" font-weight="500" text-anchor="middle" >SSD → HDD → ARCHIVE</text>
+<rect x="90" y="270" width="170" height="96" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" />
+<text x="175" y="308" font-size="25" fill="#111827" font-weight="800" text-anchor="middle" >L4</text>
+<text x="175" y="339" font-size="14" fill="#64748B" font-weight="700" text-anchor="middle" class="caps">APPLICATION</text>
+<rect x="300" y="270" width="360" height="96" rx="12" fill="#E8F1FA" stroke="#D7DEE8" stroke-width="1.2" />
+<text x="480" y="326" font-size="20" fill="#172033" font-weight="650" text-anchor="middle" >Probabilistic Business Logic</text>
+<rect x="710" y="270" width="360" height="96" rx="12" fill="#FBF1DD" stroke="#C58A24" stroke-width="2.5" />
+<text x="890" y="326" font-size="20" fill="#172033" font-weight="650" text-anchor="middle" >Deterministic Business Logic + UI</text>
+<rect x="1120" y="270" width="360" height="96" rx="12" fill="#E4F3F0" stroke="#D7DEE8" stroke-width="1.2" />
+<text x="1300" y="326" font-size="20" fill="#172033" font-weight="650" text-anchor="middle" >Data Layer · DB + Lakehouse</text>
+<line x1="480" y1="392" x2="480" y2="374" stroke="#1F5A93" stroke-width="3"/>
+<path d="M 473 382 L 480 372 L 487 382" fill="#1F5A93"/>
+<line x1="890" y1="392" x2="890" y2="374" stroke="#C58A24" stroke-width="3"/>
+<path d="M 883 382 L 890 372 L 897 382" fill="#C58A24"/>
+<line x1="1300" y1="392" x2="1300" y2="374" stroke="#147A72" stroke-width="3"/>
+<path d="M 1293 382 L 1300 372 L 1307 382" fill="#147A72"/>
+<rect x="90" y="400" width="170" height="96" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" />
+<text x="175" y="438" font-size="25" fill="#111827" font-weight="800" text-anchor="middle" >L3</text>
+<text x="175" y="469" font-size="14" fill="#64748B" font-weight="700" text-anchor="middle" class="caps">MODEL / AGENT</text>
+<rect x="300" y="400" width="360" height="96" rx="12" fill="#E8F1FA" stroke="#D7DEE8" stroke-width="1.2" />
+<text x="480" y="456" font-size="20" fill="#172033" font-weight="650" text-anchor="middle" >Foundation Model</text>
+<rect x="710" y="400" width="360" height="96" rx="12" fill="#FBF1DD" stroke="#C58A24" stroke-width="2.5" />
+<text x="890" y="456" font-size="20" fill="#172033" font-weight="650" text-anchor="middle" >Code + Harness</text>
+<rect x="1120" y="400" width="360" height="96" rx="12" fill="#E4F3F0" stroke="#D7DEE8" stroke-width="1.2" />
+<text x="1300" y="456" font-size="20" fill="#172033" font-weight="650" text-anchor="middle" >Unstructured AI-generated Data</text>
+<line x1="480" y1="522" x2="480" y2="504" stroke="#1F5A93" stroke-width="3"/>
+<path d="M 473 512 L 480 502 L 487 512" fill="#1F5A93"/>
+<line x1="890" y1="522" x2="890" y2="504" stroke="#C58A24" stroke-width="3"/>
+<path d="M 883 512 L 890 502 L 897 512" fill="#C58A24"/>
+<line x1="1300" y1="522" x2="1300" y2="504" stroke="#147A72" stroke-width="3"/>
+<path d="M 1293 512 L 1300 502 L 1307 512" fill="#147A72"/>
+<rect x="90" y="530" width="170" height="96" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" />
+<text x="175" y="568" font-size="25" fill="#111827" font-weight="800" text-anchor="middle" >L2</text>
+<text x="175" y="599" font-size="14" fill="#64748B" font-weight="700" text-anchor="middle" class="caps">CLOUD</text>
+<rect x="300" y="530" width="360" height="96" rx="12" fill="#E8F1FA" stroke="#D7DEE8" stroke-width="1.2" />
+<text x="480" y="586" font-size="20" fill="#172033" font-weight="650" text-anchor="middle" >GPU Compute</text>
+<rect x="710" y="530" width="360" height="96" rx="12" fill="#FBF1DD" stroke="#C58A24" stroke-width="2.5" />
+<text x="890" y="586" font-size="20" fill="#172033" font-weight="650" text-anchor="middle" >CPU Compute</text>
+<rect x="1120" y="530" width="360" height="96" rx="12" fill="#E4F3F0" stroke="#D7DEE8" stroke-width="1.2" />
+<text x="1300" y="586" font-size="20" fill="#172033" font-weight="650" text-anchor="middle" >Cloud Storage</text>
+<line x1="480" y1="652" x2="480" y2="634" stroke="#1F5A93" stroke-width="3"/>
+<path d="M 473 642 L 480 632 L 487 642" fill="#1F5A93"/>
+<line x1="890" y1="652" x2="890" y2="634" stroke="#C58A24" stroke-width="3"/>
+<path d="M 883 642 L 890 632 L 897 642" fill="#C58A24"/>
+<line x1="1300" y1="652" x2="1300" y2="634" stroke="#147A72" stroke-width="3"/>
+<path d="M 1293 642 L 1300 632 L 1307 642" fill="#147A72"/>
+<rect x="90" y="660" width="170" height="96" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" />
+<text x="175" y="698" font-size="25" fill="#111827" font-weight="800" text-anchor="middle" >L1</text>
+<text x="175" y="729" font-size="14" fill="#64748B" font-weight="700" text-anchor="middle" class="caps">CHIP</text>
+<rect x="300" y="660" width="360" height="96" rx="12" fill="#E8F1FA" stroke="#D7DEE8" stroke-width="1.2" />
+<text x="480" y="716" font-size="20" fill="#172033" font-weight="650" text-anchor="middle" >GPU / TPU + HBM</text>
+<rect x="710" y="660" width="360" height="96" rx="12" fill="#FBF1DD" stroke="#C58A24" stroke-width="2.5" />
+<text x="890" y="716" font-size="20" fill="#172033" font-weight="650" text-anchor="middle" >CPU + LPDDR / DRAM</text>
+<rect x="1120" y="660" width="360" height="96" rx="12" fill="#E4F3F0" stroke="#D7DEE8" stroke-width="1.2" />
+<text x="1300" y="716" font-size="20" fill="#172033" font-weight="650" text-anchor="middle" >NAND SSD · tiered upward</text>
+<line x1="660" y1="318" x2="710" y2="318" stroke="#C58A24" stroke-width="3" stroke-dasharray="6 6"/>
+<line x1="1070" y1="318" x2="1120" y2="318" stroke="#C58A24" stroke-width="3" stroke-dasharray="6 6"/>
+<line x1="660" y1="448" x2="710" y2="448" stroke="#C58A24" stroke-width="3" stroke-dasharray="6 6"/>
+<line x1="1070" y1="448" x2="1120" y2="448" stroke="#C58A24" stroke-width="3" stroke-dasharray="6 6"/>
+<line x1="660" y1="578" x2="710" y2="578" stroke="#C58A24" stroke-width="3" stroke-dasharray="6 6"/>
+<line x1="1070" y1="578" x2="1120" y2="578" stroke="#C58A24" stroke-width="3" stroke-dasharray="6 6"/>
+<line x1="660" y1="708" x2="710" y2="708" stroke="#C58A24" stroke-width="3" stroke-dasharray="6 6"/>
+<line x1="1070" y1="708" x2="1120" y2="708" stroke="#C58A24" stroke-width="3" stroke-dasharray="6 6"/>
+<rect x="300" y="795" width="1230" height="58" rx="10" fill="#EEF2F7" stroke="none" stroke-width="0" />
+<text x="915" y="831" font-size="18" fill="#475569" font-weight="500" text-anchor="middle" >Value flows upward (L1 → L4); the deterministic rail orchestrates inference calls and storage I/O at every layer.</text>
+<text x="90" y="838" font-size="13" fill="#64748B" font-weight="700" text-anchor="start" class="caps">WISDOM HILL RESEARCH · REPORT 11</text>
+</svg>

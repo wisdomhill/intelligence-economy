@@ -99,6 +99,18 @@ def widths_of(path):
     return found or None
 
 
+def hand_built(path):
+    """True if the fragment carries structure this tool cannot reproduce.
+
+    A table whose PDF and web proportions differ is written twice, inside
+    `.content-visible` blocks, and only in the qmd -- the manuscript keeps one
+    copy. Regenerating from the manuscript would collapse it back to one table
+    and silently drop the print widths, so refuse instead."""
+    if not os.path.exists(path):
+        return False
+    return '.content-visible' in io.open(path, encoding='utf-8').read()
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('report', help='report directory name, e.g. r08')
@@ -124,6 +136,10 @@ def main():
     rc = 0
     for (title, chunk), name in zip(chunks, names):
         path = os.path.join(d, name)
+        if hand_built(path):
+            print('%-30s SKIPPED -- hand-built per-format tables' % name)
+            rc |= 2
+            continue
         new = convert(chunk, widths_of(path))
         old = io.open(path, encoding='utf-8').read().replace('\r\n', '\n') \
             if os.path.exists(path) else None

@@ -24,6 +24,8 @@ The Category 5 row carries a 1.5–3x latency penalty, modeled here to express t
 
 **Table 4a. Derivation basis: nominal tokens × compute weight → frontier-equivalent tokens (trillions)**
 
+::: {.content-visible when-format="html"}
+
 | Function | Weight | T_g (bn/GPU-yr) | 2026 nominal | 2026 weighted | 2027 nominal | 2027 weighted | 2028 nominal | 2028 weighted |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | 1 Software Engineering | 0.70 | 12.36 | 16,500 | 11,550.0 | 19,500 | 13,650.0 | 21,600 | 15,120.0 |
@@ -36,6 +38,25 @@ The Category 5 row carries a 1.5–3x latency penalty, modeled here to express t
 | **Total** | — | — | **20,144** | **13,711** | **28,415** | **18,513** | **38,051** | **23,658** |
 
 : {tbl-colwidths="[20,6,9,11,11,11,11,11,10]"}
+
+:::
+
+::: {.content-visible when-format="typst"}
+
+| Function | Weight | T_g (bn/GPU-yr) | 2026 nominal | 2026 weight­ed | 2027 nominal | 2027 weight­ed | 2028 nominal | 2028 weight­ed |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 Software Engineering | 0.70 | 12.36 | 16,500 | 11,550.0 | 19,500 | 13,650.0 | 21,600 | 15,120.0 |
+| 2 Quant Analysis & Data Science | 0.60 | 12.36 | 2,003 | 1,201.5 | 4,806 | 2,883.6 | 8,411 | 5,046.3 |
+| 3 Transaction Record Ops | 0.10 | 38.16 | 72 | 7.2 | 240 | 24.0 | 528 | 52.8 |
+| 4 Sales & Outreach | 0.15 | 38.16 | 80 | 12.0 | 320 | 48.0 | 800 | 120.0 |
+| 5 Customer Interaction | 0.20 | 10.09 | 48 | 9.6 | 192 | 38.4 | 448 | 89.6 |
+| 6 Qualitative Review & Research | 0.80 | 15.14 | 1,037 | 829.4 | 1,872 | 1,497.6 | 3,024 | 2,419.2 |
+| 7 Workflow Integration & Automation | 0.25 | 14.19 | 405 | 101.2 | 1,485 | 371.3 | 3,240 | 810.0 |
+| **Total** | — | — | **20,144** | **13,711** | **28,415** | **18,513** | **38,051** | **23,658** |
+
+: {tbl-colwidths="[25,6,9,11,9,11,9,11,9]"}
+
+:::
 
 *Weighted figures, multiplied by the year's drift factor (1.00 / 1.15 / 1.30) and divided by each function's T_g, yield the fleet counts of Table 4. Category rows are rounded independently and may differ from the displayed totals by one unit.*
 

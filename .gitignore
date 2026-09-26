@@ -44,3 +44,4 @@ Thumbs.db
 
 **/*.quarto_ipynb
 /.split-tmp/
+/.claude/

@@ -6,6 +6,6 @@
 | Solar, 2005–2013 | Polysilicon, equipment | Module makers | Soft budget constraints; structural price collapse; western exit | Policy-driven demand; no premium-tier refuge existed |
 | Memory, 2007–2012 | — | DRAM makers (8 → 3) | Prisoner's dilemma; exit and ownership consolidation restored discipline — Qimonda removed capacity, Elpida's capacity was consolidated under Micron | Loss-driven withdrawal of independent decision-makers functioned — the feature now weakened |
 
-: {tbl-colwidths="[16,21,21,21,21]"}
+: {tbl-colwidths="[16,19,19,25,21]"}
 
 ------------------------------------------------------------------------

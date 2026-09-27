@@ -11,7 +11,7 @@ Datacenter capacity is a **self-intensifying** constraint. The datacenter layer 
 Formally, the growth of installed AI compute is governed by the lesser of two flows:
 
 $$
-\frac{dK_{AI}}{dt} \;=\; \min\!\Big( F_{semi}(t),\; A_{DC}(t) \Big)
+\frac{dK_{AI}}{dt} \;=\; \min\left( F_{semi}(t),\; A_{DC}(t) \right)
 $$
 
 where $F_{semi}(t)$ is the chip output flow — driven upward over multi-year horizons by the cumulative stock of committed fabs, though not strictly monotonic period by period — and $A_{DC}(t)$ is the datacenter absorption flow, a function of newly secured power, sites, and capital, whose growth faces structural ceilings. Early in the buildout, $F_{semi} < A_{DC}$: chips are scarce, datacenter shells wait for silicon, and the chip maker is the binding constraint and the rent collector. Because one curve is fed by an accumulating stock while the other must be renewed each year against depleting inputs, the structural pressure is toward reversal of the inequality — a crossing that is a scenario to monitor rather than a mathematical certainty, since supply-side discipline or absorption-side relief can defer it. If and when it occurs, the crossing point is a regime change: chips become abundant relative to the places they can be plugged in, unabsorbed flow accumulates as inventory, and inventory is the transmission mechanism from physical imbalance to price.

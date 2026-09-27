@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "7. Memory: The Structural Case"
+---
+
+{{< include _06-memory-structure.qmd >}}

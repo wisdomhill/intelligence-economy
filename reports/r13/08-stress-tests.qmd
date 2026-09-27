@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "8. Stress-Testing the Thesis"
+---
+
+{{< include _08-stress-tests.qmd >}}

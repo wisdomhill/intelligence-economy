@@ -1,0 +1,14 @@
+title-block-style: none
+
+date: 2026-09-28
+date-modified: 2026-09-28
+
+# Applied to every page in this report, so each chapter cites the report as a
+# whole rather than itself. `title` and `url` override the per-page values.
+citation:
+  type: report
+  title: "13. The Coming Inversion of the AI Hardware Cycle"
+  container-title: "The Intelligence Economy"
+  number: 13
+  publisher: "Wisdom Hill"
+  url: https://wisdomhill.github.io/intelligence-economy/reports/r13/

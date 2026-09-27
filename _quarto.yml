@@ -225,6 +225,21 @@ website:
           - reports/r12/07-implications.qmd
           - reports/r12/08-appendix.qmd
           - reports/r12/09-references.qmd
+      - section: "13. The Coming Inversion of the AI Hardware Cycle"
+        href: reports/r13/index.qmd
+        contents:
+          - reports/r13/01-derived-demand.qmd
+          - reports/r13/02-bottleneck-migration.qmd
+          - reports/r13/03-capital-dynamics.qmd
+          - reports/r13/04-integrated-model.qmd
+          - reports/r13/05-dyad.qmd
+          - reports/r13/06-memory-structure.qmd
+          - reports/r13/07-memory-ramp.qmd
+          - reports/r13/08-stress-tests.qmd
+          - reports/r13/09-monitoring.qmd
+          - reports/r13/10-appendix-a.qmd
+          - reports/r13/11-appendix-b.qmd
+          - reports/r13/12-references.qmd
       - text: "---"
       - href: errata.qmd
         text: "Errata"

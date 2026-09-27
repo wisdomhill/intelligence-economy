@@ -1,0 +1,89 @@
+Bass, F. M. (1969). "A New Product Growth Model for Consumer Durables." *Management Science*, 15(5), 215–227.
+
+Clark, J. M. (1917). "Business Acceleration and the Law of Demand: A Technical Factor in Economic Cycles." *Journal of Political Economy*, 25(3), 217–235. <https://www.journals.uchicago.edu/doi/abs/10.1086/252958>
+
+Dixit, A. (1980). "The Role of Investment in Entry-Deterrence." *The Economic Journal*, 90(357), 95–106.
+
+Forrester, J. W. (1961). *Industrial Dynamics.* MIT Press.
+
+Gholami, A., Yao, Z., Kim, S., Hooper, C., Mahoney, M. W., & Keutzer, K. (2024). "AI and Memory Wall." *IEEE Micro*, 44(3), 33–39. <https://doi.org/10.1109/MM.2024.3373763>
+
+Goldratt, E. M., & Cox, J. (1984). *The Goal: A Process of Ongoing Improvement.* North River Press.
+
+Jevons, W. S. (1865). *The Coal Question: An Inquiry Concerning the Progress of the Nation, and the Probable Exhaustion of Our Coal-Mines.* Macmillan.
+
+Kornai, J. (1986). "The Soft Budget Constraint." *Kyklos*, 39(1), 3–30.
+
+Lee, H. L., Padmanabhan, V., & Whang, S. (1997). "The Bullwhip Effect in Supply Chains." *Sloan Management Review*, 38(3), 93–102.
+
+Maynard Smith, J. (1974). "The Theory of Games and the Evolution of Animal Conflicts." *Journal of Theoretical Biology*, 47(1), 209–221.
+
+Patel, M., Shahroodi, T., Manglik, A., Yağlıkçı, A. G., Olgun, A., Luo, H., & Mutlu, O. (2024). "Rethinking the Producer-Consumer Relationship in Modern DRAM-Based Systems." arXiv:2401.16279. <https://arxiv.org/abs/2401.16279>
+
+Rogers, E. M. (2003). *Diffusion of Innovations* (5th ed.). Free Press.
+
+Samuelson, P. A. (1939). "Interactions between the Multiplier Analysis and the Principle of Acceleration." *The Review of Economics and Statistics*, 21(2), 75–78.
+
+Wright, T. P. (1936). "Factors Affecting the Cost of Airplanes." *Journal of the Aeronautical Sciences*, 3(4), 122–128.
+
+## Primary sources and industry data — company filings, disclosures, and trade analysis
+
+ASML. (n.d.). *Customer support: Installed base management*. <https://www.asml.com/en/en/products/customer-support>
+
+Bloomberg. (2026, August 22). *Nvidia customers notified about AI-related price hikes above 15%*. <https://www.bloomberg.com/news/articles/2026-08-22/nvidia-customers-notified-about-ai-related-price-hikes-above-15>
+
+CNBC. (2026, June 27). *The memory shortage shaking Apple and Microsoft is 'existential crisis' for smaller players*. <https://www.cnbc.com/2026/06/27/memory-crunch-shaking-apple-and-microsoft-existential-for-small-guys.html>
+
+CoreWeave, Inc. (2025a). *Quarterly report (Form 10-Q) for the quarter ended September 30, 2025*. U.S. Securities and Exchange Commission. <https://www.sec.gov/Archives/edgar/data/1769628/000176962825000062/crwv-20250930.htm>
+
+CoreWeave, Inc. (2025b). *Current report (Form 8-K): Master services agreement and order form with NVIDIA Corporation*. U.S. Securities and Exchange Commission. <https://www.sec.gov/Archives/edgar/data/1769628/000176962825000047/crwv-20250909.htm>
+
+CXMT (ChangXin Memory Technologies, Inc.). (2026). *Initial public offering prospectus*. Shanghai Stock Exchange. <https://static.sse.com.cn/stock/disclosure/announcement/c/202605/002170_20260527_23QQ.pdf>
+
+Federal Reserve Bank of San Francisco. (2001). *Rising junk bond yields: Liquidity or credit concerns?* (FRBSF Economic Letter 2001-33). <https://www.frbsf.org/research-and-insights/publications/economic-letter/2001/11/rising-junk-bond-yields-liquidity-or-credit-concerns/>
+
+Intel Corporation. (2026). *2025 annual report (Form 10-K): Property, plant and equipment disclosures*. <https://www.intc.com/filings-reports/all-sec-filings/xbrl_doc_only/4133>
+
+International Energy Agency \[IEA\]. (2025). *Energy and AI* (World Energy Outlook Special Report), chapter: AI and energy security. <https://www.iea.org/reports/energy-and-ai/ai-and-energy-security>
+
+Lawrence Berkeley National Laboratory. (2024). *Queued up: 2024 edition — Characteristics of power plants seeking transmission interconnection*. <https://emp.lbl.gov/publications/queued-2024-edition-characteristics>
+
+Micron Technology, Inc. (2022, November 16). *Micron announces supply reduction* \[Press release\]. <https://investors.micron.com/node/44261>
+
+Micron Technology, Inc. (2024). *Fiscal Q3 2024 investor presentation*. <https://investors.micron.com/static-files/a531c7f0-fca2-48f3-8f24-79c945aaa2d2>
+
+Micron Technology, Inc. (2026a). *Quarterly report (Form 10-Q) for the quarter ended May 28, 2026*. U.S. Securities and Exchange Commission. <https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm>
+
+Micron Technology, Inc. (2026b). *Fiscal Q3 2026 investor presentation*. <https://investors.micron.com/static-files/2354ecda-77a0-4ddd-8462-a631eb491356>
+
+Nortel Networks Corporation. (2002). *Annual report (Form 10-K) for fiscal year 2001*. U.S. Securities and Exchange Commission. <https://www.sec.gov/Archives/edgar/data/72911/000113031902000168/t06646e10-k.htm>
+
+NVIDIA Corporation. (2022, August 24). *NVIDIA announces financial results for second quarter fiscal 2023* \[Press release\]. <https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2023>
+
+Samsung C&T Corporation. (2022, September 22). *P4-PJT FAB building construction work contract* \[Disclosure\]. <https://www.samsungcnt.com/eng/ir/disclosure/view.do?seq=517>
+
+Samsung Electronics. (2023). *Samsung Electronics announces third quarter 2023 results* \[Press release\]. <https://news.samsung.com/global/samsung-electronics-announces-third-quarter-2023-results>
+
+Samsung Electronics. (2026). *삼성, 미래 성장 위해 2,655조원 투자* \[Press release\]. Samsung Newsroom. <https://news.samsung.com/kr/%EC%82%BC%EC%84%B1-%EB%AF%B8%EB%9E%98-%EC%84%B1%EC%9E%A5-%EC%9C%84%ED%95%B4-2655%EC%A1%B0%EC%9B%90-%ED%88%AC%EC%9E%90>
+
+SemiAnalysis. (2026, March 24). *The memory wall: Past, present, and future of DRAM*. <https://newsletter.semianalysis.com/p/the-memory-wall>
+
+Semiconductor Digest. (2020, March 10). *Transistor count trends continue to track with Moore's Law* (reporting IC Insights data). <https://www.semiconductor-digest.com/transistor-count-trends-continue-to-track-with-moores-law/>
+
+Seoul Economic Daily. (2026, April 22). *Samsung accelerates P4 line: Mass production moved up by six months*. <https://en.sedaily.com/finance/2026/04/22/samsung-accelerates-p4-fab-advances-full-production-by-six>
+
+SK hynix. (2022). *SK hynix reports third quarter 2022 results* \[Press release\]. <https://news.skhynix.com/sk-hynix-reports-third-quarter-2022-results/>
+
+SK hynix. (2024). *SK hynix to produce DRAM from M15X in Cheongju* \[Press release\]. <https://news.skhynix.com/sk-hynix-to-produce-dram-from-m15x-in-cheongju/>
+
+SK hynix. (2025). *New facility investment for Yongin semiconductor cluster* \[Press release\]. <https://news.skhynix.com/new-facility-investment-for-yongin-semiconductor-cluster/>
+
+SK hynix. (2026). *Explainer: SK hynix's Mid-to-Long-Term Investment Strategy* \[Press release\]. <https://news.skhynix.com/fact-05/>
+
+TrendForce. (2026, June 2). *Tight DRAM supply gives suppliers greater pricing power in HBM, with HBM contract prices expected to surge multiples higher in 2027* \[Press release\]. <https://www.trendforce.com/presscenter/news/20260602-13074.html>
+
+Market-share estimates and price series for DRAM cited qualitatively in Chapter 7 rest partly on secondary industry data (e.g., Omdia rankings reproduced in the CXMT prospectus; research-firm price assessments) and are identified as such where used. TrendForce wafer- and bit-share estimates are forward-looking projections by that firm, not realized outcomes. Accelerator stock and flow estimates in Chapter 6 are those of Report 12 of this series.
+
+------------------------------------------------------------------------
+
+*© 2026 Wisdom Hill Research. For institutional investors only. This document presents an analytical framework and does not constitute investment advice or a recommendation to buy or sell any security.*

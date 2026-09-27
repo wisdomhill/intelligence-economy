@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "6. The Datacenter–NVIDIA Dyad"
+---
+
+{{< include _05-dyad.qmd >}}

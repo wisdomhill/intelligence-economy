@@ -1,0 +1,56 @@
+---
+title: "13. The Coming Inversion of the AI Hardware Cycle"
+subtitle: "The second derivative: stock-flow dynamics, migrating bottlenecks, and opposite games"
+format:
+  typst: default
+---
+
+# 1. Executive Summary
+
+{{< include _00-executive-summary.qmd >}}
+
+# 2. Framework I: Derived Demand
+
+{{< include _01-derived-demand.qmd >}}
+
+# 3. Framework II: Bottleneck Migration
+
+{{< include _02-bottleneck-migration.qmd >}}
+
+# 4. Framework III: Capital Dynamics
+
+{{< include _03-capital-dynamics.qmd >}}
+
+# 5. The Integrated Model
+
+{{< include _04-integrated-model.qmd >}}
+
+# 6. The Datacenter–NVIDIA Dyad
+
+{{< include _05-dyad.qmd >}}
+
+# 7. Memory
+
+{{< include _06-memory-structure.qmd >}}
+
+{{< include _07-memory-ramp.qmd >}}
+
+# 8. Stress-Testing the Thesis
+
+{{< include _08-stress-tests.qmd >}}
+
+# 9. Monitoring and Implications
+
+{{< include _09-monitoring.qmd >}}
+
+# Appendix A
+
+{{< include _10-appendix-a.qmd >}}
+
+# Appendix B
+
+{{< include _11-appendix-b.qmd >}}
+
+# References
+
+{{< include _12-references.qmd >}}

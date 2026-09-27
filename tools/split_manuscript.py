@@ -30,6 +30,13 @@ Usage:
 import argparse, io, os, re, subprocess, sys
 
 READER = 'markdown-smart-tex_math_dollars+autolink_bare_uris'
+# A manuscript that writes real TeX math declares `tex-math: true` in its
+# Layer 0 front matter, and the reader keeps `$...$` math for it. The default
+# is off because the reports quote dollar amounts far more often than they
+# write equations, and `$1 billion ... $9 billion` otherwise parses as a math
+# span that eats the text between.
+READER_MATH = 'markdown-smart+autolink_bare_uris'
+TEX_MATH = False
 WRITER = 'markdown-smart'
 SCRATCH = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '.split-tmp')
 
@@ -40,7 +47,7 @@ def roundtrip(text):
     os.makedirs(SCRATCH, exist_ok=True)
     src, dst = os.path.join(SCRATCH, 'in.md'), os.path.join(SCRATCH, 'out.md')
     io.open(src, 'w', encoding='utf-8', newline='\n').write(text)
-    p = subprocess.run(['quarto', 'pandoc', '-f', READER, '-t', WRITER,
+    p = subprocess.run(['quarto', 'pandoc', '-f', READER_MATH if TEX_MATH else READER, '-t', WRITER,
                         '--wrap=none', src, '-o', dst],
                        capture_output=True, shell=(os.name == 'nt'))
     if p.returncode:
@@ -57,14 +64,17 @@ def escape_cells(row):
 
     The prose round-trip does this for body text, but tables never reach
     pandoc, so it has to happen here. `$` opens TeX math and `~` opens a
-    subscript; either silently eats the text that follows.
+    subscript; either silently eats the text that follows. Where the
+    manuscript declares `tex-math: true`, `$` is left alone -- the author is
+    writing equations, not prices.
     """
+    unsafe = '~' if TEX_MATH else '$~'
     out, i = [], 0
     while i < len(row):
         c = row[i]
         if c == chr(92):                  # already escaped, take both
             out.append(row[i:i + 2]); i += 2; continue
-        out.append(chr(92) + c if c in '$~' else c)
+        out.append(chr(92) + c if c in unsafe else c)
         i += 1
     return ''.join(out)
 
@@ -142,6 +152,12 @@ def main():
     if len(ms) != 1:
         sys.exit('expected one manuscript for %s, found %s' % (args.report, ms))
     text = io.open(os.path.join('manuscripts', ms[0]), encoding='utf-8').read()
+
+    global TEX_MATH
+    front = text.split(chr(10) + '---' + chr(10), 1)[0]
+    TEX_MATH = bool(re.search(r'(?m)^tex-math:\s*true\s*$', front))
+    if TEX_MATH:
+        print('tex-math: on (the manuscript declares it)')
 
     d = os.path.join('reports', args.report)
     names = sorted(f for f in os.listdir(d) if re.match(r'^_\d\d-.*\.qmd$', f))

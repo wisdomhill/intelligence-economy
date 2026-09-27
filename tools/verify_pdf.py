@@ -36,7 +36,11 @@ EXPECT_FONTS = {"Inter-SemiBold", "Inter-Regular", "SourceSerif4-Regular"}
 # from Typst rather than from the machine. The series carries about ten inline
 # literals in total (file and field names), so committing a monospace face of
 # our own would add weight for nothing.
-ALLOWED_PREFIXES = ("Inter", "SourceSerif4", "DejaVuSansMono")
+# NewCMMath is Typst's math face. It appears only where a report actually
+# sets equations -- Report 13 does. Its presence in a report that sets none
+# means a `$...$` pair was read as math by accident; that used to be the
+# way such a bug surfaced, and is now prevented in tools/split_manuscript.py.
+ALLOWED_PREFIXES = ("Inter", "SourceSerif4", "DejaVuSansMono", "NewCMMath")
 EXPECT_HEADING_PT = {1: 15.0, 2: 12.0, 3: 11.0}
 EXPECT_BODY_PT = 11.0
 # Headings are found by face and size, and a figure defeats that on its own:

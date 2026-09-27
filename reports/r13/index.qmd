@@ -1,0 +1,46 @@
+---
+format:
+  html: default
+title-block-style: default
+title: "13. The Coming Inversion of the AI Hardware Cycle"
+subtitle: "The second derivative: stock-flow dynamics, migrating bottlenecks, and opposite games"
+
+description: >-
+  Why the hardware cycle turns before demand does. Derived demand is a
+  derivative, bottlenecks migrate to whatever cannot expand, and the cash-rich
+  overbuild — three mechanisms pointing the same way.
+
+order: 13
+keywords:
+  - accelerator principle
+  - bottleneck migration
+  - HBM
+  - capital cycle
+  - derived demand
+  - rotation
+
+---
+
+::: {.callout-note appearance="simple" icon=false}
+**Read the full report as a PDF:** [The Coming Inversion of the AI Hardware Cycle (PDF)](r13-the-coming-inversion-of-the-ai-hardware-cycle.pdf)
+:::
+
+## Executive Summary
+
+{{< include _00-executive-summary.qmd >}}
+
+## Contents
+
+|   | Chapter                                                                | The question it answers                                                 |
+|---|------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| 2 | [Framework I: Derived Demand](01-derived-demand.qmd)                   | Why does the supplier's peak arrive before the customer's?              |
+| 3 | [Framework II: Bottleneck Migration](02-bottleneck-migration.qmd)      | Which constraints resolve themselves, and which get worse?              |
+| 4 | [Framework III: Capital Dynamics](03-capital-dynamics.qmd)             | Why does abundant cash produce overexpansion?                           |
+| 5 | [The Integrated Model](04-integrated-model.qmd)                        | How do the three frameworks combine?                                    |
+| 6 | [The Datacenter–NVIDIA Dyad](05-dyad.qmd)                               | What happens when the customer becomes the competitor?                  |
+| 7 | [Memory: The Structural Case](06-memory-structure.qmd)                 | Why is memory placed differently from logic?                            |
+| 7 | [Memory: The 2026–28 Ramp](07-memory-ramp.qmd)                          | What does the capacity timetable imply?                                 |
+| 8 | [Stress-Testing the Thesis](08-stress-tests.qmd)                        | What would have to be true for the inversion not to happen?             |
+| 9 | [Monitoring and Implications](09-monitoring.qmd)                       | What should be watched, and what would trigger a rotation?              |
+
+: {tbl-colwidths="[5,42,53]"}

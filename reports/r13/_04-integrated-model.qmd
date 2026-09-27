@@ -1,0 +1,11 @@
+The three frameworks converge into a single statement about how this cycle ends. The peak of the AI hardware cycle will be set not by the peak of AI demand but by whichever of two terminal mechanisms arrives first — a turn in the demand derivative, or a crossing of chip output and datacenter absorption capacity. A third condition, a credit crack in the attrition tier, is not a separate ending but an accelerant that can pull the crossing forward. The three are distinct in what they look like and causally linked in how they operate:
+
+**Trigger 1 — the demand derivative (Framework I).** End-demand growth decelerates as adoption passes its inflection point; the second derivative turns negative; new-capacity chip demand contracts in absolute terms while headline usage still sets records.
+
+**Trigger 2 — the physical crossing (Framework II).** Cumulative fab output capability, compounding quarter by quarter, overtakes the datacenter layer's absorption capacity, throttled by power, sites, and grid access. Chips outrun racks; inventory accumulates; price follows inventory.
+
+**Accelerant — the credit crack (Framework III).** The attrition tier of the datacenter market loses access to capital — spreads widen, collateral terms tighten, a marquee casualty resets risk appetite — and absorption capacity contracts discontinuously rather than smoothly, dragging the crossing of Trigger 2 forward. This is the mechanism by which the cycle can end well before end demand decelerates.
+
+The coupling runs in one principal direction: expensive chips accelerate customer cash depletion (the accelerant), which slows absorption (Trigger 2), which can force the glut before demand ever decelerates (Trigger 1). The peak they jointly determine is the peak of the accelerator flow — the flow that NVIDIA and its captive competitors supply to the datacenter stock. Memory's cycle is derived from that flow, not independent of it, and is treated accordingly as an additional consideration in Chapter 7. A rigorous formulation of the inversion thesis therefore does not predict *which* mechanism ends the cycle or *when*; it specifies what each looks like in observable data and defines the response in advance. Chapter 9 develops that framework.
+
+------------------------------------------------------------------------

@@ -1,0 +1,35 @@
+## 9.1 Why timing is unknowable
+
+The frameworks predict sequence, not timing, and this limitation is inherent to the problem rather than a matter of analytical incompleteness. The decisive variable — the economy's current position on the AI adoption S-curve — is unobservable in real time: penetration of a market whose eventual size is itself the unknown $L$ cannot be measured, and the second derivative of demand, the quantity on which everything turns, is identifiable in the data only after several periods of confirmation, by which point the turn is history. Every prior cycle teaches the same lesson in both directions: warnings of telecom overcapacity began in 1997, three years and several hundred percent of equipment-stock appreciation before the peak. In markets, early and wrong are indistinguishable at the position level. The correct response to an unknowable date is not a braver forecast; it is a framework in which the *triggers* are specified in advance and the response is conditional on observing them.
+
+## 9.2 The leading-indicator dashboard
+
+Each framework nominates its own observables, organized here from upstream cause to downstream confirmation.
+
+| Framework | Indicator | What it signals |
+|---|---|---|
+| Contestability | Captive vs. merchant share of accelerator flow, quarter by quarter, measured over more than one generation transition | Whether the accelerator market remains contested; a durable reversal toward the merchant would suspend the overexpansion mechanism (Test 1) |
+| I. Demand derivative | Hyperscaler capex guidance — *revisions and second differences*, not levels | The earliest readable proxy for $d^2Y/dt^2$; watch for deceleration in the growth of guided capex |
+| I. Demand derivative | Rental price of installed accelerator capacity vs. chip price | Whether chip-price declines are reaching the point of use (Jevons channel open) or being captured as datacenter margin (Test 3) |
+| I / Case study | Merchant supplier's inventory and purchase commitments relative to revenue | The fabless form of overcapacity; commitments rising against decelerating orders preceded the 2022 charges |
+| II. Physical crossing | Power contracting (PPA signings, grid-interconnection queue movement) vs. fab ramp schedules | The relative slope of $A_{DC}$ and $F_{semi}$; the gap is the countdown to crossing |
+| II. Physical crossing | Turbine, transformer, and switchgear backlogs | Depth of the self-intensifying constraint; a rapid clearing would open the telecom path (Test 2) |
+| II. Physical crossing | "Chips awaiting racks" — accelerator inventory accumulating between delivery and energization | The most direct evidence the crossing has occurred |
+| II / Case study | Leading-edge foundry and advanced-packaging utilization and customer mix | Whether capacity released by the merchant flows to captive programs (the trap of Section 6.3) |
+| III. Credit | Credit spreads and collateral terms in the neocloud tier (LTVs, rates on chip-collateralized debt) | Health of the attrition front line; cracked credit preceded cracked volume in 2000 |
+| III. Credit | Vendor support and circular supplier–shareholder–customer deal volume | The upstream's own assessment of its customers' capital constraint |
+| III. Credit | The *order* of capex guidance cuts (weakest balance sheets first) | Onset of attrition exits |
+| Memory (Ch. 7) | HBM contract pricing and memory's share of accelerator system cost | Memory's leverage over the accelerator layer; a reversal marks the unwinding of the redistribution |
+| Memory (Ch. 7) | Equipment orders at newly constructed shells across the four players | The 2026–28 capacity ramp — tools, not groundbreakings, are the commitment |
+
+: {tbl-colwidths="[16,42,42]"}
+
+## 9.3 Trigger-based rotation design
+
+The payoff structure of the inversion thesis punishes early execution on both legs. Exiting the merchant accelerator leader before the peak forfeits what is historically the steepest portion of the up-cycle — late-stage scarcity pricing — while rotating into datacenter operators early means holding maximum free-cash-flow compression and headline risk through the very period the attrition narrative is loudest. The thesis is therefore implementable only as a *conditional* rotation: positioning changes are bound, in advance, to dashboard triggers rather than to calendar views or valuation discomfort. In schematic form: a sustained captive share of accelerator flow, merchant inventory and purchase commitments rising against decelerating orders, a widening gap between chip prices and rental prices for installed capacity, and the first credit deterioration in the neocloud tier together constitute the rotation signal away from accelerator-cycle exposure — and, because memory demand is derived from that flow, the same signal governs memory exposure with a lag. Confirmation of the physical crossing (inventory between delivery and energization) and the onset of ordered capex cuts constitute the signal that the survivor's-premium phase — long the consolidating balance sheets, long the power-and-sites complex of Framework II — has begun.
+
+Equally important is specifying falsification. The thesis is suspended if the accelerator market ceases to be contested — a durable reversal of captive silicon's share of flow, with the merchant leader reverting from expansion to rationing (a return to uncontested supply). It is wrong, not early, if power and site constraints relax faster than fab output compounds, so that the datacenter layer can overbuild and chip-price declines reach the end user (the telecom regime, in which the Jevons channel reopens). A reader who tracks the dashboard is positioned to recognize either within quarters rather than years. What the reader should not expect is a signal that the thesis is *early*: the report's own framework holds that the inflection is invisible until it has passed, and a thesis about medium-to-long-term sequence cannot be falsified by a near-term calendar.
+
+This report is an analytical framework, not investment advice; position sizing, instruments, and suitability are the reader's own determination.
+
+------------------------------------------------------------------------

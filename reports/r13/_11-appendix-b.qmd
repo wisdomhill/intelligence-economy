@@ -1,0 +1,11 @@
+| Episode | Picks-and-shovels layer | Stock-building layer | What mapped | What did not |
+|---|---|---|---|---|
+| Railroads, 1870s–1890s | Rail, steel, construction | Railroad operators | Derivative demand; overbuild; bondholder losses; consolidation of survivors | Land grants distorted entry; no oligopoly discipline anywhere |
+| Telecom, 1999–2001 | Equipment vendors | Carriers | Vendor financing as confession; credit cracked before volume; glut persisted post-exit | Glutted asset (fiber) was itself the bottleneck asset — benefits flowed to new entrants, not survivors |
+| LCD panels, 2000s–2010s | Equipment, glass | Panel makers | State-backed entrant; broken exit mechanism; incumbent retreat to premium tier | Demand was mature, not on an early S-curve |
+| Solar, 2005–2013 | Polysilicon, equipment | Module makers | Soft budget constraints; structural price collapse; western exit | Policy-driven demand; no premium-tier refuge existed |
+| Memory, 2007–2012 | — | DRAM makers (8 → 3) | Prisoner's dilemma; exit and ownership consolidation restored discipline — Qimonda removed capacity, Elpida's capacity was consolidated under Micron | Loss-driven withdrawal of independent decision-makers functioned — the feature now weakened |
+
+: {tbl-colwidths="[16,21,21,21,21]"}
+
+------------------------------------------------------------------------

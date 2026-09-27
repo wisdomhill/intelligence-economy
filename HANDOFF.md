@@ -199,6 +199,35 @@ at any column width. A soft hyphen (U+00AD) in the source authorises the
 break. Keep it in the typst copy only: it is a print control, not the author's
 text, and the manuscript should stay clean.
 
+## Dollar signs, and the `tex-math` switch
+
+The reports quote dollar amounts constantly, and `$1 billion ... $9 billion`
+parses as a TeX math span that swallows the text between. So the conversion
+reads with `tex_math_dollars` **off** by default, and
+`tools/split_manuscript.py` escapes `$` inside table rows as well -- tables
+never reach pandoc, and Report 12's header
+`| Cumulative chip cost ($B) | YoY adds ($B) |` welded two columns into one
+before that was added. `~` is escaped alongside it, for the same reason in
+subscript form.
+
+A manuscript that writes real equations turns it back on with one line in its
+Layer 0 front matter:
+
+```yaml
+tex-math: true
+```
+
+Report 13 is the case: 154 dollar signs, an appendix of formulations, and
+`$A_{DC}$` and `$d^2Y/dt^2$` throughout the prose. With the switch on the
+reader keeps math and the table escaping leaves `$` alone. Leave it off unless
+the manuscript genuinely needs it; a report cannot have it both ways, so an
+author who wants both must escape the prices by hand.
+
+`NewCMMath-Book` in the embedded-font list is the signature of math having
+been typeset. `tools/verify_pdf.py` allows it, because Report 13 legitimately
+sets equations -- but in a report that sets none it means a `$...$` pair was
+read as math by accident, which is how Report 12's bug surfaced.
+
 ## Verifying
 
 ```

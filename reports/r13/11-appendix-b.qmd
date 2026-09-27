@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "Appendix B"
+---
+
+{{< include _11-appendix-b.qmd >}}

@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "3. Framework II: Bottleneck Migration"
+---
+
+{{< include _02-bottleneck-migration.qmd >}}

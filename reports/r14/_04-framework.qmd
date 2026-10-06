@@ -1,0 +1,39 @@
+## 2.1 Why power is held constant
+
+Power and site scarcity is real, binding, and — for the purpose of ranking firms — largely undifferentiating. All large buyers bid in the same interconnection queues, face the same multi-year substation and turbine lead times, and increasingly co-locate behind the same utility constraints. Differences of execution exist, but they are second-order relative to the two constraints this report isolates, and they lack the firm-level, decade-long structural character of silicon design ownership or balance-sheet composition. We therefore treat power as a common industry ceiling on aggregate build-out pace, not as a competitive axis.
+
+The division of labor with Report 13 is exact. There, the datacenter absorption flow A_DC — throttled by power, sites, and grid access — is the industry-level curve whose crossing with fab output defines the regime change; its trajectory determines *when* rent migrates downstream and how valuable the survivors' energized capacity becomes. Here, conditional on that common trajectory, we ask which owners reach the crossing in the strongest position. The one channel through which the power constraint does differentiate firms is capital: Report 13 noted that A_DC is a function of capital-market conditions as well as physical inputs, and at the firm level the capital-market term is precisely Axis II. An owner's share of the industry's constrained absorption capacity is, at the margin, purchased with balance-sheet headroom.
+
+## 2.2 The user-cost formulation
+
+The economics of holding a capital asset are summarized by the user cost of capital in the tradition of Jorgenson (1963): the annualized cost of one unit of capital equals its price multiplied by the sum of the financing rate and the depreciation rate. Applied per H100-equivalent and separated by asset class:
+
+> **UC_i = δ_chip · P_i + δ_infra · K + r_i · (P_i + K)**
+
+where, for owner *i*:
+
+- **P_i** — the blended chip acquisition cost per H100e of the installed fleet. This is the empirical heart of the report: it is measured directly, owner by owner, from our analysis of the Epoch AI datasets (Section 3).
+- **K** — non-chip infrastructure capex per H100e (data-center shell, power and cooling systems, non-accelerator IT). Assumed uniform across owners (Declaration 2 below) and derived from the chip-share-of-capex assumption (Declaration 1).
+- **r_i** — the owner's after-tax marginal cost of capital, estimated roughly from credit ratings and observed issuance (Section 4).
+- **δ_chip, δ_infra** — economic depreciation rates by asset class, estimated deliberately roughly (Section 5.1).
+
+The identity makes the report's structure transparent: Section 3 measures P_i, Section 4 estimates r_i and — more importantly — the *quantity* dimension of capital that the identity does not capture, Section 5 assembles the pieces, and Section 6 converts the result into a competitive verdict.
+
+## 2.3 Stock versus flow
+
+Following the stock/flow discipline established in Report 13 — where the distinction carried the entire accelerator argument, semiconductor revenue being the flow that serves the datacenter stock — we distinguish throughout between the **cumulative installed base** (the stock: what a fleet cost to build and what it costs annually to hold) and **net additions** (the flow: what is being added each quarter and how it is being paid for). The δ·K replacement term of Report 13's derived-demand identity reappears here from the buyer's side: the economic depreciation rate estimated in Section 5.1 is simultaneously the floor under the chip industry's future revenue and the recurring charge inside every hyperscaler's user cost. The two axes map onto this distinction asymmetrically. Axis I governs the unit economics of both stock and flow — a cheap chip is cheap on the day of purchase and every day thereafter. Axis II barely differentiates the unit economics of the stock (Section 5.4) but decisively governs the *sustainability of the flow*: when capex outruns operating cash flow, the ability to keep adding capacity is rationed by balance-sheet headroom, not by a few basis points of coupon.
+
+## 2.4 Methodological declarations and confidence grading
+
+The following assumptions are declared explicitly. Each input in this report carries a confidence grade: **\[A\]** measured/disclosed, **\[B\]** reconstructed from disclosed data, **\[C\]** judgment-based estimate.
+
+1.  **Chip share of AI capex: 55% (range 50–60%). \[C\]** Accelerator silicon is assumed to constitute 55% of total AI data-center capex, with the remaining 45% comprising shell, power and cooling infrastructure, and non-accelerator IT (CPUs, memory, storage, networking).
+2.  **Non-chip cost parity. \[C\]** All owners are assumed to procure non-chip infrastructure at identical cost per H100e. Networking topologies, power-purchase terms, and construction efficiency differ in practice, but not with the persistence or magnitude of the silicon wedge. Under this assumption, all inter-owner differences in fully-loaded cost originate in chip procurement and capital procurement — which is precisely the isolation the two-axis framework requires.
+3.  **In-house silicon valued at manufacturing cost; design cost ignored. \[C\]** For internally designed chips (Google TPU, Amazon Trainium), cost reflects manufacturing/supplier-revenue economics (e.g., Broadcom's revenue from Google for TPU production). This is the correct economic basis: the relevant question is what a unit of in-house compute costs its owner to obtain. Design and NRE expenditures are real but, amortized over multi-million-unit deployment volumes, are not a large share of per-unit economics; we declare them ignored rather than pretending to estimate them.
+4.  **Nvidia margin stated as \~75%. \[A\]** Nvidia's GAAP gross margin was 73.4% in FY2026 Q3 (quarter ended October 2025), with guidance around the mid-70s; we describe the normalized data-center margin as approximately 75% throughout.
+5.  **Depreciation estimated roughly. \[C\]** Given the depth of uncertainty about the pace of technology development, δ is estimated to first-order precision only (Section 5.1). Because the same δ applies to every owner, rankings are invariant to this parameter; only levels move.
+6.  **Cost of capital estimated roughly. \[C\]** r_i is approximated from rating tiers and observed issuance yields; no full WACC construction is attempted, since Section 5.4 shows the identity is insensitive to refinements of this input within investment grade.
+7.  **Source-data revision tolerance.** The underlying chip-cost dataset is subject to minor future revision. All conclusions are therefore stated at the level of rankings, multiples, and direction.
+8.  **Geographic scope.** The analysis covers U.S.-headquartered hyperscalers and neoclouds.
+
+------------------------------------------------------------------------

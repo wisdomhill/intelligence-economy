@@ -240,6 +240,19 @@ website:
           - reports/r13/10-appendix-a.qmd
           - reports/r13/11-appendix-b.qmd
           - reports/r13/12-references.qmd
+      - section: "14. The Hyperscaler Endgame"
+        href: reports/r14/index.qmd
+        contents:
+          - reports/r14/01-framework.qmd
+          - reports/r14/02-silicon.qmd
+          - reports/r14/03-capital.qmd
+          - reports/r14/04-integration.qmd
+          - reports/r14/05-positioning.qmd
+          - reports/r14/06-falsification.qmd
+          - reports/r14/07-implications.qmd
+          - reports/r14/08-appendix-a.qmd
+          - reports/r14/09-appendix-b.qmd
+          - reports/r14/10-references.qmd
       - text: "---"
       - href: errata.qmd
         text: "Errata"

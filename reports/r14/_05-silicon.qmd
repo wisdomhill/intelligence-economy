@@ -1,0 +1,69 @@
+## 3.1 The Nvidia margin structure and what buyers actually pay
+
+The arithmetic origin of the silicon axis is a single disclosed number: Nvidia sells data-center accelerators at a gross margin of approximately 75% (GAAP 73.4% in FY2026 Q3, on data-center revenue of \$51.2B in that quarter alone) \[A\]. A buyer of merchant Nvidia silicon therefore pays roughly four dollars for every dollar of manufacturing cost embedded in the device. A buyer that designs its own accelerator and pays only the foundry-and-packaging supply chain acquires the same silicon content at cost. This margin — colloquially, the "Nvidia tax" — is not a grievance but a price for genuine value: CUDA, networking integration, and the fastest architecture cadence in the industry. The question this report asks is not whether the margin is justified but what it does to the relative cost positions of buyers who pay it and buyers who do not.
+
+The dataset answers precisely. At Q4 2025, per-H100e acquisition cost by chip platform (cumulative delivered/owner-attributed base) \[B, Wisdom Hill analysis of Epoch AI data\]:
+
+| Platform | \$/H100e (cumulative) | Note |
+|---|---:|---|
+| Nvidia H100/H200 | \$25,000 | Hopper-era merchant benchmark |
+| Nvidia B300 | \$17,024 | Blackwell Ultra, ramping |
+| Nvidia B200 | \$14,658 | Blackwell volume SKU |
+| AMD MI300X | \$9,460 | Cheapest large-volume merchant part |
+| Amazon Trainium2 | \$6,094 | In-house, manufacturing-cost basis |
+| Google TPU v7 (Ironwood) | \$5,147 | In-house, manufacturing-cost basis |
+| Google TPU v6e (Trillium) | \$4,419 | The lowest-cost volume platform in the dataset |
+
+: {tbl-colwidths="[24,24,52]"}
+
+TPU v6e at \$4,419 per H100e is 5.7× cheaper than the Hopper benchmark and 3.3× cheaper than B200. Trainium2 sits at 4.1× below Hopper and 2.4× below B200. AMD's MI300X, at roughly 62% below Hopper pricing, defines an intermediate path available without vertical integration.
+
+## 3.2 The owner-level \$/H100e leaderboard
+
+Chip platform economics translate into owner economics through fleet mix. At Q4 2025, the cumulative installed base by owner \[B\]:
+
+| Owner | Installed H100e (M) | Installed cost (\$B) | \$/H100e blended | H100e per \$B |
+|---|---:|---:|---:|---:|
+| Google | 5.03 | 48.9 | **\$9,714** | 102,941 |
+| Amazon | 2.44 | 33.5 | **\$13,765** | 72,647 |
+| Meta | 2.30 | 39.7 | **\$17,296** | 57,818 |
+| Oracle | 1.14 | 20.1 | **\$17,597** | 56,829 |
+| xAI | 0.55 | 10.2 | **\$18,509** | 54,028 |
+| Microsoft | 3.41 | 63.6 | **\$18,666** | 53,573 |
+| CoreWeave | 0.83 | 15.9 | **\$19,161** | 52,189 |
+
+: {tbl-colwidths="[14,22,22,22,20]"}
+
+*Installed-cost dollars are rounded to \$0.1B for display; \$/H100e and H100e-per-\$B are computed from unrounded source data, so ratios of the rounded columns may differ in the final digits.*
+
+Google operates the largest fleet by compute (5.03M H100e) while ranking only third by dollars deployed — it extracts 1.92× the compute per cumulative dollar that Microsoft does. Microsoft is the mirror image: the largest dollar deployment (\$63.6B) purchasing the second-smallest compute-per-dollar in the cohort. The gap between the two is the silicon axis rendered as a single number.
+
+The flow tells the same story more sharply. On 2025 net additions, Google added 3.65M H100e at \$7,384 per H100e — roughly half the industry-average cost of incremental capacity — because 78.2% of its additions came from in-house silicon (TPU v6e and v7). Microsoft added 2.17M H100e at \$16,063. Amazon's additions split visibly along its dual-platform strategy: +0.97M H100e from Nvidia at \$16,524, +0.71M from Trainium at \$6,094.
+
+## 3.3 The vertical-integration wedge, counter-factually
+
+The cleanest measure of what design ownership is worth is the counter-factual: what would the in-house fleets have cost at merchant prices? Applied to the Q4 2025 cumulative in-house installed bases \[B\]:
+
+| Scenario | Google (3.80M TPU H100e) | Amazon (1.01M Trainium H100e) | Combined |
+|---|---:|---:|---:|
+| Actual deployed cost | \$25.1B | \$6.5B | \$31.6B |
+| At B200 pricing (\$14,658/H100e) | \$55.7B | \$14.8B | \$70.5B |
+| At H100/H200 pricing (\$25,000/H100e) | \$95.1B | \$25.3B | \$120.4B |
+| **Capex avoided (vs. B200)** | **\$30.6B** | **\$8.3B** | **\$38.9B** |
+| **Capex avoided (vs. H100/H200)** | **\$70.0B** | **\$18.8B** | **\$88.8B** |
+
+: {tbl-colwidths="[34,22,26,18]"}
+
+Even against the conservative Blackwell benchmark, the two in-house programs have avoided roughly \$39B of merchant spend through Q4 2025; against the Hopper prices that actually prevailed during most of the accumulation period, roughly \$89B. Returns of this magnitude make multi-billion-dollar annual silicon-design programs straightforwardly rational — and consistent with Declaration 3, they dwarf any plausible estimate of cumulative design cost.
+
+A second, subtler finding strengthens the durability case. During 2025, Google TPU's share of industry-wide installed H100e rose +4.53pp while its share of industry-wide installed *dollars* fell −0.19pp — the in-house platform is gaining capacity share while getting cheaper per unit faster than the industry blend, as v6e/v7 economics compound through the fleet mix. No merchant platform in the dataset exhibits this signature.
+
+## 3.4 The intermediate route: AMD without vertical integration
+
+Meta demonstrates that a meaningful fraction of the wedge is capturable without designing silicon. AMD accounts for 19.9% of Meta's installed H100e at only 11.4% of its installed cost, and Meta's blended \$17,296/H100e undercuts Microsoft's \$18,666 despite Meta possessing no at-scale in-house silicon in the dataset. MI300X pricing (\~\$9,460/H100e) sits between the in-house platforms and merchant Nvidia; a buyer with the software capacity to operate ROCm at scale — Meta's open Llama serving stack being the natural case — can harvest part of the discount. The route is real but bounded: it lowers P by thousands of dollars per H100e, not by the 2.9–5.7× multiples available to designers.
+
+## 3.5 Share dynamics as validation
+
+If the silicon axis is economically decisive, it should be visible in market-share physics — and it is. During 2025, among the Big Four, the two vertically integrated owners gained installed-compute share while the two merchant-dependent owners lost it: Google +4.07pp and Amazon +0.60pp, against Meta −0.32pp and Microsoft −1.81pp. Combined, the integrated pair moved from 32.4% to 37.0% of industry H100e while the merchant pair fell from 30.4% to 28.3% — a 6.8pp relative swing in twelve months, achieved with only a +0.5pp swing in dollar share. The divergence is driven by capacity-per-dollar, not by dollars: all four owners roughly tripled their fleets, but the industry grew 3.06×, and only owners whose incremental dollar bought more compute than the blended market price gained ground. This is the demand-side mirror of the supplier-side fact that Nvidia's installed-base share declined on both compute and dollar metrics during 2025 despite capturing the large majority of the year's net spending.
+
+------------------------------------------------------------------------

@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "References"
+---
+
+{{< include _13-references.qmd >}}

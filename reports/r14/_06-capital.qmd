@@ -1,0 +1,92 @@
+## 4.1 The funding-model inflection
+
+For the first years of the AI build-out, hyperscaler capex was financed overwhelmingly from operating cash flow. That model has ended. During 2025, the largest hyperscalers issued approximately \$121B of bonds — roughly four times the prior five-year average of about \$28B per year — and the pace has accelerated sharply since: AI-related issuers had raised roughly \$236B of debt by the end of May 2026, about four times the prior-year pace, with Morgan Stanley projecting hyperscaler borrowing of roughly \$400B for 2026 and total AI-related issuance approaching \$570B \[A/B\]. The proximate cause is the capex trajectory itself: combined 2026 capital-expenditure guidance across the Big Four reaches approximately \$725B — Amazon around \$200B, Microsoft tracking toward \$190B, Alphabet \$175–185B, Meta \$125–145B — up roughly 77% from about \$410B in 2025 \[A\].
+
+When capex is internally funded, the capital axis is nearly invisible: money spent from retained cash flow carries no rating scrutiny and no covenant. When capex must be raised externally, two questions that previously did not bind become decisive: *at what price* can each firm raise, and — the question this section argues is the more important one — *how much* can each firm raise before its credit standing, and therefore its price, deteriorates. We treat these as the price dimension and the quantity dimension of Axis II.
+
+## 4.2 The price of capital: ratings and rough marginal funding costs
+
+The rating hierarchy, and the rough after-tax marginal debt cost it implies, is as follows. Marginal financing has shifted decisively toward bonds, so after-tax debt cost serves as the working proxy for the marginal cost of capital; no full WACC construction is attempted (Declaration 6).
+
+| Owner | Rating (S&P / Moody's) | Pre-tax marginal yield (est.) | After-tax r_i (est.) | Confidence |
+|---|---|---:|---:|---|
+| Microsoft | AAA / Aaa | \~4.4% | **\~3.6%** | C |
+| Alphabet | AA+ / Aa2 | \~4.6% | **\~3.8%** | C |
+| Amazon | AA / A1 | \~4.7% | **\~3.9%** | C |
+| Meta | \~AA− tier | \~4.9% | **\~4.0%** | C |
+| Oracle | BBB / Baa2 | \~5.6% | **\~4.6%** | C |
+| CoreWeave, xAI | Sub-investment-grade / asset-backed | \~9–12% | **\~8–10%** | C |
+
+: {tbl-colwidths="[14,26,24,20,16]"}
+
+Two observations frame everything that follows. First, within the Big Four the entire after-tax spread is on the order of 30–40 basis points — Microsoft's AAA, one of only two among large U.S. corporates and now a notch above the U.S. sovereign itself following Moody's May 2025 downgrade of the United States to Aa1, buys it remarkably little in unit-cost terms (Section 5.4 quantifies how little). Second, the spread becomes structural at the tail: Oracle pays roughly 100bp over the leaders, and the neocloud cohort finances GPU fleets at roughly two to three times the investment-grade rate, frequently against the collateral value of the very hardware whose economic depreciation Section 5.1 estimates at \~30% per year.
+
+**Alphabet's demonstrated market access deserves separate mention, because it upgraded during the period under review — qualitatively and visibly.** In November 2025 Alphabet raised \$17.5B in a dollar offering that attracted roughly \$90B in orders and included a 50-year tranche, the longest-dated dollar technology bond of that year. In February 2026 it returned with a \$20B seven-part dollar offering — upsized from \$15B against an order book exceeding \$100B, among the largest ever recorded for a corporate bond, with the 40-year tranche compressing 25bp during bookbuilding to price near T+95 — alongside a £1B **100-year sterling century bond, the first century issuance by a technology company since Motorola in 1997**, itself nearly ten times oversubscribed, plus Swiss-franc and euro tranches bringing the week's total to roughly \$31.5B. Then in June 2026 Alphabet announced a landmark **equity capital program of up to \~\$85B** — approximately \$18B of Class A and Class C common stock (upsized from \$15B), \$16.75B of 6.25% mandatory convertible preferred depositary shares (also upsized), and a \$10B private placement, alongside a \$40B at-the-market program not expected to commence before Q3 2026; the underwritten and privately placed portion (\~\$45B) was raised at announcement, with the ATM tranche a forward facility rather than proceeds already in hand \[A\]. Within eight months, in other words, Alphabet demonstrated jumbo-scale access to every layer of the capital structure — short debt, ultra-long debt in three currencies, hybrid convertible capital, and common equity — at pricing that treats it as long-duration infrastructure rather than cyclical technology. No other owner in this cohort has demonstrated capital access of comparable breadth, and the demonstration itself is information: the quantity dimension of Alphabet's Axis II position is now evidenced rather than assumed.
+
+## 4.3 The quantity of capital I — internal generation
+
+The first quantity sub-dimension is the trajectory of internally generated funding. Here the Big Four have diverged sharply. Alphabet's free cash flow remains positive though compressed — Q1 2026 FCF of \$10.1B, down 47% year over year under the capex ramp \[A\]. Meta's cash generation remains robust in absolute terms but is being consumed at the highest capex-to-revenue ratio in the cohort (approaching the mid-30s in percent). Microsoft's operating cash flow remains enormous and its FCF positive.
+
+Amazon is the outlier. Its trailing-twelve-month free cash flow collapsed from roughly \$38B to \$1.2B — a 95% decline — as capex accelerated, and sell-side projections for 2026 put Amazon's FCF meaningfully negative, on the order of −\$17B (Morgan Stanley) to −\$28B (BofA), with the company itself flagging the possibility of additional debt and equity issuance in its disclosures \[A/B\]. Amazon is thus the first of the Big Four to cross fully from self-funding into structural external dependence: every incremental H100e it adds is, at the margin, a financed H100e.
+
+## 4.4 The quantity of capital II — balance-sheet headroom, and the structure of Amazon's constraint
+
+The second quantity sub-dimension is the stock of existing obligations against which new debt must be layered. Including lease obligations — which for these firms are economically debt, funding fulfillment centers and data centers alike — the picture is starkly uneven \[A/B\]:
+
+| Owner (FY2025 year-end) | On-balance-sheet borrowings | Lease liabilities (PV) | Total debt + leases | Net position |
+|---|---:|---:|---:|---|
+| Amazon | \~\$68B (\$65.6B long-term plus current portion) | **\~\$103B** | **\~\$170B** | Net debt (alone in cohort) |
+| Meta | \$58.7B | modest | \~\$65B | Modest net cash |
+| Microsoft | \~\$45B | sizable (finance leases on data centers) | \~\$90B | Large net cash |
+| Alphabet | \$46.5B | modest | \~\$50B+ | **Largest net cash (\~\$95–100B)** |
+
+: {tbl-colwidths="[18,24,20,18,20]"}
+
+*Snapshot as of FY2025 year-end; totals rounded \[B\]. Meta's borrowings had grown to approximately \$84B by Q1 2026 (Section 4.5), eroding but not yet eliminating its net-cash position; the ordering of the table is unchanged at that date.*
+
+Amazon's FY2025 10-K discloses gross lease liabilities of \$121.8B (\$103B at present value) — its lease book alone exceeds the total borrowings of any other Big Four member \[A\]. Layered on \~\$68B of bonds, Amazon carries roughly \$170B of debt-like obligations into a capex cycle it can no longer self-fund, and it is the only Big Four member in a net-debt position. The constraint is already visibly binding on the rating trajectory: Moody's, having moved Amazon's A1 outlook to positive in early 2025, returned it to stable in February 2026, citing the acceleration of capex \[B\]. An A1/AA credit does not lose market access at these levels — but each incremental \$100B of issuance is layered onto the least headroom in the cohort, and headroom is precisely what a multi-year, externally financed capex race consumes.
+
+**The origin of this constraint deserves careful statement, because the obvious narrative is wrong.** It is tempting to read Amazon-versus-Microsoft as a strategic trade-off — as if Amazon's willingness to invest capital in silicon bought its chip advantage at the price of a heavy balance sheet, while Microsoft's asset-light restraint bought its pristine credit at the price of merchant dependence. The data do not support that reading. In the cloud infrastructure business itself, the two firms have been symmetric, aggressive rivals for a decade, and in GPU procurement specifically Microsoft has been the *more* aggressive spender — it is the largest Nvidia customer in the dataset and the largest cumulative dollar deployer of AI compute. The divergence in enterprise-level capital intensity comes from everything *outside* the cloud: Microsoft's non-cloud portfolio is software — Office, Windows, gaming, LinkedIn — with negligible capital requirements, while Amazon's other core business is e-commerce, whose fulfillment and logistics network demands warehouse, vehicle, and facility investment on a scale that has filled its lease book for two decades. Amazon's Axis II constraint, in other words, is a **legacy of retail capital intensity, not a cost of its silicon strategy**; and Microsoft's Axis II strength is a property of its software-weighted portfolio, not a reward for eschewing custom chips. The two axes are causally independent — which is exactly why the framework treats them as separate axes.
+
+## 4.5 The quantity of capital III — off-balance-sheet and not-yet-commenced commitments
+
+The visible balance sheet understates the cohort's true forward obligations. Moody's has flagged that hyperscaler data-center lease commitments signed but not yet commenced — and therefore not yet on any balance sheet — total approximately \$662B, a figure larger than the cohort's combined on-balance-sheet debt \[B\]. The distribution of this shadow book, and of adjacent structures, differentiates the owners:
+
+Meta has moved furthest toward structured external finance: its on-balance-sheet debt roughly doubled during 2025 (from \$29.5B to \$58.7B, reaching approximately \$84B by Q1 2026), and its \~\$27B Hyperion data-center project — structured as a joint venture in which Blue Owl-managed funds hold 80% and Meta 20%, shifting the majority of the campus's funding off Meta's consolidated balance sheet rather than the full \$27B — moves a large share of its single largest facility outside its own accounts, while multi-year cloud and equipment purchase commitments disclosed in its filings have expanded rapidly \[A/B\]. None of this is imprudent in isolation — but it means Meta's reported leverage understates its economic leverage more than any other Big Four member's.
+
+Microsoft has used external structures in the opposite direction — defensively. Its participation in the \~\$100B AI Infrastructure Partnership places large AI build-out exposure in a fund vehicle (levered at the fund level, not the corporate level), preserving the AAA balance sheet while retaining economic participation \[B\]. The structure is rating-protective rather than leverage-concealing, and it is part of why Microsoft's price-of-capital advantage is durable.
+
+## 4.6 Counterparty concentration and circular revenue: the Microsoft–OpenAI structure
+
+Report 13 identified circular dealmaking — suppliers taking equity stakes in customers, extending financing, participating in structures where investment returns as revenue — as the upstream's confession that its customers' capital constraint had become the system's weak point, converting income-statement exposure into balance-sheet exposure to the counterparty's survival. The largest such structure in the industry does not, however, sit at the chip layer. It sits inside the demand side itself, one exposure in this cohort that fits none of the standard categories of leverage or liquidity — and it attaches to the owner with the strongest conventional financing profile. Microsoft's position in OpenAI now comprises three mutually referencing elements \[A\]:
+
+1.  **An equity stake of approximately 27%** (as-converted, diluted) in OpenAI Group PBC, valued at approximately \$135B at the October 2025 recapitalization — against total funding commitments of \$13B, of which \$11.8B had actually been funded as of March 2026. The stake is accounted for under the equity method, and its swings are already material to reported earnings: OpenAI losses reduced Microsoft's quarterly net income by \$3.1B (41 cents of EPS) in the September 2025 quarter, while the recapitalization's dilution gain contributed to \$5.9B of net gains in the following nine months.
+2.  **A contracted revenue stream:** under the October 2025 agreement, OpenAI committed to purchase an incremental **\$250B of Azure services**, even as Microsoft relinquished its right of first refusal as OpenAI's compute provider.
+3.  **A strategic dependence:** a meaningful share of Azure's growth — the fastest-growing large revenue engine at Microsoft — derives from OpenAI's consumption, and Microsoft's data-center build-out is partly sized to OpenAI's projected demand.
+
+The circularity is structural: Microsoft's equity stake is valuable because OpenAI grows; OpenAI grows by spending enormous sums on Azure; OpenAI funds that spending substantially through external capital raises whose valuations rest on growth expectations; and the \$250B purchase commitment vastly exceeds OpenAI's current revenue base, meaning it is a claim on capital OpenAI has not yet raised. In the benign scenario this is a flywheel. In the adverse scenario — an OpenAI funding shortfall, a valuation reset, or a demand disappointment — Microsoft is exposed on three fronts simultaneously: the \~\$135B transaction-implied value of the stake (a recapitalization mark, not the equity-method carrying value, but the reference against which a reset would be measured), the Azure revenue and backlog attributed to OpenAI's commitments, and the utilization of capacity built for a counterparty that can no longer pay for it. No other Big Four member carries a single-counterparty concentration of comparable size relative to its cloud growth narrative. This report therefore attaches an explicit qualifier to Microsoft's otherwise top-tier Axis II grade: the price and headroom of Microsoft's capital are the cohort's best, but a non-trivial share of the *earnings power that secures that standing* is referenced to a single private counterparty whose own financing needs are among the largest in corporate history. Oracle carries a directionally similar but even more concentrated version of this exposure through its OpenAI-linked OCI bookings, layered — unlike Microsoft's — on a BBB-tier balance sheet.
+
+## 4.7 The composite Axis II scorecard
+
+Combining the price dimension with the three quantity sub-dimensions and the counterparty overlay:
+
+| Owner | ① Marginal cost | ② Internal generation | ③ Balance-sheet headroom | ④ Off-BS / commitments | **Composite** |
+|---|:---:|:---:|:---:|:---:|:---:|
+| Microsoft | A+ | A | A | A− (defensive structures) | **A+ †** |
+| Alphabet | A | A− (FCF −47% but positive) | A+ (largest net cash; demonstrated full-spectrum access) | A | **A+** |
+| Meta | A− | B+ (highest capex/revenue) | B+ | B− (SPV; rapid debt growth) | **B+** |
+| Amazon | B+ | C+ (FCF ≈ zero, turning negative) | C+ (net debt; \~\$170B incl. leases) | B | **B−** |
+| Oracle | C | C | D+ (debt-to-equity near 500%) | C− (OpenAI concentration) | **C−** |
+| CoreWeave / xAI | D | D | D | D | **D** |
+
+: {tbl-colwidths="[13,14,17,22,20,14]"}
+
+† Subject to the counterparty-concentration qualifier of Section 4.6.
+
+The scorecard's most consequential feature is not any single grade but the *ordering*: within the Big Four, the Axis II ranking (Microsoft ≈ Alphabet \> Meta \> Amazon) runs nearly opposite to the Axis I ranking (Google \> Amazon \> Meta \> Microsoft) — with Google the sole owner near the top of both. Section 6 develops what that structure implies.
+
+## 4.8 The neocloud financing model as the fragile tail
+
+The neocloud cohort (CoreWeave, xAI) merits separate treatment because it is the only segment where both axes are adverse *and* interacting. These owners hold pure-Nvidia fleets at the highest unit costs in the cohort (\$19,161 and \$18,509 per H100e respectively), financed at sub-investment-grade rates, frequently secured against the GPUs themselves. The collateral is depreciating economically at roughly 30% per year (Section 5.1) while the market price of equivalent incremental capacity fell 12% during 2025 alone as Blackwell ramped — meaning the loan-to-value of GPU-backed structures deteriorates from both numerator and denominator. The neocloud model is solvent exactly as long as contracted tenant minimums outrun that depreciation; it is the levered tail of the industry's capital structure, and the first place any demand disappointment will be marked to market. In Report 13's terms, this cohort is the front line of the war of attrition and the watch-point of Trigger 3: the credit crack that contracts industry absorption capacity discontinuously arrives here first, which is why GPU-cloud credit spreads and collateral terms head that report's monitoring dashboard. The present report adds the quantitative reason the front line is where it is: these owners post the largest ante per unit at the highest funding cost — the exact combination the attrition equilibrium eliminates first.
+
+------------------------------------------------------------------------

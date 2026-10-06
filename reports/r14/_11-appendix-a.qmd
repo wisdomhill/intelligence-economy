@@ -1,0 +1,15 @@
+**H100-equivalent (H100e).** Compute capacity normalized to one Nvidia H100, computed from peak dense 8-bit throughput (FP16/BF16 where 8-bit is unsupported). A peak-throughput proxy: it does not capture memory bandwidth, interconnect quality, or workload-specific software efficiency.
+
+**Cumulative installed base vs. net additions.** All fleet values are cumulative through the stated quarter; net additions are differences between cumulative snapshots (annual: Q4-over-Q4; quarterly: sequential).
+
+**Chip cost (P_i).** Deployed chip cost per H100e, blended across the owner's cumulative fleet. For merchant silicon this reflects estimated purchase prices; for in-house silicon (TPU, Trainium), manufacturing/supplier-revenue cost (Declaration 3). Comparing internal-transfer cost to merchant list price slightly overstates the wedge; ignored design cost slightly understates owner-side burden; the two biases partially offset and neither approaches the magnitude of the 2.9–5.7× platform-level gaps.
+
+**Non-chip capex (K).** Derived, not measured: K = (industry-wide blended chip \$/H100e, computed across the full dataset — see Section 5.2) × (1 − s)/s at chip share s = 55%. K ≈ \$12,600/H100e; range \$10,300–15,400 for s ∈ \[0.50, 0.60\]. Assumed uniform across owners (Declaration 2). K covers shell, power, cooling, and non-accelerator IT; it excludes land banking and energy procurement contracts.
+
+**Cost of capital (r_i).** After-tax marginal debt cost by rating tier, confidence C. Not a WACC; Section 5.4 establishes that refinement within investment grade would not change any conclusion.
+
+**Depreciation (δ).** Economic, not accounting, rates: δ_chip ≈ 30% (declining-balance equivalent of the two-year training → inference → legacy cascade over a six-year service life), δ_infra ≈ 10% (blend of 15–25-year facility assets and 5–6-year IT assets). Owner-uniform by construction.
+
+**2026 data.** Fleet analysis ends at Q4 2025; source data for 2026 was not yet finalized at the time of analysis. Capital-market events through June 2026 are included in Axis II.
+
+------------------------------------------------------------------------

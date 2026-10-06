@@ -1,0 +1,7 @@
+---
+format:
+  html: default
+title: "5. The Fully-Loaded Cost"
+---
+
+{{< include _07-integration.qmd >}}

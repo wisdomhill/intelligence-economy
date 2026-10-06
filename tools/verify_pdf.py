@@ -40,7 +40,15 @@ EXPECT_FONTS = {"Inter-SemiBold", "Inter-Regular", "SourceSerif4-Regular"}
 # sets equations -- Report 13 does. Its presence in a report that sets none
 # means a `$...$` pair was read as math by accident; that used to be the
 # way such a bug surfaced, and is now prevented in tools/split_manuscript.py.
-ALLOWED_PREFIXES = ("Inter", "SourceSerif4", "DejaVuSansMono", "NewCMMath")
+# LibertinusSerif is Typst's fallback for a character the pinned faces do
+# not carry. Report 14 needs it for five glyphs in total -- the circled
+# digits in its scorecard header and one element-of sign. Allowing it is a
+# deliberate trade: the check no longer notices if a whole passage falls
+# back to the substitute. To see what actually used it:
+#   {ch["text"] for p in pdf.pages for ch in p.chars
+#    if "Libertinus" in ch["fontname"]}
+ALLOWED_PREFIXES = ("Inter", "SourceSerif4", "DejaVuSansMono", "NewCMMath",
+                    "LibertinusSerif")
 EXPECT_HEADING_PT = {1: 15.0, 2: 12.0, 3: 11.0}
 EXPECT_BODY_PT = 11.0
 # Headings are found by face and size, and a figure defeats that on its own:

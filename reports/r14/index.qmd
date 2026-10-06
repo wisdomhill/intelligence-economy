@@ -1,0 +1,56 @@
+---
+format:
+  html: default
+title-block-style: default
+title: "14. The Hyperscaler Endgame"
+subtitle: "Who inherits the inversion: a two-axis analysis of silicon and capital procurement"
+
+description: >-
+  Who inherits the inversion. Hyperscalers graded on two axes — what a unit of
+  compute costs them to buy, and what it costs them to finance — and the
+  finding that the first varies by multiples and the second by basis points.
+
+order: 14
+keywords:
+  - hyperscaler
+  - user cost of capital
+  - vertical integration
+  - balance-sheet headroom
+  - H100-equivalent
+  - neocloud
+
+---
+
+::: {.callout-note appearance="simple" icon=false}
+**Read the full report as a PDF:** [The Hyperscaler Endgame (PDF)](r14-the-hyperscaler-endgame.pdf)
+:::
+
+## Preface: From the Inversion to Its Inheritors
+
+{{< include _00-preface.qmd >}}
+
+## Scope and Thesis
+
+{{< include _01-scope.qmd >}}
+
+## Data Sources and Attribution
+
+{{< include _02-data-sources.qmd >}}
+
+## Executive Summary
+
+{{< include _03-executive-summary.qmd >}}
+
+## Contents
+
+|   | Chapter                                                        | The question it answers                                                   |
+|---|----------------------------------------------------------------|---------------------------------------------------------------------------|
+| 2 | [Framework](01-framework.qmd)                                  | Why two axes, and why is power held constant?                             |
+| 3 | [Axis I: Silicon Procurement](02-silicon.qmd)                  | What does a unit of compute actually cost each buyer?                     |
+| 4 | [Axis II: Capital Procurement](03-capital.qmd)                 | What does the money cost, and how much of it can each raise?              |
+| 5 | [The Fully-Loaded Cost](04-integration.qmd)                    | Put together, what is the user cost per H100-equivalent?                  |
+| 6 | [Competitive Positioning](05-positioning.qmd)                  | Graded on both axes, where does each hyperscaler land?                    |
+| 7 | [Falsification Criteria](06-falsification.qmd)                 | What would show the thesis to be wrong?                                   |
+| 8 | [Strategic Implications](07-implications.qmd)                  | What follows for the cohort, and for the tail?                            |
+
+: {tbl-colwidths="[5,38,57]"}

@@ -1,0 +1,49 @@
+## 5.1 Depreciation: a deliberately rough estimate under technological uncertainty
+
+Consistent with Declaration 5, this section fixes δ to first-order precision only. Because the same rates apply to every owner, nothing in the competitive ranking depends on them; they set levels, and they determine how heavily the financing-rate differences of Section 4.2 are diluted.
+
+**Non-chip infrastructure: δ_infra ≈ 10%.** This figure is not an assumption but a blend of two disclosed asset classes. Data-center shells, power, and cooling systems have useful lives of fifteen to twenty-five years — an annual rate of roughly 5–6% — while the non-accelerator IT inside them (CPU servers, memory, storage, networking) is depreciated over five to six years under the schedules the major clouds converged on by 2023–2024, roughly 17–20% per year \[A\]. Weighting the two components within the 45% non-chip capex share (facility-type assets roughly 25 points, IT-type assets roughly 20 points) yields a blended rate of approximately 10–11% per year.
+
+**Accelerators: δ_chip ≈ 30%.** Three reference points bracket this choice. The floor is set by accounting policy: the large clouds carry server assets, including GPUs, at five- to six-year straight-line lives (Amazon shortened a subset from six years to five effective January 2025, explicitly citing the accelerating pace of AI technology, taking a \$0.7B operating-income reduction plus \$920M of accelerated depreciation; Meta simultaneously extended to five and a half years, booking a \$2.9B depreciation reduction — identical hardware, opposite accounting conclusions) — implying 17–20% per year \[A\]. The ceiling is set by the pessimist case, argued most publicly by Michael Burry, that the true economic life of frontier GPUs is two to three years, implying 33–50% per year and, on his arithmetic, roughly \$176B of understated industry depreciation across 2026–2028 \[B\]. Between the two sits the operational reality both camps partly acknowledge: a value cascade in which accelerators serve frontier training in years one and two, migrate to high-value inference in years three and four, and finish in batch and legacy workloads in years five and six — economically productive for six years, but shedding a large step of value every two \[B\]. A 30% declining-balance rate reproduces this cascade almost exactly: residual value of \~49% after two years, \~24% after four, \~12% after six. It also matches the observed market repricing — B200 delivered H100e capacity at 41% below Hopper pricing roughly two years after Hopper's peak deployment, and secondary rental rates for prior-generation parts have fallen far faster than accounting schedules imply. We emphasize that 30% is an *economic* depreciation rate; the accounting rates the owners report are materially lower, which is precisely why reported earnings are an unreliable guide to the user cost of compute.
+
+Blended across the 55/45 capex split, industry-level economic depreciation runs at roughly 20% per year (0.55 × 30% + 0.45 × 10%). Sensitivity to this parameter is shown in Section 5.3.
+
+## 5.2 The user-cost calculation: the fully-loaded leaderboard
+
+The final input is K, the uniform non-chip capex per H100e. Under Declaration 1 (chip share 55%), K follows from the industry-wide blended chip cost — approximately \$15,400 per H100e at Q4 2025, computed across all owners in the dataset rather than only this report's seven-owner cohort, whose own blend is roughly \$14,800 \[B\] — inverted through the capex split: K = \$15,400 × (45/55) ≈ **\$12,600 per H100e** (range \$10,300–\$15,400 across the 50–60% chip-share band). Anchoring K to the cohort blend instead would lower it to roughly \$12,100, shifting every owner's level down slightly without changing any ranking or materially moving any ratio.
+
+Assembling UC_i = 0.30·P_i + 0.10·K + r_i·(P_i + K):
+
+| Owner | P_i (chip \$/H100e) | P_i + K (total capex) | r_i | **UC_i (\$/H100e·yr, approx.)** | vs. Google |
+|---|---:|---:|---:|---:|---:|
+| **Google** | 9,714 | 22,314 | 3.8% | **\~5,000** | 1.00× |
+| **Amazon** | 13,765 | 26,365 | 3.9% | **\~6,400** | 1.28× |
+| **Meta** | 17,296 | 29,896 | 4.0% | **\~7,600** | 1.52× |
+| **Oracle** | 17,597 | 30,197 | 4.6% | **\~7,900** | 1.58× |
+| **Microsoft** | 18,666 | 31,266 | 3.6% | **\~8,000** | 1.59× |
+| **xAI** | 18,509 | 31,109 | \~9% | **\~9,600** | 1.91× |
+| **CoreWeave** | 19,161 | 31,761 | \~9% | **\~9,900** | 1.96× |
+
+: {tbl-colwidths="[15,17,19,10,24,15]"}
+
+*All values are rough estimates carrying uncertainty of at least ±20%; only rankings and multiples are asserted. Microsoft and Oracle are statistically indistinguishable — Oracle's slightly cheaper fleet mix offsets its \~100bp funding disadvantage almost exactly.*
+
+Under central assumptions, operating one H100e for one year costs Google approximately \$5,000 and Microsoft approximately \$8,000. Scaled to Google's 5.03M-H100e fleet, the annualized gap versus Microsoft's cost structure is on the order of \$15B per year — a recurring annual saving equal to roughly half the one-time B200-basis capex avoidance of Section 3.3; the counter-factual advantage, in other words, now re-accrues about every two years.
+
+One further computation closes the stock/flow discipline of Section 2.3. The cumulative P_i is a *stock* price, weighted down by Hopper-era purchases for merchant buyers and by early-generation TPUs for Google; the ante in the attrition war going forward is the *flow* price. Rerunning the identity on 2025 net-addition chip costs (Google \$7,384, Microsoft \$16,063, uniform K) widens the Google–Microsoft fully-loaded ratio from 1.59× to roughly 1.7×. The stock-based leaderboard above is therefore the *conservative* version of the report's central result: at the margin, the gap is wider than the installed base shows.
+
+## 5.3 The dilution effect, and its sensitivity
+
+An honest framework must report what the integration *weakens* as well as what it confirms. At the chip level, Google's advantage over Microsoft is 1.92×. Passing it through the uniform non-chip layer K — which every owner buys at the same assumed price — dilutes the fully-loaded advantage to approximately **1.59×**. This is the framework's self-correction against the maximalist reading of vertical integration: custom silicon does not make compute five times cheaper end-to-end, because silicon is only 55% of the bill and the remaining 45% is competitively undifferentiated by assumption. What survives the dilution is nonetheless decisive — Microsoft's annual unit cost still runs roughly 60% above Google's — and it is robust: varying the chip share across 50–60% moves the ratio between 1.55× and 1.63×, and varying δ_chip across 25–35% moves it between 1.55× and 1.62×. No plausible parameterization brings the merchant-dependent cost structure within a third of the integrated one.
+
+## 5.4 The asymmetry result: multiples versus basis points
+
+The identity also quantifies the relative force of the two axes, and the result is stark. Within the Big Four, the entire after-tax financing spread (\~30–40bp on a capex base of \$22,000–31,000 per H100e) moves the annual user cost by roughly \$90–125 per H100e — about 1.5–2% of the total. The chip-cost spread moves it by roughly \$2,700–3,000 per H100e — over half of Google's entire unit cost. Microsoft's AAA rating, the best credit standing in global technology, offsets less than one-twentieth of the disadvantage created by its silicon position. **Within investment grade, Axis I operates in multiples and Axis II in basis points.**
+
+The asymmetry inverts at the rating boundary. For the neocloud cohort, the \~500bp financing gap contributes roughly \$1,600 per H100e of annual cost — about a third of their total disadvantage versus Google — making capital a first-order variable exactly where the credit spectrum ends. The capital axis, in short, is second-order *inside* investment grade and first-order *outside* it.
+
+## 5.5 Reframing Axis II: financing capacity as the constraint on net-addition velocity
+
+If the price of capital barely moves the unit cost of the stock, is Axis II a minor axis? No — its force applies to a different variable. In an externally financed capex regime, what capital procurement determines is the **sustainable rate of net additions**: how many quarters of \$50–60B industry-wide adds each owner can underwrite before balance-sheet headroom, rating thresholds, or equity-market patience binds. On that variable the Section 4.7 scorecard is decisive rather than marginal. Amazon holds the second-best unit economics in the industry but the least financing headroom in the Big Four — its ability to *realize* its Axis I advantage at scale is the open question, because every marginal Trainium rack is now a financed rack. Alphabet, by contrast, has demonstrated funding access across the entire capital structure and secured a large tranche of its trajectory in advance. Microsoft can finance essentially any build-out it chooses, subject to the Section 4.6 qualifier that the demand underwriting part of that build-out is concentrated in a single counterparty. The stock is priced by silicon; the flow is rationed by capital. This is the two-axis restatement of Report 13's attrition equilibrium: exit proceeds in order of staying power, and staying power is jointly determined by how much each round of the game costs a player (Axis I) and how many rounds the player can fund (Axis II).
+
+------------------------------------------------------------------------

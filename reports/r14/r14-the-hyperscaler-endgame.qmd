@@ -1,0 +1,62 @@
+---
+title: "14. The Hyperscaler Endgame"
+subtitle: "Who inherits the inversion: a two-axis analysis of silicon and capital procurement"
+format:
+  typst: default
+---
+
+# Preface: From the Inversion to Its Inheritors
+
+{{< include _00-preface.qmd >}}
+
+# Scope and Thesis
+
+{{< include _01-scope.qmd >}}
+
+# Data Sources and Attribution
+
+{{< include _02-data-sources.qmd >}}
+
+# 1. Executive Summary
+
+{{< include _03-executive-summary.qmd >}}
+
+# 2. Framework
+
+{{< include _04-framework.qmd >}}
+
+# 3. Axis I: Silicon Procurement
+
+{{< include _05-silicon.qmd >}}
+
+# 4. Axis II: Capital Procurement
+
+{{< include _06-capital.qmd >}}
+
+# 5. The Fully-Loaded Cost
+
+{{< include _07-integration.qmd >}}
+
+# 6. Competitive Positioning
+
+{{< include _08-positioning.qmd >}}
+
+# 7. Falsification Criteria
+
+{{< include _09-falsification.qmd >}}
+
+# 8. Strategic Implications
+
+{{< include _10-implications.qmd >}}
+
+# Appendix A
+
+{{< include _11-appendix-a.qmd >}}
+
+# Appendix B
+
+{{< include _12-appendix-b.qmd >}}
+
+# References
+
+{{< include _13-references.qmd >}}

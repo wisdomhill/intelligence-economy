@@ -1,0 +1,54 @@
+---
+title: "Epilogue: The Intelligence Economy, Reassembled"
+subtitle: "One argument in fourteen movements"
+format:
+  typst: default
+---
+
+# Preface: What This Document Is
+
+{{< include _00-preface.qmd >}}
+
+# 1. The Economy in One Sentence
+
+{{< include _01-one-sentence.qmd >}}
+
+# 2. The Master Law: The Bottleneck Migrates, and Rent Follows It
+
+{{< include _02-master-law.qmd >}}
+
+# 3. Verification: The Physics of the Demand Side
+
+{{< include _03-verification.qmd >}}
+
+# 4. The Architecture: Squeeze, Mesh, Substrate
+
+{{< include _04-architecture.qmd >}}
+
+# 5. The Consumer Mirror, and a Second Front Still Being Sown
+
+{{< include _05-consumer-mirror.qmd >}}
+
+# 6. Reading the Shadow: Two Demand Functions, Three Infrastructures
+
+{{< include _06-shadow.qmd >}}
+
+# 7. The Inversion: Why the Cycle Turns While Demand Still Rises
+
+{{< include _07-inversion.qmd >}}
+
+# 8. The Endgame and the Closed Loop
+
+{{< include _08-endgame.qmd >}}
+
+# 9. The Consolidated Ledger: Where Value Pools, and Where It Leaks
+
+{{< include _09-ledger.qmd >}}
+
+# 10. What the Series Does Not Know
+
+{{< include _10-unknowns.qmd >}}
+
+# Conclusion: Two Terminal Scarcities — Power Below, Context Above
+
+{{< include _11-conclusion.qmd >}}

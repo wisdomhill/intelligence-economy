@@ -1,0 +1,20 @@
+Assembled across all fourteen reports, the series' value-migration map reduces to a small number of positions, each an instance of the master law. The table states each position, the constraint whose ownership sustains it, and the report where it is developed and given falsifiers; the prose that follows states the pattern.
+
+| Position | The constraint it owns | Developed in |
+|---|---|---|
+| Control planes (routing, orchestration, governance) — at token, enterprise, industry, and OS scopes | Access to and allocation of scarce agent capability | Reports 3, 5, 9 |
+| Context and semantics — accumulated agent context, semantic layers, knowledge capital | Meaning: the non-transferable residue after models and formats commoditize | Reports 1, 6, 7, 8 |
+| Verification infrastructure — test harnesses, semantic layers as machine verifiers, audit surfaces | The gate through which abundant execution becomes trusted output | Reports 2, 3, 8 |
+| Settlement and trust rails — metering, machine-native payment, agent identity | The transactional plumbing seats never needed | Reports 4, 5 |
+| Machine-denominated revenue models | Exposure to the number and activity of agents, not human seats | Report 4 |
+| Vertically integrated, strongly financed compute operators | The cost floor of compute and the staying power to keep building | Reports 12, 14 |
+| Power, sites, and the equipment chain behind them | The self-intensifying downstream bottleneck | Report 13 |
+| Human judgment and frontier ideas | The upstream constraint no execution abundance relieves | Report 2 |
+
+: {tbl-colwidths="[40,42,18]"}
+
+Value leaks, correspondingly, from every position whose product was a constraint that agents dissolve: integration middleware whose product was the integration tax itself; commoditized, routable model inference; thin-workflow SaaS whose function an agent composes from primitives; seat-denominated revenue at machine-scale usage; file formats as moats; merchant-dependent compute procurement carrying a multiple-not-margin cost disadvantage; leveraged capacity financed against fast-depreciating collateral; and — conditionally, on Report 13's triggers — the memory and accelerator rents that today look most secure. The common signature of a leaking position is that it earns rent on a bottleneck whose dissolution is already funded.
+
+Two entries in the ledger deserve emphasis because they bracket all the others. At the top of the stack, the series' longest-running conclusion is that after each successive commoditization — model, harness, format, protocol — the residual asset is always a form of *context*: what the organization knows, what its data means, what its agents have accumulated. At the bottom, the terminal asset is *power and sites*: the one input a technology cycle cannot manufacture and a chip glut cannot cheapen. Everything in between is contested, and mostly contestable.
+
+------------------------------------------------------------------------

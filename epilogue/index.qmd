@@ -1,0 +1,48 @@
+---
+format:
+  html: default
+title-block-style: default
+title: "Epilogue: The Intelligence Economy, Reassembled"
+subtitle: "One argument in fourteen movements"
+
+description: >-
+  The series reassembled into a single argument: one master law, the
+  verification physics beneath it, a consolidated ledger of where value pools
+  and where it leaks, and the two scarcities that bound it.
+
+order: 15
+keywords:
+  - bottleneck migration
+  - verification
+  - control plane
+  - value capture
+  - series synthesis
+
+---
+
+::: {.callout-note appearance="simple" icon=false}
+**Read the whole Epilogue as a PDF:** [The Intelligence Economy, Reassembled (PDF)](epilogue.pdf)
+:::
+
+{{< include _00-preface.qmd >}}
+
+# 1. The Economy in One Sentence
+
+{{< include _01-one-sentence.qmd >}}
+
+# 2. The Master Law: The Bottleneck Migrates, and Rent Follows It
+
+{{< include _02-master-law.qmd >}}
+
+# 3. Verification: The Physics of the Demand Side
+
+{{< include _03-verification.qmd >}}
+
+# Continue
+
+|   | Part                                                   | Chapters                                                      |
+|---|--------------------------------------------------------|---------------------------------------------------------------|
+| 2 | [The Architecture and the Shadow](02-architecture.qmd) | 4 Architecture · 5 Consumer mirror · 6 Shadow · 7 Inversion   |
+| 3 | [The Ledger and the Conclusion](03-ledger.qmd)         | 8 Endgame · 9 Ledger · 10 What the series does not know · Conclusion |
+
+: {tbl-colwidths="[5,38,57]"}

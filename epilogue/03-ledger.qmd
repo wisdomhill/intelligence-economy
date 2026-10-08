@@ -1,0 +1,21 @@
+---
+format:
+  html: default
+title: "The Ledger and the Conclusion"
+---
+
+# 8. The Endgame and the Closed Loop
+
+{{< include _08-endgame.qmd >}}
+
+# 9. The Consolidated Ledger: Where Value Pools, and Where It Leaks
+
+{{< include _09-ledger.qmd >}}
+
+# 10. What the Series Does Not Know
+
+{{< include _10-unknowns.qmd >}}
+
+# Conclusion: Two Terminal Scarcities — Power Below, Context Above
+
+{{< include _11-conclusion.qmd >}}

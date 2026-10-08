@@ -11,6 +11,7 @@ project:
     - prologue.qmd
     - errata.qmd
     - reports/*/*.qmd
+    - epilogue/*.qmd
 
 website:
   title: "The Intelligence Economy"
@@ -58,8 +59,8 @@ website:
         text: Reports
       - href: prologue.qmd
         text: Prologue
-      # - href: epilogue.qmd      # takes this slot once the Epilogue lands
-      #   text: Epilogue
+      - href: epilogue/index.qmd
+        text: Epilogue
     right:
       - icon: github
         href: https://github.com/wisdomhill/intelligence-economy
@@ -253,6 +254,11 @@ website:
           - reports/r14/08-appendix-a.qmd
           - reports/r14/09-appendix-b.qmd
           - reports/r14/10-references.qmd
+      - section: "Epilogue"
+        href: epilogue/index.qmd
+        contents:
+          - epilogue/02-architecture.qmd
+          - epilogue/03-ledger.qmd
       - text: "---"
       - href: errata.qmd
         text: "Errata"

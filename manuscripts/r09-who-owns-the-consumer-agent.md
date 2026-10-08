@@ -4,8 +4,8 @@ subtitle: "Funnel collapse, the OS duopoly, and the five-way battle for personal
 series: "The Intelligence Economy"
 number: 9
 manuscript-revision: 1
-date: 2026-08-24
-date-modified: 2026-08-24
+date: 2026-08-28
+date-modified: 2026-08-28
 author: "Wisdom Hill Research"
 publisher: "Wisdom Hill"
 license: "CC BY-NC-ND 4.0"

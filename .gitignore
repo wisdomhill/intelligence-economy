@@ -50,3 +50,8 @@ Thumbs.db
 **/*.quarto_ipynb
 /.split-tmp/
 /.claude/
+
+# Zenodo deposit: the manifest is generated, the state file names drafts and
+# carries no secret but is specific to one account.
+/zenodo.json
+/zenodo-state*.json

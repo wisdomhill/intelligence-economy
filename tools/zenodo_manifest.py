@@ -14,9 +14,14 @@ import io, json, os, re, sys, glob
 import yaml
 
 SITE = "https://wisdomhill.github.io/intelligence-economy"
-# Zenodo's own licence id, from /api/licenses.
+# Zenodo's own licence id, from /api/vocabularies/licenses.
 LICENSE = "cc-by-nc-nd-4.0"
-CREATOR = {"name": "Wisdom Hill Research", "affiliation": "Wisdom Hill"}
+PUBLISHER = "Wisdom Hill"
+# `organizational` is the point of using Zenodo's InvenioRDM API rather than
+# the legacy deposit API: the legacy one has no creator type, so it files an
+# imprint as a person and makes the whole name a surname. See HANDOFF.md.
+CREATOR = {"person_or_org": {"type": "organizational",
+                             "name": "Wisdom Hill Research"}}
 
 
 def front_matter(path):
@@ -45,37 +50,40 @@ def record(fm, pdf, url, order):
 
     # Zenodo renders description as HTML. Lead with the subtitle, which carries
     # as much of the argument as the title does in this series.
-    description = "<p><strong>%s</strong></p><p>%s</p>" % (subtitle, summary) \
-        if subtitle else "<p>%s</p>" % summary
+    description = "<p><strong>%s</strong></p><p>%s</p>" % (subtitle, summary)         if subtitle else "<p>%s</p>" % summary
     description += ('<p>Part of <em>%s</em>, a research series by Wisdom Hill '
                     'Research. The full series is at <a href="%s/">%s</a>.</p>'
                     % (series, SITE, SITE))
+
+    position = ("Prologue" if order == 0 else
+                "Epilogue" if order == 15 else "Report %d of 14" % order)
 
     return {
         "order": order,
         "pdf": pdf,
         "url": url,
         "metadata": {
-            "upload_type": "publication",
-            "publication_type": "report",
+            "resource_type": {"id": "publication-report"},
             "title": title,
+            "publisher": PUBLISHER,
+            "publication_date": str(fm.get("date-modified") or fm["date"]),
             "creators": [CREATOR],
             "description": description,
-            "publication_date": str(fm.get("date-modified") or fm["date"]),
-            "access_right": "open",
-            "license": LICENSE,
-            "keywords": [series] + list(fm.get("keywords") or []),
-            "language": "eng",
+            "rights": [{"id": LICENSE}],
+            "subjects": [{"subject": s} for s in
+                         [series] + list(fm.get("keywords") or [])],
+            "languages": [{"id": "eng"}],
             "version": "1.0.0",
             "related_identifiers": [
-                {"identifier": url, "relation": "isIdenticalTo",
-                 "resource_type": "publication-report"},
-                {"identifier": SITE + "/", "relation": "isPartOf",
-                 "resource_type": "publication-report"},
+                {"identifier": url, "relation_type": {"id": "isidenticalto"},
+                 "scheme": "url"},
+                {"identifier": SITE + "/", "relation_type": {"id": "ispartof"},
+                 "scheme": "url"},
             ],
-            "notes": "Series position: %s." % (
-                "Prologue" if order == 0 else
-                "Epilogue" if order == 15 else "Report %d of 14" % order),
+            "additional_descriptions": [
+                {"description": "Series position: %s." % position,
+                 "type": {"id": "other"}},
+            ],
         },
     }
 

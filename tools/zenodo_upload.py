@@ -3,22 +3,28 @@
 Create Zenodo records for every document in the manifest.
 
     python tools/zenodo_manifest.py > zenodo.json
-    export ZENODO_TOKEN=...        # never committed, never passed on the CLI
     python tools/zenodo_upload.py --sandbox        # rehearse
     python tools/zenodo_upload.py                  # create real drafts
     python tools/zenodo_upload.py --publish        # mint the DOIs
 
+Uses Zenodo's InvenioRDM API (`/api/records`), not the legacy deposit API.
+The legacy one has no creator type and no publisher field, so it files an
+imprint as a person -- DataCite comes back with
+`"nameType": "Personal", "familyName": "Wisdom Hill Research"` -- and stamps
+the publisher as Zenodo. Both were seen on the sandbox before this was
+rewritten.
+
 Drafts by default. Publishing is the irreversible step -- a published Zenodo
-record cannot be deleted, only a new version added -- so it needs the explicit
-flag, and the script asks before doing it.
+record cannot be deleted, only superseded -- so it needs the explicit flag,
+and the script asks before doing it.
 
 Progress is kept in a state file (`zenodo-state.json`, or
 `zenodo-state-sandbox.json`), keyed by the document's URL, so a re-run resumes
 rather than duplicating. Delete the state file only if you have also deleted
 the drafts it names.
 
-The token is read from the environment and is never written to the state file
-or printed.
+The token is read from a file or the environment, and is never written to the
+state file, printed, or put on a command line.
 """
 import argparse, io, json, os, sys, time
 import requests
@@ -28,9 +34,14 @@ TIMEOUT = 120
 
 def api(base, token, method, path, **kw):
     url = path if path.startswith("http") else base + path
+    # Pop once: on a retry the caller's Content-Type must still be there.
+    headers = dict(kw.pop("headers", {}))
+    headers["Authorization"] = "Bearer " + token
+    if "json" in kw:
+        headers.setdefault("Content-Type", "application/json")
     for attempt in range(4):
         r = requests.request(method, url, timeout=TIMEOUT,
-                             headers={"Authorization": "Bearer " + token}, **kw)
+                             headers=headers, **kw)
         if r.status_code not in (429, 500, 502, 503, 504):
             break
         wait = 2 ** attempt
@@ -51,6 +62,43 @@ def save(path, state):
         json.dumps(state, indent=2, ensure_ascii=False) + "\n")
 
 
+def read_token(sandbox):
+    """Find the access token without ever putting it on a command line.
+
+    A token file is the simpler route on Windows: `setx` writes to the
+    registry, and a program that is already running -- including whatever
+    launched this shell -- keeps the environment it started with, so a freshly
+    set variable is invisible until that program restarts. A file is read at
+    the moment it is needed, and is scoped to this directory rather than to
+    every process the account runs.
+
+    Sandbox and production are separate Zenodo accounts with separate tokens,
+    so they get separate files.
+    """
+    names = (["ZENODO_SANDBOX_TOKEN", "ZENODO_TOKEN"] if sandbox
+             else ["ZENODO_TOKEN"])
+    for n in names:
+        if os.environ.get(n):
+            return os.environ[n].strip()
+
+    path = ".zenodo-token-sandbox" if sandbox else ".zenodo-token"
+    if os.path.exists(path):
+        token = io.open(path, encoding="utf-8").read().strip()
+        if token:
+            return token
+        sys.exit("%s is empty" % path)
+
+    nl = chr(10)
+    sys.exit(
+        "no access token." + nl +
+        "  Put it in %s (one line, nothing else), or set %s." % (path, names[0]) + nl +
+        "  Zenodo > top-right menu > Applications > Personal access tokens," + nl +
+        "  with the scopes deposit:write and deposit:actions." + nl +
+        "  " + ("Sandbox is a separate site with its own account and token."
+               if sandbox else
+               "This token can publish; keep the file out of version control."))
+
+
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--manifest", default="zenodo.json")
@@ -62,10 +110,7 @@ def main():
                    help="restrict to these series positions (0 = Prologue, 15 = Epilogue)")
     args = p.parse_args()
 
-    token = os.environ.get("ZENODO_TOKEN")
-    if not token:
-        sys.exit("set ZENODO_TOKEN (Zenodo > Applications > Personal access "
-                 "tokens, scopes deposit:write and deposit:actions)")
+    token = read_token(args.sandbox)
 
     base = ("https://sandbox.zenodo.org" if args.sandbox else "https://zenodo.org") + "/api"
     state_path = "zenodo-state-sandbox.json" if args.sandbox else "zenodo-state.json"
@@ -94,36 +139,44 @@ def main():
             continue
 
         if not os.path.exists(rec["pdf"]):
-            sys.exit("%s\n    missing %s -- run `quarto render` first"
-                     % (label, rec["pdf"]))
+            sys.exit("%s" % label + chr(10) +
+                     "    missing %s -- run `quarto render` first" % rec["pdf"])
+
+        body = {"access": {"record": "public", "files": "public"},
+                "files": {"enabled": True},
+                "metadata": meta}
 
         if not here.get("id"):
-            dep = api(base, token, "POST", "/deposit/depositions",
-                      json={}, headers={"Content-Type": "application/json"})
-            here["id"] = dep["id"]
-            here["bucket"] = dep["links"]["bucket"]
-            here["draft"] = dep["links"].get("html")
+            d = api(base, token, "POST", "/records", json=body)
+            here["id"] = d["id"]
+            here["draft"] = d["links"].get("self_html")
             save(state_path, state)
             print("%s  draft %s" % (label, here["id"]))
+        else:
+            api(base, token, "PUT", "/records/%s/draft" % here["id"], json=body)
 
+        name = os.path.basename(rec["pdf"])
         if not here.get("file"):
-            name = os.path.basename(rec["pdf"])
+            # Three steps: declare the name, send the bytes, commit.
+            api(base, token, "POST", "/records/%s/draft/files" % here["id"],
+                json=[{"key": name}])
             with io.open(rec["pdf"], "rb") as fh:
-                api(base, token, "PUT", "%s/%s" % (here["bucket"], name), data=fh)
+                api(base, token, "PUT",
+                    "/records/%s/draft/files/%s/content" % (here["id"], name),
+                    data=fh,
+                    headers={"Content-Type": "application/octet-stream"})
+            api(base, token, "POST",
+                "/records/%s/draft/files/%s/commit" % (here["id"], name))
             here["file"] = name
             save(state_path, state)
             print("       uploaded %s" % name)
 
-        api(base, token, "PUT", "/deposit/depositions/%s" % here["id"],
-            json={"metadata": meta}, headers={"Content-Type": "application/json"})
-        here["metadata_set"] = True
-        save(state_path, state)
-
         if args.publish:
             out = api(base, token, "POST",
-                      "/deposit/depositions/%s/actions/publish" % here["id"])
-            here["doi"] = out.get("doi") or out.get("metadata", {}).get("doi")
-            here["record"] = out["links"].get("record_html")
+                      "/records/%s/draft/actions/publish" % here["id"])
+            here["doi"] = (out.get("pids", {}).get("doi", {}).get("identifier")
+                           or out.get("doi"))
+            here["record"] = out.get("links", {}).get("self_html")
             save(state_path, state)
             print("       published %s" % here["doi"])
 

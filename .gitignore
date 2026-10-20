@@ -55,3 +55,6 @@ Thumbs.db
 # carries no secret but is specific to one account.
 /zenodo.json
 /zenodo-state*.json
+# Access tokens. Never commit these.
+/.zenodo-token
+/.zenodo-token-sandbox

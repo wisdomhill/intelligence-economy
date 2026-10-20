@@ -23,6 +23,13 @@ $endif$
 $if(citation.number)$
   report-number: [$citation.number$],
 $endif$
+$if(citation.doi)$
+  doi: "$citation.doi$",
+$else$
+$if(doi)$
+  doi: "$doi$",
+$endif$
+$endif$
 $if(license.text)$
   license-text: [$license.text$],
 $endif$

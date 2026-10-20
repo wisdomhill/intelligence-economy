@@ -10,6 +10,13 @@ description: >-
 date: 2026-08-24
 date-modified: 2026-08-24
 order: 0
+keywords:
+  - agentic AI
+  - unit of sale
+  - work-referenced pricing
+  - software repricing
+  - run-rate revenue
+  - series architecture
 toc: true
 ---
 

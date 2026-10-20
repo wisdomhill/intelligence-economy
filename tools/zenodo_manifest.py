@@ -17,9 +17,19 @@ SITE = "https://wisdomhill.github.io/intelligence-economy"
 # Zenodo's own licence id, from /api/vocabularies/licenses.
 LICENSE = "cc-by-nc-nd-4.0"
 PUBLISHER = "Wisdom Hill"
+
+
+def copyright_line():
+    """`Copyright (c) YEAR HOLDER`, from the same place the PDF colophon takes
+    it. The holder is the institution, Wisdom Hill; the creator is the imprint,
+    Wisdom Hill Research. The series has kept those apart from the start."""
+    q = yaml.safe_load(io.open("_quarto.yml", encoding="utf-8").read())
+    c = q.get("copyright") or {}
+    return "Copyright © %s %s" % (c["year"], c["holder"])
 # `organizational` is the point of using Zenodo's InvenioRDM API rather than
 # the legacy deposit API: the legacy one has no creator type, so it files an
 # imprint as a person and makes the whole name a surname. See HANDOFF.md.
+COPYRIGHT = None
 CREATOR = {"person_or_org": {"type": "organizational",
                              "name": "Wisdom Hill Research"}}
 
@@ -66,6 +76,7 @@ def record(fm, pdf, url, order):
             "resource_type": {"id": "publication-report"},
             "title": title,
             "publisher": PUBLISHER,
+            "copyright": COPYRIGHT,
             "publication_date": str(fm.get("date-modified") or fm["date"]),
             "creators": [CREATOR],
             "description": description,
@@ -89,6 +100,8 @@ def record(fm, pdf, url, order):
 
 
 def main():
+    global COPYRIGHT
+    COPYRIGHT = copyright_line()
     out = []
 
     fm = front_matter("prologue.qmd")

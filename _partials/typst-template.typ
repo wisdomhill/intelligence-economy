@@ -35,6 +35,7 @@
   series-title: none,
   series-url: none,
   report-number: none,
+  doi: none,
   license-text: none,
   copyright-holder: none,
   copyright-year: none,
@@ -258,6 +259,15 @@
       #if series-url != none {
         let u = series-url.replace("\\", "")
         link(u)[#u]
+      }
+      // The DOI is reserved on the Zenodo draft before this PDF is built, so
+      // the document can carry the identifier that resolves to it. Code mode
+      // rather than markup: a markup line break here is a trailing backslash,
+      // which is fragile to edit and easy to lose.
+      #if doi != none {
+        linebreak()
+        let d = "https://doi.org/" + doi
+        link(d)[#d]
       }
     ]
   }

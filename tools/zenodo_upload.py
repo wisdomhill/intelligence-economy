@@ -53,6 +53,31 @@ def api(base, token, method, path, **kw):
     return r.json() if r.content else {}
 
 
+RDM = {"Accept": "application/vnd.inveniordm.v1+json"}
+
+
+def draft_doi(base, token, rid):
+    """The DOI currently reserved on a draft, or None.
+
+    Asked for explicitly: these endpoints answer in the legacy shape unless
+    the InvenioRDM serializer is requested, and the legacy shape has no pids.
+    """
+    d = api(base, token, "GET", "/records/%s/draft" % rid, headers=dict(RDM))
+    return ((d.get("pids") or {}).get("doi") or {}).get("identifier")
+
+
+def reserve_doi(base, token, rid):
+    """Reserve a DOI, or return the one the draft already has."""
+    doi = draft_doi(base, token, rid)
+    if doi:
+        return doi
+    api(base, token, "POST", "/records/%s/draft/pids/doi" % rid)
+    doi = draft_doi(base, token, rid)
+    if not doi:
+        sys.exit("reserved a DOI for draft %s but cannot read it back" % rid)
+    return doi
+
+
 def load(path):
     return json.load(io.open(path, encoding="utf-8")) if os.path.exists(path) else {}
 
@@ -104,6 +129,10 @@ def main():
     p.add_argument("--manifest", default="zenodo.json")
     p.add_argument("--sandbox", action="store_true",
                    help="use sandbox.zenodo.org; separate account and token")
+    p.add_argument("--reserve", action="store_true",
+                   help="create the drafts and reserve their DOIs, then stop; "
+                        "run tools/zenodo_doi_writeback.py and re-render before "
+                        "uploading, so each PDF carries its own DOI")
     p.add_argument("--publish", action="store_true",
                    help="publish the drafts; this mints DOIs and cannot be undone")
     p.add_argument("--only", type=int, action="append",
@@ -138,7 +167,7 @@ def main():
             print("%s  already published: %s" % (label, here["doi"]))
             continue
 
-        if not os.path.exists(rec["pdf"]):
+        if not args.reserve and not os.path.exists(rec["pdf"]):
             sys.exit("%s" % label + chr(10) +
                      "    missing %s -- run `quarto render` first" % rec["pdf"])
 
@@ -154,6 +183,14 @@ def main():
             print("%s  draft %s" % (label, here["id"]))
         else:
             api(base, token, "PUT", "/records/%s/draft" % here["id"], json=body)
+
+        if not here.get("reserved"):
+            here["reserved"] = reserve_doi(base, token, here["id"])
+            save(state_path, state)
+            print("       reserved %s" % here["reserved"])
+
+        if args.reserve:
+            continue
 
         name = os.path.basename(rec["pdf"])
         if not here.get("file"):
@@ -183,7 +220,12 @@ def main():
     done = sum(1 for v in state.values() if v.get("doi"))
     print("\n%d of %d published. State in %s."
           % (done, len(records), state_path))
-    if not args.publish:
+    if args.reserve:
+        print("DOIs are reserved and nothing is public. Next:" + chr(10) +
+              "  python tools/zenodo_doi_writeback.py" + chr(10) +
+              "  quarto render" + chr(10) +
+              "  python tools/zenodo_upload.py" + ("" if not args.sandbox else " --sandbox"))
+    elif not args.publish:
         print("Drafts are not public yet. Review them on Zenodo, then re-run "
               "with --publish.")
 

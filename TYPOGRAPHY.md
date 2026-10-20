@@ -205,6 +205,23 @@ anything:
 | Cited title | the document's own `title` |
 | URL | `series-url` (`_quarto.yml`) |
 
+Where a document has a DOI, it closes the block on its own line:
+
+```
+https://wisdomhill.github.io/intelligence-economy/
+https://doi.org/10.5281/zenodo.0000000
+```
+
+The value comes from `citation.doi`, or from a document-level `doi` where
+there is no `citation:` block of its own — the Prologue's case. It is written
+in code mode rather than markup, because a markup line break here is a
+trailing backslash and those are easy to lose in an edit.
+
+The DOI has to exist before the PDF is built, which is why
+`tools/zenodo_upload.py --reserve` reserves it on the Zenodo draft first. The
+alternative — publish, then add the DOI, then upload again — costs a second
+DOI per document, since Zenodo versions rather than replaces.
+
 No rule is drawn by the colophon. Each chapter already closes with one, so the
 last chapter's rule is the separator above this block. Where the body fills its
 last page the colophon moves to a page of its own.
